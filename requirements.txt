@@ -1,2 +1,5 @@
-# local package
+# Local Package
 -e .
+
+# Required Packages
+tqdm
