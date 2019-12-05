@@ -17,8 +17,8 @@ def retry_urlopen(url, timeout, retries, delay):
     url : string or Request object
 
     timeout : the optional timeout parameter specifies a timeout in seconds 
-        for blocking operations like the connection attempt (if not specified, 
-        the global default timeout setting will be used). This actually only 
+        for blocking operations like the connection attempt (if not specified,
+        the global default timeout setting will be used). This actually only
         works for HTTP, HTTPS and FTP connections
 
     retries : number of retries before an error is raised. The maximum number
@@ -64,7 +64,7 @@ def download_file(url, file_path, chunk_size=1024*1024, timeout=5.0,
     file_path : string or path object giving path to destination file
 
     timeout : the optional timeout parameter specifies a timeout in seconds 
-        for blocking operations like the connection attempt (if not specified, 
+        for blocking operations like the connection attempt (if not specified,
         the global default timeout setting will be used). This actually only 
         works for HTTP, HTTPS and FTP connections
 
@@ -73,14 +73,11 @@ def download_file(url, file_path, chunk_size=1024*1024, timeout=5.0,
 
     delay : the delay in seconds between subsequent retries
     '''
-    logger = logging.getLogger(__name__)
-    logger.info('downloading \'{}\' to \'{}\''.format(url, file_path))
-
     response = retry_urlopen(url, timeout=timeout, retries=retries,
                              delay=delay)
 
-    info = response.info()['Content-length']
-    size = int(info['Content-length']) if 'Content-length' in info else None
+    info = response.info()
+    size = int(info['Content-Length']) if 'Content-Length' in info else None
 
     with open(file_path, 'wb') as file:
         prog_bar = tqdm(total=size, unit='B', unit_scale=True)

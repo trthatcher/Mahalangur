@@ -7,3 +7,6 @@ environment:
 install_requirements:
 	$(PYTHON_INTERPRETER) -m pip install -U pip setuptools wheel
 	$(PYTHON_INTERPRETER) -m pip install -r requirements.txt
+
+himalayan_database:
+	$(PYTHON_INTERPRETER) -m mahalangur.data.hdb
