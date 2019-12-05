@@ -1,0 +1,7 @@
+MSMTBID|MSMTBIDDESCRIPTION
+0|Unspecified
+1|No summit bid
+2|Aborted below high camp
+3|Aborted at high camp
+4|Aborted above high camp
+5|Successful summit bid

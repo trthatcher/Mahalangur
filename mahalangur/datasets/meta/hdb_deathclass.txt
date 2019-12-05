@@ -1,0 +1,9 @@
+DEATHCLASS|DEATHCLASSDESCRIPTION
+0|Unspecified
+1|Death enroute BC
+2|Death at BC / ABC
+3|Route preparation
+4|Ascending in summit bid
+5|Descending from summit bid
+6|Expedition evacuation
+7|Other / Unknown

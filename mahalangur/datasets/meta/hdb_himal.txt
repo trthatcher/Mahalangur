@@ -1,0 +1,22 @@
+HIMAL|HIMALNAME
+0|Unclassified
+1|Annapurna
+2|Api/Byas Risi/Guras
+3|Damodar
+4|Dhaulagiri
+5|Ganesh/Shringi
+6|Janak/Ohmi Kangri
+7|Jongsang
+8|Jugal
+9|Kangchenjunga/Simhalila
+10|Kanjiroba
+11|Kanti/Palchung
+12|Khumbu
+13|Langtang
+14|Makalu
+15|Manaslu/Mansiri
+16|Mukut/Mustang
+17|Nalakankar/Chandi/Changla
+18|Peri
+19|Rolwaling
+20|Saipal

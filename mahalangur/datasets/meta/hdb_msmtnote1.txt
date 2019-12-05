@@ -1,0 +1,9 @@
+MSMTNOTE1|MSMTNOTE1DESCRIPTION
+0|None
+1|Flight-assisted ascent
+2|Flight-assisted descent
+3|Flight-assisted ascent and descent
+4|Re-ascent from high camp
+5|Re-ascent from high camp with fight-assisted ascent
+6|Re-ascent from high camp with fight-assisted descent
+7|Re-ascent from high camp with fight-assisted ascent and descent

@@ -98,7 +98,7 @@ def convert_hdb(raw_dir=HDB_RAW_DIR, converted_dir=HDB_INTERIM_DIR):
             else:
                 whitelist[key] = value
 
-        txt_path = (converted_dir / '{}.txt'.format(table_name)).resolve()
+        txt_path = (converted_dir / 'hdb_{}.txt'.format(table_name)).resolve()
 
         log_msg = 'converting \'{}\' to delimited text file \'{}\''
         logger.info(log_msg.format(dbf_path.name, txt_path.name))
@@ -109,7 +109,8 @@ def convert_hdb(raw_dir=HDB_RAW_DIR, converted_dir=HDB_INTERIM_DIR):
         row_count = 0
         blacklist = []
         with open(txt_path, 'w', newline='', encoding='utf-8') as dsv_file:
-            dsv_writer = csv.writer(dsv_file, delimiter='|')
+            dsv_writer = csv.writer(dsv_file, delimiter='|',
+                                    quoting=csv.QUOTE_MINIMAL)
 
             dsv_writer.writerow(dbf_table.field_names)
 

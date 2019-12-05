@@ -1,0 +1,14 @@
+DEATHTYPE|DEATHTYPEDESCRIPTION
+0|Unspecified
+1|AMS (acute mtn sickness)
+2|Exhaustion
+3|Exposure / frostbite
+4|Fall
+5|Crevasse
+6|Icefall collapse
+7|Avalanche
+8|Falling rock / ice
+9|Disappearance (unexplained)
+10|Illness (non-AMS)
+11|Other
+12|Unknown
