@@ -80,7 +80,7 @@ def download_file(url, file_path, chunk_size=1024*1024, timeout=5.0,
     size = int(info['Content-Length']) if 'Content-Length' in info else None
 
     with open(file_path, 'wb') as file:
-        prog_bar = tqdm(total=size, unit='B', unit_scale=True)
+        prog_bar = tqdm(total=size, unit='B', unit_scale=True, leave=False)
 
         for chunk in iter(lambda: response.read(chunk_size), b''):
             prog_bar.update(len(chunk))
