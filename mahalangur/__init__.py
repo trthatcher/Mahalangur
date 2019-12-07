@@ -4,6 +4,9 @@
 import importlib.resources as res
 from pathlib import Path
 
+with res.path('mahalangur', '') as package_path:
+    PACKAGE_DIR = Path(package_path)
+
 with res.path('mahalangur', 'datasets') as datasets_path:
     DATASETS_DIR = Path(datasets_path)
 

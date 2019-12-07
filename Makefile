@@ -10,3 +10,6 @@ install_requirements:
 
 himalayan_database:
 	$(PYTHON_INTERPRETER) -m mahalangur.data.hdb
+
+mahalangur_database:
+	$(PYTHON_INTERPRETER) -m mahalangur.data.sqlitedb

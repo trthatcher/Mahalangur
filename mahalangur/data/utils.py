@@ -1,12 +1,14 @@
 # -*- coding: utf-8 -*-
+import csv
 import logging
+import sqlite3
 from time import sleep
 from tqdm import tqdm
 from urllib.request import urlopen
 from urllib.error import URLError
 
 
-### Functions
+### Functions - Web
 
 def retry_urlopen(url, timeout, retries, delay):
     '''Open the URL url, which can be either a string or a Request object and
@@ -79,13 +81,57 @@ def download_file(url, file_path, chunk_size=1024*1024, timeout=5.0,
     info = response.info()
     size = int(info['Content-Length']) if 'Content-Length' in info else None
 
-    with open(file_path, 'wb') as file:
-        prog_bar = tqdm(total=size, unit='B', unit_scale=True, leave=False)
+    prog_bar = tqdm(total=size, unit='B', unit_scale=True, leave=False)
 
+    with open(file_path, 'wb') as file:
         for chunk in iter(lambda: response.read(chunk_size), b''):
             prog_bar.update(len(chunk))
             file.write(chunk)
 
-        prog_bar.close()
+    prog_bar.close()
 
     return file_path
+
+
+### Functions - SQLite
+
+def noneif(value, case):
+    return None if value == case else value
+
+
+def batched(reader, batch_size=100):
+    batch = []
+
+    for i, row in enumerate(reader, 1):
+        batch.append(row)
+        if i % batch_size == 0:
+            yield batch
+            batch = []
+
+    yield batch
+
+
+def import_file(db_conn, table_name, dsv_reader):
+    db_csr = db_conn.cursor()
+
+    headers = next(dsv_reader)
+    
+    headers_sql = ','.join(headers)
+    values_sql = ','.join(['?'] * len(headers))
+
+    sql = 'INSERT INTO {}({}) VALUES ({})'.format(table_name, headers_sql,
+                                                    values_sql)
+
+    prog_bar = tqdm(unit='rows', leave=False)
+
+    for batch in batched(dsv_reader, batch_size=50):
+        processed_batch = [[noneif(v,'') for v in row] for row in batch]
+
+        db_csr.executemany(sql, processed_batch)
+
+        prog_bar.update(len(batch))
+
+    prog_bar.close()
+
+    db_csr.close()
+    db_conn.commit()
