@@ -2,6 +2,7 @@
 import csv
 import logging
 import sqlite3
+import socket
 from time import sleep
 from tqdm import tqdm
 from urllib.request import urlopen
@@ -41,13 +42,13 @@ def retry_urlopen(url, timeout, retries, delay):
         try:
             response = urlopen(url, timeout=timeout)
             return response
-        except URLError as err:
+        except (URLError, socket.timeout) as err:
             if i == 0 and retries == 0:
                 raise err
             elif i == 0:
                 logger.warning(err)
             else:
-                logger.warning('Retry {} got {}'.format(i, err))
+                logger.warning('Retry {} got \'{}\''.format(i, err))
 
             if i != retries:
                 sleep(delay)
@@ -115,7 +116,7 @@ def import_file(db_conn, table_name, dsv_reader):
     db_csr = db_conn.cursor()
 
     headers = next(dsv_reader)
-    
+
     headers_sql = ','.join(headers)
     values_sql = ','.join(['?'] * len(headers))
 
