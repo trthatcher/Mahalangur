@@ -3,21 +3,23 @@ import csv
 import logging
 import sqlite3
 import socket
-from time import sleep
-from tqdm import tqdm
+from pathlib import Path
+from time    import sleep
+from tqdm    import tqdm
 from urllib.request import urlopen
-from urllib.error import URLError
+from urllib.error   import URLError
 
 
 ### Functions - Web
 
-def retry_urlopen(url, timeout, retries, delay):
+def retry_urlopen(url, timeout, retries, delay,
+                  logger=logging.getLogger(__name__)):
     '''Open the URL url, which can be either a string or a Request object and
     retry if an exception is raised up to retries times.
 
     Parameters
     ----------
-    url : string or Request object
+    url : string
 
     timeout : the optional timeout parameter specifies a timeout in seconds 
         for blocking operations like the connection attempt (if not specified,
@@ -36,7 +38,7 @@ def retry_urlopen(url, timeout, retries, delay):
         msg = 'retries={} must a non-negative integer'.format(retries)
         raise ValueError(msg)
 
-    logger = logging.getLogger(__name__)
+    logger.info('opening URL')
 
     for i in range(retries + 1):
         try:
@@ -57,12 +59,12 @@ def retry_urlopen(url, timeout, retries, delay):
 
 
 def download_file(url, file_path, chunk_size=1024*1024, timeout=5.0,
-                  retries=5, delay=0.5):
+                  retries=5, delay=0.5, logger=logging.getLogger(__name__)):
     '''Download a file from the specified url to the specified file_path.
     
     Parameters
     ----------
-    url : string or Request object
+    url : string
 
     file_path : string or path object giving path to destination file
 
@@ -76,11 +78,16 @@ def download_file(url, file_path, chunk_size=1024*1024, timeout=5.0,
 
     delay : the delay in seconds between subsequent retries
     '''
+    if isinstance(file_path, str):
+        file_path = Path(file_path)
+
     response = retry_urlopen(url, timeout=timeout, retries=retries,
-                             delay=delay)
+                             delay=delay, logger=logger)
 
     info = response.info()
     size = int(info['Content-Length']) if 'Content-Length' in info else None
+
+    logger.info('downloading to file \'{}\''.format(file_path.name))
 
     prog_bar = tqdm(total=size, unit='B', unit_scale=True, leave=False)
 
@@ -112,27 +119,69 @@ def batched(reader, batch_size=100):
     yield batch
 
 
-def import_file(db_conn, table_name, dsv_reader):
-    db_csr = db_conn.cursor()
+def import_delimited(db_conn, table_name, dsv_path,
+                     logger=logging.getLogger(__name__)):
+    if isinstance(dsv_path, str):
+        dsv_path = Path(dsv_path)
 
-    headers = next(dsv_reader)
+    #logger = logging.getLogger(__name__)
 
-    headers_sql = ','.join(headers)
-    values_sql = ','.join(['?'] * len(headers))
+    log_msg = 'importing records from delimited file \'{}\' to table \'{}\'...'
+    logger.info(log_msg.format(dsv_path.name, table_name))
 
-    sql = 'INSERT INTO {}({}) VALUES ({})'.format(table_name, headers_sql,
-                                                    values_sql)
+    with open(dsv_path, 'r', newline='', encoding='utf-8') as dsv_file:
+        dsv_reader = csv.reader(dsv_file, delimiter='|')
 
-    prog_bar = tqdm(unit='rows', leave=False)
+        headers = next(dsv_reader)
 
-    for batch in batched(dsv_reader, batch_size=50):
-        processed_batch = [[noneif(v,'') for v in row] for row in batch]
+        headers_sql = ','.join(headers)
+        values_sql = ','.join(['?'] * len(headers))
+        sql = 'INSERT INTO {}({}) VALUES ({})'.format(table_name, headers_sql,
+                                                        values_sql)
 
-        db_csr.executemany(sql, processed_batch)
+        db_csr = db_conn.cursor()
+        prog_bar = tqdm(unit='rows', leave=False)
 
-        prog_bar.update(len(batch))
+        n = 0
+        for batch in batched(dsv_reader, batch_size=50):
+            processed_batch = [[noneif(v,'') for v in row] for row in batch]
+            n_batch = len(processed_batch)
 
-    prog_bar.close()
+            db_csr.executemany(sql, processed_batch)
 
-    db_csr.close()
+            prog_bar.update(n_batch)
+            n += n_batch
+
+        prog_bar.close()
+        db_csr.close()
+
     db_conn.commit()
+
+    logger.info('wrote {} records to table \'{}\''.format(n, table_name))
+
+    return (table_name, n)
+
+
+# Functions - delimited files
+
+def write_delimited(records, dsv_path, logger=logging.getLogger(__name__)):
+    if isinstance(dsv_path, str):
+        dsv_path = Path(dsv_path)
+
+    log_msg = 'writing to delimited text file \'{}\'...'
+    logger.info(log_msg.format(dsv_path.name))
+
+    n = len(records) - 1
+
+    with open(dsv_path, 'w', newline='', encoding='utf-8') as dsv_file:
+        dsv_writer = csv.writer(dsv_file, delimiter='|',
+                                quoting=csv.QUOTE_MINIMAL)
+
+        for record in tqdm(records, unit='rows', leave=False):
+            processed_record = [noneif(field,'') for field in record]
+            dsv_writer.writerow(processed_record)
+
+    log_msg = 'wrote {} records to delimited text file \'{}\''
+    logger.info(log_msg.format(n, dsv_path.name))
+
+    return (dsv_path, n)

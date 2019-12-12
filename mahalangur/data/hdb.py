@@ -136,9 +136,9 @@ def convert_hdb(raw_dir=HDB_RAW_DIR, converted_dir=HDB_INTERIM_DIR):
 
 
 def main():
-    download_hdb()
-    extract_hdb()
-    convert_hdb()
+    download_hdb(url=HDB_URL, zip_path=HDB_ZIP_PATH, force_download=False)
+    extract_hdb(zip_path=HDB_ZIP_PATH, export_dir=HDB_RAW_DIR)
+    convert_hdb(raw_dir=HDB_RAW_DIR, converted_dir=HDB_INTERIM_DIR)
 
 
 if __name__ == '__main__':

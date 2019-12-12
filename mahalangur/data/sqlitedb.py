@@ -2,7 +2,7 @@ import csv
 import logging
 import sqlite3
 from pathlib import Path
-from .utils import import_file
+from .  import utils
 from .. import DATASETS_DIR, LOG_FORMAT, PACKAGE_DIR
 
 
@@ -43,17 +43,10 @@ def load_tables(db_conn, data_dir, data_files):
     if isinstance(data_dir, str):
         data_dir = Path(data_dir)
 
-    logger = logging.getLogger(__name__)
-
     for file_name, table_name in data_files.items():
         dsv_path = (data_dir / file_name).resolve()
 
-        log_msg = 'loading file \'{}\' to table \'{}\''
-        logger.info(log_msg.format(file_name, table_name))
-
-        with open(dsv_path, newline='', encoding='utf-8') as dsv_file:
-            dsv_reader = csv.reader(dsv_file, delimiter='|')
-            import_file(db_conn, table_name, dsv_reader)
+        utils.import_delimited(db_conn, table_name, dsv_path)
 
 
 def main():
