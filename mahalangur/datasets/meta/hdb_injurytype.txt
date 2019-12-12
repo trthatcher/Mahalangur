@@ -1,4 +1,4 @@
-INJURYTYPE|INJURYTYPEDESCRIPTION
+INJURYTYPE|INJURYTYPEDESC
 0|Unspecified
 1|AMS (acute mtn sickness) 
 2|Exhaustion

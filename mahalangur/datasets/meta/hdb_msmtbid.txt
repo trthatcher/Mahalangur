@@ -1,4 +1,4 @@
-MSMTBID|MSMTBIDDESCRIPTION
+MSMTBID|MSMTBIDDESC
 0|Unspecified
 1|No summit bid
 2|Aborted below high camp

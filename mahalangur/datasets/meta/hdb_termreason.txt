@@ -1,4 +1,4 @@
-TERMREASON|TERMREASONDESCRIPTION
+TERMREASON|TERMREASONDESC
 0|Unknown
 1|Success (main peak)
 2|Success (subpeak)

@@ -1,4 +1,4 @@
-MSMTTERM|MSMTTERMDESCRIPTION
+MSMTTERM|MSMTTERMDESC
 0|Unspecified
 1|Success
 2|Success (subpeak)

@@ -1,4 +1,4 @@
-MSMTNOTE1|MSMTNOTE1DESCRIPTION
+MSMTNOTE|MSMTNOTEDESC
 0|None
 1|Flight-assisted ascent
 2|Flight-assisted descent

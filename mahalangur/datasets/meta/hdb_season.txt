@@ -1,6 +1,6 @@
-SEASON|SEASONNAME
-0|Unknown
-1|Spring
-2|Summer
-3|Autumn
-4|Winter
+SEASON|SEASONNAME|STARTDAY
+0|Unknown|
+1|Spring|61
+2|Summer|152
+3|Autumn|243
+4|Winter|334

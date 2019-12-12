@@ -7,16 +7,39 @@ from .. import DATASETS_DIR, LOG_FORMAT, PACKAGE_DIR
 
 
 ### Globals
-INTERIM_DIR = (DATASETS_DIR / 'interim').resolve()
 SQL_DIR = (PACKAGE_DIR / 'data' / 'sql').resolve()
-SCHEMA_TABLES = ['hdb_peak', 'hdb_expedition', 'hdb_member', 'hdb_reference']
+SCHEMA_TABLES = [
+    'hdb_deathclass',
+    'hdb_deathtype',
+    'hdb_expedition',
+    'hdb_himal',
+    'hdb_injurytype',
+    'hdb_member',
+    'hdb_msmtbid',
+    'hdb_msmtnote',
+    'hdb_msmtterm',
+    'hdb_peak',
+    'hdb_reference',
+    'hdb_season',
+    'hdb_termreason'
+]
 
 DATA_FILES = {
-    'hdb_members.txt': 'hdb_member',
-    'hdb_peaks.txt'  : 'hdb_peak',
-    'hdb_exped.txt'  : 'hdb_expedition',
-    'hdb_refer.txt'  : 'hdb_reference'
+    'hdb_member'    : ['interim', 'hdb_members.txt'],
+    'hdb_peak'      : ['interim', 'hdb_peaks.txt'],
+    'hdb_expedition': ['interim', 'hdb_exped.txt'],
+    'hdb_reference' : ['interim', 'hdb_refer.txt'],
+    'hdb_deathclass': ['meta', 'hdb_deathclass.txt'],
+    'hdb_deathtype' : ['meta', 'hdb_deathtype.txt'],
+    'hdb_himal'     : ['meta', 'hdb_himal.txt'],
+    'hdb_injurytype': ['meta', 'hdb_injurytype.txt'],
+    'hdb_msmtbid'   : ['meta', 'hdb_msmtbid.txt'],
+    'hdb_msmtnote'  : ['meta', 'hdb_msmtnote.txt'],
+    'hdb_msmtterm'  : ['meta', 'hdb_msmtterm.txt'],
+    'hdb_season'    : ['meta', 'hdb_season.txt'],
+    'hdb_termreason': ['meta', 'hdb_termreason.txt']
 }
+
 
 ### Functions
 
@@ -42,8 +65,8 @@ def load_tables(db_conn, data_dir, data_files):
     if isinstance(data_dir, str):
         data_dir = Path(data_dir)
 
-    for file_name, table_name in data_files.items():
-        dsv_path = (data_dir / file_name).resolve()
+    for table_name, file_path in data_files.items():
+        dsv_path = data_dir.joinpath(*file_path).resolve()
 
         utils.import_delimited(db_conn, table_name, dsv_path)
 
@@ -61,7 +84,7 @@ def main():
                    object_type='table', logger=logger)
 
     logger.info('loading tables')
-    load_tables(db_conn, INTERIM_DIR, DATA_FILES)
+    load_tables(db_conn, DATASETS_DIR, DATA_FILES)
 
     db_conn.close()
     logger.info('closed connection to \'{}\''.format(db_path.name))

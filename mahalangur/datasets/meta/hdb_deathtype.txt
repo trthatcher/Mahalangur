@@ -1,4 +1,4 @@
-DEATHTYPE|DEATHTYPEDESCRIPTION
+DEATHTYPE|DEATHTYPEDESC
 0|Unspecified
 1|AMS (acute mtn sickness)
 2|Exhaustion
