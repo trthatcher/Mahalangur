@@ -20,11 +20,10 @@ DATA_FILES = {
 
 ### Functions
 
-def create_objects(db_conn, script_dir, object_list, object_type='table'):
+def create_objects(db_conn, script_dir, object_list, object_type='table',
+                   logger=logging.getLogger(__name__)):
     if isinstance(script_dir, str):
         script_dir = Path(script_dir)
-
-    logger = logging.getLogger(__name__)
 
     db_csr = db_conn.cursor()
     for object in object_list:
@@ -50,7 +49,7 @@ def load_tables(db_conn, data_dir, data_files):
 
 
 def main():
-    logger = logging.getLogger(__name__)
+    logger = logging.getLogger('mahalangur.data.sqlitedb')
 
     db_path = (DATASETS_DIR / 'mahalangur.db').resolve()
 
@@ -58,12 +57,10 @@ def main():
     db_conn = sqlite3.connect(db_path)
 
     logger.info('creating database schema')
-
     create_objects(db_conn, script_dir=SQL_DIR, object_list=SCHEMA_TABLES,
-                   object_type='table')
+                   object_type='table', logger=logger)
 
     logger.info('loading tables')
-
     load_tables(db_conn, INTERIM_DIR, DATA_FILES)
 
     db_conn.close()
