@@ -3,4 +3,6 @@
 
 # Required Packages
 dbfread
+netCDF4
+scikit-learn
 tqdm

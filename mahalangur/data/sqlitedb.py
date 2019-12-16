@@ -29,15 +29,15 @@ DATA_FILES = {
     'hdb_peak'      : ['interim', 'hdb_peaks.txt'],
     'hdb_expedition': ['interim', 'hdb_exped.txt'],
     'hdb_reference' : ['interim', 'hdb_refer.txt'],
-    'hdb_deathclass': ['meta', 'hdb_deathclass.txt'],
-    'hdb_deathtype' : ['meta', 'hdb_deathtype.txt'],
-    'hdb_himal'     : ['meta', 'hdb_himal.txt'],
-    'hdb_injurytype': ['meta', 'hdb_injurytype.txt'],
-    'hdb_msmtbid'   : ['meta', 'hdb_msmtbid.txt'],
-    'hdb_msmtnote'  : ['meta', 'hdb_msmtnote.txt'],
-    'hdb_msmtterm'  : ['meta', 'hdb_msmtterm.txt'],
-    'hdb_season'    : ['meta', 'hdb_season.txt'],
-    'hdb_termreason': ['meta', 'hdb_termreason.txt']
+    'hdb_deathclass': ['static', 'hdb_deathclass.txt'],
+    'hdb_deathtype' : ['static', 'hdb_deathtype.txt'],
+    'hdb_himal'     : ['static', 'hdb_himal.txt'],
+    'hdb_injurytype': ['static', 'hdb_injurytype.txt'],
+    'hdb_msmtbid'   : ['static', 'hdb_msmtbid.txt'],
+    'hdb_msmtnote'  : ['static', 'hdb_msmtnote.txt'],
+    'hdb_msmtterm'  : ['static', 'hdb_msmtterm.txt'],
+    'hdb_season'    : ['static', 'hdb_season.txt'],
+    'hdb_termreason': ['static', 'hdb_termreason.txt']
 }
 
 

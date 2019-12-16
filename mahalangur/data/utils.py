@@ -101,6 +101,44 @@ def download_file(url, file_path, chunk_size=1024*1024, timeout=5.0,
     return file_path
 
 
+### Functions - delimited files
+
+def open_dsv(dsv_path, mode='r'):
+    return open(dsv_path, mode, newline='', encoding='utf-8')
+
+
+def dsv_writer(dsv_file):
+    return csv.writer(dsv_file, delimiter='|', quoting=csv.QUOTE_MINIMAL,
+                      quotechar='"')
+
+
+def dsv_reader(dsv_file):
+    return csv.reader(dsv_file, delimiter='|', quoting=csv.QUOTE_MINIMAL,
+                      quotechar='"')
+
+
+def write_delimited(records, dsv_path, logger=logging.getLogger(__name__)):
+    if isinstance(dsv_path, str):
+        dsv_path = Path(dsv_path)
+
+    log_msg = 'writing to delimited text file \'{}\'...'
+    logger.info(log_msg.format(dsv_path.name))
+
+    n = len(records) - 1
+
+    with open_dsv(dsv_path, 'w') as dsv_file:
+        writer = dsv_writer(dsv_file)
+
+        for record in tqdm(records, unit='rows', leave=False):
+            processed_record = [noneif(field,'') for field in record]
+            writer.writerow(processed_record)
+
+    log_msg = 'wrote {} records to delimited text file \'{}\''
+    logger.info(log_msg.format(n, dsv_path.name))
+
+    return (dsv_path, n)
+
+
 ### Functions - SQLite
 
 def noneif(value, case):
@@ -124,15 +162,13 @@ def import_delimited(db_conn, table_name, dsv_path,
     if isinstance(dsv_path, str):
         dsv_path = Path(dsv_path)
 
-    #logger = logging.getLogger(__name__)
-
     log_msg = 'importing records from delimited file \'{}\' to table \'{}\'...'
     logger.info(log_msg.format(dsv_path.name, table_name))
 
-    with open(dsv_path, 'r', newline='', encoding='utf-8') as dsv_file:
-        dsv_reader = csv.reader(dsv_file, delimiter='|')
+    with open_dsv(dsv_path, 'r') as dsv_file:
+        reader = dsv_reader(dsv_file)
 
-        headers = next(dsv_reader)
+        headers = next(reader)
 
         headers_sql = ','.join(headers)
         values_sql = ','.join(['?'] * len(headers))
@@ -143,7 +179,7 @@ def import_delimited(db_conn, table_name, dsv_path,
         prog_bar = tqdm(unit='rows', leave=False)
 
         n = 0
-        for batch in batched(dsv_reader, batch_size=50):
+        for batch in batched(reader, batch_size=50):
             processed_batch = [[noneif(v,'') for v in row] for row in batch]
             n_batch = len(processed_batch)
 
@@ -160,28 +196,3 @@ def import_delimited(db_conn, table_name, dsv_path,
     logger.info('wrote {} records to table \'{}\''.format(n, table_name))
 
     return (table_name, n)
-
-
-# Functions - delimited files
-
-def write_delimited(records, dsv_path, logger=logging.getLogger(__name__)):
-    if isinstance(dsv_path, str):
-        dsv_path = Path(dsv_path)
-
-    log_msg = 'writing to delimited text file \'{}\'...'
-    logger.info(log_msg.format(dsv_path.name))
-
-    n = len(records) - 1
-
-    with open(dsv_path, 'w', newline='', encoding='utf-8') as dsv_file:
-        dsv_writer = csv.writer(dsv_file, delimiter='|',
-                                quoting=csv.QUOTE_MINIMAL)
-
-        for record in tqdm(records, unit='rows', leave=False):
-            processed_record = [noneif(field,'') for field in record]
-            dsv_writer.writerow(processed_record)
-
-    log_msg = 'wrote {} records to delimited text file \'{}\''
-    logger.info(log_msg.format(n, dsv_path.name))
-
-    return (dsv_path, n)

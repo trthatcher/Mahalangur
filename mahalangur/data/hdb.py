@@ -2,17 +2,17 @@
 import csv
 import logging
 import zipfile
-from .. import DATASETS_DIR, LOG_FORMAT
-from .utils import download_file
+from ..      import DATASETS_DIR, LOG_FORMAT
+from .       import utils
 from dbfread import DBF
 from pathlib import Path, PurePath
-from tqdm import tqdm
+from tqdm    import tqdm
 
 
 ### Globals
 
-HDB_ZIP_PATH = (DATASETS_DIR / 'raw' / 'himalayan-database.zip').resolve()
-HDB_RAW_DIR = (DATASETS_DIR / 'raw' / 'himalayan-database').resolve()
+HDB_ZIP_PATH = (DATASETS_DIR / 'raw' / 'hdb.zip').resolve()
+HDB_RAW_DIR  = (DATASETS_DIR / 'raw' / 'hdb'    ).resolve()
 HDB_INTERIM_DIR = (DATASETS_DIR / 'interim').resolve()
 HDB_URL = ('https://www.himalayandatabase.com/downloads/' +
            'Himalayan%20Database.zip')
@@ -39,7 +39,7 @@ def download_hdb(url=HDB_URL, zip_path=HDB_ZIP_PATH, force_download=False):
     else:
         log_msg = 'downloading Himalayan Database to file \'{}\''
         logger.info(log_msg.format(zip_path.name))
-        download_file(url, zip_path)
+        utils.download_file(url, zip_path)
 
 
 def extract_hdb(zip_path=HDB_ZIP_PATH, export_dir=HDB_RAW_DIR):
@@ -98,21 +98,20 @@ def convert_hdb(raw_dir=HDB_RAW_DIR, converted_dir=HDB_INTERIM_DIR):
             else:
                 whitelist[key] = value
 
-        txt_path = (converted_dir / 'hdb_{}.txt'.format(table_name)).resolve()
+        dsv_path = (converted_dir / 'hdb_{}.txt'.format(table_name)).resolve()
 
         log_msg = 'converting \'{}\' to delimited text file \'{}\''
-        logger.info(log_msg.format(dbf_path.name, txt_path.name))
+        logger.info(log_msg.format(dbf_path.name, dsv_path.name))
 
         # Export the records that match our whitelist (must match the
         # disambiguation column specified in the HDB_DUPLICATES global)
 
         row_count = 0
         blacklist = []
-        with open(txt_path, 'w', newline='', encoding='utf-8') as dsv_file:
-            dsv_writer = csv.writer(dsv_file, delimiter='|',
-                                    quoting=csv.QUOTE_MINIMAL)
+        with utils.open_dsv(dsv_path, 'w') as dsv_file:
+            writer = utils.dsv_writer(dsv_file)
 
-            dsv_writer.writerow(dbf_table.field_names)
+            writer.writerow(dbf_table.field_names)
 
             for record in tqdm(dbf_table, unit='rows', leave=False):
                 key = get_key(record)
@@ -121,13 +120,13 @@ def convert_hdb(raw_dir=HDB_RAW_DIR, converted_dir=HDB_INTERIM_DIR):
                 if value == whitelist[key]:
                     row = [int(field) if type(field) is bool else field
                            for field in list(record.values())]
-                    dsv_writer.writerow(row)
+                    writer.writerow(row)
                     row_count += 1
                 else:
                     blacklist.append((key, value))
 
         log_msg = 'wrote {}/{} records to \'{}\''
-        logger.info(log_msg.format(row_count, len(dbf_table), txt_path.name))
+        logger.info(log_msg.format(row_count, len(dbf_table), dsv_path.name))
 
         # Print the warnings last because it interferes with tqdm's output
         log_msg = 'ignored record with key={} and {}=\'{}\''
