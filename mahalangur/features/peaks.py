@@ -1,19 +1,17 @@
 # -*- coding: utf-8 -*-
 import copy
 import csv
+import json
 import logging
 import numpy as np
 import pandas as pd
 import re
 from .. import utils, LOG_FORMAT, DATASETS_DIR
 from pathlib import Path
+from shapely.geometry import Point, Polygon
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-#import sys
-# Add the ptdraft folder path to the sys.path list
-#sys.path.append('/home/tim/Projects/Mahalangur/mahalangur/')
-#import utils
 
 
 ### Globals
@@ -22,44 +20,30 @@ MOTCA_PATH = (DATASETS_DIR / 'static' / 'motca_peak.txt').resolve()
 HDB_PATH   = (DATASETS_DIR / 'processed' / 'hdb_peaks.txt').resolve() 
 OSM_PATH   = (DATASETS_DIR / 'static' / 'osm_peak.txt').resolve() 
 PEAK_PATH  = (DATASETS_DIR / 'processed' / 'feat_peak.txt').resolve()
-
-IGNORE_NAMES = {
-    'TENT PEAK',     # Two alt names 
-    'TWINS',         # HDB contains two peaks that have this name
-    'JUNCTION PEAK', # Two HDB alt names, one primary
-    'FLUTED PEAK',   # Two HDB alt names
-    'DOMO',          # One primary HDB, one alt
-    'SHARPHU IV',    # HDB primary and alt - not sure why this exists
-    'NUPCHU',        # HDB primary and alt
-    'PYRAMID PEAK',
-    'GANESH VI',
-    'KANGTEGA',
-    'CHAMAR'
-}
+HIMAL_PATH = (DATASETS_DIR / 'static' / 'osm_himal.geojson').resolve()
 
 COMMON_WORDS = {'NORTH', 'WEST', 'EAST', 'SOUTH', 'CENTRAL', 'HIMAL', 'I',
-                'II', 'III', 'IV', 'V', 'VI', 'VII', 'PEAK'} #, 'TSE', 'RE'}
+                'II', 'III', 'IV', 'V', 'VI', 'VII', 'PEAK'}
 
 SUBSTITUTIONS = {
     r'\wKANG': ' KHANG',
     r'\wSE'  : ' SOUTH EAST',
-    r'\wNE'  : ' NORTH EAST',
-    r'\wTSE' : ' TSE'
+    r'\wNE'  : ' NORTH EAST'
 }
 
-OVERRIDE = {
-    'KGUR': 154,   # Naurgaon Pk is Kang Guru
-    'URKM': 400,   # Slight spelling variation of Urkenmang
-    'PIMU': None,  # Errors
-    'GHYM': None,
-    'CTSE': None,
-    'TONG': None
+# 0.7 override
+MOTCA_OVERRIDE = {
+    'RANI': '119', # Himalchuli Northeast = Himalchuli East?
+    'LNKE': '233', # Lunchhung = Lungchhung
+    'KABD': '143', # Kabru Dome = Kabru
+    'URKM': '400', # Slight spelling variation of Urkenmang
+    'KGUR': '154', # Naurgaon Pk is Kang Guru
 }
 
 
 ### Logic
 
-def name_ngrams(name, n=3):
+def name_ngrams(name, n=2):
     name = re.sub(r'\W+', ' ', name).upper()
 
     for pattern, sub in SUBSTITUTIONS.items():
@@ -89,6 +73,25 @@ def read_peaks(dsv_path, id_col):
     return peaks
 
 
+def read_himals(geojson_path):
+    with open(geojson_path, 'r') as geojson_file:
+        features = json.load(geojson_file)['features']
+    
+    black_list = set()
+    for feature in features:
+        parent = feature.get('properties', {}).get('parent')
+        if parent is not None:
+            black_list.add(parent)
+
+    himals = {}
+    for feature in features:
+        himal_id = feature['id']
+        if himal_id not in black_list:
+            himals[himal_id] = Polygon(feature['geometry']['coordinates'][0])
+
+    return himals
+
+
 def peak_names(peak_dict, name1, name2):
     peaks = []
     for peak_id, peak in peak_dict.items():
@@ -103,7 +106,7 @@ def peak_names(peak_dict, name1, name2):
     return pd.DataFrame(data=peaks, columns=['id', 'seq', 'name'])
 
 
-def name_matches(base_df, match_df, threshold=0.4):
+def name_matches(base_df, match_df):
     corpus = list(set(base_df['name']) | set(match_df['name']))
 
     vectorizer = TfidfVectorizer(min_df=1, analyzer=name_ngrams)
@@ -117,19 +120,21 @@ def name_matches(base_df, match_df, threshold=0.4):
     matches = []
     for i, j in zip(*similarity_matrix.nonzero()):
         similarity = similarity_matrix[i, j]
-        if similarity > threshold:
-            base  = base_df.iloc[i]
-            match = match_df.iloc[j]
 
-            matches.append([
-                base['id'],
-                base['seq'],
-                base['name'],
-                match['id'],
-                match['seq'],
-                match['name'],
-                similarity
-            ])
+        if similarity < 0.5: continue
+
+        base  = base_df.iloc[i]
+        match = match_df.iloc[j]
+
+        matches.append([
+            base['id'],
+            base['seq'],
+            base['name'],
+            match['id'],
+            match['seq'],
+            match['name'],
+            similarity
+        ])
 
     return pd.DataFrame(data=matches, columns=['id', 'seq', 'name',
                         'match_id', 'match_seq', 'match_name', 'similarity'])
@@ -138,11 +143,12 @@ def name_matches(base_df, match_df, threshold=0.4):
 def choose_match(match_df):
     match = match_df.sort_values(by='similarity', ascending=False).iloc[0]
 
-    #main_df = match_df[match_df['seq'] == 1]
-    #if not main_df.empty:
-    #    alt = main_df.sort_values(by='similarity', ascending=False).iloc[0]
-    #    if alt['similarity'] > 0.9:
-    #        match = alt
+    main_df = match_df[match_df['seq'] == 1]
+    if not main_df.empty:
+        alt_match = main_df.sort_values(by='similarity',
+                                        ascending=False).iloc[0]
+        if alt_match['similarity'] > 0.85:
+            match = alt_match
 
     return pd.Series({
         'name'      : match['name'],
@@ -152,34 +158,39 @@ def choose_match(match_df):
     })
 
 
-def get_name_link(base_df, match_df, override={}, threshold=0.6):
+def name_link(base_df, match_df, override={}, threshold=0.6):
     matches_df = name_matches(base_df, match_df)
     matches_df = matches_df.groupby(['id']).apply(choose_match)
 
     matches = copy.deepcopy(override)
     for id, match in matches_df.iterrows():
-        if id not in override and match['similarity'] >= threshold:
+        if id not in matches and match['similarity'] >= threshold:
             matches[id] = match['match_id']
 
     return matches
 
 
-def make_linkage(hdb_peaks, osm_peaks, motca_peaks, osm_override={},
-                 motca_override={}):
-    hdb_names = peak_names(hdb_peaks, name1='PKNAME', name2='PKNAME2')
-    osm_names = peak_names(osm_peaks, name1='peak_name', name2='alt_names')
-    motca_names = peak_names(motca_peaks, name1='peak_name', name2='alt_names')
-
-    osm_link = get_name_link(hdb_names, osm_names, override=osm_override)
-    motca_link = get_name_link(hdb_names, motca_names, override=motca_override)
-
-    peaks = [['peak_id', 'peak_name', 'alt_names', 'approximate_coordinates',
-              'longitude', 'latitude', 'dms_longitude', 'dms_latitude']]
+def peak_list(hdb_peaks, himals, osm_peaks, motca_peaks):
+    peaks = [[
+        'peak_id',
+        'peak_name',
+        'alt_names',
+        'location',
+        'approximate_coordinates',
+        'longitude',
+        'latitude',
+        'dms_longitude',
+        'dms_latitude',
+        'coordinate_notes',
+        'himal'
+    ]]
     for peak_id, hdb_peak in hdb_peaks.items():
-        osm_peak   =   osm_peaks.get(  osm_link.get(peak_id, None), {})
-        motca_peak = motca_peaks.get(motca_link.get(peak_id, None), {})
+        osm_peak   =   osm_peaks.get(peak_id, {})
+        motca_peak = motca_peaks.get(peak_id, {})
 
         name = hdb_peak['PKNAME']
+
+        location = hdb_peak['LOCATION']
 
         # Get all variations of the name
         alt_names = set()
@@ -203,90 +214,101 @@ def make_linkage(hdb_peaks, osm_peaks, motca_peaks, osm_override={},
         lat       = None
         dms_lon   = None
         dms_lat   = None
+        coord_notes = None
 
-        for peak, approx in [(osm_peak, False), (motca_peak, True)]:
-            if peak.get('longitude', None) is not None:
+        for peak, approx, cite in [(osm_peak  , False, 'OSM'),
+                                   (motca_peak, True,  'MoTCA')]:
+            if peak.get('longitude') is not None:
+                peak_lon = peak.get('dms_longitude')
+                peak_lat = peak.get('dms_latitude')
+
                 if lon is None:
                     is_approx = 'Y' if approx else 'N'
-                    lon       = peak.get('longitude')
-                    lat       = peak.get('latitude')
-                    dms_lon   = peak.get('dms_longitude')
-                    dms_lat   = peak.get('dms_latitude')
+                    lon       = float(peak.get('longitude'))
+                    lat       = float(peak.get('latitude' ))
+                    dms_lon   = peak_lon
+                    dms_lat   = peak_lat
 
+                coord_note = '{}: ({}, {})'.format(cite, peak_lat, peak_lon)
+                if coord_notes is None:
+                    coord_notes = coord_note
+                else:
+                    coord_notes += '\n' + coord_note
+
+        # Get himal details
+        himal = None
+        if lon is not None and lat is not None:
+            peak_coord = Point(lon, lat)
+            for himal_id, himal_poly in himals.items():
+                if himal_poly.contains(peak_coord):
+                    himal = himal_id
+                    break
+
+        # Append the records
         peaks.append([
             peak_id,
             name,
             alt_names,
+            location,
             is_approx,
             lon,
             lat,
             dms_lon,
-            dms_lat
+            dms_lat,
+            coord_notes,
+            himal
         ])
 
     return peaks
 
 
 def main():
-    hdb_peaks   = read_peaks(HDB_PATH, id_col='PEAKID')
-    osm_peaks   = read_peaks(OSM_PATH, id_col='peak_id')
+    logger = logging.getLogger(__name__)
+
+    # Read peaks as {id: record} dictionary
+    hdb_peaks   = read_peaks(HDB_PATH  , id_col='PEAKID'     )
+    osm_peaks   = read_peaks(OSM_PATH  , id_col='peak_id'    )
     motca_peaks = read_peaks(MOTCA_PATH, id_col='peak_number')
 
-    hdb_names = peak_names(hdb_peaks, name1='PKNAME', name2='PKNAME2')
-    osm_names = peak_names(osm_peaks, name1='peak_name', name2='alt_names')
-    motca_names = peak_names(motca_peaks, name1='peak_name', name2='alt_names')
+    # Read himal geometry
+    himals = read_himals(HIMAL_PATH)
 
-    matches_df = name_matches(hdb_names, osm_names)
-    matches_df = matches_df.groupby(['id']).apply(choose_match)
-    matches_df.to_csv((DATASETS_DIR / 'processed' / 'osm_matches.txt').resolve(), sep='|')
+    # Create a dataframe of names with header [id, seq, name]
+    hdb_names_df   = peak_names(hdb_peaks,
+                                name1='PKNAME',
+                                name2='PKNAME2')
+    osm_names_df   = peak_names(osm_peaks,
+                                name1='peak_name',
+                                name2='alt_names')
+    motca_names_df = peak_names(motca_peaks,
+                                name1='peak_name',
+                                name2='alt_names')
 
-    matches_df = name_matches(hdb_names, motca_names)
-    matches_df = matches_df.groupby(['id']).apply(choose_match)
-    matches_df.to_csv((DATASETS_DIR / 'processed' / 'motca_matches.txt').resolve(), sep='|')
+    # Link the various datasets by choosing best match
+    logger.info('matching HDB peaks to OSM peaks...')
+    osm_link   = name_link(hdb_names_df,
+                           osm_names_df,
+                           threshold=0.9)
+    logger.info('matching HDB peaks to MoTCA peaks...')
+    motca_link = name_link(hdb_names_df,
+                           motca_names_df,
+                           override=MOTCA_OVERRIDE,
+                           threshold=0.7)
 
+    osm_peaks_linked   = {hdb_pk: osm_peaks[osm_pk]
+                          for hdb_pk, osm_pk in osm_link.items()}
 
-    links = make_linkage(hdb_peaks, osm_peaks, motca_peaks)
+    motca_peaks_linked = {hdb_pk: motca_peaks[motca_pk]
+                          for hdb_pk, motca_pk in motca_link.items()}
 
-    utils.write_delimited(links, PEAK_PATH)
+    # Combine into a table
+    peaks = peak_list(hdb_peaks, himals, osm_peaks_linked, motca_peaks_linked)
+
+    utils.write_delimited(peaks, PEAK_PATH)
+
+    return PEAK_PATH
 
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO, format=LOG_FORMAT)
     main()
-
-
-
-#def make_peak_table(hdb_peaks, osm_link, osm_peaks, motca_link, motca_peaks):
-#    peaks = []
-#
-#    for peak_id, hdb_data in hdb_peaks.items():
-
-
-
-
-#MOTCA_PATH = Path('/home/tim/Projects/Mahalangur/mahalangur/datasets/static/motca_peak.txt')
-#HDB_PATH = Path('/home/tim/Projects/Mahalangur/mahalangur/datasets/processed/hdb_peaks.txt')
-#OSM_PATH = Path('/home/tim/Projects/Mahalangur/mahalangur/datasets/static/osm_peak.txt')
-#
-#hdb_peaks = read_peaks(HDB_PATH, id_col='PEAKID')
-#osm_peaks = read_peaks(OSM_PATH, id_col='peak_id')
-#
-#
-#
-#
-#
-#hdb_df = read_peaks(HDB_PATH, id_col=0, name_col=1, alt_names_col=2)
-#motca_df = read_peaks(MOTCA_PATH, id_col=0, name_col=1, alt_names_col=2)
-#osm_df = read_peaks(OSM_PATH, id_col=0, name_col=1, alt_names_col=2)
-#
-#sim_df = match_peak_names(hdb_df, motca_df)
-#sim_df.to_csv('/home/tim/Projects/Mahalangur/mahalangur/datasets/processed/similarities.csv', sep='|', index=False)
-#
-#match_df = sim_df.groupby(['id']).apply(choose_match)
-#match_df.to_csv('/home/tim/Projects/Mahalangur/mahalangur/datasets/processed/matches.csv', sep='|', index=True)
-#
-#sim_df = match_peak_names(hdb_df, osm_df)
-#match_df = sim_df.groupby(['id']).apply(choose_match)
-#
-#match_df.to_csv('/home/tim/Projects/Mahalangur/mahalangur/datasets/processed/osm_matches.csv', sep='|', index=True)
-
