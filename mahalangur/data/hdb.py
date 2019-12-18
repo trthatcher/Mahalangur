@@ -2,8 +2,8 @@
 import csv
 import logging
 import zipfile
-from ..      import DATASETS_DIR, LOG_FORMAT
-from .       import utils
+from ..      import utils, DATASETS_DIR, LOG_FORMAT
+#from ..      import utils
 from dbfread import DBF
 from pathlib import Path, PurePath
 from tqdm    import tqdm

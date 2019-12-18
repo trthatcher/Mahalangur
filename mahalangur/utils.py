@@ -117,6 +117,11 @@ def dsv_reader(dsv_file):
                       quotechar='"')
 
 
+def dsv_dictreader(dsv_file, fieldnames=None):
+    return csv.DictReader(dsv_file, fieldnames=fieldnames, delimiter='|',
+                          quoting=csv.QUOTE_MINIMAL, quotechar='"')
+
+
 def write_delimited(records, dsv_path, logger=logging.getLogger(__name__)):
     if isinstance(dsv_path, str):
         dsv_path = Path(dsv_path)

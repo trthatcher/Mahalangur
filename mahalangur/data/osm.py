@@ -4,22 +4,21 @@ import json
 import logging
 import math
 import re
-from .       import utils
-from ..      import DATASETS_DIR, LOG_FORMAT
+from ..      import utils, DATASETS_DIR, LOG_FORMAT
 from pathlib import Path
 from shapely import ops, geometry as geom
 from urllib  import parse
 
 
 ### Globals
-OSM_RAW_DIR        = (DATASETS_DIR / 'raw' / 'osm').resolve()
-OSM_PROCESSED_DIR  = (DATASETS_DIR / 'processed').resolve()
+OSM_RAW_DIR    = (DATASETS_DIR / 'raw' / 'osm').resolve()
+OSM_STATIC_DIR = (DATASETS_DIR / 'static').resolve()
 
-HIMAL_JSON_PATH    = (OSM_RAW_DIR / 'himal.json').resolve()
-HIMAL_DSV_PATH     = (OSM_PROCESSED_DIR / 'osm_himal.txt').resolve()
-HIMAL_GEOJSON_PATH = (OSM_PROCESSED_DIR / 'osm_himal.geojson').resolve()
-PEAK_JSON_PATH     = (OSM_RAW_DIR / 'peak.json').resolve()
-PEAK_DSV_PATH      = (OSM_PROCESSED_DIR / 'osm_peak.txt').resolve()
+HIMAL_JSON_PATH    = (OSM_RAW_DIR    / 'himal.json'       ).resolve()
+HIMAL_DSV_PATH     = (OSM_STATIC_DIR / 'osm_himal.txt'    ).resolve()
+HIMAL_GEOJSON_PATH = (OSM_STATIC_DIR / 'osm_himal.geojson').resolve()
+PEAK_JSON_PATH     = (OSM_RAW_DIR    / 'peak.json'        ).resolve()
+PEAK_DSV_PATH      = (OSM_STATIC_DIR / 'osm_peak.txt'     ).resolve()
 
 OVERPASS_URL = 'https://overpass-api.de/api/interpreter?data={}'
 HIMAL_QUERY = '''
@@ -60,9 +59,9 @@ def dms_string(value, is_lon):
     min, r2 = divmod(60*r1, 10**7)
     sec = (r2*60)/(10**7)
 
-    direction = (('N','S') if is_lon else ('E','W'))[neg]
+    direction = (('E','W') if is_lon else ('N','S'))[neg]
 
-    dms = '{:d}° {:02d}′ {:08.5f}″{}'
+    dms = '{:d}° {:02d}′ {:08.5f}″ {}'
 
     return dms.format(deg, min, sec, direction)
 
@@ -72,8 +71,6 @@ def query_overpass(query, file_path, force_download=False,
     '''Retrieve geometry from overpass API'''
     if isinstance(file_path, str):
         file_path = Path(file_path)
-
-    #logger = logging.getLogger(__name__)
 
     file_dir = file_path.parents[0]
     if not file_dir.exists():
@@ -196,12 +193,12 @@ def get_himal_list(himal_geojson):
     himal_list = [[
             'himal_id',
             'himal_name',
-            'himal_alt_name',
-            'parent_himal_id',
+            'alt_names',
             'longitude',
-            'dms_longitude',
             'latitude',
-            'dms_latitude'
+            'dms_longitude',
+            'dms_latitude',
+            'parent_himal_id'
     ]]
 
     for feature in himal_geojson['features']:
@@ -213,11 +210,11 @@ def get_himal_list(himal_geojson):
             feature['id'],
             properties['name'],
             properties.get('alt_name', None),
-            properties.get('parent'  , None),
             lon,
-            dms_string(lon, is_lon=True),
             lat,
-            dms_string(lat, is_lon=False)
+            dms_string(lon, is_lon=True),
+            dms_string(lat, is_lon=False),
+            properties.get('parent'  , None)
         ]
 
         himal_list.append(record)
@@ -234,8 +231,8 @@ def get_peak_list(json_path=PEAK_JSON_PATH):
         'peak_name',
         'alt_names',
         'longitude',
-        'dms_longitude',
         'latitude',
+        'dms_longitude',
         'dms_latitude'
     ]]
     for node in peaks['elements']:
@@ -250,7 +247,13 @@ def get_peak_list(json_path=PEAK_JSON_PATH):
                 if not name.isascii() or name == '' or name.isdigit():
                     continue
 
-                names[name.strip()] = True
+                numerals = {num.title(): num for num in {'I', 'II', 'III',
+                            'IV', 'V', 'VI', 'VII'}}
+
+                name = ' '.join([numerals.get(word, word)
+                                 for word in name.strip().title().split()])
+
+                names[name] = True
 
         names = list(names.keys())
 
@@ -268,8 +271,8 @@ def get_peak_list(json_path=PEAK_JSON_PATH):
             name,
             ','.join(names),
             lon,
-            dms_string(lon, is_lon=True),
             lat,
+            dms_string(lon, is_lon=True),
             dms_string(lat, is_lon=False)
         ])
 

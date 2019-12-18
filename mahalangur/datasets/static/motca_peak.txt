@@ -1,0 +1,415 @@
+peak_number|peak_name|alt_names|himal|region|height|longitude|latitude|dms_longitude|dms_latitude|caravan_route
+1|Abi||Mahalangur|Solukhumbu|6043|86.7236111|27.9833333|86° 43′ 25.00000″ E|27° 59′ 00.00000″ N|Lukla-Namche-Khumjung-Gokyo BC/Dingboche-Lobuche-BC
+2|Agole East||Rolwaling|Solukhumbu|6675|86.5688889|27.8547222|86° 34′ 08.00000″ E|27° 51′ 17.00000″ N|Lukla-Namche-Thame-Targna Chudonmo Khola-BC/Charikot-Simigaun-Beding-Na-Tolumbau Glacier-BC
+3|Aichyn||Chanwathan|Humla|6055|81.8597222|30.2708333|81° 51′ 35.00000″ E|30° 16′ 15.00000″ N|Simikotu Subakhola-Nyengla BC
+4|Ama Dablam||Khumbu|Solukhumbu|6814|86.8638889|27.8611111|86° 51′ 50.00000″ E|27° 51′ 40.00000″ N|Lukla-Namche-Khumjung-Pangboche-BC/Milingo-Mingbo-BC
+5|Amotsang||Damodar|Manang|6393|84.1725|28.8347222|84° 10′ 21.00000″ E|28° 50′ 05.00000″ N|Besisahar-Koto-Phu-Pokarkang BC or Naar-Labse Khola-BC
+6|Amphu Gyabjen||Mahalangur|Solukhumbu|5630|86.8708333|27.8811111|86° 52′ 15.00000″ E|27° 52′ 52.00000″ N|Lukla-Namche-Khumjung-Dingboche-BC
+7|Amphu I||Mahalangur|Solukhumbu|6740|86.9555556|27.8702778|86° 57′ 20.00000″ E|27° 52′ 13.00000″ N|Lukla-Namche-Khumjung-Dingboche-BC
+8|Anidesh Chuli|White Wave|Kanchenjunga|Taplejung|6808|88.0708333|27.7186111|88° 04′ 15.00000″ E|27° 43′ 07.00000″ N|Taplejung-Ghunsa-Pangpema-BC
+9|Annapurna I||Annapurna|Myagdi/Kaski|8091|83.8225|28.5955556|83° 49′ 21.00000″ E|28° 35′ 44.00000″ N|Pokhara-Beni-Lete-Thulobugin-MirstiKhola-BC/Gandrung-Annapurna BC
+10|Annapurna II||Annapurna|Kaski/Manang|7937|84.1241667|28.5347222|84° 07′ 27.00000″ E|28° 32′ 05.00000″ N|Besisahar-Dharapani-Chame-Homde-BC/Setikhola-Annapurna BC
+11|Annapurna III||Annapurna|Kaski/Manang|7555|83.9916667|28.5844444|83° 59′ 30.00000″ E|28° 35′ 04.00000″ N|Besisahar-Dharapani-Chame-Braga-BC/Pokhara-Chemrong-Manchhapuchhere-BC
+12|Annapurna IV||Annapurna|Kaski/Manang|7525|84.085|28.5366667|84° 05′ 06.00000″ E|28° 32′ 12.00000″ N|Besisahar-Dharapani-Chame-Homde-BC/Pokhara-Burjung Khola-BC
+13|Annapurna South||Annapurna|Kaski/Manang|7219|83.8080556|28.5183333|83° 48′ 29.00000″ E|28° 31′ 06.00000″ N|Birethanti-Ghandruk-BC
+14|Api Main||Byas-Rishi|Darchula|7132|80.9316667|30.0052778|80° 55′ 54.00000″ E|30° 00′ 19.00000″ N|Darchula-Syaku-Gati Bagad-BC/Baitadi-Gokuleswar-Ghunsa-BC
+15|Api West||Byas-Rishi|Darchula|7076|80.9255556|30.0016667|80° 55′ 32.00000″ E|30° 00′ 06.00000″ N|Darchula-Syaku-Gat Ktm-Darchula-Syaku-Gati Bagad-BC/Baitadi-Gokuleswar-Ghunsa-BC i Bagad-BC
+16|Araniko Chuli||Damodar|Dolpa/Mustang/NC|6034|83.6594444|29.1761111|83° 39′ 34.00000″ E|29° 10′ 34.00000″ N|Jomosom-Ghami or Lo Manthang-BC
+17|Ardang|||Humla|6034|81.6233333|30.1988889|81° 37′ 24.00000″ E|30° 11′ 56.00000″ N|Simikot-Subakhola-Nyeng-la BC/Kermi-Nyalungla-Kying Khola BC
+18|Asajya Tuppa||Gorakh Himal|Humla/NC|6265|82.2797222|30.0625|82° 16′ 47.00000″ E|30° 03′ 45.00000″ N|Jumla-Gamgadi-Piplan-Nepka-Bhoblhanchaur-BC/Rimi-Nepka-Take Khola-BC
+19|Baden Powell Scout Peak|Urkema Peak|Langtang|Rasuwa/Sindhupalchok|5890|85.5125|28.1527778|85° 30′ 45.00000″ E|28° 09′ 10.00000″ N|Syabrubenshi-Langtang-Kyangjin Gumba-BC
+20|Bamongo||Gaurishankar|Dolakha/NC|6406|86.4352778|27.9086111|86° 26′ 07.00000″ E|27° 54′ 31.00000″ N|Charikot-Simigaon-Bedding-BC
+21|Barun Tse||Barun|Solukhumbu/Sankhuwasabha|7152|86.9827778|27.8713889|86° 58′ 58.00000″ E|27° 52′ 17.00000″ N|Lukla-Thaknag-Merala-Panch Pokhari-BC/Tumlingtar-Tashgaun-BC
+22|Baudha||Mansiri|Lamjung/Gorkha|6672|84.6788889|28.3755556|84° 40′ 44.00000″ E|28° 22′ 32.00000″ N|Gorka-Barpak-Rupina la-BC
+23|Bedding Go||Rolwaling|Dolakha/NC|6125|86.3930556|27.9258333|86° 23′ 35.00000″ E|27° 55′ 33.00000″ N|Charikot-Simigaon-Beding-BC
+24|Bhairab Takura|Madiya Peak|Jugal|Sindhupalchok/NC|6799|85.8097222|28.1977778|85° 48′ 35.00000″ E|28° 11′ 52.00000″ N|Barabishe-Listimai-Bagan-Bhairav Kunda-BC
+25|Bhemdang Ri||Langtang|Rasuwa|6150|85.6677778|28.2733333|85° 40′ 04.00000″ E|28° 16′ 24.00000″ N|Dhunche-Langtang-Kyanjin-BC
+26|Bhrikuti||Damodar|Mustang|6476|84.1475|28.9188889|84° 08′ 51.00000″ E|28° 55′ 08.00000″ N|Jomsom-Lomanthang-Damodar Kunda-BC
+27|Bhrikuti Shail||Damodar|Mustang/Manang/NC|6361|84.2283333|28.8938889|84° 13′ 42.00000″ E|28° 53′ 38.00000″ N|Jomosom-Lo Manthang-Damodar Kunda-BC
+28|Bhulu Lhasa||Kanjiroba|Mugu|6102|82.5994444|29.4413889|82° 35′ 58.00000″ E|29° 26′ 29.00000″ N|Gamgadi-Nangri-Dolpho-Sumdo Khola BC
+29|Bijora Hiun Chuli||Kanjiroba|Jumla|6111|82.5308333|29.2919444|82° 31′ 51.00000″ E|29° 17′ 31.00000″ N|Jumla-Talphi-Chaudebesi Khola BC
+30|Bobaye||Byas-Risi|Darchula/Bajhang|6808|81.0225|29.9591667|81° 01′ 21.00000″ E|29° 57′ 33.00000″ N|Baitedi-Gokuleswar-Ghusa-BC
+31|Bokta Peak||Kanchenjunga|Taplejung|6114|88.0069444|27.6208333|88° 00′ 25.00000″ E|27° 37′ 15.00000″ N|Taplejung-Yamphuding-Ramje-BC/Ghunsa-Lapsang BC
+32|Burke Khang||Mahalangur|Solukhumbu/NC|6942|86.7738889|28.0369444|86° 46′ 26.00000″ E|28° 02′ 13.00000″ N|Lukla-Namche-Khumjung-Gokyo-BC/Zongla-BC
+33|Chabuk|Tsajirip|Kanchenjunga|Taplejung/NC|6792|87.9875|27.8858333|87° 59′ 15.00000″ E|27° 53′ 09.00000″ N|Taplejung-Ghunsa-BC
+34|Chago||Mahalangur|Sankhuwasabha/NC|6893|87.0563889|27.9261111|87° 03′ 23.00000″ E|27° 55′ 34.00000″ N|Tumlingtar-Seduwa-Shipton's Pass-Shershong-BC/Lukla-Thangna-West Col-Sherpani Col-Makalu-BC
+35|Chako||Peri Himal|Manang/NC|6704|84.2886111|28.8805556|84° 17′ 19.00000″ E|28° 52′ 50.00000″ N|Besisahar-Chame-Chechna-Meta-BC
+36|Chamar||Shringi|Gorkha|7161|84.9505556|28.5466667|84° 57′ 02.00000″ E|28° 32′ 48.00000″ N|Arughat-Jagat-Tsum Valley-BC
+37|Chamar North||Sringi|Gorkha|7165|84.9469444|28.5552778|84° 56′ 49.00000″ E|28° 33′ 19.00000″ N|Ktm-Arughat-Jagat-Tsum Valley-BC
+38|Chamlang||Mahalangur|Solukhumbu/Sankhuwasabha|7321|86.9822222|27.7752778|86° 58′ 56.00000″ E|27° 46′ 31.00000″ N|Lukla-Chatra La-Tagnak-Merala-Honku Valley-BC
+39|Chandi Himal||Chandi Himal|Humla/NC|6142|81.9513889|30.3591667|81° 57′ 05.00000″ E|30° 21′ 33.00000″ N|Simikot-Chuwa Khola-Ning Khola-BC
+40|Chang Himal|Wedge Peak|Kanchenjunga|Taplejung|6802|88.0861111|27.7652778|88° 05′ 10.00000″ E|27° 45′ 55.00000″ N|Taplejung-Ghunsa-Lonak-BC
+41|Changdi||Palchung|Mugu/NC|6623|82.7986111|29.7191667|82° 47′ 55.00000″ E|29° 43′ 09.00000″ N|Jufal-Shey Phoksundo-Bhijer-Tankya Khola-BC
+42|Changla||Changla|Humla/NC|6563|82.1288889|30.3030556|82° 07′ 44.00000″ E|30° 18′ 11.00000″ N|Simikot-Dharapani-Kanche-Bhimthaukoti-BC
+43|Changwathang||Chandi Himal|Humla|6130|81.8883333|30.3263889|81° 53′ 18.00000″ E|30° 19′ 35.00000″ N|Nepalganj-Simikot-Kermi-Nyu La-Takchen-Taisolu Khola-BC
+44|Chaw Peak||Kanchanjunga|Taplejung/NC|6404|87.9441667|27.9097222|87° 56′ 39.00000″ E|27° 54′ 35.00000″ N|Taplejung-Yanma-Lonak-BC
+45|Chekigo||Gaurishankar|Dolakha/NC|6121|86.4136111|27.9063889|86° 24′ 49.00000″ E|27° 54′ 23.00000″ N|Charikot-Simigaon-Beding-BC
+46|Cheo Himal||Peri|Manang/NC|6820|84.4541667|28.7647222|84° 27′ 15.00000″ E|28° 45′ 53.00000″ N|Besisahar-Dharapani-Larkye Pass-Pambari BC
+47|Chhib Himal|Chhiv Himal|Damodar|Mustang/Manang|6650|84.1622222|28.8733333|84° 09′ 44.00000″ E|28° 52′ 24.00000″ N|Jomosom-Tsarang-Lo Manthang-Damodar Kunda-BC/Bensishar-Koto-Phu
+48|Chhochenphu Himal||Kanchanjunga|Taplejung|6260|87.7644444|27.8319444|87° 45′ 52.00000″ E|27° 49′ 55.00000″ N|Taplejung-Chiruwa-Olangchungola-Nyup-Yangma-Cherchenpokhari-BC
+49|Chhopa Bamare||Rolwaling|Dolakha/NC|6109|86.0919444|28.0572222|86° 05′ 31.00000″ E|28° 03′ 26.00000″ N|Singate-Lambagar-BC
+50|Chhuboche Peak||Annapurna|Manang|5606|84.2183333|28.7516667|84° 13′ 06.00000″ E|28° 45′ 06.00000″ N|Besisahar-Koto-BC
+51|Chhukung Chuli||Khumbu|Solukhumbu|5833|86.8772222|27.9388889|86° 52′ 38.00000″ E|27° 56′ 20.00000″ N|Lukla-Namche-Khumjung-Dingboche-BC
+52|Cho Polu||Mahalangur|Solukhumbu/Sankhuwasabha|6700|86.9836111|27.9194444|86° 59′ 01.00000″ E|27° 55′ 10.00000″ N|Tumlingtar-Seduwa-Shipton's Pass-Shershong-BC or Lukla-Namche-Khumjung-Dingboche-BC
+53|Chobuje||Rolwaling|Dolakha|6686|86.4916667|27.8822222|86° 29′ 30.00000″ E|27° 52′ 56.00000″ N|Charikot-Simigaon-Beding-Na-Rolwaling Glacier-BC
+54|Chola Tse||Khumbu|Solukhumbu|6423|86.7688889|27.9202778|86° 46′ 08.00000″ E|27° 55′ 13.00000″ N|Lukla-Namche-Khumjung-Pheriche-Zongla-BC
+55|Cho-Oyu||Khumbu|Solukhumbu/NC|8188|86.6633333|28.0936111|86° 39′ 48.00000″ E|28° 05′ 37.00000″ N|Lukla-Namce-Khumjung-Gokyo-BC/Thame-Tarnga-Arya-BC
+56|Chota Ri|Kali Himal|Khumbu Himal|Solukhumbu/Sankhuwasabha|6985|86.9755556|27.8772222|86° 58′ 32.00000″ E|27° 52′ 38.00000″ N|Lukla-Thaknag-Amphu Laptse-BC/Namche-Khumjung-Dingboche-BC
+57|Chukyima Go||Rolwaling|Dolakha/Ramechhap|6258|86.4525|27.8322222|86° 27′ 09.00000″ E|27° 49′ 56.00000″ N|Charikot-Simigaon-Beding-Na-Cho Rolpa-BC
+58|Chulu East||Damodar|Manang|6584|84.0366667|28.7358333|84° 02′ 12.00000″ E|28° 44′ 09.00000″ N|Besisahar-chame-ngawal-BC
+59|Chulu West||Damodar|Manang|6419|84.025|28.7433333|84° 01′ 30.00000″ E|28° 44′ 36.00000″ N|Besisahar-Chame-Manang-Ledari-BC
+60|Chumbu||Mahalangur|Solukhumbu|6859|86.7925|28.0188889|86° 47′ 33.00000″ E|28° 01′ 08.00000″ N|Lukla-Namche-Lobuche-BC
+61|Churen||Dhaulagiri|Myagdi/Dolpa|7371|83.2122222|28.7322222|83° 12′ 44.00000″ E|28° 43′ 56.00000″ N|Beni-Darbang-Budzunge Kharka-Gurja-BC/Jufal-Tarakot-Kakotgaun-BC
+62|Danfe Shail||Kanjirowa|Dolpa/NC|6103|83.0102778|29.6725|83° 00′ 37.00000″ E|29° 40′ 21.00000″ N|Jufal-Phoksundo Tal-Shey Gompa-Bhijer-Kuwa Gaon-Jhyanglun Khola-BC
+63|Danga||Kanchanjunga|Taplejung|6220|87.9786111|27.8169444|87° 58′ 43.00000″ E|27° 49′ 01.00000″ N|Taplejung-Thapethok-Ghunsa-Kambachen-Lonak-BC
+64|Dazaney I|Dzanaye Peak|Kanchanjunga|Taplejung/NC|6581|88.0308333|27.9055556|88° 01′ 51.00000″ E|27° 54′ 20.00000″ N|Taplejung-Lonak-Lonak Glacier-BC
+65|Dhagpache|Yansa Tsenji|Langtang|Rasuwa/NC|6567|85.6083333|28.2563889|85° 36′ 30.00000″ E|28° 15′ 23.00000″ N|Dhunche-Langtang-Kayanjging-BC
+66|Dhaulagari||Saipal|Bhajang|6638|81.1213889|29.95|81° 07′ 17.00000″ E|29° 57′ 00.00000″ N|Dhulli-Dalachaour-Garanphu-BC
+67|Dhaulagiri I||Dhaulagiri|Myagdi|8167|83.495|28.6966667|83° 29′ 42.00000″ E|28° 41′ 48.00000″ N|Beni-Marpha-BC/Beni-Darbang-Mudi-BC
+68|Dhaulagiri II||Dhaulagiri|Dolpa/Myagdi|7751|83.3905556|28.7630556|83° 23′ 26.00000″ E|28° 45′ 47.00000″ N|Beni-Darbang-Mudi-BC
+69|Dhaulagiri III||Dhaulagiri|Dolpa/Myagdi|7715|83.3794444|28.7538889|83° 22′ 46.00000″ E|28° 45′ 14.00000″ N|Beni-Darbang-Mudi-BC
+70|Dhaulagiri IV||Dhaulagiri|Dolpa/Myagdi|7661|83.3169444|28.7358333|83° 19′ 01.00000″ E|28° 44′ 09.00000″ N|Beni-Darbang-Mudi-BC
+71|Dhaulagiri V||Dhaulagiri|Dolpa/Myagdi|7618|83.3638889|28.7338889|83° 21′ 50.00000″ E|28° 44′ 02.00000″ N|Beni-Darbang-Mudi-BC
+72|Dhaulagiri VI||Dhaulagiri|Myagdi|7268|83.2758333|28.7083333|83° 16′ 33.00000″ E|28° 42′ 30.00000″ N|Beni-Darbang-Mudi-BC
+73|Dhechyan Khang||Damodar|Mustang/NC|6019|84.2519444|29.0358333|84° 15′ 07.00000″ E|29° 02′ 09.00000″ N|Jomsom-Lomanthang-Damodar Kunda-BC
+74|Dingjung North||Gaurishankar|Solukhumbu/NC|6249|86.5169444|27.9877778|86° 31′ 01.00000″ E|27° 59′ 16.00000″ N|Ktm-Charikot-Simi Gaon-Beding-BC or via Lama Bagar
+75|Dingjung Ri||Mahalangur|Solukhumbu/NC|6196|86.5227778|27.9744444|86° 31′ 22.00000″ E|27° 58′ 28.00000″ N|Charikot-Simi Gaon-Beding-BC or Via Lama Bagar
+76|Dogari Himal||Dhaulagiri|Rukum/Dolpa|6536|83.1002778|28.7666667|83° 06′ 01.00000″ E|28° 46′ 00.00000″ N|Jufal-Tarakor-BC
+77|Dolma Khang||Rolwaling|Dolakha/NC|6332|86.3502778|27.9372222|86° 21′ 01.00000″ E|27° 56′ 14.00000″ N|Charikot-Simigaon-Beding-BC
+78|Dome Khang||Kanchanjunga|Taplejung/NI|7264|88.15|27.8766667|88° 09′ 00.00000″ E|27° 52′ 36.00000″ N|Taplejung-Ghunsa-Pangpema-BC
+79|Dorje Lyakpa||Jugal|Rasuwa/Sindhupalchowk|6966|85.7811111|28.1738889|85° 46′ 52.00000″ E|28° 10′ 26.00000″ N|Syabrubesi-Langtang Kyangjing-Langshisha Kharka-BC/or Panch Pokhari-BC
+80|Dr. Harka Gurung Chuli|Ngadi Chuli,Peak 29,Dakura|Mansiri|Manang/Gorkha|7871|84.5686111|28.5033333|84° 34′ 07.00000″ E|28° 30′ 12.00000″ N|Arughat-Jagat-Namru-BC
+81|Drohmo||Kanchenjunga|Taplejung|6881|88.105|27.8238889|88° 06′ 18.00000″ E|27° 49′ 26.00000″ N|Taplejung-Ghunsa-Pangpema-BC
+82|Dudh Kundali||Kanjiroba|Jumla/Dolpa|6045|82.5455556|29.2238889|82° 32′ 44.00000″ E|29° 13′ 26.00000″ N|Jumla-Gotichaur-Hurikot-Jagdul-BC
+83|Dwijen Himal||Sringi|Gorkha/NC|6169|84.9033333|28.5933333|84° 54′ 12.00000″ E|28° 35′ 36.00000″ N|Arughat-Jagat-Bigh Gaon-Sherang Gomba-BC
+84|Dzanye II||Kanchenjunga|Taplejung/NC|6318|88.0411111|27.9022222|88° 02′ 28.00000″ E|27° 54′ 08.00000″ N|Taplejung-Ghunsa-Lhonak-Pangpema-BC
+85|Ek Rate Dada||Makalu|Solukhumbu/Shankhuwasava|6213|87.005|27.7088889|87° 00′ 18.00000″ E|27° 42′ 32.00000″ N|Phaplu-Budhidanda-Bung-Chheskam-Kako Pokhari-Honku Khola-BC or Lukla-Mera-La-BC
+86|Firnkof East||Saipal|Humla/Bajhang|6730|81.4572222|29.9013889|81° 27′ 26.00000″ E|29° 54′ 05.00000″ N|Bajhang-Dulu-BC
+87|Firnkof West||Saipal|Bajhang|6745|81.4469444|29.8980556|81° 26′ 49.00000″ E|29° 53′ 53.00000″ N|Bajhang-Dulu-BC
+88|Friendship Peak||Mahalangur|Solukhumbu/NC|6592|86.605|28.1013889|86° 36′ 18.00000″ E|28° 06′ 05.00000″ N|Lukla-Namche-Thame-Chule-Lunak-BC
+89|Ganchenpo||Jugal|Rasuwa|6378|85.6811111|28.1688889|85° 40′ 52.00000″ E|28° 10′ 08.00000″ N|Dhunche-Syabrubesi-Langtang-Kyangjing-Langshisha Kharka-BC
+90|Gandharva Chuli||Annapurna|Kaski|6248|83.9622222|28.5383333|83° 57′ 44.00000″ E|28° 32′ 18.00000″ N|Chomorong-Deurali-MBC-BC
+91|Ganesh I|Yangra|Ganesh|Gorkha/NC|7422|85.1288889|28.3916667|85° 07′ 44.00000″ E|28° 23′ 30.00000″ N|Macha Khola-Jagat-Ripchet-Kharka andpossibly Torogumba Kharka-Respectivelybefore-finally arriving at Genesh Himal-BC
+92|Ganesh II||Ganesh|Gorkha|7118|85.0591667|28.3788889|85° 03′ 33.00000″ E|28° 22′ 44.00000″ N|Arughat-Jagat-Tsum-Domje-BC
+93|Ganesh III|Salasungo|Ganesh|Dhading/NC|7043|85.1247222|28.3352778|85° 07′ 29.00000″ E|28° 20′ 07.00000″ N|Syabrubesi-Tambuchet-Tatopani-Bhrange Khola-Sanjun Kharka-BC
+94|Ganesh IV|Pabil|Ganesh|Gorkha/Dhading|7104|85.0822222|28.3455556|85° 04′ 56.00000″ E|28° 20′ 44.00000″ N|Arughat-Jagat-Tsum-Domje-BC
+95|Ganesh V||Ganesh|Dhading/Rasuwa/NC|6770|85.1608333|28.3319444|85° 09′ 39.00000″ E|28° 19′ 55.00000″ N|Syabrubesi-Chilime-Tatopani-Chharahekharka-C
+96|Ganesh VI||Ganesh|Gorkha|6908|85.0638889|28.3711111|85° 03′ 50.00000″ E|28° 22′ 16.00000″ N|Syabrubesi-Tambuchet-Tatopani-Bhirange Khola-Sanjun Kharka-BC
+97|Gangapurna||Annapurna|Kaski/Manang|7455|83.9658333|28.6052778|83° 57′ 57.00000″ E|28° 36′ 19.00000″ N|Besisahar-Chame-Manang-BC
+98|Gangapurna West|Lachenel|Annapurna|Manang/Kaski|7140|83.9438889|28.6011111|83° 56′ 38.00000″ E|28° 36′ 04.00000″ N|Chame-Manang-BC/Pokhara-Chumrung-MBC-BC
+99|Gaugiri||Damodar|Mustang/NC|6110|84.19|29.0452778|84° 11′ 24.00000″ E|29° 02′ 43.00000″ N|Jomsom-Lomangthang-BC
+100|Gauri||Rolwaling|Dolakha/NC|6983|86.3502778|27.9372222|86° 21′ 01.00000″ E|27° 56′ 14.00000″ N|Charikot-Simigaon-Beding-BC
+101|Gauri Shanker||Rolwaling|Dolakha/NC|7135|86.3377778|27.965|86° 20′ 16.00000″ E|27° 57′ 54.00000″ N|Dolakha-Charikot-Simigaon-Beding-BC/Lamabagar-Lapche-BC
+102|Ghanja La Chuli|Naya Kanga|Langtang|Rasuwa/Sindhupalchowk|5863|85.5513889|28.1683333|85° 33′ 05.00000″ E|28° 10′ 06.00000″ N|Dhunche-Syabrubeshi-Kyanjin-BC
+103|Ghanyala Hies||Kanchenjunga|Taplejung/NC|6744|88.0827778|27.8955556|88° 04′ 58.00000″ E|27° 53′ 44.00000″ N|Taplejung-Ghunsa-Lonak-Tshima Glacier-BC
+104|Ghenye Liru||Langtang|Rasuwa|6596|85.4738889|28.2480556|85° 28′ 26.00000″ E|28° 14′ 53.00000″ N|Dhunche-Syabrubesi-Timure-BC
+105|Ghustung North||Dhaulagiri|Myagdi|6529|83.2472222|28.6805556|83° 14′ 50.00000″ E|28° 40′ 50.00000″ N|Beni-Darbang-Gurja Gaon-BC
+106|Ghustung South||Dhaulagiri|Myagdi|6465|83.2461111|28.6722222|83° 14′ 46.00000″ E|28° 40′ 20.00000″ N|Beni-Darbang-Gurja Gaon-BC
+107|Ghyun Himal I||Damodar|Mustang/NC|6099|83.7819444|29.2441667|83° 46′ 55.00000″ E|29° 14′ 39.00000″ N|Pokhara-Jomsom-Lomanthang-BC
+108|Gimigela Chuli|Twins|Kanchenjunga|Taplejung/NI|7350|88.1611111|27.7405556|88° 09′ 40.00000″ E|27° 44′ 26.00000″ N|Taplejung-Ghunsa-Lonak-Pangpema-BC
+109|Gorakh Himal||Gorakh|Humla/NC|6198|82.2330556|30.065|82° 13′ 59.00000″ E|30° 03′ 54.00000″ N|Nepalgunj-Simikot-Chuwa Khola-Darma-Nepka-Take Khola-Bholbihanchaur-BC
+110|Gorakh Khang||Gorakh Himal|Humla/NC|6254|82.3375|30.0441667|82° 20′ 15.00000″ E|30° 02′ 39.00000″ N|Jumla-Gamgadi-Darma-Yachu-Dojan-BC
+111|Guras||Guras|Bajhang/NC|6744|81.1088889|30.0430556|81° 06′ 32.00000″ E|30° 02′ 35.00000″ N|Darchula-Changru-Tinkar River-BC
+112|Gurja Himal||Dahaulagiri|Myagdi|7193|83.2777778|28.6738889|83° 16′ 40.00000″ E|28° 40′ 26.00000″ N|Beni-Darbang-Dharaapani-Budzang Kharka-BC
+113|Gurkarpo Ri||Jugal|Rasuwa/NC|6889|85.7772222|28.2097222|85° 46′ 38.00000″ E|28° 12′ 35.00000″ N|Syabrubesi-Langtang-Kyangjing-Langshisha Kharka-Morimoto-BC
+114|Gyachung Khang||Khumbu|Solukhumbu/NC|7952|86.7508333|28.0944444|86° 45′ 03.00000″ E|28° 05′ 40.00000″ N|Lukla-Namche-Khumjung-Gokyo-BC
+115|Gyaji Khang||Peri|Manang|7074|84.3741667|28.7330556|84° 22′ 27.00000″ E|28° 43′ 59.00000″ N|Besisahar-Dharapani-Koto-Meta-Kyang-Phu-BC
+116|Gyala||Gyala|Gorkha|6363|84.5588889|28.7519444|84° 33′ 32.00000″ E|28° 45′ 07.00000″ N|Arughat-Jagat-Namru-Lho-Samagaon-Samdo-Larkey-BC
+117|Gyalzen Peak||Jugal|Sindhupalchok/NC|6151|85.8416667|28.1838889|85° 50′ 30.00000″ E|28° 11′ 02.00000″ N|Barabishe-Chako-Listimai-Bagan-Bahirav Kunda-BC
+118|Hillary Peak||Mahalangur|Solukhumbu/NC|7681|86.7161111|28.1066667|86° 42′ 58.00000″ E|28° 06′ 24.00000″ N|Lukla-Namche-Gokyo-BC
+119|Himalchuli East||Mansiri|Lamjung/Gorkha|7893|84.6413889|28.4369444|84° 38′ 29.00000″ E|28° 26′ 13.00000″ N|Gorka-Barpak-Rupina la-Chhilung KholaBC/Arughat-Nyak-BC/Besisahar-Nagdi-Mimi Pokhari-BC
+120|Himalchuli North||Mansiri|Lamjung/Gorkha|7331|84.6063889|28.4491667|84° 36′ 23.00000″ E|28° 26′ 57.00000″ N|Besisahar-Nagdi-Mimi-Pokhari-BC/Arughat-NNyak-BC/Bahundanda-Naiche-Tabang-BC
+121|Himalchuli West||Mansiri|Lamjung|7540|84.6188889|28.4355556|84° 37′ 08.00000″ E|28° 26′ 08.00000″ N|Besisahar-Ngadi-Mimi Pokhari-BC/Bahundanda-Naiche-Tabang-BC
+122|Himjung|Nemjung Goth|Peri|Manang|7092|84.4197222|28.7363889|84° 25′ 11.00000″ E|28° 44′ 11.00000″ N|Besisahar-Ceme-Nar Phu-BC
+123|Himlung East||Peri|Manang/NC|6932|84.4388889|28.7691667|84° 26′ 20.00000″ E|28° 46′ 09.00000″ N|Ktm-Besisahar-Dharapani-Larkye Pass-Pambari BC
+124|Himlung Himal||Peri|Manang|7126|84.4247222|28.7716667|84° 25′ 29.00000″ E|28° 46′ 18.00000″ N|Besisahar-Dharapani-Kodo-Meta-Kyang-Phu-BC
+125|Hiun Chuli||Annapurna|Kaski|6434|83.8519444|28.5102778|83° 51′ 07.00000″ E|28° 30′ 37.00000″ N|Chomrong-Deurali-BC/ABC-BC
+126|Hongde||Damodar|Dolpa/Mustang|6556|83.4991667|28.8430556|83° 29′ 57.00000″ E|28° 50′ 35.00000″ N|Beni-Marpha-Thapa pass-BC/Beni-Dovan-Dhaulagiri-BC
+127|Hongu|Sura Peak|Mahalangur/Makalu|Solukhumbu/Sankhuwasabha|6764|86.9794444|27.8255556|86° 58′ 46.00000″ E|27° 49′ 32.00000″ N|Lukla-Merala--Seto Pokhari-BC/Lukla-Namche-Amphulapcha-BC
+128|Hulang Go||Peri|Manang/NC|6687|84.3455556|28.8727778|84° 20′ 44.00000″ E|28° 52′ 22.00000″ N|Besisahar-Chame-Nar-Phu-BC
+129|Hunchhi||Mahalangur|Solukhumbu/NC|7029|86.7611111|28.0347222|86° 45′ 40.00000″ E|28° 02′ 05.00000″ N|Lukla-Namche-Khumjung-Gokyo-BC
+130|Hunku Chuli||Mahalangur|Solukhumbu/Sankhuwasabha|6833|87.0119444|27.8175|87° 00′ 43.00000″ E|27° 49′ 03.00000″ N|Lukla-Mera La-Seto Pokhari-BC/Lukla-Namche-Amphulapaha-BC
+131|Imja Tse|Island Peak|Khumbu|Solukhumbu|6165|86.9377778|27.9205556|86° 56′ 16.00000″ E|27° 55′ 14.00000″ N|Lukla-Namche-Khumjung-Dinboche-Chukung-BC
+132|Jabou Ri||Rolwaling|Dolakha|6166|86.5152778|27.8538889|86° 30′ 55.00000″ E|27° 51′ 14.00000″ N|Charikot-Simigaun-Beding-Na-Tolumbau Glacier-BC
+133|Jagdula Peak||Jagdula|Dolpa/Jumla|5761|82.5919444|29.3269444|82° 35′ 31.00000″ E|29° 19′ 37.00000″ N|Jumla-Chaudabise Khola-BC/Juphal-Hurrikot-Jagdul-BC
+134|Janak Chuli||Kanchenjunga|Taplejung/NC|7041|88.0933333|27.8716667|88° 05′ 36.00000″ E|27° 52′ 18.00000″ N|Taplejung-Ghunsa-Khambachen-Lonak-Bc
+135|Jarkya Peak||Peri|Gorkha/NC|6473|84.5269444|28.7419444|84° 31′ 37.00000″ E|28° 44′ 31.00000″ N|Arughat-Namru-Samagaon-Samdo-Fukang Glacier-BC
+136|Jasemba Go||Mahalangur|Solukhumbu/NC|6734|86.605|28.0872222|86° 36′ 18.00000″ E|28° 05′ 14.00000″ N|Lukla-Namche-Thame-Chule-Lunak-BC
+137|Jethi Bahurani||Gurans|Darchula/Bajang|6850|81.0425|29.8816667|81° 02′ 33.00000″ E|29° 52′ 54.00000″ N|Baitadi-Dhaoulechaur-BC
+138|Jijang||Damodar|Manang|6111|84.0347222|28.7841667|84° 02′ 05.00000″ E|28° 47′ 03.00000″ N|Jomsom-Kagbeni-Tange-Teri la-Mustang La-BC/Kodo-Narphu-BC
+139|Jobo Rinjang||Mahalangur|Solukhumbu/NC|6781|86.5652778|28.0661111|86° 33′ 55.00000″ E|28° 03′ 58.00000″ N|Lukla-Namche-Khumjung-Thame-Lunak-BC
+140|Jomsom Himal||Damodar|Manang|6335|84.1558333|28.8408333|84° 09′ 21.00000″ E|28° 50′ 27.00000″ N|Besisahar-Koto-Meta-Naar-Jomsomkhola-BC/Jomsom-Kagbeni-Tangye-Kog-Teri la Pass-BC/Jomsom-Kagbeni-Lomanthang-Damodarkunkda-BC
+141|Jongsang Peak||Janak|Taplejung/NC|7462|88.1380556|27.8811111|88° 08′ 17.00000″ E|27° 52′ 52.00000″ N|Taplejung-Kambachen-Pangpame-BC
+142|Jyacchhung||Byas Risi|Darchula/NC|6388|81.0858333|30.1063889|81° 05′ 09.00000″ E|30° 06′ 23.00000″ N|Darchula-Changru-Tinkar River-BC
+143|Kabru||Kanchanjunga|Taplejung/NI|7318|88.1136111|27.6080556|88° 06′ 49.00000″ E|27° 36′ 29.00000″ N|Taplejung-Yamphudin-Ramchaur-BC
+144|Kabru Central||Kanchenjunga|Taplejung/NI|7412|88.1213889|27.6352778|88° 07′ 17.00000″ E|27° 38′ 07.00000″ N|Taplejung-Yamphuding-Tseram-BC
+145|Kagmara||Kanjiroba|Dolpa|5978|82.7613889|29.1377778|82° 45′ 41.00000″ E|29° 08′ 16.00000″ N|Juphal-Dunai-Ringmo-Phoksundo-Kagmara la-BC/Jumla-Kaigaon-Kagmara la-BC
+146|Kaipuchonam||Palchung|Mugu/NC|6329|82.7833333|29.7255556|82° 47′ 00.00000″ E|29° 43′ 32.00000″ N|Phoksundo-Bhijer-Pung Kharka-Chandi Khola-BC
+147|Kalo Parbat||Mukut Himal|Dolpa|5387|83.4491667|28.8213889|83° 26′ 57.00000″ E|28° 49′ 17.00000″ N|Jomsom-Kagbeni-Saldang-Mukut Gaon-BC
+148|Kambong Peak||Dhaulagiri|Myagdi|6570|83.3080556|28.6594444|83° 18′ 29.00000″ E|28° 39′ 34.00000″ N|Beni-Darbang-Muri-BC
+149|Kanchenjunga Central||Kanchenjunga|Taplejung/NI|8473|88.1533333|27.6961111|88° 09′ 12.00000″ E|27° 41′ 46.00000″ N|Taplejung-Mamankhe-Yamphudin-Cheram-BC
+150|Kanchenjunga||Kanchenjunga|Taplejung/NI|8586|88.15|27.7027778|88° 09′ 00.00000″ E|27° 42′ 10.00000″ N|Taplejung-Yamphudin-Ramachaur-BC
+151|Kanchenjunga South||Kanchenjunga|Taplejung/NI|8476|88.1563889|27.6922222|88° 09′ 23.00000″ E|27° 41′ 32.00000″ N|Taplejung-Yamphudin-Ramachaur-BC
+152|Kanchenjunga North||Kanchenjunga|Taplejung/NI|7938|88.1544444|27.7108333|88° 09′ 16.00000″ E|27° 42′ 39.00000″ N|Taplejung-Ghunsa-Lhonak-Pangpema-BC
+153|Kande Hiun Chuli||Patrasi|Mugu/Jumla/Dolpa|6627|82.5602778|29.4113889|82° 33′ 37.00000″ E|29° 24′ 41.00000″ N|Jumla-Talpe-Chaudabise Khola BC
+154|Kang Garu||Peri|Manang|6981|84.3041667|28.6586111|84° 18′ 15.00000″ E|28° 39′ 31.00000″ N|Besisahar-Dharapani-Koto-Phu-BC
+155|Kang Kuru||Damodar|Mustang/Manang|6355|84.1861111|28.9013889|84° 11′ 10.00000″ E|28° 54′ 05.00000″ N|Besisahar-Dharapani-Koto-Phu-BC
+156|Kangbachen||Kanchenjunga|Taplejung|7902|88.1127778|27.7163889|88° 06′ 46.00000″ E|27° 42′ 59.00000″ N|Taplejung-Ghunsa-Pangpeme-BC
+157|Kangfu Gaton Kanta Gaton||Kanjirowa|Dolpa|5910|82.9958333|29.1033333|82° 59′ 45.00000″ E|29° 06′ 12.00000″ N|Juphal or Jumla-MaduwaBC
+158|Kanjerawa|Kanjeralwa|Kanjiroba|Dolpa|6612|82.87|29.23|82° 52′ 12.00000″ E|29° 13′ 48.00000″ N|Juphal-Dunai-Phoksundo Tal-BC
+159|Kanjiroba South||Kanjiroba|Dolpa|6883|82.6405556|29.3755556|82° 38′ 26.00000″ E|29° 22′ 32.00000″ N|Juphal-or Jumla-Hurrikot-Jagdul Col-des Anglais-BC
+160|Kanjiroba North||kanjiroba|Mugu/Dolpa|6858|82.6433333|29.3838889|82° 38′ 36.00000″ E|29° 23′ 02.00000″ N|Nepalganj-Jumla-Hurrikot-Jagdul-Col des Anglais-BC
+161|Kanti Himal East||Kanti|Mugu/NC|6516|82.7022222|29.8530556|82° 42′ 08.00000″ E|29° 51′ 11.00000″ N|Jumla-Gamgadi-Shilen Chaur-Mugu-Kogi Chwa Khola-BC
+162|Kanti Himal||Kanti Himal|Mugu/NC|6850|82.7536111|29.7663889|82° 45′ 13.00000″ E|29° 45′ 59.00000″ N|Jumla-Gamdadi-Mugu-BC
+163|Kaptang||Kanti Himal|Mugu/NC|5965|82.5736111|29.9269444|82° 34′ 25.00000″ E|29° 55′ 37.00000″ N|Jumla-Gamgdi-Mugu-BC
+164|Karko||Saipal|Bajhang|6015|81.2191667|29.9202778|81° 13′ 09.00000″ E|29° 55′ 13.00000″ N|Chainpur-Talkot-Kaga-Saingaon-Gharphu-Odar-BC
+165|Karyolung||Rolwalling|Solukhumbu|6530|86.6141667|27.7333333|86° 36′ 51.00000″ E|27° 44′ 00.00000″ N|Lukla-Lumding Kharka-BC
+166|Kasi Dalpha||Kanjiroba|Jumla/Dolpa|6386|82.5547222|29.2830556|82° 33′ 17.00000″ E|29° 16′ 59.00000″ N|Jumla-Talphi-Chaudebesi Khola BC
+167|Kesang Khang|UAAA Peak,Karsang Kang|Mustang|Mustang|6476|84.1694444|28.9333333|84° 10′ 10.00000″ E|28° 55′ 60.00000″ N|Jomson-Kagbeni-Lomanthang-Tangye-BC
+168|Khambachen East||Kanchenjunga|Taplejung/NI|7784|88.1580556|27.7175|88° 09′ 29.00000″ E|27° 43′ 03.00000″ N|Taplejung-Ghunsa-Lhonak-Pangpema-BC
+169|Khang Karpo||Rolwaling|Dolakha/Solukhumbu/NC|6646|86.5180556|27.8730556|86° 31′ 05.00000″ E|27° 52′ 23.00000″ N|Ktm-Charikot-Simi Gaon-Beding-BC or via Lama Bagar
+170|Khang Nagchugo||Gaurishankar|Dolakha/NC|6737|86.4447222|27.9061111|86° 26′ 41.00000″ E|27° 54′ 22.00000″ N|Charikot-Simi Gaon Beding-BC
+171|Khang Sar Khang||Annapurna|Kaski/Myagdi/Manang|7485|83.8736111|28.6133333|83° 52′ 25.00000″ E|28° 36′ 48.00000″ N|Besisahar-Manang-Tilicho Lake-BC
+172|Khang Tokal||Kanjiroba|Dolpa|6294|83.1686111|28.7997222|83° 10′ 07.00000″ E|28° 47′ 59.00000″ N|Juphal-Tarakot-Kakot-BC
+173|Khangchung|UIAA Peak|Mahalangur|Solukhumbu|6063|86.7397222|27.9836111|86° 44′ 23.00000″ E|27° 59′ 01.00000″ N|Luk-Namche-Dzongla/Gokyo BC
+174|Khangri Shar||Mahalangur|Solukhumbu/NC|6792|86.8152778|28.0188889|86° 48′ 55.00000″ E|28° 01′ 08.00000″ N|Lukla-Namche-Khumjung-Dingboche-Lobuche-BC
+175|Khangri West||Mahalangur|Solukhumbu/NC|6621|86.7975|28.0205556|86° 47′ 51.00000″ E|28° 01′ 14.00000″ N|Lukla-Namche-Khumjung-Dingboche-Lobuche-BC
+176|Khangsar Khang West|Herzog Peak|Annapurna|Myagdi/Kaski|7555|83.8602778|28.6091667|83° 51′ 37.00000″ E|28° 36′ 33.00000″ N|Pokhara-Chumrung-MBC-BC
+177|Khangtega||Khumbu|Solukhumbu|6783|86.8194444|27.7925|86° 49′ 10.00000″ E|27° 47′ 33.00000″ N|Lukla-Zartlawa-Tangnag-Khare-BC/Lukla-Namche-Tyangboche-BC
+178|Khatang||Rolwaling|Solukhumbu|6790|86.5983333|27.7575|86° 35′ 54.00000″ E|27° 45′ 27.00000″ N|Lukla-Ghat-Mora la-Lumding Kharka-BC
+179|Khatung Khang||Patrung Himal|Mustang/Manang|6484|83.9213889|28.7769444|83° 55′ 17.00000″ E|28° 46′ 37.00000″ N|Jomsom-Muktinath-Thorang La-BC
+180|Khayang||Mansiri|Gorkha/NC|6186|84.7158333|28.6333333|84° 42′ 57.00000″ E|28° 38′ 00.00000″ N|Besisahar-Tilje-Samagaon-BC
+181|Khiurikala||Saipal|Bajhang|5806|81.2730556|29.97|81° 16′ 23.00000″ E|29° 58′ 12.00000″ N|Chainpur-Talkot-Dulu-BC
+182|Khongma Tse|Mehra|Khumbu|Solukhumbu|5849|86.8505556|27.9477778|86° 51′ 02.00000″ E|27° 56′ 52.00000″ N|Lukla-Namche-Khumjung-Dingboche-Lobuche-BC
+183|Khumbu Tse||Mahalangur|Solukhumbu/NC|6639|86.875|28.0205556|86° 52′ 30.00000″ E|28° 01′ 14.00000″ N|Lukla-Namche-Khumjung-Dingboche-Lobuche-BC
+184|Khumjung||Damodar|Mustang/Manang|6759|84.1291667|28.8888889|84° 07′ 45.00000″ E|28° 53′ 20.00000″ N|Jomsom-Tange-Dhey-BC/Jomsom-Lomanthang-Damodar Kunda-BC
+185|Khung||Palchung|Dolpa/NC|6024|83.1441667|29.6247222|83° 08′ 39.00000″ E|29° 37′ 29.00000″ N|Jufal-Phoksundo-Saldan-Lunchun-Khun Khola-BC
+186|Kirat Chuli|Tent Peak|Kangchenjunga|Taplejung/NI|7362|88.1983333|27.7886111|88° 11′ 54.00000″ E|27° 47′ 19.00000″ N|Taplejung-Ghunsa-Lonak-BC
+187|Kogi Khang North||Kanti|Mugu/NC|6275|82.7391667|29.8144444|82° 44′ 21.00000″ E|29° 48′ 52.00000″ N|Jumla-Gamgadi-Shilen Chaur-Mugu-Kogi Khola-BC
+188|Kojichwa Chuli||Kanti Himal|Mugu/NC|6439|82.6436111|29.8655556|82° 38′ 37.00000″ E|29° 51′ 56.00000″ N|Jumla-Gamgdi-Mugu-BC
+189|Kojichwa South||Kanti|Mugu/NC|6264|82.6311111|29.8486111|82° 37′ 52.00000″ E|29° 50′ 55.00000″ N|Jumla-Gamgadi-Shilen Chaur-Mugu-Kogi Chwa Khola-BC
+190|Kokthang||Kanchanjunga|Taplejung/NI|6148|88.0825|27.5636111|88° 04′ 57.00000″ E|27° 33′ 49.00000″ N|Taplejung-Yamphudin-Ramchaur-BC
+191|Korlang Pari Tippa||Rolwaling|Dolakha/NC|5738|86.1911111|28.1733333|86° 11′ 28.00000″ E|28° 10′ 24.00000″ N|Jagat-Lambagar-Lapchegaun-Kidibu Khola-BC
+192|Kumbhakarna|Jannu|Kanchenjunga|Taplejung|7711|88.0463889|27.6822222|88° 02′ 47.00000″ E|27° 40′ 56.00000″ N|Taplejung-Yamfudin-Ramchaur-BC
+193|Kusum Kanguru||Khumbu|Solukhumbu|6360|86.7911111|27.7305556|86° 47′ 28.00000″ E|27° 43′ 50.00000″ N|Lukla-Phakding-Monjo-BC/Lukla-Chhatrala-Thaknag-BC
+194|Kwangde||Rolwaling|Solukhumbu|6086|86.6344444|27.8002778|86° 38′ 04.00000″ E|27° 48′ 01.00000″ N|Lukla-Phakding-Lumding Kharka-BC/Lukla-Namche-BC
+195|Kyabura||Kanchenjunga|Taplejung/NC|6466|88.0241667|27.8963889|88° 01′ 27.00000″ E|27° 53′ 47.00000″ N|Taplejung-Ghunsa-Lonak-BC
+196|Kyashar|Peak 43|Mahalangur-Makalu|Solukhumbu|6770|86.825|27.7552778|86° 49′ 30.00000″ E|27° 45′ 19.00000″ N|Lukla-Chhatrala pass-Kote-Thaknak-BC
+197|Kyazo Ri||Mahalangur|Solukhumbu|6151|86.6730556|27.9088889|86° 40′ 23.00000″ E|27° 54′ 32.00000″ N|Lukla-Namche-Khumjung-Gyajo-BC/Mende-Gyajo-BC
+198|Kyungka Ri 1||Langtang|Rasuwa|6599|85.6705556|28.2963889|85° 40′ 14.00000″ E|28° 17′ 47.00000″ N|Dhunche-Kyanjing-Langsisha Kharka-BC
+199|Kyungka Ri 2||Langtang|Rasuwa/NC|6506|85.6647222|28.3033333|85° 39′ 53.00000″ E|28° 18′ 12.00000″ N|Dhunche-Kyanjing-Langsisha Kharka-BC
+200|Lachama Chuli||Changla Himal|Humla/NC|6721|82.2005556|30.1363889|82° 12′ 02.00000″ E|30° 08′ 11.00000″ N|Simikot-Chuwa Khola-Lachhama Khola-BC
+201|Lachama North||Changla|Humla/NC|6628|82.2|30.1433333|82° 12′ 00.00000″ E|30° 08′ 36.00000″ N|Ktm-Nepalganj-Simikot-Chuwa Khola-Lachama Khola-BC
+202|Lamjung Himal||Annapurna|Kaski/Manang|6983|84.1911111|28.4891667|84° 11′ 28.00000″ E|28° 29′ 21.00000″ N|Begnas-Sisuwa-Shiklish-BC/Hynja-Shiklish-BC
+203|Langchung Khang||Kanchanjunga|Taplejung/NI|6786|88.1813889|27.8561111|88° 10′ 53.00000″ E|27° 51′ 22.00000″ N|Taplejung-Ghunsa-Lonak-BC
+204|Langdak||Rolwaling|Solukhumbu|6220|86.5636111|27.9169444|86° 33′ 49.00000″ E|27° 55′ 01.00000″ N|Charikot-Simigaun-Beding-Na-Rolwalingglacier-BC
+205|Langdung||Rolwaling|Dolakha/NC|6326|86.4841667|27.9477778|86° 29′ 03.00000″ E|27° 56′ 52.00000″ N|Ktm-Charikot-Simigaon-Beding-BC
+206|Langju||Puchen|Gorkha|6426|85.0552778|28.5458333|85° 03′ 19.00000″ E|28° 32′ 45.00000″ N|Arughat-Jagat-Tsum Valley-Nile-BC
+207|Langmoche Ri||Mahalangur|Dolakha/Solukhumbu|6617|86.555|27.8672222|86° 33′ 18.00000″ E|27° 52′ 02.00000″ N|Lukla-Namche-Khumjung-Thame-Bc
+208|Langpo Peak||Kanchanjunga|Taplejung/NI|6965|88.1988889|27.8533333|88° 11′ 56.00000″ E|27° 51′ 12.00000″ N|Taplejung-Ghunsa-Pangpema-BC
+209|Langsisa Ri||Jugal|Rasuwa|6412|85.7163889|28.2169444|85° 42′ 59.00000″ E|28° 13′ 01.00000″ N|Dhunche-Kyanging-BC
+210|Langtang Lirung||Langtang|Rasuwa|7227|85.5194444|28.2561111|85° 31′ 10.00000″ E|28° 15′ 22.00000″ N|Syabrubeshi-Lama Hotel-Kyanging-BC
+211|Langtang Ri||Langtang|Rasuwa/NC|7205|85.6863889|28.3822222|85° 41′ 11.00000″ E|28° 22′ 56.00000″ N|Syabrubeshi-Langtang-Langsisa Kharkha-BC
+212|Lapuchun||Tanje|Gorkha/NC|5960|84.8591667|28.5705556|84° 51′ 33.00000″ E|28° 34′ 14.00000″ N|Arughat-Jagat-Bigh Gaon-Sherang Gomba-BC
+213|Larkya Peak||Manaslu|Manang/Gorkha|6416|84.545|28.6269444|84° 32′ 42.00000″ E|28° 37′ 37.00000″ N|Arughat-Samagaon-Samdo-BC/Besisahar-Bhimthang-Larkey-BC
+214|Lasa||Byas Risi|Darchula/NC|6189|81.0841667|30.1358333|81° 05′ 03.00000″ E|30° 08′ 09.00000″ N|Darchula-Changru-Tinkar River-BC
+215|Leonpo Gang||Jugal|Rasuwa/Sindhupalchowk/NC|6979|85.8019444|28.1955556|85° 48′ 07.00000″ E|28° 11′ 44.00000″ N|Shyarubesi-Kyanjing-Langshisa Kharka-BC
+216|Leonpo Gang East||Jugal|Sindhupalchok/NC|6733|85.8177778|28.2025|85° 49′ 04.00000″ E|28° 12′ 09.00000″ N|Chautara-Barabise-Pembathang-Panchpokhari-Naya Masal Khola-BC
+217|Lhasharma||Kanjirowa|Dolpa|6412|82.7472222|29.2258333|82° 44′ 50.00000″ E|29° 13′ 33.00000″ N|Juphal-Santowa-Kagmara-la-BC
+218|Lhayul Peak||Api Himal|Darchula|6395|80.8688889|29.9761111|80° 52′ 08.00000″ E|29° 58′ 34.00000″ N|Darchula-Gokule-Ghusa-Chamlaya-Nadi-Tudadera-BC
+219|Lhotse||Khumbu|Solukhumbu/NC|8516|86.9366667|27.9619444|86° 56′ 12.00000″ E|27° 57′ 43.00000″ N|Lukla-Namche-Khumjung-Lobuche-BC
+220|Lhotse Middle||Mahalangur|Solukhumbu/NC|8410|86.9408333|27.9611111|86° 56′ 27.00000″ E|27° 57′ 40.00000″ N|Lukla-Namche-Khumjung-Dingboche-Lobuche-BC
+221|Lhotse Shar||Khumbu|Solukhumbu/NC|8382|86.9455556|27.9583333|86° 56′ 44.00000″ E|27° 57′ 30.00000″ N|Lukla-Namche-Khumjung-Dingboche-Chukung-BC
+222|Lhonak|Rifil Peak|Kanchenjunga|Taplejung|6070|88.0572222|27.8319444|88° 03′ 26.00000″ E|27° 49′ 55.00000″ N|Taplejung-GhunsaKhambachen-BC
+223|Lingtren||Mahalangur|Solukhumbu/NC|6713|86.8572222|28.0275|86° 51′ 26.00000″ E|28° 01′ 39.00000″ N|Lukla-Namche-Khumjung-Dingboche-Lobuche-BC
+224|Likhu Chuli I|Pig Pherago Shar|Mahalangur|Solukhumbu/Ramechhap/Dolakha|6719|86.5447222|27.8111111|86° 32′ 41.00000″ E|27° 48′ 40.00000″ N|Charikot-Beding-Chobuk-BC/Namche-Thame-Thengpo-BC
+225|Likhu Chuli II|Pig Pherago Nup|Mahalangur|Dolkha/Ramechhap|6659|86.5261111|27.805|86° 31′ 34.00000″ E|27° 48′ 18.00000″ N|Charikot-Beding-Chobuk-BC/Namche-Thame-Thengpo-BC
+226|Lobuje East||Khumbu|Solukhumbu|6090|86.7930556|27.9583333|86° 47′ 35.00000″ E|27° 57′ 30.00000″ N|Lukla-Namche-Khumjung-Lobuche-BC/Gokyo-Dzonghla-BC
+227|Lobuje West||Khumbu|Solukhumbu|6135|86.7847222|27.9688889|86° 47′ 05.00000″ E|27° 58′ 08.00000″ N|Lukla-Namche-Khumjung-Lobuche-BC/Gokyo-Dzonghla-BC
+228|Loshar I||Kanchenjunga|Taplejung/NC|6842|88.0566667|27.8961111|88° 03′ 24.00000″ E|27° 53′ 46.00000″ N|Taplejung-Ghunsa-Lonak-Tshima Glacier-BC
+229|Loshar II||Kanchenjunga|Taplejung/NC|6803|88.0669444|27.8861111|88° 04′ 01.00000″ E|27° 53′ 10.00000″ N|Taplejung-Ghunsa-Lonak-Tshima Glacier-BC
+230|Lugula||Lugula|Manang/NC|6899|84.2616667|28.8961111|84° 15′ 42.00000″ E|28° 53′ 46.00000″ N|Besisahar-Chame-Nar-Phu-Naguro-BC
+231|Lumba Sumba Peak||Kanchenjunga|Sankhuwasabha/Taplejung|5740|87.6419444|27.71|87° 38′ 31.00000″ E|27° 42′ 36.00000″ N|Taplejung-Chiruwa-Olangchungola-BC
+232|Lung Sampa||Mahalangur|Solukhumbu|6500|86.6613889|28.0527778|86° 39′ 41.00000″ E|28° 03′ 10.00000″ N|Lukla-Namche-Khumjung-Gokyo-BC
+233|Lungchhung||Palchung|Dolpa/NC|6043|83.1222222|29.6283333|83° 07′ 20.00000″ E|29° 37′ 42.00000″ N|Jufal-Phoksundo-Saldan-Lunchun-Khun Khola-BC
+234|Luza Peak||Mahalangur|Solukhumbu|5710|86.6966667|27.8877778|86° 41′ 48.00000″ E|27° 53′ 16.00000″ N|Lukla-Namche-Khumjung-Dole-Luza-BC
+235|Machermo||Mahalangur|Solukhumbu|5559|86.6955556|27.8958333|86° 41′ 44.00000″ E|27° 53′ 45.00000″ N|Lukla-Namche-Khumjung-Machharmo-BC
+236|Makalu I||Mahalangur|Sankhuwasabha/NC|8485|87.0908333|27.8891667|87° 05′ 27.00000″ E|27° 53′ 21.00000″ N|Tumlingtar-Chichila-Num-Yak Kharkha-BC
+237|Makalu II|Kangchug Tse|Mahalangur|Sankhuwasabha/NC|7678|87.0805556|27.9155556|87° 04′ 50.00000″ E|27° 54′ 56.00000″ N|Tumlingtar-Chichila-Num-Yangle Kharkha-BC
+238|Malanphulan||Mahalangur|Solukhumbu|6573|86.8722222|27.8027778|86° 52′ 20.00000″ E|27° 48′ 10.00000″ N|Lukla-Namche-Pangboche-Mingbu-BC
+239|Manapathi||Dhaulagiri|Myagdi|6380|83.4588889|28.6455556|83° 27′ 32.00000″ E|28° 38′ 44.00000″ N|Beni-Darbang-Muri-BC
+240|Manaslu||Mansiri|Manang/Gorkha|8163|84.5616667|28.5502778|84° 33′ 42.00000″ E|28° 33′ 01.00000″ N|Arughat-Jagat-Sama gaon-BC
+241|Manaslu North||Mansiri|Manang/Gorkha|6994|84.5505556|28.5777778|84° 33′ 02.00000″ E|28° 34′ 40.00000″ N|Arughat-Jagat-Sama gaon-BC
+242|Mansail||Damodar|Mustang/NC|6242|83.3019444|29.3019444|83° 18′ 07.00000″ E|29° 18′ 07.00000″ N|Pokhara-Jomsom-Lomanthang-Chhonhup-BC
+243|Mansail South||Damodar|Mustang/NC|6251|83.8102778|29.2944444|83° 48′ 37.00000″ E|29° 17′ 40.00000″ N|Pokhara-Jomsom-Lomanthang-BC
+244|Mardi Himal||Annapurna|Kaski|5553|83.9308333|28.4730556|83° 55′ 51.00000″ E|28° 28′ 23.00000″ N|Hyangja-Dhiprang-Kharka-BC
+245|Mariayang West||Palchung|Dolpa/NC|6455|82.8755556|29.6894444|82° 52′ 32.00000″ E|29° 41′ 22.00000″ N|Jufal-Shey Phoksundo-Bhijer-Tankya Khola-BC
+246|Mariyang||Kanjiroba|Dolpa/NC|6528|82.8888889|29.6933333|82° 53′ 20.00000″ E|29° 41′ 36.00000″ N|Juphal-Phuksundo-Shey Gompa-Phopa Gaon-Swaksa Khola-BC
+247|Mayung Thang Khang||Kanti|Mugu/NC|6449|82.7466667|29.7697222|82° 44′ 48.00000″ E|29° 46′ 11.00000″ N|Jumla-Gamgadi-Thaju Chaur-Takla Khola-BC
+248|MDM Peak|Tsisima|Kanchenjunga|Taplejung|6196|88.0405556|27.8630556|88° 02′ 26.00000″ E|27° 51′ 47.00000″ N|Taplejung-Ghunsa-Lonak-Tshima Glacier-BC
+249|Mera Peak||Khumbu|Solukhumbu|6470|86.8705556|27.7086111|86° 52′ 14.00000″ E|27° 42′ 31.00000″ N|Lukla-Chhatrala-Thanknak-Khare-BC/Jiri-Sete-Kharikhola-Pangkhongma-Khare-BC
+250|Mera South||Mahalangur|Solukhumbu|6064|86.895|27.7011111|86° 53′ 42.00000″ E|27° 42′ 04.00000″ N|Lukla-Thaknag-Dig Kharka-Khare--BC
+251|Merra||Kanchenjunga|Taplejung|6334|88.0197222|27.7408333|88° 01′ 11.00000″ E|27° 44′ 27.00000″ N|Taplejung-Ghunsa-Lonak-Tshima Glacier-BC
+252|Mojka Peak||Kanchenjunga|Taplejung|6024|88.0505556|27.7705556|88° 03′ 02.00000″ E|27° 46′ 14.00000″ N|Taplejung-Ghunsa-Lonak-Tshima Glacier-BC
+253|Mukot Himal||Dhaulagiri|Dolpa/Mustang|6087|83.4822222|28.8169444|83° 28′ 56.00000″ E|28° 49′ 01.00000″ N|Pokhara-Beni-Marpha-BC
+254|Mustang Himal||Damodar|Mustang/NC|6195|83.81|29.2861111|83° 48′ 36.00000″ E|29° 17′ 10.00000″ N|Pokhara-Jomsom-Lomanthang-BC
+255|Nagpai Gosum I||Mahalangur|Solukhumbu/NC|7350|86.6377778|28.0705556|86° 38′ 16.00000″ E|28° 04′ 14.00000″ N|Lukla-Namche-Khumjung-Gokyo-BC/Thame-Tarnga-Lunak-BC
+256|Nagpai Gosum II||Mahalangur|Solukhumbu/NC|7307|86.6525|28.0747222|86° 39′ 09.00000″ E|28° 04′ 29.00000″ N|Lukla-Namche-Khumjung-Gokyo-BC/Thame-Lunak-BC
+257|Nala Kankar||Nalakankar|Humla/NC|6062|81.4013889|30.3575|81° 24′ 05.00000″ E|30° 21′ 27.00000″ N|Simikot-Kermi-Nyula-Takchen-Gyau Khola-BC
+258|Nampa||Gurans|Darchula|6729|80.9969444|30.0041667|80° 59′ 49.00000″ E|30° 00′ 15.00000″ N|Baitadi-Gokuleswor-Chamalia Khola-Ghusa-BC/Bajang-Talkot-Kada-Dahachaur-Baiyeli Khola-BC
+259|Nampa II||Gurans|Darchula|6585|80.9597222|30.0127778|80° 57′ 35.00000″ E|30° 00′ 46.00000″ N|Baitadi-Gokuleswor-Chamalia Khola-Ghusa-BC/Bajang-Talkot-Kada-Dahachaur-Baiyeli Khola-BC
+260|Nampa III||Gurans|Darchula/Bajhang|6611|81.0169444|29.9808333|81° 01′ 01.00000″ E|29° 58′ 51.00000″ N|Baitadi-Gokuleswor-Chamalia Khola-Ghusa-BC/Bajang-Talkot-Kada-Dahachaur-Baiyeli Khola-BC
+261|Nampa South||Byas-Rikhi|Darchula|6180|80.9966667|29.9858333|80° 59′ 48.00000″ E|29° 59′ 09.00000″ N|Baitadi-Gokuleswor-Chamalia Khola-Ghusa-BC/Bajang-Talkot-Kada-Dahachaur-Baiyeli Khola-BC
+262|Nangamari II||Kanchanjunga|Taplejung|6209|87.8672222|27.8913889|87° 52′ 02.00000″ E|27° 53′ 29.00000″ N|Taplejung-Sekhathum-Yanma-BC
+263|Nangamari I||Kanchanjunga|Taplejung/NC|6547|87.8686111|27.9105556|87° 52′ 07.00000″ E|27° 54′ 38.00000″ N|Taplejung-Sekhathum-Yanma-BC
+264|Nar Phu||Damodar|Manang|5921|84.1238889|28.7169444|84° 07′ 26.00000″ E|28° 43′ 01.00000″ N|Besisahar-Koto-Nar-Khangla pass-BC/Pisang-Ngawal-BC
+265|Naulekh||Mahalangur|Solukhumbu|6340|86.9047222|27.6869444|86° 54′ 17.00000″ E|27° 41′ 13.00000″ N|Lukla-Chhatrala-Dig Kharkha-BC
+266|Nemjung||Manang|Manang|7140|84.4180556|28.7569444|84° 25′ 05.00000″ E|28° 45′ 25.00000″ N|Besisahar-Koto-Phu Gaon-BC
+267|Nepal Gyap Peak||Kanchenjunga|Taplejung/NI|7007|88.1808333|27.7463889|88° 10′ 51.00000″ E|27° 44′ 47.00000″ N|Taplejung-Ghunsa-Lhonak-Pangpema-BC
+268|Nepal Peak||Kanchenjunga|Taplejung/NI|7177|88.1852778|27.7763889|88° 11′ 07.00000″ E|27° 46′ 35.00000″ N|Taplejung-Ghunsa-Lonak-BC
+269|Ngojumba Khang II||Khumbu|Solukhumbu/NC|7743|86.7086111|28.1063889|86° 42′ 31.00000″ E|28° 06′ 23.00000″ N|Lukla-Namche-Khumjung-Machharmo-Gokyo-BC
+270|Nheserku|Chhukpu|Mahalangur|Solukhumbu|5897|86.6030556|27.9188889|86° 36′ 11.00000″ E|27° 55′ 08.00000″ N|Lukla-Namche-Khumjung-Thame-Arya-BC
+271|Nilgiri Central||Nilgiri|Myagdi/Mustang|6940|83.7086111|28.6783333|83° 42′ 31.00000″ E|28° 40′ 42.00000″ N|Tatopani-Lete-Thulo Buggini-BC/Jomsom-Thini-BC
+272|Nilgiri North||Nilgiri|Myagdi/Mustang|7061|83.7463889|28.69|83° 44′ 47.00000″ E|28° 41′ 24.00000″ N|Tatopani-Lete-Thulo Buggini-BC/Jomsom-Thini-BC
+273|Nilgiri South||Nilgiri|Myagdi/Mustang|6839|83.7322222|28.6547222|83° 43′ 56.00000″ E|28° 39′ 17.00000″ N|Tatopani-Lete-Thulo Buggini-BC/Jomsom-Thini-BC
+274|Nirekha Peak||Mahalangur|Solukhumbu|6159|86.7652778|27.9775|86° 45′ 55.00000″ E|27° 58′ 39.00000″ N|Lukla-Namche-Khumjung-Gokyo-BC/Dingboche-Lobuche-BC
+275|Norbu Khang||Kanjirowa|Dolpa|6085|83.0747222|29.1191667|83° 04′ 29.00000″ E|29° 07′ 09.00000″ N|Jhufal-Dunai-Lagna Odar-BC/Dho-Numla-BC
+276|Numbur||Rolwaling|Remechhap/Solukhumbu|6958|86.575|27.7544444|86° 34′ 30.00000″ E|27° 45′ 16.00000″ N|Phaphlu-Thaksindu-Dudhkunda-BC
+277|Numri||Mahalangur|Solukhumbu/Sankhuwasabha|6635|86.9758333|27.8952778|86° 58′ 33.00000″ E|27° 53′ 43.00000″ N|Lukla-Namche-Khumjung-Dingboche-Lobuche-BC
+278|Nupla Khang||Mahalangur|Solukhumbu/NC|6861|86.7669444|28.0741667|86° 46′ 01.00000″ E|28° 04′ 27.00000″ N|Lukla-Namche-Gokyo-Gorekhsep-BC
+279|Nuptse||Khumbu|Solukhumbu|7864|86.8894444|27.9669444|86° 53′ 22.00000″ E|27° 58′ 01.00000″ N|Lukla-Namche-Khumjung-Lobuche-BC
+280|Ohmi Kangri||Janak|Taplejung/NC|6839|87.9666667|27.8972222|87° 58′ 00.00000″ E|27° 53′ 50.00000″ N|Taplejung-Shekathum-Yanma-BC
+281|Ombigaichen||Mahalangur|Solukhumbu|6340|86.8858333|27.8525|86° 53′ 09.00000″ E|27° 51′ 09.00000″ N|Lukla-Namche-Khumjung-Dingboche-BC
+282|Omi Tso Go||Rolwaling|Dolakha/NC|6332|86.4580556|27.9152778|86° 27′ 29.00000″ E|27° 54′ 55.00000″ N|Ktm-Charikot-Lambagar-Lapche-BC
+283|P2|Simnang Himal|Manaslu Himal|Gorkha|6251|84.5972222|28.5163889|84° 35′ 50.00000″ E|28° 30′ 59.00000″ N|Arughat-Soti Khola-Namrung-BC
+284|Pabuk Khang|Kangata|Kanchanjunga|Taplejung/NC|6244|87.8905556|27.91|87° 53′ 26.00000″ E|27° 54′ 36.00000″ N|Taplejung-Sekthum-Yangma-BC
+285|Paldor Peak||Ganesh|Dhading/Rasuwa|5903|85.1841667|28.2777778|85° 11′ 03.00000″ E|28° 16′ 40.00000″ N|Shabrubesi-Ghatlang-Somdang-Larimine-BC
+286|Pama Himal||Peri|Gorkha/NC|6300|84.9511111|28.5802778|84° 57′ 04.00000″ E|28° 34′ 49.00000″ N|Arughat-Jagat-Bigh Gaon-Sherang Gomba-BC
+287|Panbari||Peri|Manang/Gorkha|6887|84.4838889|28.7183333|84° 29′ 02.00000″ E|28° 43′ 06.00000″ N|Besisahar-Larkey Pass-Samdo-BC/Arughat-Jagat-Sama-Samdo-BC
+288|Pangbuk Ri||Mahalangur|Solukhumbu/NC|6625|86.5222222|28.0052778|86° 31′ 20.00000″ E|28° 00′ 19.00000″ N|Lukla-Namche-Khumjung-Thame-Lunak-BC
+289|Pandra||Kanchanjunga|Taplejung|6857|87.9952778|27.8644444|87° 59′ 43.00000″ E|27° 51′ 52.00000″ N|Taplejung-Ghunsa-Lunak-Tshima Glacier-BC
+290|Pangri Goldumba||Langtang|Rasuwa/NC|6620|85.7291667|28.3280556|85° 43′ 45.00000″ E|28° 19′ 41.00000″ N|Langtang-Langshisa Kharka-Morimoto-BC
+291|Paniyotippa||Mahalangur|Ramechhap/Solukhumbu|6687|86.5697222|27.8041667|86° 34′ 11.00000″ E|27° 48′ 15.00000″ N|Lukla-Ghat-Lumding Kharka-BC/Lukla-Namche-Thame-Thangbo-BC
+292|Pankar Himal||Sringi|Gorkha/NC|6264|84.7425|28.6163889|84° 44′ 33.00000″ E|28° 36′ 59.00000″ N|Arughat-Jagat-Namru-Lho-Samagaon-Samdo-BC
+293|Panpoche 1|Pang Phunch 1|Mansiri|Gorkha|6620|84.6838889|28.6288889|84° 41′ 02.00000″ E|28° 37′ 44.00000″ N|Arughat-Jagat-Sama Gaon-Samdo-BC
+294|Panpoche 2|Pang Phunch 2|Mansiri|Gorkha|6504|84.6875|28.6141667|84° 41′ 15.00000″ E|28° 36′ 51.00000″ N|Arughat-Jagat-Sama Gaon-Samdo-BC
+295|Pasang Lhamu Chuli||Mahalangur|Solukhumbu/NC|7350|86.6169444|28.0733333|86° 37′ 01.00000″ E|28° 04′ 24.00000″ N|Lukla-Namche-Khumjung-Thame-Tarnga-Dzasamba-BC
+296|Pashuwo||Tsum|Gorkha/NC|6177|85.1683333|28.5319444|85° 10′ 06.00000″ E|28° 31′ 55.00000″ N|Syabrubesi-Langtang Valley-BC/Arughat-Jagat-Tsum-Domjenile-BC
+297|Pathibhara Chuli|Pyramid Peak|Kanchenjunga|Taplejung/NI|7140|88.1758333|27.8205556|88° 10′ 33.00000″ E|27° 49′ 14.00000″ N|Taplejung-Ghunsa-Lonak-BC
+298|Pathibhara East|Sphinx|Kanchenjunga|Taplejung/NI|6825|88.1902778|27.825|88° 11′ 25.00000″ E|27° 49′ 30.00000″ N|Taplejung-Ghunsa-Lhonak-Pangpema-BC
+299|Patrasi||Patrasi|Mugu/Dolpa|6450|82.5925|29.4211111|82° 35′ 33.00000″ E|29° 25′ 16.00000″ N|Jumla-Trikhu-Talphi-Dhouli Daha-Hurrikot-BC
+300|Peak 38|Shanti Shikhar|Mahalangur|Solukhumbu/NC|7591|86.9675|27.9552778|86° 58′ 03.00000″ E|27° 57′ 19.00000″ N|Lukla-Namche-Khumjung-Dingboche-Chhukung-BC
+301|Peak 4||Mahalangur/Makalu|Sankhuwasabha|6287|87.0133333|27.8527778|87° 00′ 48.00000″ E|27° 51′ 10.00000″ N|Lukla-Merala-Hunku Glacier-BC/Tashgaun-Khongmal-BC
+302|Peak 41||Mahalangur|Solukhumbu|6648|86.9113889|27.7738889|86° 54′ 41.00000″ E|27° 46′ 26.00000″ N|Lukla-Chhatrala-Thaknag-Merala-BC/Namche-Khumjung-Dingboche-Amphulapcha-Pach Pokhari-BC
+303|Pem Thang Karpo Ri||Langtang|Rasuwa/NC|6865|85.7505556|28.2491667|85° 45′ 02.00000″ E|28° 14′ 57.00000″ N|Langtang-Langshisa Kharka-Morimoto-BC
+304|Peri||Langtang|Rasuwa/NC|6174|85.7236111|28.3530556|85° 43′ 25.00000″ E|28° 21′ 11.00000″ N|Langtang-Langshisa Kharka-Morimoto-BC
+305|Peri Himal||Peri|Manang/NC|6296|84.4816667|28.7472222|84° 28′ 54.00000″ E|28° 44′ 50.00000″ N|Arughat-Namru-Samagaon-Samdo-Fukang Glacier-BC
+306|Pethangtse||Mahalangur|Sankhuwasabha/NC|6739|87.0183333|27.9575|87° 01′ 06.00000″ E|27° 57′ 27.00000″ N|Lukla-Thaknag-Panch pokhari-BC/Tumlingta-Seduwa-Shipton's Pass-BC
+307|Pethangtse East||Mahalangur|Sankhuwasabha/NC|6572|87.0361111|27.9494444|87° 02′ 10.00000″ E|27° 56′ 58.00000″ N|Tumlingtar-Seduwa-Shipton's Pass-Shershong-BC
+308|Pharchamo||Rolwaling|Dolakha/Solukhumbu|6279|86.5494444|27.8366667|86° 32′ 58.00000″ E|27° 50′ 12.00000″ N|Dolakha-Beding-Kabung-Tashi Lapcha-BC/Lukla-Namche-Khumjung-Thame-Tashi Lapcha
+309|Phari Lapcha||Mahalangur|Solukhumbu|6017|86.6836111|27.9291667|86° 41′ 01.00000″ E|27° 55′ 45.00000″ N|Lukla-Namche-Khumjung-Gokyo-BC/Thame-Renjo-BC
+310|Phole||Kanchenjunga|Taplejung|6645|88.01|27.6858333|88° 00′ 36.00000″ E|27° 41′ 09.00000″ N|Taplejung-Ghunsa-Khangbachen-BC
+311|Phu Khang||Peri Himal|Manang/NC|6694|84.4491667|28.7933333|84° 26′ 57.00000″ E|28° 47′ 36.00000″ N|Besisahar-Dhara Pani-Phu-BC
+312|Phu Khang Go||Peri|Manang/Gorkha/NC|6767|84.4938889|28.7347222|84° 29′ 38.00000″ E|28° 44′ 05.00000″ N|Arughat-Namru-Samagaon-Samdo-Fukang Glacier-BC
+313|Phu khang North||Peri|Manang/NC|6580|84.4377778|28.8208333|84° 26′ 16.00000″ E|28° 49′ 15.00000″ N|Ktm-Besisahar-Koto-Phu-BC
+314|Phungi Himal||Mansiri|Manang|6538|84.4858333|28.5544444|84° 29′ 09.00000″ E|28° 33′ 16.00000″ N|Besisahar-Dharapani-Thonje-Dana Khola-BC/Bimthan-BC
+315|Phungi||Peri|Manang/NC|6524|84.4027778|28.83|84° 24′ 10.00000″ E|28° 49′ 48.00000″ N|Ktm-Besisahar-Koto-Phu-BC
+316|Phurbi Chyachu||Jugal|Sindhupalchok/NC|6637|85.8719444|28.1305556|85° 52′ 19.00000″ E|28° 07′ 50.00000″ N|Jalbire-Gumthang-Tembathang-Nyam-Masal Khola-BC
+317|Pisang||Damodar|Manang|6091|84.1883333|28.6461111|84° 11′ 18.00000″ E|28° 38′ 46.00000″ N|Besisahar-Chamje-Chame-Pisang-BC
+318|Pokhalde||Khumbu|Solukhumbu|5780|86.8358333|27.9244444|86° 50′ 09.00000″ E|27° 55′ 28.00000″ N|Lukla-Namche-Khumjung-Lobuche-BC/Gokyo-Chola Pass-Lobuche-BC
+319|Pokhar Khang||Damodar|Manang|6372|84.2288889|28.8127778|84° 13′ 44.00000″ E|28° 48′ 46.00000″ N|Besisahar-Koto-Neta-Phu-Ngaru Pokharicamp-BC
+320|Pota North|Peak Hawley|Kakhyor Himal|Dolpa|6182|83.1975|28.7758333|83° 11′ 51.00000″ E|28° 46′ 33.00000″ N|Jumla-Gotichaur-Urikot-BC
+321|Pumori||Khumbu|Solukhumbu/NC|7138|86.8305556|28.015|86° 49′ 50.00000″ E|28° 00′ 54.00000″ N|Lukla-Namche-Khumjung-Dingboche-Lobuche-BC
+322|Punchen Himal||Mansiri|Gorkha/NC|6049|85.1483333|28.6608333|85° 08′ 54.00000″ E|28° 39′ 39.00000″ N|Arughat-Jagat-Lokpa-Chumling-Raphen-Nyal-Mu-BC
+323|Purbung||Damodar|Mustang/Manang|6500|84.0205556|28.8013889|84° 01′ 14.00000″ E|28° 48′ 05.00000″ N|Besisahar-Chame-Manang-BC/Kodo-Neta-Fu-BC
+324|Purkung||Damodar|Mustang/Manang|6126|83.9927778|28.8147222|83° 59′ 34.00000″ E|28° 48′ 53.00000″ N|Besisahar-Chame-Manang-Thorang Phedi-BC
+325|Putha Hiunchuli||Dhaulagiri|Rukum/Dolpa/Myagdi|7246|83.1480556|28.7477778|83° 08′ 53.00000″ E|28° 44′ 52.00000″ N|Juphal-Tarakot-Kakot-German Basecamp-BC
+326|Raksha Urai||Urai Lekh|Bajhang|6609|81.1288889|30.0058333|81° 07′ 44.00000″ E|30° 00′ 21.00000″ N|Bajhang-Talkot-Dhulae-Gorongphu-Setopokhari-BC
+327|Ramdong Go||Rolwaling|Dolakha/Ramechhap|5900|86.4336111|27.8186111|86° 26′ 01.00000″ E|27° 49′ 07.00000″ N|Dolakha-Jagat-Simi Gaon-Beding-Na-BC
+328|Ramtang||Kanchenjunga|Taplejung|6601|88.0958333|27.7508333|88° 05′ 45.00000″ E|27° 45′ 03.00000″ N|Taplejung-Ghunsa-Ramtang-Lonak-Pangpema-BC
+329|Rathong||Kanchanjunga|Taplejung/NI|6682|88.0911111|27.5936111|88° 05′ 28.00000″ E|27° 35′ 37.00000″ N|Taplejung-Yamphudin-Ramche-BC
+330|Ratna Chuli||Peri|Manang/NC|7035|84.3772222|28.8644444|84° 22′ 38.00000″ E|28° 51′ 52.00000″ N|Besisahar-Dharapani-Koto-Meta-Fhugaon-BC
+331|Raungsiyar||Rolwaling|Dolakha/Solukhumbu|6224|86.5594444|27.9077778|86° 33′ 34.00000″ E|27° 54′ 28.00000″ N|Lukla-Namche-Thame-TargnaChudonmokhola-BC/Charikot-Simigaun-Beding-Na-Tolumbau Glacier-BC
+332|Rhimbu||Puchen|Gorkha|6210|85.0475|28.5594444|85° 02′ 51.00000″ E|28° 33′ 34.00000″ N|Arughat-Jagat-Tsum Valley-Nile-BC
+333|Rokapi|Kap Chuli|Saipal|Darchula/Bhajang|6468|81.0402778|29.8477778|81° 02′ 25.00000″ E|29° 50′ 52.00000″ N|Darchula-Gokule-Gunsa-Chamalaya Nadi-BC
+334|Rolmi||Puchen|Gorkha|6056|85.0502778|28.5677778|85° 03′ 01.00000″ E|28° 34′ 04.00000″ N|Arughat-Jagat-Tsum Valley-Nile-BC
+335|Rolwaling Khang||Rolwaling|Dolakha|6664|86.5230556|27.8975|86° 31′ 23.00000″ E|27° 53′ 51.00000″ N|Charikot-Simigaun-Beding-Na-Tolumbau Glacier-BC
+336|Rongshar Ri I|Ondrej Peak|Mahalangur|Solukhumbu/NC|6900|86.5511111|28.0505556|86° 33′ 04.00000″ E|28° 03′ 02.00000″ N|Lukla-Namche-Thame-Chule-BC
+337|Sagarmatha||Khumbu|Solukhumbu/NC|8848|86.9280556|27.9880556|86° 55′ 41.00000″ E|27° 59′ 17.00000″ N|Lukla-Namche-Khumjung-Dingboche-Lobuche-BC
+338|Saipal||Gurans/Saipal|Humla/Bajhang|7030|81.4947222|29.8877778|81° 29′ 41.00000″ E|29° 53′ 16.00000″ N|Simikot-Kermi-Yalbang-Puya-Chola-BC
+339|Saipal East Humla||Saipal|Humla/Bajhang|6907|81.5005556|29.8911111|81° 30′ 02.00000″ E|29° 53′ 28.00000″ N|Simikot-Kermi-Yalbang-Puya-Chola-BC
+340|Salbachum||Langtang|Rasuwa/NC|6707|85.6344444|28.2716667|85° 38′ 04.00000″ E|28° 16′ 18.00000″ N|Syabru-Lama Hotel-Kyangjing-BC
+341|Saldim||Mahalangur/Makalu|Sankhuwasabha/NC|6374|87.1730556|27.8213889|87° 10′ 23.00000″ E|27° 49′ 17.00000″ N|Lukla-Merala-West Col-BC/Tumlingtar-Siduwa-Sersong-BC
+342|Saldim West||Mahalangur|Sankhuwasabha/NC|6388|87.1591667|27.8241667|87° 09′ 33.00000″ E|27° 49′ 27.00000″ N|Tumlingtar-Seduwa-Shipton's Pass-Shershong-BC
+343|Samdo Peak||Mansiri|Gorkha/NC|6335|84.6972222|28.6361111|84° 41′ 50.00000″ E|28° 38′ 10.00000″ N|Arughat-Sama Gaon-Samdo-BC
+344|Sanctuary Peak||Kanjiroba|Mugu/Dolpa|6207|82.6258333|29.4238889|82° 37′ 33.00000″ E|29° 25′ 26.00000″ N|Jumla-Gotichaur-Hurikot-BC
+345|Saribung||Damodar|Mustang/Manang|6328|84.1738889|28.8844444|84° 10′ 26.00000″ E|28° 53′ 04.00000″ N|Jomsom-Kagbeni-Lomangthang-BC/Chame-Nar Phu-BC
+346|Sat Peak||Kanchenjunga|Taplejung|6164|87.9141667|27.7111111|87° 54′ 51.00000″ E|27° 42′ 40.00000″ N|Taplejung-Ghunsa-Lonak-Tshima Glacier-BC
+347|Saula||Kutang|Gorkha/NC|6235|84.7561111|28.6138889|84° 45′ 22.00000″ E|28° 36′ 50.00000″ N|Arughat-Jagat-Namru-Lho-Samagaon-Samdo-BC
+348|Sharphu I||Kanchenjunga|Taplejung|6463|87.9197222|27.7522222|87° 55′ 11.00000″ E|27° 45′ 08.00000″ N|Taplejung-Dovan-Nilung-Sojang-Ghunsa-BC
+349|Sharphu II||Kanchenjunga|Taplejung|6164|87.9216667|27.7577778|87° 55′ 18.00000″ E|27° 45′ 28.00000″ N|Taplejung-Dovan-Nilung-Sojang-Ghunsa-BC
+350|Sharphu III||Kanchenjunga|Taplejung|6220|87.9072222|27.7305556|87° 54′ 26.00000″ E|27° 43′ 50.00000″ N|Taplejung-Dovan-Nilung-Sojang-Ghunsa-BC
+351|Sharphu IV||Kanchenjunga|Taplejung|6172|87.9202778|27.8152778|87° 55′ 13.00000″ E|27° 48′ 55.00000″ N|Taplejung-Dovan-Nilung-Sojang-Ghunsa-BC
+352|Sharphu V||Kanchenjunga|Taplejung|6158|87.92|27.7452778|87° 55′ 12.00000″ E|27° 44′ 43.00000″ N|Taplejung-Dovan-Nilung-Sojang-Ghunsa-BC
+353|Sharphu VI||Kanchenjunga|Taplejung|6076|87.9258333|27.7736111|87° 55′ 33.00000″ E|27° 46′ 25.00000″ N|Taplejung-Dovan-Nilung-Sojang-Ghunsa-BC
+354|Shartse II||Khumbu|Solukhumbu/Sankhuwasabha/NC|7457|86.9852778|27.9491667|86° 59′ 07.00000″ E|27° 56′ 57.00000″ N|Lukla-Namche-Khumjung-Dingboche-Chukung-BC
+355|Sherson|Peak 3|Mahalangur/makalu|Sankhuwasabha/NC|6432|87.1288889|27.8338889|87° 07′ 44.00000″ E|27° 50′ 02.00000″ N|Tumlingtar-Seduwa-Shipton's Pass-Shershon-BC
+356|Sherson Northwest||Mahalangur|Sankhuwasabha/NC|6682|87.1108333|27.8552778|87° 06′ 39.00000″ E|27° 51′ 19.00000″ N|Tumlingtar-Seduwa-Shipton's Pass-Shershon-BC
+357|Shey Shikhar||Kanjiroba|Dolpa|6139|82.7972222|29.2869444|82° 47′ 50.00000″ E|29° 17′ 13.00000″ N|Juphal-Phoksundo-BC/Hurrikot-Gagdul-Coldes Anglais-Hyangin Glacier-BC
+358|Singu Chuli|Fluted Peak|Annapurna|Kaski|6501|83.885|28.5872222|83° 53′ 06.00000″ E|28° 35′ 14.00000″ N|Chomrong-Deurali-MBC-BC
+359|Sisne||Sisne Himal|Rukum|5911|82.6186111|28.8277778|82° 37′ 07.00000″ E|28° 49′ 40.00000″ N|Rukum-Salle-Daune-Naigad-Sisne Chargau-BC
+360|Sita Chuchura||Dhaulagiri|Dolpa/Myagdi|6611|83.4847222|28.7825|83° 29′ 05.00000″ E|28° 46′ 57.00000″ N|Beni-Marpha-BC/Beni-Darbang-Mur-Hidden Valley-BC
+361|Sobitongie||Kanchenjunga|Taplejung|6652|88.0280556|27.6855556|88° 01′ 41.00000″ E|27° 41′ 08.00000″ N|Taplejung-Ghunsa-Pandra Glacier-BC
+362|Surma-Sarovar North||Surma Saravar Lekh|Bajhang|6397|81.0855556|29.8352778|81° 05′ 08.00000″ E|29° 50′ 07.00000″ N|Chainpur-Daulichaur-Laune-Kalanga Gad Khola-BC
+363|Suyao Kang||Kanchenjunga|Taplejung|5929|87.8961111|27.8825|87° 53′ 46.00000″ E|27° 52′ 57.00000″ N|Taplejung-Dovan-Sekher Thum-BC
+364|Swaksa Kang||Kanjiroba|Dolpa/NC|6405|82.8583333|29.6863889|82° 51′ 30.00000″ E|29° 41′ 11.00000″ N|Juphal-Phoksundo-Shey Gompa-Phopha-Swaksa Khola-BC
+365|Swelokhan||Mansiri|Gorkha/NC|6180|84.6463889|28.725|84° 38′ 47.00000″ E|28° 43′ 30.00000″ N|Besisahar-Larkye Pass-Samdo-BC/Arughat-Jagat-Sama-Samdo-BC
+366|Takargo||Mahalangur|Dolakha|6771|86.5116667|27.8747222|86° 30′ 42.00000″ E|27° 52′ 29.00000″ N|Charikot-Simi Gaon-Beding-Na-Rolwaling Glacier-BC/Lukla-Thame-Tashilapcha-BC
+367|Takla Khang||Kanti|Mugu/NC|6276|82.6952778|29.7611111|82° 41′ 43.00000″ E|29° 45′ 40.00000″ N|Jumla-Gamgadi-Thaju Chaur-Takla Khola-BC
+368|Takphu Himal||Nalakankar|Humla/NC|6395|81.4177778|30.2838889|81° 25′ 04.00000″ E|30° 17′ 02.00000″ N|Simikot-Kerimi-Nyula-Takchen-Sakya Khola-BC
+369|Takphu North||Nalakankar|Humla/NC|6142|81.4222222|30.3036111|81° 25′ 20.00000″ E|30° 18′ 13.00000″ N|Ktm-Nepalganj-Simikot-Kermi-Nyu La-Takchen-Sakya Khola-BC
+370|Talung||Kanchenjunga|Taplejung/NI|7349|88.1336111|27.6547222|88° 08′ 01.00000″ E|27° 39′ 17.00000″ N|Taplejung-Yamphudin-Ramachaur-BC
+371|Tankya I||Palchung|Dolpa/NC|6305|82.9169444|29.7061111|82° 55′ 01.00000″ E|29° 42′ 22.00000″ N|Jufal-Shey Phoksundo-Bhijer-Tankya Khola-BC
+372|Taple Sikhar|Cross Peak|Kanchenjunga|Taplejung|6447|88.1477778|27.7611111|88° 08′ 52.00000″ E|27° 45′ 40.00000″ N|Taplejung-Tapethok-Ghunsa-BC
+373|Tare Khang||Annapurna|Kaski/Manang|7069|83.9161111|28.605|83° 54′ 58.00000″ E|28° 36′ 18.00000″ N|Besisahar-Chame-Manang-Khangser-Tilicho-BC
+374|Tashi Khang||Mukut Himal|Mustang|6386|83.6313889|28.8530556|83° 37′ 53.00000″ E|28° 51′ 11.00000″ N|Jomsom-Marpha-Dhampus pass-BC/Jomsom-Phalak-Sangda-BC
+375|Tawoche||Khumbu|Solukhumbu|6495|86.7816667|27.8972222|86° 46′ 54.00000″ E|27° 53′ 50.00000″ N|Lukla-Namche-Khumjung-Khonar-BC/Khumjung-Dingboche-BC
+376|Tengi Ragi Tau|Agole|Mahalangur|Dolakha/Solukhumbu|6938|86.5563889|27.8572222|86° 33′ 23.00000″ E|27° 51′ 26.00000″ N|Lukla-Namche-Khumjung-Thame-Thengpo-BC
+377|Tengkangpoche||Mahalangur|Solukhumbu|6482|86.5986111|27.8038889|86° 35′ 55.00000″ E|27° 48′ 14.00000″ N|Lukla-Namche-Khumjung-Thame-Thengpo-BC
+378|Tengkoma||Kanchenjunga|Taplejung|6215|88.0766667|27.8083333|88° 04′ 36.00000″ E|27° 48′ 30.00000″ N|Taplejung-Ghunsa-Lhonak-BC
+379|Tenzing Peak||Mahalangur|Solukhumbu/NC|7916|86.6869444|28.1058333|86° 41′ 13.00000″ E|28° 06′ 21.00000″ N|Lukla-Namche-Gokyo-BC
+380|Thakar Go East||Rolwaling|Dolakha|6152|86.5233333|27.8719444|86° 31′ 24.00000″ E|27° 52′ 19.00000″ N|Charikot-Simigaun-Beding-Na-Tolumbau Glacier-BC
+381|Thakmarpo Ri|Panaya Tippa,Dragmorpa Ri|Langtang|Rasuwa|6185|85.6641667|28.3252778|85° 39′ 51.00000″ E|28° 19′ 31.00000″ N|Syabrubesi-Langtang-Kyanjing-Langshisha Kharka-BC
+382|Thaknak Ri|Dranganag Ri|Rolwaling|Dolakha/Solukhumbu|6757|86.5263889|27.9469444|86° 31′ 35.00000″ E|27° 56′ 49.00000″ N|Dolakha-Jagat-Simi Gaon-Beding-Na-BC
+383|Thamserku||Khumbu|Solukhumbu|6618|86.7877778|27.7897222|86° 47′ 16.00000″ E|27° 47′ 23.00000″ N|Lukla-Manju-BC/Namche-Khumjung-BC
+384|Thapa Peak|Dhampus|Dhaulagiri|Mustang|6012|83.6119444|28.7980556|83° 36′ 43.00000″ E|28° 47′ 53.00000″ N|Jomsom-Marpha-Yak Kharka-BC
+385|Tharke Khang||Mahalangur|Solukhumbu/NC|6710|86.7516667|28.0438889|86° 45′ 06.00000″ E|28° 02′ 38.00000″ N|Lukla-Namche-Khumjung-Gokyo-BC/Zongla-BC
+386|Tharpu Chuli|Tent Peak|Annapurna|Kaski|5695|83.9305556|28.5847222|83° 55′ 50.00000″ E|28° 35′ 05.00000″ N|Chomorong-Deurali-MBC-BC
+387|Thoche Go||Peri|Manang/NC|6602|84.4597222|28.7577778|84° 27′ 35.00000″ E|28° 45′ 28.00000″ N|Besisahar-Dharapani-Bhinthang-Ponkar Glacier-BC
+388|Thorong Peak||Annapurna|Manang/Mustang|6144|83.93|28.7825|83° 55′ 48.00000″ E|28° 46′ 57.00000″ N|Jomsom-Muktinath-BC/Chame-Manang-Thorangla-BC
+389|Thulagi Peak||Mansiri|Manang|7059|84.5227778|28.5277778|84° 31′ 22.00000″ E|28° 31′ 40.00000″ N|Besisahar-Tal-Dhara Pani-Dovan Khola-BC
+390|Til Kang||Nalakankar|Humla/NC|6369|81.4144444|30.27|81° 24′ 52.00000″ E|30° 16′ 12.00000″ N|Simikot-Kerimi-Nyu La-Takechen-Sakya Khola-BC
+391|Tilicho Peak||Annapurna|Myagdi/Manang|7134|83.8138889|28.6825|83° 48′ 50.00000″ E|28° 40′ 57.00000″ N|Chame-Manang-Khangsar-Tilcho-BC/JomsomMesokanto pass-BC
+392|Tilje||Peri|Manang|5696|84.3952778|28.7102778|84° 23′ 43.00000″ E|28° 42′ 37.00000″ N|Besisahar-Koto-Meta-Kayang-BC
+393|Tobsar Peak||Siringi Himal|Gorkha|6065|85.0594444|28.5805556|85° 03′ 34.00000″ E|28° 34′ 50.00000″ N|Arughat-Jagat-Tsum-Domje-Nimyang Kharka-BC
+394|Tripura Hiun Chuli|Hanging Glacier Peak|Kanjiroba|Dolpa|6553|82.7375|29.3263889|82° 44′ 15.00000″ E|29° 19′ 35.00000″ N|Jumla-Hurrikot-Jagdul-BC
+395|Tsartse||Mukut Himal|Mustang|6343|83.6486111|28.8613889|83° 38′ 55.00000″ E|28° 51′ 41.00000″ N|Jomsom-Marpha-Dhampus-BC/Jomsom-Phalak-Sangda pass-BC
+396|Tso Karpo||Kanjiroba|Dolpa|6518|82.7666667|29.3666667|82° 46′ 00.00000″ E|29° 22′ 00.00000″ N|Dunai-Ringmo-BC
+397|Tso Karpo Khang||Kanjibora|Dolpa|6556|82.7808333|29.3680556|82° 46′ 51.00000″ E|29° 22′ 05.00000″ N|Juphal-Phoksunko-Peri Kapuwa Khola-BC
+398|Tutse|Peak 6|Mahalangur/Makalu|Sankhuwasabha|6758|87.1013889|27.7719444|87° 06′ 05.00000″ E|27° 46′ 19.00000″ N|Tumlingtar-Deduwa-Yangre Kharka-Ramara-BC
+399|Tukuche Peak||Dhaulagiri|Myagdi/Mustang|6920|83.5608333|28.7461111|83° 33′ 39.00000″ E|28° 44′ 46.00000″ N|Jomsom-Marpha-Dhampus-BC
+400|Urkenmang||Jugal|Rasuwa/Sindhupalchowk|6143|85.715|28.1691667|85° 42′ 54.00000″ E|28° 10′ 09.00000″ N|Dhunche-Langtang-Kyangjing-Langsisa Kharka-BC
+401|Varaha Shikhar|Fang|Annapurna|Myagdi/Kaski|7647|83.8033333|28.5780556|83° 48′ 12.00000″ E|28° 34′ 41.00000″ N|Beni-Lete-Thulobugin-Mristi Khola-BC
+402|Yakawa Kang||Damodar|Mustang/Manang|6482|83.9444444|28.8086111|83° 56′ 40.00000″ E|28° 48′ 31.00000″ N|Jomsom-Muktinath-Thorang Phedi-BC or Manang
+403|Yala||Langtang|Rasuwa|5732|85.6258333|28.24|85° 37′ 33.00000″ E|28° 14′ 24.00000″ N|Dhunche-Langtang-Kyanjin-BC
+404|Yalung Khang||Kachenjunga|Taplejung|8505|88.1386111|27.705|88° 08′ 19.00000″ E|27° 42′ 18.00000″ N|Taplejung-Yamphudin--Tseram-Ramche-Oktang-BC
+405|Yalung Khang West||Kanchenjunga|Taplejung|8077|88.1255556|27.7061111|88° 07′ 32.00000″ E|27° 42′ 22.00000″ N|Taplejung-Gunsa-Lonak-Pangpema-BC/Taplejung-Yamphuding-Tseram-BC
+406|Yalung Ri||Rolwaling|Dolakha|5647|86.4144444|27.8530556|86° 24′ 52.00000″ E|27° 51′ 11.00000″ N|Charikot-Simigaon-Beding-Na-Yalung-BC
+407|Yangra South||Ganesh|Gorkha/Dhading/NC|6863|85.11|28.3463889|85° 06′ 36.00000″ E|28° 20′ 47.00000″ N|Trishuli-Shertung-Pansan Bhanjyang-BC
+408|Yangri||Jugal|Sindhupalchok/NC|6635|85.8738889|28.1427778|85° 52′ 26.00000″ E|28° 08′ 34.00000″ N|Ktm-Jalbire-Ghumthang-Tembathang Ladangbenshi-Nyamya Masal Khola-BC
+409|Yanme Khang||Kanchanjunga|Taplejung/NC|6206|87.8497222|27.9461111|87° 50′ 59.00000″ E|27° 56′ 46.00000″ N|Taplejung-GhunsaYanma-BC
+410|Yara Chuli||Palchung|Mugu/Dolpa/NC|6236|82.8288889|29.6894444|82° 49′ 44.00000″ E|29° 41′ 22.00000″ N|Jufal-Shey Phoksundo-Bhijer-Tankya Khola-BC
+411|Yarwa||Guras|Darchula/Bajhang/NC|6644|81.0925|30.0541667|81° 05′ 33.00000″ E|30° 03′ 15.00000″ N|Darchula-Changru-Tinkar River-BC
+412|Yaupa||Mahalangur/Makalu|Sankhuwasabha/NC|6422|87.1430556|27.8369444|87° 08′ 35.00000″ E|27° 50′ 13.00000″ N|Tumlingtar-Seduwa-Shipton's Pass-Shershong-BC
+413|Yoko Pahar|Nampa VIII|Gurans|Darchula/Bajhang|6423|81.04|30.015|81° 02′ 24.00000″ E|30° 00′ 54.00000″ N|Darchula-Syaku-Gati Bagad-Tinkar-BC
+414|Yubra Himal||Langtang Himal|Rasuwa|6048|85.5677778|28.2744444|85° 34′ 04.00000″ E|28° 16′ 28.00000″ N|Dhunche-Langtang-Kyanjing Gombai-BC
