@@ -13,15 +13,21 @@ from tqdm    import tqdm
 
 HDB_ZIP_PATH = (DATASETS_DIR / 'raw' / 'hdb.zip').resolve()
 HDB_RAW_DIR  = (DATASETS_DIR / 'raw' / 'hdb'    ).resolve()
-HDB_INTERIM_DIR = (DATASETS_DIR / 'interim').resolve()
+HDB_PROCESSED_DIR = (DATASETS_DIR / 'processed').resolve()
 HDB_URL = ('https://www.himalayandatabase.com/downloads/' +
            'Himalayan%20Database.zip')
-HDB_TABLES = ['members', 'exped', 'peaks', 'refer']
+HDB_TABLES = {
+    'members': 'member',
+    'exped'  : 'expedition',
+    'peaks'  : 'peak',
+    'refer'  : 'reference'
+}
+
 HDB_DUPLICATES = {
-    'exped'  : (('EXPID',), 'YEAR'),
-    'members': (('EXPID', 'MEMBID'), 'MYEAR'),
-    'refer'  : (('EXPID', 'REFID'), 'RYEAR'),
-    'peaks'  : (('PEAKID',), 'PEAKID')
+    'exped'  : (('expid',), 'year'),
+    'members': (('expid', 'membid'), 'myear'),
+    'refer'  : (('expid', 'refid'), 'ryear'),
+    'peaks'  : (('peakid',), 'peakid')
 }
 
 
@@ -65,17 +71,18 @@ def extract_hdb(zip_path=HDB_ZIP_PATH, export_dir=HDB_RAW_DIR):
                     file.write(zip_file.read(zipped_file))
 
 
-def convert_hdb(raw_dir=HDB_RAW_DIR, converted_dir=HDB_INTERIM_DIR):
+def convert_hdb(raw_dir=HDB_RAW_DIR, converted_dir=HDB_PROCESSED_DIR):
     """Description"""
     logger = logging.getLogger(__name__)
 
     if not converted_dir.exists():
         converted_dir.mkdir()
 
-    for table_name in HDB_TABLES:
+    for table_name, extract_name in HDB_TABLES.items():
         dbf_path = (raw_dir / '{}.dbf'.format(table_name)).resolve()
 
-        dbf_table = DBF(dbf_path, ignore_missing_memofile=False)
+        dbf_table = DBF(dbf_path, ignore_missing_memofile=False,
+                        lowernames=True)
 
         log_msg = 'scanning \'{}\' for duplicate records'
         logger.info(log_msg.format(dbf_path.name))
@@ -98,10 +105,11 @@ def convert_hdb(raw_dir=HDB_RAW_DIR, converted_dir=HDB_INTERIM_DIR):
             else:
                 whitelist[key] = value
 
-        dsv_path = (converted_dir / 'hdb_{}.txt'.format(table_name)).resolve()
+        dsv_name = 'hdb_{}.txt'.format(extract_name)
+        dsv_path = (converted_dir / dsv_name).resolve()
 
         log_msg = 'converting \'{}\' to delimited text file \'{}\''
-        logger.info(log_msg.format(dbf_path.name, dsv_path.name))
+        logger.info(log_msg.format(dbf_path.name, dsv_name))
 
         # Export the records that match our whitelist (must match the
         # disambiguation column specified in the HDB_DUPLICATES global)
@@ -137,7 +145,7 @@ def convert_hdb(raw_dir=HDB_RAW_DIR, converted_dir=HDB_INTERIM_DIR):
 def main():
     download_hdb(url=HDB_URL, zip_path=HDB_ZIP_PATH, force_download=False)
     extract_hdb(zip_path=HDB_ZIP_PATH, export_dir=HDB_RAW_DIR)
-    convert_hdb(raw_dir=HDB_RAW_DIR, converted_dir=HDB_INTERIM_DIR)
+    convert_hdb(raw_dir=HDB_RAW_DIR, converted_dir=HDB_PROCESSED_DIR)
 
 
 if __name__ == '__main__':

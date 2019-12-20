@@ -1,35 +1,34 @@
 # -*- coding: utf-8 -*-
 import copy
-import csv
 import json
 import logging
-import numpy as np
 import pandas as pd
 import re
 from .. import utils, LOG_FORMAT, DATASETS_DIR
-from pathlib import Path
+from Levenshtein import jaro_winkler
 from shapely.geometry import Point, Polygon
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 
-
 ### Globals
 
-MOTCA_PATH = (DATASETS_DIR / 'static' / 'motca_peak.txt').resolve() 
-HDB_PATH   = (DATASETS_DIR / 'processed' / 'hdb_peaks.txt').resolve() 
-OSM_PATH   = (DATASETS_DIR / 'static' / 'osm_peak.txt').resolve() 
-PEAK_PATH  = (DATASETS_DIR / 'processed' / 'feat_peak.txt').resolve()
-HIMAL_PATH = (DATASETS_DIR / 'static' / 'osm_himal.geojson').resolve()
-
-COMMON_WORDS = {'NORTH', 'WEST', 'EAST', 'SOUTH', 'CENTRAL', 'HIMAL', 'I',
-                'II', 'III', 'IV', 'V', 'VI', 'VII', 'PEAK'}
+MOTCA_PATH = (DATASETS_DIR / 'static'    / 'motca_peak.txt'   ).resolve() 
+OSM_PATH   = (DATASETS_DIR / 'static'    / 'osm_peak.txt'     ).resolve() 
+HIMAL_PATH = (DATASETS_DIR / 'static'    / 'osm_himal.geojson').resolve()
+HDB_PATH   = (DATASETS_DIR / 'processed' / 'hdb_peak.txt'     ).resolve() 
+PEAK_PATH  = (DATASETS_DIR / 'processed' / 'feat_peak.txt'    ).resolve()
 
 SUBSTITUTIONS = {
-    r'\wKANG': ' KHANG',
-    r'\wSE'  : ' SOUTH EAST',
-    r'\wNE'  : ' NORTH EAST'
+    r'(?<=\W)KANG'       : 'KHANG',
+    r'(?<=\W)SE(?=\W|\Z)': 'SOUTH EAST',
+    r'(?<=\W)NE(?=\W|\Z)': 'NORTH EAST'
 }
+
+TITLES = {'NORTH', 'WEST', 'EAST', 'SOUTH', 'CENTRAL', 'MIDDLE', 'I', 'II',
+          'III', 'IV', 'V', 'VI', 'VII'}
+
+IGNORE_WORDS = {'HIMAL', 'PEAK'}
 
 # 0.7 override
 MOTCA_OVERRIDE = {
@@ -43,29 +42,8 @@ MOTCA_OVERRIDE = {
 
 ### Logic
 
-def name_ngrams(name, n=2):
-    name = re.sub(r'\W+', ' ', name).upper()
-
-    for pattern, sub in SUBSTITUTIONS.items():
-        name = re.sub(pattern, sub, name)
-
-    words = []
-    name_parts = []
-    for name_part in name.split():
-        if name_part in COMMON_WORDS or name_part.isdigit():
-            words.append(name_part)
-        else:
-            name_parts.append(name_part)
-
-    name = ''.join(name_parts)
-    
-    ngrams = zip(*[name[i:] for i in range(n)])
-    words.extend([''.join(ngram) for ngram in ngrams])
-
-    return words
-
-
 def read_peaks(dsv_path, id_col):
+    '''Read in the peak list as a {peak_id: peak} dictionary'''
     with utils.open_dsv(dsv_path, 'r') as dsv_file:
         reader = utils.dsv_dictreader(dsv_file)
         peaks = {row[id_col]: row for row in reader}
@@ -92,52 +70,59 @@ def read_himals(geojson_path):
     return himals
 
 
-def peak_names(peak_dict, name1, name2):
-    peaks = []
-    for peak_id, peak in peak_dict.items():
+def process_name(name):
+    '''Preprocesses a name by subsituting non-alphanumeric characters with
+    whitespace, substituting several patterns and filtering some common words
+    from the string'''
+    name = re.sub(r'\W+', ' ', name).upper()
+
+    for pattern, sub in SUBSTITUTIONS.items():
+        name = re.sub(pattern, sub, name)
+
+    name_parts = []
+    titles = []
+    for name_part in name.split():
+        if name_part in IGNORE_WORDS:
+            continue
+        elif name_part.isdigit() or name_part in TITLES:
+            titles.append(name_part)
+        else:
+            name_parts.append(name_part)
+    
+    return (''.join(name_parts), ' '.join(titles)) 
+
+
+def name_dataframe(peaks, name1, name2):
+    '''Create a dataframe of peak names'''
+    names = []
+    for peak_id, peak in peaks.items():
         name_string = peak.get(name1,'') + ',' + peak.get(name2,'')
 
-        names = [nm.strip() for nm in name_string.split(',')
-                 if nm.strip() != '']
+        peak_names = [nm.strip() for nm in name_string.split(',')
+                      if nm.strip() != '']
 
-        for i, name in enumerate(names):
-            peaks.append([peak_id, i+1, name])
+        for i, peak_name in enumerate(peak_names):
+            name, title = process_name(peak_name)
+            names.append([peak_id, i+1, peak_name, name, title])
 
-    return pd.DataFrame(data=peaks, columns=['id', 'seq', 'name'])
+    headers = [
+        'id',
+        'seq',
+        'full_name',
+        'name',
+        'title'
+    ]
+
+    return pd.DataFrame(data=names, columns=headers)
 
 
-def name_matches(base_df, match_df):
-    corpus = list(set(base_df['name']) | set(match_df['name']))
-
-    vectorizer = TfidfVectorizer(min_df=1, analyzer=name_ngrams)
-    vectorizer.fit(corpus)
-
-    base_X = vectorizer.transform(base_df['name'])
-    match_X = vectorizer.transform(match_df['name'])
-
-    similarity_matrix = cosine_similarity(base_X, match_X)
-
-    matches = []
-    for i, j in zip(*similarity_matrix.nonzero()):
-        similarity = similarity_matrix[i, j]
-
-        if similarity < 0.5: continue
-
-        base  = base_df.iloc[i]
-        match = match_df.iloc[j]
-
-        matches.append([
-            base['id'],
-            base['seq'],
-            base['name'],
-            match['id'],
-            match['seq'],
-            match['name'],
-            similarity
-        ])
-
-    return pd.DataFrame(data=matches, columns=['id', 'seq', 'name',
-                        'match_id', 'match_seq', 'match_name', 'similarity'])
+def jaccard(list1, list2):
+    set1 = set(list1)
+    set2 = set(list2)
+    if not set1 and not set2:
+        return 0.0
+    else:
+        return len(set1.intersection(set2)) / len(set1.union(set2))
 
 
 def choose_match(match_df):
@@ -151,16 +136,96 @@ def choose_match(match_df):
             match = alt_match
 
     return pd.Series({
-        'name'      : match['name'],
+        'name'      : match['full_name'],
         'match_id'  : match['match_id'],
-        'match_name': match['match_name'],
+        'match_name': match['match_full_name'],
         'similarity': match['similarity']
     })
 
 
-def name_link(base_df, match_df, override={}, threshold=0.6):
-    matches_df = name_matches(base_df, match_df)
-    matches_df = matches_df.groupby(['id']).apply(choose_match)
+def match_names(name1_df, name2_df, reduce=True):
+    name_vectorizer = TfidfVectorizer(analyzer='char', ngram_range=(2,3))
+    name_vectorizer.fit(list(name1_df['name']))
+
+    name1_X = name_vectorizer.transform(name1_df['name'])
+    name2_X = name_vectorizer.transform(name2_df['name'])
+
+    similarity_matrix = cosine_similarity(name1_X, name2_X)
+
+    matches = []
+    for i, j in zip(*similarity_matrix.nonzero()):
+            # Similarity between names
+            name_sim_cs = similarity_matrix[i, j]
+
+            if name_sim_cs < 0.5: continue
+
+            match1 = name1_df.iloc[i]
+            match2 = name2_df.iloc[j]
+
+            name1 = match1['name']
+            name2 = match2['name']
+
+            name_sim_jw = jaro_winkler(name1, name2, 0.1)
+
+            similarity = (name_sim_cs + name_sim_jw)/2
+
+            # Similarity between titles
+
+            title1 = match1['title']
+            title2 = match2['title']
+
+            titles = title1.split()
+            title_sim = jaccard(titles, title2.split())
+            if title1 != '':
+                title_weight = min(len(titles), 2)*0.1
+
+                similarity = (title_weight*title_sim +
+                              (1-title_weight)*similarity)
+
+            matches.append([
+                match1['id'],
+                match1['seq'],
+                match1['full_name'],
+                name1,
+                title1,
+                match2['id'],
+                match2['seq'],
+                match2['full_name'],
+                name2,
+                title2,
+                name_sim_cs,
+                name_sim_jw,
+                title_sim,
+                similarity
+            ])
+
+    headers = [
+        'id',
+        'seq',
+        'full_name',
+        'name',
+        'title',
+        'match_id',
+        'match_seq',
+        'match_full_name',
+        'match_name',
+        'match_title',
+        'name_similarity_cs',
+        'name_similarity_jw',
+        'title_similarity',
+        'similarity'
+    ]
+
+    match_df = pd.DataFrame(data=matches, columns=headers)
+
+    if reduce:
+        return match_df.groupby(['id']).apply(choose_match)
+    else:
+        return match_df
+
+
+def name_link(name1_df, name2_df, override={}, threshold=0.6):
+    matches_df = match_names(name1_df, name2_df, reduce=True)
 
     matches = copy.deepcopy(override)
     for id, match in matches_df.iterrows():
@@ -188,15 +253,15 @@ def peak_list(hdb_peaks, himals, osm_peaks, motca_peaks):
         osm_peak   =   osm_peaks.get(peak_id, {})
         motca_peak = motca_peaks.get(peak_id, {})
 
-        name = hdb_peak['PKNAME']
+        name = hdb_peak['pkname']
 
-        location = hdb_peak['LOCATION']
+        location = hdb_peak['location']
 
         # Get all variations of the name
         alt_names = set()
         for peak, cols in [(osm_peak  , ['peak_name', 'alt_names']),
                            (motca_peak, ['peak_name', 'alt_names']),
-                           (hdb_peak  , ['PKNAME2'               ])]:
+                           (hdb_peak  , ['pkname2'               ])]:
             for col in [c for c in cols if c in peak]:
                 for alt_name in peak[col].split(','):
                     alt_name = alt_name.strip()
@@ -266,38 +331,37 @@ def main():
     logger = logging.getLogger(__name__)
 
     # Read peaks as {id: record} dictionary
-    hdb_peaks   = read_peaks(HDB_PATH  , id_col='PEAKID'     )
+    hdb_peaks   = read_peaks(HDB_PATH  , id_col='peakid'     )
     osm_peaks   = read_peaks(OSM_PATH  , id_col='peak_id'    )
     motca_peaks = read_peaks(MOTCA_PATH, id_col='peak_number')
 
     # Read himal geometry
     himals = read_himals(HIMAL_PATH)
 
-    # Create a dataframe of names with header [id, seq, name]
-    hdb_names_df   = peak_names(hdb_peaks,
-                                name1='PKNAME',
-                                name2='PKNAME2')
-    osm_names_df   = peak_names(osm_peaks,
-                                name1='peak_name',
-                                name2='alt_names')
-    motca_names_df = peak_names(motca_peaks,
-                                name1='peak_name',
-                                name2='alt_names')
+    # Create a dataframe of names with header [id, seq, full_name, name, title]
+    hdb_name_df   = name_dataframe(hdb_peaks,
+                                   name1='pkname',
+                                   name2='pkname2')
+    osm_name_df   = name_dataframe(osm_peaks,
+                                   name1='peak_name',
+                                   name2='alt_names')
+    motca_name_df = name_dataframe(motca_peaks,
+                                   name1='peak_name',
+                                   name2='alt_names')
 
     # Link the various datasets by choosing best match
     logger.info('matching HDB peaks to OSM peaks...')
-    osm_link   = name_link(hdb_names_df,
-                           osm_names_df,
-                           threshold=0.9)
+    osm_link = name_link(hdb_name_df,
+                         osm_name_df,
+                         threshold=0.9)
+    osm_peaks_linked = {hdb_pk: osm_peaks[osm_pk]
+                        for hdb_pk, osm_pk in osm_link.items()}
+
     logger.info('matching HDB peaks to MoTCA peaks...')
-    motca_link = name_link(hdb_names_df,
-                           motca_names_df,
+    motca_link = name_link(hdb_name_df,
+                           motca_name_df,
                            override=MOTCA_OVERRIDE,
                            threshold=0.7)
-
-    osm_peaks_linked   = {hdb_pk: osm_peaks[osm_pk]
-                          for hdb_pk, osm_pk in osm_link.items()}
-
     motca_peaks_linked = {hdb_pk: motca_peaks[motca_pk]
                           for hdb_pk, motca_pk in motca_link.items()}
 

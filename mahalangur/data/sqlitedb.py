@@ -2,13 +2,13 @@ import csv
 import logging
 import sqlite3
 from pathlib import Path
-from .  import utils
-from .. import DATASETS_DIR, LOG_FORMAT, PACKAGE_DIR
+from .. import utils, DATASETS_DIR, LOG_FORMAT, PACKAGE_DIR
 
 
 ### Globals
 SQL_DIR = (PACKAGE_DIR / 'data' / 'sql').resolve()
 SCHEMA_TABLES = [
+    'feat_peak',
     'hdb_deathclass',
     'hdb_deathtype',
     'hdb_expedition',
@@ -25,19 +25,20 @@ SCHEMA_TABLES = [
 ]
 
 DATA_FILES = {
-    'hdb_member'    : ['interim', 'hdb_members.txt'],
-    'hdb_peak'      : ['interim', 'hdb_peaks.txt'],
-    'hdb_expedition': ['interim', 'hdb_exped.txt'],
-    'hdb_reference' : ['interim', 'hdb_refer.txt'],
-    'hdb_deathclass': ['static', 'hdb_deathclass.txt'],
-    'hdb_deathtype' : ['static', 'hdb_deathtype.txt'],
-    'hdb_himal'     : ['static', 'hdb_himal.txt'],
-    'hdb_injurytype': ['static', 'hdb_injurytype.txt'],
-    'hdb_msmtbid'   : ['static', 'hdb_msmtbid.txt'],
-    'hdb_msmtnote'  : ['static', 'hdb_msmtnote.txt'],
-    'hdb_msmtterm'  : ['static', 'hdb_msmtterm.txt'],
-    'hdb_season'    : ['static', 'hdb_season.txt'],
-    'hdb_termreason': ['static', 'hdb_termreason.txt']
+    'feat_peak'     : ['processed', 'feat_peak.txt'     ],
+    'hdb_member'    : ['processed', 'hdb_member.txt'    ],
+    'hdb_peak'      : ['processed', 'hdb_peak.txt'      ],
+    'hdb_expedition': ['processed', 'hdb_expedition.txt'],
+    'hdb_reference' : ['processed', 'hdb_reference.txt' ],
+    'hdb_deathclass': ['static'   , 'hdb_deathclass.txt'],
+    'hdb_deathtype' : ['static'   , 'hdb_deathtype.txt' ],
+    'hdb_himal'     : ['static'   , 'hdb_himal.txt'     ],
+    'hdb_injurytype': ['static'   , 'hdb_injurytype.txt'],
+    'hdb_msmtbid'   : ['static'   , 'hdb_msmtbid.txt'   ],
+    'hdb_msmtnote'  : ['static'   , 'hdb_msmtnote.txt'  ],
+    'hdb_msmtterm'  : ['static'   , 'hdb_msmtterm.txt'  ],
+    'hdb_season'    : ['static'   , 'hdb_season.txt'    ],
+    'hdb_termreason': ['static'   , 'hdb_termreason.txt']
 }
 
 
