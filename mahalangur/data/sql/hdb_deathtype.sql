@@ -1,5 +1,5 @@
 DROP TABLE IF EXISTS hdb_deathtype;
 CREATE TABLE hdb_deathtype(
-     DEATHTYPE     INTEGER NOT NULL PRIMARY KEY
-    ,DEATHTYPEDESC TEXT
+     deathtype     INTEGER NOT NULL PRIMARY KEY
+    ,deathtypedesc TEXT
 ) WITHOUT ROWID;

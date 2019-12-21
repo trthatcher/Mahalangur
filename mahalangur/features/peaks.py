@@ -39,6 +39,35 @@ MOTCA_OVERRIDE = {
     'KGUR': '154', # Naurgaon Pk is Kang Guru
 }
 
+HIMAL_OVERRIDE = {
+    'GAMA': 'DHAULAGIRI',
+    'MATA': 'KANJIROBA',
+    'GHYM': 'KANJIROBA',
+    'JUNC': 'DHAULAGIRI',
+    'KTSU': 'KANJIROBA',
+    'MACH': 'ANNAPURNA',
+    'MING': 'KHUMBU',
+    'OMBK': 'JANAK',
+    'POIN': 'KHUMBU',
+    'SNOW': 'DHAULAGIRI',
+    'SRKU': 'KANJIROBA',
+    'GAUG': 'DAMODAR',
+    'PK41': 'KHUMBU',
+    'DZAS': 'KHUMBU',
+    'MYAG': 'DHAULAGIRI',
+    'ROMA': 'SAIPAL',
+    'TAWA': 'DAMODAR',
+    'GOJN': 'KANTI',
+    'LUNW': 'ROLWALING',
+    'LUN2': 'ROLWALING',
+    'DHEC': 'DAMODAR',
+    'GDNG': 'CHANGLA',
+    'PAWR': 'PERI',
+    'NGOR': 'PERI',
+    'FUTI': 'DAMODAR',
+    'SANK': 'DAMODAR'
+}
+
 
 ### Logic
 
@@ -235,7 +264,7 @@ def name_link(name1_df, name2_df, override={}, threshold=0.6):
     return matches
 
 
-def peak_list(hdb_peaks, himals, osm_peaks, motca_peaks):
+def peak_list(hdb_peaks, himals, himal_override, osm_peaks, motca_peaks):
     peaks = [[
         'peak_id',
         'peak_name',
@@ -281,8 +310,8 @@ def peak_list(hdb_peaks, himals, osm_peaks, motca_peaks):
         dms_lat   = None
         coord_notes = None
 
-        for peak, approx, cite in [(osm_peak  , False, 'OSM'),
-                                   (motca_peak, True,  'MoTCA')]:
+        for peak, approx, cite in [(osm_peak  , False, 'OSM'  ),
+                                   (motca_peak, True , 'MoTCA')]:
             if peak.get('longitude') is not None:
                 peak_lon = peak.get('dms_longitude')
                 peak_lat = peak.get('dms_latitude')
@@ -301,8 +330,8 @@ def peak_list(hdb_peaks, himals, osm_peaks, motca_peaks):
                     coord_notes += '\n' + coord_note
 
         # Get himal details
-        himal = None
-        if lon is not None and lat is not None:
+        himal = himal_override.get(peak_id)
+        if himal is None and lon is not None and lat is not None:
             peak_coord = Point(lon, lat)
             for himal_id, himal_poly in himals.items():
                 if himal_poly.contains(peak_coord):
@@ -366,7 +395,8 @@ def main():
                           for hdb_pk, motca_pk in motca_link.items()}
 
     # Combine into a table
-    peaks = peak_list(hdb_peaks, himals, osm_peaks_linked, motca_peaks_linked)
+    peaks = peak_list(hdb_peaks, himals, HIMAL_OVERRIDE, osm_peaks_linked,
+                      motca_peaks_linked)
 
     utils.write_delimited(peaks, PEAK_PATH)
 

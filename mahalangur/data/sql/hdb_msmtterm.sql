@@ -1,5 +1,5 @@
 DROP TABLE IF EXISTS hdb_msmtterm;
 CREATE TABLE hdb_msmtterm(
-     MSMTTERM     INTEGER NOT NULL PRIMARY KEY
-    ,MSMTTERMDESC TEXT
+     msmtterm     INTEGER NOT NULL PRIMARY KEY
+    ,msmttermdesc TEXT
 ) WITHOUT ROWID;

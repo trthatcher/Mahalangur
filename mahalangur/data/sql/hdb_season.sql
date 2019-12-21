@@ -1,6 +1,6 @@
 DROP TABLE IF EXISTS hdb_season;
 CREATE TABLE hdb_season(
-     SEASON     INTEGER NOT NULL PRIMARY KEY
-    ,SEASONNAME TEXT
-    ,STARTDAY   INT
+     season     INTEGER NOT NULL PRIMARY KEY
+    ,seasonname TEXT
+    ,startday   INT
 ) WITHOUT ROWID;

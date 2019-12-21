@@ -1,5 +1,5 @@
 DROP TABLE IF EXISTS hdb_msmtnote;
 CREATE TABLE hdb_msmtnote(
-     MSMTNOTE     INTEGER NOT NULL PRIMARY KEY
-    ,MSMTNOTEDESC TEXT
+     msmtnote     INTEGER NOT NULL PRIMARY KEY
+    ,msmtnotedesc TEXT
 ) WITHOUT ROWID;

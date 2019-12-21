@@ -1,17 +1,17 @@
 DROP TABLE IF EXISTS hdb_reference;
 CREATE TABLE hdb_reference(
-     EXPID      CHAR(9)      NOT NULL
-    ,REFID      CHAR(2)      NOT NULL
-    ,RYEAR      CHAR(4)
-    ,RTYPE      INTEGER
-    ,RJRNL      VARCHAR(4)
-    ,RAUTHOR    VARCHAR(140)
-    ,RTITLE     VARCHAR(210)
-    ,RPUBLISHER VARCHAR(70)
-    ,RPUBDATE   CHAR(4)
-    ,RLANGUAGE  VARCHAR(30)
-    ,RCITATION  VARCHAR(30)
-    ,RYAK94     VARCHAR(5)
-    ,RNOTES     TEXT
+     expid      CHAR(9)      NOT NULL
+    ,refid      CHAR(2)      NOT NULL
+    ,ryear      CHAR(4)
+    ,rtype      INTEGER
+    ,rjrnl      VARCHAR(4)
+    ,rauthor    VARCHAR(140)
+    ,rtitle     VARCHAR(210)
+    ,rpublisher VARCHAR(70)
+    ,rpubdate   CHAR(4)
+    ,rlanguage  VARCHAR(30)
+    ,rcitation  VARCHAR(30)
+    ,ryak94     VARCHAR(5)
+    ,rnotes     TEXT
     ,PRIMARY KEY (EXPID ASC, REFID ASC)
 ) WITHOUT ROWID;

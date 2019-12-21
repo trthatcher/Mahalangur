@@ -1,5 +1,5 @@
 DROP TABLE IF EXISTS hdb_msmtbid;
 CREATE TABLE hdb_msmtbid(
-     MSMTBID     INTEGER NOT NULL PRIMARY KEY
-    ,MSMTBIDDESC TEXT
+     msmtbid     INTEGER NOT NULL PRIMARY KEY
+    ,msmtbiddesc TEXT
 ) WITHOUT ROWID;
