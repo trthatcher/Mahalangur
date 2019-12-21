@@ -4,6 +4,7 @@ CREATE TABLE feat_peak(
     ,peak_name               TEXT
     ,alt_names               TEXT
     ,"location"              TEXT
+    ,height                  INTEGER
     ,approximate_coordinates CHAR(1)
     ,longitude               REAL
     ,latitude                REAL

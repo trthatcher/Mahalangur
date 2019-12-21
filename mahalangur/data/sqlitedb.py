@@ -24,6 +24,12 @@ SCHEMA_TABLES = [
     'hdb_termreason'
 ]
 
+SCHEMA_VIEWS = [
+    'model_expedition',
+    'model_member',
+    'model_base'
+]
+
 DATA_FILES = {
     'feat_peak'     : ['processed', 'feat_peak.txt'     ],
     'hdb_member'    : ['processed', 'hdb_member.txt'    ],
@@ -83,6 +89,8 @@ def main():
     logger.info('creating database schema')
     create_objects(db_conn, script_dir=SQL_DIR, object_list=SCHEMA_TABLES,
                    object_type='table', logger=logger)
+    create_objects(db_conn, script_dir=SQL_DIR, object_list=SCHEMA_VIEWS,
+                   object_type='view', logger=logger)
 
     logger.info('loading tables')
     load_tables(db_conn, DATASETS_DIR, DATA_FILES)

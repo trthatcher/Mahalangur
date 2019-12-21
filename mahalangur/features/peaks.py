@@ -269,6 +269,7 @@ def peak_list(hdb_peaks, himals, himal_override, osm_peaks, motca_peaks):
         'peak_id',
         'peak_name',
         'alt_names',
+        'height',
         'location',
         'approximate_coordinates',
         'longitude',
@@ -338,11 +339,15 @@ def peak_list(hdb_peaks, himals, himal_override, osm_peaks, motca_peaks):
                     himal = himal_id
                     break
 
+        # height
+        height = hdb_peak.get('heightm')
+
         # Append the records
         peaks.append([
             peak_id,
             name,
             alt_names,
+            height,
             location,
             is_approx,
             lon,
