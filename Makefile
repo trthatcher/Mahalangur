@@ -8,11 +8,20 @@ install_requirements:
 	$(PYTHON_INTERPRETER) -m pip install -U pip setuptools wheel
 	$(PYTHON_INTERPRETER) -m pip install -r requirements.txt
 
-hdb_dataset:
+data_hdb:
 	$(PYTHON_INTERPRETER) -m mahalangur.data.hdb
+
+feature_peaks:
+	$(PYTHON_INTERPRETER) -m mahalangur.features.peaks
+
+database_mahalangur:
+	$(PYTHON_INTERPRETER) -m mahalangur.data.db
+
+model_rf:
+	$(PYTHON_INTERPRETER) -m mahalangur.models.rf
+
+
+### Optional metadata update
 
 osm_metadata:
 	$(PYTHON_INTERPRETER) -m mahalangur.data.osm
-
-mahalangur_database:
-	$(PYTHON_INTERPRETER) -m mahalangur.data.sqlitedb

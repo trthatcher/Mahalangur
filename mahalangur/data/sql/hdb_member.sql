@@ -3,7 +3,7 @@ CREATE TABLE hdb_member(
      expid      CHAR(9)     NOT NULL
     ,membid     CHAR(2)     NOT NULL
     ,peakid     CHAR(4)
-    ,myear      CHAR(4)
+    ,myear      INTEGER
     ,mseason    INTEGER
     ,fname      VARCHAR(35)
     ,lname      VARCHAR(35)

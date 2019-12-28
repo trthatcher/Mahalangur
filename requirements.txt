@@ -3,6 +3,7 @@
 
 # Required Packages
 dbfread
+jupyterlab
 netCDF4
 scikit-learn
 tqdm

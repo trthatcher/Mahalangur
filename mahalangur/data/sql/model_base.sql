@@ -6,7 +6,11 @@ SELECT
     ,e.expedition_year
     ,e.season
     ,e.himal
+    ,e.peak_id
+    ,e.height
     ,e.commercial_route
+    ,e.total_members
+    ,e.total_hired
     ,m.sex
     ,m.age
     ,m.o2_used

@@ -2,7 +2,7 @@ DROP TABLE IF EXISTS hdb_expedition;
 CREATE TABLE hdb_expedition(
      expid      CHAR(9)     NOT NULL PRIMARY KEY
     ,peakid     CHAR(4)     NOT NULL
-    ,year       CHAR(4)
+    ,year       INTEGER
     ,season     INTEGER
     ,host       INTEGER
     ,route1     VARCHAR(55)
