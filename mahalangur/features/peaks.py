@@ -4,7 +4,7 @@ import json
 import logging
 import pandas as pd
 import re
-from .. import utils, LOG_FORMAT, DATASETS_DIR
+from .. import utils, LOG_FORMAT, DATASETS_DIR, WEB_DIR
 from Levenshtein import jaro_winkler
 from shapely.geometry import Point, Polygon
 from sklearn.metrics.pairwise import cosine_similarity
@@ -13,11 +13,14 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 
 ### Globals
 
-MOTCA_PATH = (DATASETS_DIR / 'static'    / 'motca_peak.txt'   ).resolve() 
-OSM_PATH   = (DATASETS_DIR / 'static'    / 'osm_peak.txt'     ).resolve() 
-HIMAL_PATH = (DATASETS_DIR / 'static'    / 'osm_himal.geojson').resolve()
-HDB_PATH   = (DATASETS_DIR / 'processed' / 'hdb_peak.txt'     ).resolve() 
-PEAK_PATH  = (DATASETS_DIR / 'processed' / 'feat_peak.txt'    ).resolve()
+MOT_DSV_PATH = (DATASETS_DIR / 'meta'      / 'mot_peak.txt').resolve()
+OSM_DSV_PATH = (DATASETS_DIR / 'meta'      / 'osm_peak.txt').resolve()
+HDB_DSV_PATH = (DATASETS_DIR / 'processed' / 'hdb_peak.txt').resolve() 
+
+HIMAL_GEOJSON_PATH = (WEB_DIR / 'static' / 'himal.geojson').resolve()
+
+PEAK_GEOJSON_PATH  = (WEB_DIR / 'static' / 'peak.geojson').resolve()
+PEAK_DSV_PATH      = (DATASETS_DIR / 'meta' / 'feat_peak.txt').resolve()
 
 SUBSTITUTIONS = {
     r'(?<=\W)KANG'       : 'KHANG',
@@ -361,27 +364,57 @@ def peak_list(hdb_peaks, himals, himal_override, osm_peaks, motca_peaks):
     return peaks
 
 
+def peak_geojson(peak_list):
+    features = []
+
+    property_names = [
+        ('name'     ,  1),
+        ('alt_names',  2),
+        ('height'   ,  3),
+        ('himal'    , 11)
+    ]
+
+    for peak in peak_list:
+        properties = {name: peak[col] for name, col in property_names
+                      if peak[col] is not None}
+
+        features.append({
+            'id': peak[0],
+            'type': 'Feature',
+            'properties': properties,
+            'geometry': {
+                'type': 'Point',
+                'coordinates': (peak[6], peak[7])
+            }
+        })
+
+    return {
+        'type': 'FeatureCollection',
+        'features': features
+    }
+
+
 def main():
-    logger = logging.getLogger(__name__)
+    logger = logging.getLogger('mahalangur.features.peaks')
 
     # Read peaks as {id: record} dictionary
-    hdb_peaks   = read_peaks(HDB_PATH  , id_col='peakid'     )
-    osm_peaks   = read_peaks(OSM_PATH  , id_col='peak_id'    )
-    motca_peaks = read_peaks(MOTCA_PATH, id_col='peak_number')
+    hdb_peaks   = read_peaks(HDB_DSV_PATH, id_col='peakid'     )
+    osm_peaks   = read_peaks(OSM_DSV_PATH, id_col='peak_id'    )
+    motca_peaks = read_peaks(MOT_DSV_PATH, id_col='peak_number')
 
     # Read himal geometry
-    himals = read_himals(HIMAL_PATH)
+    himals = read_himals(HIMAL_GEOJSON_PATH)
 
     # Create a dataframe of names with header [id, seq, full_name, name, title]
-    hdb_name_df   = name_dataframe(hdb_peaks,
-                                   name1='pkname',
-                                   name2='pkname2')
-    osm_name_df   = name_dataframe(osm_peaks,
-                                   name1='peak_name',
-                                   name2='alt_names')
-    motca_name_df = name_dataframe(motca_peaks,
-                                   name1='peak_name',
-                                   name2='alt_names')
+    hdb_name_df = name_dataframe(hdb_peaks,
+                                 name1='pkname',
+                                 name2='pkname2')
+    osm_name_df = name_dataframe(osm_peaks,
+                                 name1='peak_name',
+                                 name2='alt_names')
+    mot_name_df = name_dataframe(motca_peaks,
+                                 name1='peak_name',
+                                 name2='alt_names')
 
     # Link the various datasets by choosing best match
     logger.info('matching HDB peaks to OSM peaks...')
@@ -393,7 +426,7 @@ def main():
 
     logger.info('matching HDB peaks to MoTCA peaks...')
     motca_link = name_link(hdb_name_df,
-                           motca_name_df,
+                           mot_name_df,
                            override=MOTCA_OVERRIDE,
                            threshold=0.7)
     motca_peaks_linked = {hdb_pk: motca_peaks[motca_pk]
@@ -403,9 +436,15 @@ def main():
     peaks = peak_list(hdb_peaks, himals, HIMAL_OVERRIDE, osm_peaks_linked,
                       motca_peaks_linked)
 
-    utils.write_delimited(peaks, PEAK_PATH)
+    utils.write_delimited(peaks, PEAK_DSV_PATH)
 
-    return PEAK_PATH
+    # Generate the geojson file
+    peaks_geo = peak_geojson(peaks[1:])
+    logger.info('writing geojson \'{}\''.format(PEAK_GEOJSON_PATH.name))
+    with open(PEAK_GEOJSON_PATH, 'w') as geojson_file:
+        json.dump(peaks_geo, geojson_file)
+
+    return (PEAK_DSV_PATH, PEAK_GEOJSON_PATH)
 
 
 if __name__ == '__main__':
