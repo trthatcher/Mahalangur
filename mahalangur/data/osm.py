@@ -4,23 +4,22 @@ import json
 import logging
 import math
 import re
-from ..      import utils, DATASETS_DIR, LOG_FORMAT
+from ..      import utils, DATASETS_DIR, LOG_FORMAT, WEB_DIR
 from pathlib import Path
 from shapely import ops, geometry as geom
 from urllib  import parse
 
 
 ### Globals
-OSM_RAW_DIR    = (DATASETS_DIR / 'raw' / 'osm').resolve()
-OSM_STATIC_DIR = (DATASETS_DIR / 'static').resolve()
+HIMAL_JSON_PATH    = (DATASETS_DIR / 'raw' / 'osm' / 'himal.json').resolve()
+HIMAL_DSV_PATH     = (DATASETS_DIR / 'meta' / 'osm_himal.txt'    ).resolve()
+HIMAL_GEOJSON_PATH = (WEB_DIR / 'static' / 'himal.geojson'   ).resolve()
 
-HIMAL_JSON_PATH    = (OSM_RAW_DIR    / 'himal.json'       ).resolve()
-HIMAL_DSV_PATH     = (OSM_STATIC_DIR / 'osm_himal.txt'    ).resolve()
-HIMAL_GEOJSON_PATH = (OSM_STATIC_DIR / 'osm_himal.geojson').resolve()
-PEAK_JSON_PATH     = (OSM_RAW_DIR    / 'peak.json'        ).resolve()
-PEAK_DSV_PATH      = (OSM_STATIC_DIR / 'osm_peak.txt'     ).resolve()
+PEAK_JSON_PATH = (DATASETS_DIR / 'raw' / 'osm' / 'peak.json').resolve()
+PEAK_DSV_PATH  = (DATASETS_DIR / 'meta' / 'osm_peak.txt').resolve()
 
 OVERPASS_URL = 'https://overpass-api.de/api/interpreter?data={}'
+
 HIMAL_QUERY = '''
 [out:json];
 rel

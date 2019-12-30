@@ -13,9 +13,7 @@ with res.path('mahalangur', 'assets') as assets_path:
 with res.path('mahalangur', 'datasets') as datasets_path:
     DATASETS_DIR = Path(datasets_path)
 
-STATIC_DIR    = (DATASETS_DIR / 'static'       ).resolve()
-PROCESSED_DIR = (DATASETS_DIR / 'processed'    ).resolve()
-RAW_DIR       = (DATASETS_DIR / 'raw'          ).resolve()
-DATABASE_PATH = (DATASETS_DIR / 'mahalangur.db').resolve()
+with res.path('mahalangur', 'web') as web_path:
+    WEB_DIR = Path(web_path)
 
 LOG_FORMAT = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'

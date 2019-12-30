@@ -11,17 +11,14 @@ install_requirements:
 data_hdb:
 	$(PYTHON_INTERPRETER) -m mahalangur.data.hdb
 
+data_osm:
+	$(PYTHON_INTERPRETER) -m mahalangur.data.osm
+
 feature_peaks:
 	$(PYTHON_INTERPRETER) -m mahalangur.features.peaks
 
-database_mahalangur:
-	$(PYTHON_INTERPRETER) -m mahalangur.data.db
+data_sqldb:
+	$(PYTHON_INTERPRETER) -m mahalangur.data.sqldb
 
 model_rf:
 	$(PYTHON_INTERPRETER) -m mahalangur.models.rf
-
-
-### Optional metadata update
-
-osm_metadata:
-	$(PYTHON_INTERPRETER) -m mahalangur.data.osm
