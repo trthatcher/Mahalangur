@@ -4,19 +4,23 @@ import json
 import logging
 import math
 import re
-from ..      import utils, DATASETS_DIR, LOG_FORMAT, WEB_DIR
+from .       import utils
+from ..      import DATA_DIR, LOG_FORMAT
 from pathlib import Path
 from shapely import ops, geometry as geom
 from urllib  import parse
 
 
 ### Globals
-HIMAL_JSON_PATH    = (DATASETS_DIR / 'raw' / 'osm' / 'himal.json').resolve()
-HIMAL_DSV_PATH     = (DATASETS_DIR / 'meta' / 'osm_himal.txt'    ).resolve()
-HIMAL_GEOJSON_PATH = (WEB_DIR / 'static' / 'himal.geojson'   ).resolve()
+OSM_RAW_DIR  = (DATA_DIR / 'raw' / 'osm').resolve()
+OSM_PROC_DIR = (DATA_DIR / 'processed'  ).resolve()
 
-PEAK_JSON_PATH = (DATASETS_DIR / 'raw' / 'osm' / 'peak.json').resolve()
-PEAK_DSV_PATH  = (DATASETS_DIR / 'meta' / 'osm_peak.txt').resolve()
+HIMAL_JSON_PATH    = (OSM_RAW_DIR  / 'himal.json'   ).resolve()
+HIMAL_DSV_PATH     = (OSM_PROC_DIR / 'osm_himal.txt').resolve()
+HIMAL_GEOJSON_PATH = (OSM_PROC_DIR / 'himal.geojson').resolve()
+
+PEAK_JSON_PATH = (OSM_RAW_DIR  / 'peak.json'   ).resolve()
+PEAK_DSV_PATH  = (OSM_PROC_DIR / 'osm_peak.txt').resolve()
 
 OVERPASS_URL = 'https://overpass-api.de/api/interpreter?data={}'
 
@@ -85,7 +89,7 @@ def query_overpass(query, file_path, force_download=False,
         return utils.download_file(url, file_path, timeout=45, retries=2)
 
 
-def get_himal_polygons(himal_path=HIMAL_JSON_PATH, tol=0.005):
+def read_himal_json(himal_path=HIMAL_JSON_PATH, tol=0.005):
     '''Read the overpass JSON query and return a list of dictionaries
     where each dictionary corresponds to a himal with a name field, optional
     alt_name field and a polygon field'''
@@ -188,8 +192,8 @@ def get_himal_geojson(himals):
     }
 
 
-def get_himal_list(himal_geojson):
-    himal_list = [[
+def get_himal_dsv(himal_geojson):
+    himal_dsv = [[
             'himal_id',
             'himal_name',
             'alt_names',
@@ -216,25 +220,17 @@ def get_himal_list(himal_geojson):
             properties.get('parent'  , None)
         ]
 
-        himal_list.append(record)
+        himal_dsv.append(record)
 
-    return himal_list
+    return himal_dsv
 
 
-def get_peak_list(json_path=PEAK_JSON_PATH):
-    with open(json_path, 'r') as json_file:
-        peaks = json.load(json_file)
+def read_peak_json(peak_path=PEAK_JSON_PATH):
+    with open(peak_path, 'r') as json_file:
+        peak_json = json.load(json_file)
 
-    records = [[
-        'peak_id',
-        'peak_name',
-        'alt_names',
-        'longitude',
-        'latitude',
-        'dms_longitude',
-        'dms_latitude'
-    ]]
-    for node in peaks['elements']:
+    peaks = []
+    for node in peak_json['elements']:
         tags = node['tags']
         name_tags = [tag for tag in tags if tag in {'name', 'int_name',
                      'name:en', 'alt_name', 'alt_name:en'}]
@@ -265,45 +261,61 @@ def get_peak_list(json_path=PEAK_JSON_PATH):
         lon = node['lon']
         lat = node['lat']
 
-        records.append([
-            node['id'],
-            name,
-            ','.join(names),
-            lon,
-            lat,
-            dms_string(lon, is_lon=True),
-            dms_string(lat, is_lon=False)
-        ])
+        peaks.append({
+            'peak_id'      : node['id'],
+            'peak_name'    : name,
+            'alt_names'    : ','.join(names),
+            'longitude'    : lon,
+            'latitude'     : lat,
+            'dms_longitude': dms_string(lon, is_lon=True),
+            'dms_latitude' : dms_string(lat, is_lon=False)
+        })
 
-    return records
+    return peaks
 
 
-def main():
+def get_peak_dsv(peaks):
+    peak_dsv = [[k for k in peaks[0].keys()]]
+    for peak in peaks:
+        peak_dsv.append([v for v in peak.values()])
+
+    return peak_dsv
+
+
+def osm_metadata():
     logger = logging.getLogger('mahalangur.data.osm')
 
     # Create Himal metadata
     query_overpass(HIMAL_QUERY, HIMAL_JSON_PATH, force_download=False,
                    logger=logger)
-    himal_polys = get_himal_polygons(himal_path=HIMAL_JSON_PATH, tol=0.005)
 
-    himal_geojson = get_himal_geojson(himal_polys)
+    himals = read_himal_json(himal_path=HIMAL_JSON_PATH, tol=0.005)
+
+    himal_geojson = get_himal_geojson(himals)
+
+    if not HIMAL_GEOJSON_PATH.parents[0].exists():
+        HIMAL_GEOJSON_PATH.parents[0].mkdir(parents=True)
 
     logger.info('writing geojson \'{}\''.format(HIMAL_GEOJSON_PATH.name))
     with open(HIMAL_GEOJSON_PATH, 'w') as geojson_file:
         json.dump(himal_geojson, geojson_file)
 
-    himal_list = get_himal_list(himal_geojson)
-    utils.write_delimited(himal_list, dsv_path=HIMAL_DSV_PATH)
+    himal_dsv = get_himal_dsv(himal_geojson)
+    utils.write_delimited(himal_dsv, dsv_path=HIMAL_DSV_PATH)
 
     # Create peak metadata
     query_overpass(PEAK_QUERY, PEAK_JSON_PATH, force_download=False,
                    logger=logger)
 
-    peak_list = get_peak_list(json_path=PEAK_JSON_PATH)
+    peaks = read_peak_json(peak_path=PEAK_JSON_PATH)
+    peak_dsv = get_peak_dsv(peaks)
 
-    utils.write_delimited(peak_list, dsv_path=PEAK_DSV_PATH)
+    if not PEAK_DSV_PATH.parents[0].exists():
+        PEAK_DSV_PATH.parents[0].mkdir(parents=True)
+
+    utils.write_delimited(peak_dsv, dsv_path=PEAK_DSV_PATH)
 
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO, format=LOG_FORMAT)
-    main()
+    osm_metadata()

@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahalangur</title>
+    <style>
+        html, body, header, footer, div {
+            padding: 0;
+            margin: 0;
+        }
+
+        #main {
+            display: flex;
+            flex-flow: column;
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            z-index: 1;
+        }
+
+        #header {
+            color: white;
+            background-color: #333;
+        }
+
+        #map {
+            flex: 1;
+        }
+
+        #footer {
+            background-color: #333;
+        }
+
+        #modal {
+            display: None;
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+            z-index: 2;
+            top: 0;
+            left: 0;
+        }
+
+        #modal-content {
+            position: relative;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            background-color: white;
+            max-width: 90%;
+        }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin=""/>
+</head>
+<body>
+<main id="main">
+    <header id="header">
+        <h1>Mahalangur</h1>
+        <button id="modalbutton">Calculate Success Probability</button>
+    </header>
+    <div id="map"></div>
+    <footer id="footer"><p>Leaflet</p></footer>
+</main>
+<div id="modal">
+    <div id="modal-content">
+        <h1>This is where the modal content is</h1>
+        <form action="/visualization" method="POST">
+            <p>What is your sex?<p>
+            <ul>
+                <li><label><input name="sex" type="radio" value="M" checked="checked">Male</label></li>
+                <li><label><input name="sex" type="radio" value="F">Female</label></li>
+            </ul>
+            <p>What is your age?</p>
+            <input name="age" type="number" step="1" min="16" max="65" value="30">
+            <p>What year will you attempt the summit?</p>
+            <p>What season will you attempt the summit?</p>
+<!--
+            <p><b>What is your sex? </b> </br>
+                
+                
+            </p>
+            <p><b>What is your age? (16 to 65)</b></br>
+                
+            </p>
+            <p><b>When will you reach basecamp? </b></br>
+                <input name="bcdate" type="date" value="2019-01-01">
+            </p>
+            <p><b>How many members (not hired) will be on the expedition? (1 to 25)</b></br>
+                <input name="members" type="number" step="1" min="1" max="25" value="1">
+            </p>
+            <p><b>How many hired guides will be on the expedition? (0 to 10)</b></br>
+                <input name="guides" type="number" step="1" min="0" max="10" value="0">
+            </p>
+            <p><b>Will you use supplemental oxygen?</b> </br>
+                <label>No<input name="o2used" type="radio" value="N" checked="checked" class = "index"></label>
+                <label>Yes<input name="o2used" type="radio" value="Y" class = "index"></label>
+            </p>
+            <p><input type="submit" value="SUBMIT" class="btn btn-primary btn-block btn-large"/></p>
+            -->
+         </form>
+    </div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+
+<script>
+    const osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+          otmUrl = 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png';
+
+    const latLower = 27.4089635,
+          latUpper = 30.5429669,
+          lonLower = 80.7562824,
+          lonUpper = 88.6565770;
+
+    const latPadding = (latUpper - latLower)*0.5,
+          lonPadding = (lonUpper - lonLower)*0.5;
+
+    const bounds = L.latLngBounds(
+        L.latLng(latLower - latPadding, lonLower - lonPadding),
+        L.latLng(latUpper + latPadding, lonUpper + lonPadding)
+    );
+
+    var himalLayer = L.geoJSON(),
+        peakLayer  = L.geoJSON(),
+        osmLayer   = L.tileLayer(osmUrl, {bounds: bounds}),
+        otmLayer   = L.tileLayer(otmUrl, {bounds: bounds});
+
+    var himalayaMap = L.map('map', {
+        attributionControl: false,
+        center: [29, 84.5],
+        layers: [otmLayer, himalLayer, peakLayer],
+        maxBounds: bounds,
+        minZoom: 7,
+        zoom: 8
+    });
+
+    var baseMaps = {
+        'OpenTopoMap'  : otmLayer,
+        'OpenStreetMap': osmLayer
+    };
+
+    var overlayMaps = {
+        'Himals': himalLayer,
+        'Peaks' : peakLayer
+    };
+
+    L.control.layers(baseMaps, overlayMaps).addTo(himalayaMap);
+
+    var modal = document.getElementById("modal");
+
+    var btn = document.getElementById("modalbutton");
+    btn.onclick = function() {
+        console.log("ok");
+        modal.style.display = "block";
+    }
+
+    function populateHimalLayer(himalCollection) {
+        parentHimals = new Set();
+
+        himalCollection.features.forEach(himal => {
+            if ('parent' in himal.properties) {
+                parentHimals.add(himal.properties.parent);
+            }
+        })
+
+        himalCollection.features.forEach(himal => {
+            if (!(parentHimals.has(himal.id))) {
+                himal.properties['probability'] = Math.random();
+                himalLayer.addData(himal);
+            }
+        })
+    }
+
+    function populatePeakLayer(peakCollection) {
+        console.log(peakCollection);
+        peakCollection.features.forEach(peak => {
+            peakLayer.addData(peak);
+        })
+    }
+
+    fetch('{{ url_for('static', filename='himal.geojson') }}')
+        .then(response => {return response.json();})
+        .then(himalCollection => {
+            populateHimalLayer(himalCollection);
+        });
+
+    fetch('{{ url_for('static', filename='peak.geojson') }}')
+        .then(response => {return response.json();})
+        .then(peakCollection => {
+            populatePeakLayer(peakCollection);
+        });
+
+
+</script>
+
+</body>
+</html>
