@@ -2,8 +2,8 @@
 import csv
 import logging
 import zipfile
-from ..      import utils, DATASETS_DIR, LOG_FORMAT
-#from ..      import utils
+from .       import utils
+from ..      import DATA_DIR, LOG_FORMAT
 from dbfread import DBF
 from pathlib import Path, PurePath
 from tqdm    import tqdm
@@ -11,11 +11,13 @@ from tqdm    import tqdm
 
 ### Globals
 
-HDB_ZIP_PATH = (DATASETS_DIR / 'raw' / 'hdb.zip').resolve()
-HDB_RAW_DIR  = (DATASETS_DIR / 'raw' / 'hdb'    ).resolve()
-HDB_PROCESSED_DIR = (DATASETS_DIR / 'processed').resolve()
+HDB_ZIP_PATH = (DATA_DIR / 'raw' / 'hdb.zip').resolve()
+HDB_RAW_DIR  = (DATA_DIR / 'raw' / 'hdb'    ).resolve()
+HDB_PROC_DIR = (DATA_DIR / 'processed'      ).resolve()
+
 HDB_URL = ('https://www.himalayandatabase.com/downloads/' +
            'Himalayan%20Database.zip')
+
 HDB_TABLES = {
     'members': 'member',
     'exped'  : 'expedition',
@@ -33,27 +35,28 @@ HDB_DUPLICATES = {
 
 ### Functions
 
-def download_hdb(url=HDB_URL, zip_path=HDB_ZIP_PATH, force_download=False):
+def download_hdb(url=HDB_URL, zip_path=HDB_ZIP_PATH, force_download=False,
+                 logger=logging.getLogger(__name__)):
     if isinstance(zip_path, str):
         zip_path = Path(zip_path)
-
-    logger = logging.getLogger(__name__)
 
     if zip_path.exists() and not force_download:
         log_msg = 'file \'{}\' already exists - skipping download'
         logger.info(log_msg.format(zip_path.name))
     else:
+        if not zip_path.parent.exists():
+            zip_path.parent.mkdir(parents=True)
+
         log_msg = 'downloading Himalayan Database to file \'{}\''
         logger.info(log_msg.format(zip_path.name))
         utils.download_file(url, zip_path)
 
 
-def extract_hdb(zip_path=HDB_ZIP_PATH, export_dir=HDB_RAW_DIR):
+def extract_hdb(zip_path=HDB_ZIP_PATH, export_dir=HDB_RAW_DIR,
+                logger=logging.getLogger(__name__)):
     """Extract files from Himalayan Database zip file"""
-    logger = logging.getLogger(__name__)
-
     if not export_dir.exists():
-        export_dir.mkdir()
+        export_dir.mkdir(parents=True)
 
     export_files = {'{}.{}'.format(file_name, suffix)
                     for file_name in HDB_TABLES for suffix in ['dbf', 'fpt']}
@@ -71,10 +74,9 @@ def extract_hdb(zip_path=HDB_ZIP_PATH, export_dir=HDB_RAW_DIR):
                     file.write(zip_file.read(zipped_file))
 
 
-def convert_hdb(raw_dir=HDB_RAW_DIR, converted_dir=HDB_PROCESSED_DIR):
+def convert_hdb(raw_dir=HDB_RAW_DIR, converted_dir=HDB_PROC_DIR,
+                logger=logging.getLogger(__name__)):
     """Description"""
-    logger = logging.getLogger(__name__)
-
     if not converted_dir.exists():
         converted_dir.mkdir()
 
@@ -142,12 +144,19 @@ def convert_hdb(raw_dir=HDB_RAW_DIR, converted_dir=HDB_PROCESSED_DIR):
             logger.warning(log_msg.format(key, cmp_col, value))
 
 
-def main():
-    download_hdb(url=HDB_URL, zip_path=HDB_ZIP_PATH, force_download=False)
-    extract_hdb(zip_path=HDB_ZIP_PATH, export_dir=HDB_RAW_DIR)
-    convert_hdb(raw_dir=HDB_RAW_DIR, converted_dir=HDB_PROCESSED_DIR)
+def hdb_data():
+    logger = logging.getLogger('mahalangur.data.hdb')
+
+    download_hdb(url=HDB_URL, zip_path=HDB_ZIP_PATH, force_download=False,
+                 logger=logger)
+
+    extract_hdb(zip_path=HDB_ZIP_PATH, export_dir=HDB_RAW_DIR,
+                logger=logger)
+                
+    convert_hdb(raw_dir=HDB_RAW_DIR, converted_dir=HDB_PROC_DIR,
+                logger=logger)
 
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO, format=LOG_FORMAT)
-    main()
+    hdb_data()

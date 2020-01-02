@@ -12,12 +12,13 @@ from urllib  import parse
 
 
 ### Globals
+
 OSM_RAW_DIR  = (DATA_DIR / 'raw' / 'osm').resolve()
 OSM_PROC_DIR = (DATA_DIR / 'processed'  ).resolve()
 
-HIMAL_JSON_PATH    = (OSM_RAW_DIR  / 'himal.json'   ).resolve()
-HIMAL_DSV_PATH     = (OSM_PROC_DIR / 'osm_himal.txt').resolve()
-HIMAL_GEOJSON_PATH = (OSM_PROC_DIR / 'himal.geojson').resolve()
+HIMAL_JSON_PATH    = (OSM_RAW_DIR  / 'himal.json'       ).resolve()
+HIMAL_DSV_PATH     = (OSM_PROC_DIR / 'osm_himal.txt'    ).resolve()
+HIMAL_GEOJSON_PATH = (OSM_PROC_DIR / 'web_himal.geojson').resolve()
 
 PEAK_JSON_PATH = (OSM_RAW_DIR  / 'peak.json'   ).resolve()
 PEAK_DSV_PATH  = (OSM_PROC_DIR / 'osm_peak.txt').resolve()
@@ -293,8 +294,8 @@ def osm_metadata():
 
     himal_geojson = get_himal_geojson(himals)
 
-    if not HIMAL_GEOJSON_PATH.parents[0].exists():
-        HIMAL_GEOJSON_PATH.parents[0].mkdir(parents=True)
+    if not HIMAL_GEOJSON_PATH.parent.exists():
+        HIMAL_GEOJSON_PATH.parent.mkdir(parents=True)
 
     logger.info('writing geojson \'{}\''.format(HIMAL_GEOJSON_PATH.name))
     with open(HIMAL_GEOJSON_PATH, 'w') as geojson_file:
@@ -310,8 +311,8 @@ def osm_metadata():
     peaks = read_peak_json(peak_path=PEAK_JSON_PATH)
     peak_dsv = get_peak_dsv(peaks)
 
-    if not PEAK_DSV_PATH.parents[0].exists():
-        PEAK_DSV_PATH.parents[0].mkdir(parents=True)
+    if not PEAK_DSV_PATH.parent.exists():
+        PEAK_DSV_PATH.parent.mkdir(parents=True)
 
     utils.write_delimited(peak_dsv, dsv_path=PEAK_DSV_PATH)
 
