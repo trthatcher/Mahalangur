@@ -1,10 +1,12 @@
 # -*- coding: utf-8 -*-
 import copy
+import importlib.resources as res
 import json
 import logging
 import pandas as pd
 import re
-from .. import utils, LOG_FORMAT, DATASETS_DIR, WEB_DIR
+from .. import DATA_DIR, LOG_FORMAT
+from ..data import utils
 from Levenshtein import jaro_winkler
 from shapely.geometry import Point, Polygon
 from sklearn.metrics.pairwise import cosine_similarity
@@ -12,15 +14,9 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 
 
 ### Globals
-
-MOT_DSV_PATH = (DATASETS_DIR / 'meta'      / 'mot_peak.txt').resolve()
-OSM_DSV_PATH = (DATASETS_DIR / 'meta'      / 'osm_peak.txt').resolve()
-HDB_DSV_PATH = (DATASETS_DIR / 'processed' / 'hdb_peak.txt').resolve() 
-
-HIMAL_GEOJSON_PATH = (WEB_DIR / 'static' / 'himal.geojson').resolve()
-
-PEAK_GEOJSON_PATH  = (WEB_DIR / 'static' / 'peak.geojson').resolve()
-PEAK_DSV_PATH      = (DATASETS_DIR / 'meta' / 'feat_peak.txt').resolve()
+HDB_DSV_PATH       = (DATA_DIR / 'processed' / 'hdb_peak.txt'    ).resolve()
+PEAK_GEOJSON_PATH  = (DATA_DIR / 'processed' / 'web_peak.geojson').resolve()
+PEAK_DSV_PATH      = (DATA_DIR / 'processed' / 'ref_peak.txt'    ).resolve()
 
 SUBSTITUTIONS = {
     r'(?<=\W)KANG'       : 'KHANG',
@@ -84,6 +80,7 @@ def read_peaks(dsv_path, id_col):
 
 
 def read_himals(geojson_path):
+    '''Read the himal polygons into a {himal_id: himal_poly} dictionary'''
     with open(geojson_path, 'r') as geojson_file:
         features = json.load(geojson_file)['features']
     
@@ -342,7 +339,7 @@ def peak_list(hdb_peaks, himals, himal_override, osm_peaks, motca_peaks):
                     himal = himal_id
                     break
 
-        # height
+        # Peak elevation
         height = hdb_peak.get('heightm')
 
         # Append the records
@@ -365,8 +362,6 @@ def peak_list(hdb_peaks, himals, himal_override, osm_peaks, motca_peaks):
 
 
 def peak_geojson(peak_list):
-    features = []
-
     property_names = [
         ('name'     ,  1),
         ('alt_names',  2),
@@ -374,6 +369,7 @@ def peak_geojson(peak_list):
         ('himal'    , 11)
     ]
 
+    features = []
     for peak in peak_list:
         properties = {name: peak[col] for name, col in property_names
                       if peak[col] is not None}
@@ -394,16 +390,21 @@ def peak_geojson(peak_list):
     }
 
 
-def main():
+def create_peak():
     logger = logging.getLogger('mahalangur.features.peaks')
 
     # Read peaks as {id: record} dictionary
-    hdb_peaks   = read_peaks(HDB_DSV_PATH, id_col='peakid'     )
-    osm_peaks   = read_peaks(OSM_DSV_PATH, id_col='peak_id'    )
-    motca_peaks = read_peaks(MOT_DSV_PATH, id_col='peak_number')
+    hdb_peaks = read_peaks(HDB_DSV_PATH, id_col='peakid')
+
+    with res.path('mahalangur.data.metadata', 'osm_peak.txt') as osm_dsv_path:
+        osm_peaks = read_peaks(osm_dsv_path, id_col='peak_id')
+
+    with res.path('mahalangur.data.metadata', 'mot_peak.txt') as mot_dsv_path:
+        mot_peaks = read_peaks(mot_dsv_path, id_col='peak_number')
 
     # Read himal geometry
-    himals = read_himals(HIMAL_GEOJSON_PATH)
+    with res.path('mahalangur.web.static', 'himal.geojson') as himal_path:
+        himals = read_himals(himal_path)
 
     # Create a dataframe of names with header [id, seq, full_name, name, title]
     hdb_name_df = name_dataframe(hdb_peaks,
@@ -412,7 +413,7 @@ def main():
     osm_name_df = name_dataframe(osm_peaks,
                                  name1='peak_name',
                                  name2='alt_names')
-    mot_name_df = name_dataframe(motca_peaks,
+    mot_name_df = name_dataframe(mot_peaks,
                                  name1='peak_name',
                                  name2='alt_names')
 
@@ -429,7 +430,7 @@ def main():
                            mot_name_df,
                            override=MOTCA_OVERRIDE,
                            threshold=0.7)
-    motca_peaks_linked = {hdb_pk: motca_peaks[motca_pk]
+    motca_peaks_linked = {hdb_pk: mot_peaks[motca_pk]
                           for hdb_pk, motca_pk in motca_link.items()}
 
     # Combine into a table
@@ -449,4 +450,4 @@ def main():
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO, format=LOG_FORMAT)
-    main()
+    create_peak()

@@ -14,8 +14,8 @@ data_hdb:
 data_osm:
 	$(PYTHON_INTERPRETER) -m mahalangur.data.osm
 
-feature_peaks:
-	$(PYTHON_INTERPRETER) -m mahalangur.features.peaks
+feat_peaks:
+	$(PYTHON_INTERPRETER) -m mahalangur.feat.peaks
 
 data_sqldb:
 	$(PYTHON_INTERPRETER) -m mahalangur.data.sqldb
