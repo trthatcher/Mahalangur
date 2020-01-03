@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS feat_peak;
-CREATE TABLE feat_peak(
+DROP TABLE IF EXISTS ref_peak;
+CREATE TABLE ref_peak(
      peak_id                 CHAR(4) NOT NULL PRIMARY KEY
     ,peak_name               TEXT
     ,alt_names               TEXT

@@ -12,16 +12,12 @@ from urllib  import parse
 
 
 ### Globals
+HIMAL_JSON_PATH = (DATA_DIR / 'raw' / 'osm' / 'himal.json').resolve()
+PEAK_JSON_PATH  = (DATA_DIR / 'raw' / 'osm' / 'peak.json' ).resolve()
 
-OSM_RAW_DIR  = (DATA_DIR / 'raw' / 'osm').resolve()
-OSM_PROC_DIR = (DATA_DIR / 'processed'  ).resolve()
-
-HIMAL_JSON_PATH    = (OSM_RAW_DIR  / 'himal.json'       ).resolve()
-HIMAL_DSV_PATH     = (OSM_PROC_DIR / 'osm_himal.txt'    ).resolve()
-HIMAL_GEOJSON_PATH = (OSM_PROC_DIR / 'web_himal.geojson').resolve()
-
-PEAK_JSON_PATH = (OSM_RAW_DIR  / 'peak.json'   ).resolve()
-PEAK_DSV_PATH  = (OSM_PROC_DIR / 'osm_peak.txt').resolve()
+HIMAL_DSV_PATH     = (DATA_DIR / 'meta' / 'osm_himal.txt'    ).resolve()
+HIMAL_GEOJSON_PATH = (DATA_DIR / 'meta' / 'web_himal.geojson').resolve()
+PEAK_DSV_PATH      = (DATA_DIR / 'meta' / 'osm_peak.txt'     ).resolve()
 
 OVERPASS_URL = 'https://overpass-api.de/api/interpreter?data={}'
 

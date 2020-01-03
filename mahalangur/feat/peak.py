@@ -15,8 +15,8 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 
 ### Globals
 HDB_DSV_PATH       = (DATA_DIR / 'processed' / 'hdb_peak.txt'    ).resolve()
-PEAK_GEOJSON_PATH  = (DATA_DIR / 'processed' / 'web_peak.geojson').resolve()
-PEAK_DSV_PATH      = (DATA_DIR / 'processed' / 'ref_peak.txt'    ).resolve()
+PEAK_GEOJSON_PATH  = (DATA_DIR / 'meta'      / 'web_peak.geojson').resolve()
+PEAK_DSV_PATH      = (DATA_DIR / 'meta'      / 'ref_peak.txt'    ).resolve()
 
 SUBSTITUTIONS = {
     r'(?<=\W)KANG'       : 'KHANG',
@@ -390,7 +390,7 @@ def peak_geojson(peak_list):
     }
 
 
-def create_peak():
+def peak_metadata():
     logger = logging.getLogger('mahalangur.features.peaks')
 
     # Read peaks as {id: record} dictionary
@@ -437,10 +437,17 @@ def create_peak():
     peaks = peak_list(hdb_peaks, himals, HIMAL_OVERRIDE, osm_peaks_linked,
                       motca_peaks_linked)
 
+    if not PEAK_DSV_PATH.parent.exists():
+        PEAK_DSV_PATH.parent.mkdir(parents=True)
+
     utils.write_delimited(peaks, PEAK_DSV_PATH)
 
     # Generate the geojson file
     peaks_geo = peak_geojson(peaks[1:])
+
+    if not PEAK_GEOJSON_PATH.parent.exists():
+        PEAK_GEOJSON_PATH.parent.mkdir(parents=True)
+
     logger.info('writing geojson \'{}\''.format(PEAK_GEOJSON_PATH.name))
     with open(PEAK_GEOJSON_PATH, 'w') as geojson_file:
         json.dump(peaks_geo, geojson_file)
@@ -450,4 +457,4 @@ def create_peak():
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO, format=LOG_FORMAT)
-    create_peak()
+    peak_metadata()

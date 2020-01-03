@@ -14,7 +14,7 @@ SELECT
     ,e.totmembers AS total_members
     ,e.tothired   AS total_hired
 FROM hdb_expedition AS e
-INNER JOIN feat_peak AS p
+INNER JOIN ref_peak AS p
     ON (e.peakid = p.peak_id)
 LEFT JOIN hdb_season AS s
     ON (e.season = s.season)
