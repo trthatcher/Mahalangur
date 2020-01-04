@@ -17,7 +17,7 @@ DATA_SCHEMA = {
     },
     'commercial_route': {
         'type': 'indicator',
-        'column': 'expedition_year',
+        'column': 'commercial_route',
         'value': 'Y'
     },
     'total_members': {'column': 'total_members'},
@@ -87,8 +87,7 @@ def set_df_column(model_df, data_df, column, column_schema):
         model_df[column] = column_value.astype(dtype=np.float, copy=True)
 
     elif column_type == 'indicator':
-        indicator_value = column_schema['value']
-        column_value = data_df[source_column] == indicator_value
+        column_value = data_df[source_column].eq(column_schema['value'])
 
         model_df[column] = column_value.astype(dtype=np.uint8, copy=True)
 
@@ -96,7 +95,7 @@ def set_df_column(model_df, data_df, column, column_schema):
         category_values = column_schema['values']
         for category_value in category_values:
             subcolumn = column + '_' + category_value.lower()
-            subcolumn_value = data_df[source_column] == category_value
+            subcolumn_value = data_df[source_column].eq(category_value)
 
             model_df[subcolumn] = subcolumn_value.astype(dtype=np.uint8,
                                                          copy=True)
@@ -134,18 +133,6 @@ def update_data_matrix(model_df, data, schema=DATA_SCHEMA, ignore_cols=set()):
     return model_df
 
 
-def make_data_matrix(data_df, schema=DATA_SCHEMA, ignore_cols=set()):
-    model_df = data_df.index.copy(deep=True)
+def data_matrix(data_df, schema=DATA_SCHEMA, ignore_cols=set()):
+    model_df = pd.DataFrame(index=data_df.index.copy(deep=True))
     return update_data_matrix(model_df, data_df)
-
-
-test_df = pd.DataFrame(
-    data = {
-        'num': [1, 2, 3, 4, 5],
-        'alpha': ['A', 'B', 'C', 'D', 'E']
-    },
-    index = ['X1', 'X2', 'X3', 'X4', 'X5']
-)
-
-
-
