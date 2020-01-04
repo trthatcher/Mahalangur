@@ -14,11 +14,6 @@ from sklearn.ensemble import RandomForestClassifier
 
 ### Logic
 
-def partition(id_values, n_partitions=10):
-    sha_string = sha256('-'.join(id_values).encode('utf-8')).hexdigest()
-    return (int(sha_string, 16) % n_partitions) + 1
-
-
 def get_data():
     sql = 'SELECT * FROM model_base WHERE expedition_year >= 1970;'
 

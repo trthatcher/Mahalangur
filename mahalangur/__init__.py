@@ -20,6 +20,10 @@ MODEL_DIR = (HOME_DIR / 'model').resolve()
 if not MODEL_DIR.exists:
     MODEL_DIR.mkdir()
 
+METADATA_DIR = (HOME_DIR / 'metadata').resolve()
+if not METADATA_DIR.exists:
+    METADATA_DIR.mkdir()
+
 DATABASE_PATH = DATA_DIR / 'mahalangur.db'
 
 LOG_FORMAT = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'

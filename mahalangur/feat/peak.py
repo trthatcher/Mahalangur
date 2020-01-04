@@ -5,7 +5,7 @@ import json
 import logging
 import pandas as pd
 import re
-from .. import DATA_DIR, LOG_FORMAT
+from .. import DATA_DIR, LOG_FORMAT, METADATA_DIR
 from ..data import utils
 from Levenshtein import jaro_winkler
 from shapely.geometry import Point, Polygon
@@ -14,9 +14,9 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 
 
 ### Globals
-HDB_DSV_PATH       = (DATA_DIR / 'processed' / 'hdb_peak.txt'    ).resolve()
-PEAK_GEOJSON_PATH  = (DATA_DIR / 'meta'      / 'web_peak.geojson').resolve()
-PEAK_DSV_PATH      = (DATA_DIR / 'meta'      / 'ref_peak.txt'    ).resolve()
+HDB_DSV_PATH       = (DATA_DIR / 'processed' / 'hdb_peak.txt').resolve()
+PEAK_GEOJSON_PATH  = (METADATA_DIR / 'web_peak.geojson').resolve()
+PEAK_DSV_PATH      = (METADATA_DIR / 'ref_peak.txt'    ).resolve()
 
 SUBSTITUTIONS = {
     r'(?<=\W)KANG'       : 'KHANG',
@@ -403,7 +403,7 @@ def peak_metadata():
         mot_peaks = read_peaks(mot_dsv_path, id_col='peak_number')
 
     # Read himal geometry
-    with res.path('mahalangur.web.static', 'himal.geojson') as himal_path:
+    with res.path('mahalangur.web.static', 'web_himal.geojson') as himal_path:
         himals = read_himals(himal_path)
 
     # Create a dataframe of names with header [id, seq, full_name, name, title]

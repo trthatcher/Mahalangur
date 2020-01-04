@@ -5,7 +5,7 @@ import logging
 import math
 import re
 from .       import utils
-from ..      import DATA_DIR, LOG_FORMAT
+from ..      import DATA_DIR, LOG_FORMAT, METADATA_DIR
 from pathlib import Path
 from shapely import ops, geometry as geom
 from urllib  import parse
@@ -15,9 +15,9 @@ from urllib  import parse
 HIMAL_JSON_PATH = (DATA_DIR / 'raw' / 'osm' / 'himal.json').resolve()
 PEAK_JSON_PATH  = (DATA_DIR / 'raw' / 'osm' / 'peak.json' ).resolve()
 
-HIMAL_DSV_PATH     = (DATA_DIR / 'meta' / 'osm_himal.txt'    ).resolve()
-HIMAL_GEOJSON_PATH = (DATA_DIR / 'meta' / 'web_himal.geojson').resolve()
-PEAK_DSV_PATH      = (DATA_DIR / 'meta' / 'osm_peak.txt'     ).resolve()
+HIMAL_DSV_PATH     = (METADATA_DIR / 'osm_himal.txt'    ).resolve()
+HIMAL_GEOJSON_PATH = (METADATA_DIR / 'web_himal.geojson').resolve()
+PEAK_DSV_PATH      = (METADATA_DIR / 'osm_peak.txt'     ).resolve()
 
 OVERPASS_URL = 'https://overpass-api.de/api/interpreter?data={}'
 
