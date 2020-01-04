@@ -98,9 +98,12 @@ def api_v1():
     try:
         exped_form = request.get_json()
         exped_data = expedition_data(exped_form)
-        return jsonify(predict(exped_data))
+        return jsonify({
+            'status': 'success',
+            'prediction': predict(exped_data)
+        })
     except:
-        return jsonify({})
+        return jsonify({'status': 'failure'})
 
 
 if __name__ == "__main__":

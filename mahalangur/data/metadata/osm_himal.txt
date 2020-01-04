@@ -1,4 +1,4 @@
-himal_id|himal_name|alt_names|longitude|latitude|dms_longitude|dms_latitude|parent_himal_id
+himal_id|himal_name|alternate_names|longitude|latitude|dms_longitude|dms_latitude|parent_himal_id
 ANNAPURNA|Annapurna Himal||83.9671962|28.5296673|83° 58′ 01.90632″ E|28° 31′ 46.80228″ N|
 BARUN|Barun Subsection||86.9463465|27.7266246|86° 56′ 46.84740″ E|27° 43′ 35.84856″ N|MAHALANGUR
 CHANGLA|Changla Himal||82.1350145|30.1530202|82° 08′ 06.05220″ E|30° 09′ 10.87272″ N|

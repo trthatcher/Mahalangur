@@ -115,8 +115,12 @@ def read_himal_json(himal_path=HIMAL_JSON_PATH, tol=0.005):
     for rel in elements:
         if rel['type'] != 'relation': continue
 
-        himal = {tag: rel['tags'][tag] for tag in ('name','alt_name') 
-                 if tag in rel['tags']}
+        himal = {}
+        if 'name' in rel['tags']:
+            himal['name'] = rel['tags']['name']
+
+        if 'alt_name' in rel['tags']:
+            himal['alternate_names'] = [rel['tags']['alt_name']]
 
         segments = []
         for way in rel['members']:
@@ -145,7 +149,7 @@ def get_himal_geojson(himals):
     for himal in himals:
         id = re.sub('([^A-Z]+)|HIMAL|SUBSECTION', '', himal['name'].upper())
 
-        properties = {tag: himal[tag] for tag in ('name', 'alt_name')
+        properties = {tag: himal[tag] for tag in ('name', 'alternate_names')
                       if tag in himal}
 
         himal_poly = himal['polygon']
@@ -193,7 +197,7 @@ def get_himal_dsv(himal_geojson):
     himal_dsv = [[
             'himal_id',
             'himal_name',
-            'alt_names',
+            'alternate_names',
             'longitude',
             'latitude',
             'dms_longitude',
@@ -209,7 +213,7 @@ def get_himal_dsv(himal_geojson):
         record = [
             feature['id'],
             properties['name'],
-            properties.get('alt_name', None),
+            ','.join(properties.get('alternate_names', [])),
             lon,
             lat,
             dms_string(lon, is_lon=True),
@@ -253,19 +257,19 @@ def read_peak_json(peak_path=PEAK_JSON_PATH):
             continue
 
         name = names.pop(0)
-        names = set(names)
+        names = sorted(set(names))
 
         lon = node['lon']
         lat = node['lat']
 
         peaks.append({
-            'peak_id'      : node['id'],
-            'peak_name'    : name,
-            'alt_names'    : ','.join(names),
-            'longitude'    : lon,
-            'latitude'     : lat,
-            'dms_longitude': dms_string(lon, is_lon=True),
-            'dms_latitude' : dms_string(lat, is_lon=False)
+            'peak_id'        : node['id'],
+            'peak_name'      : name,
+            'alternate_names': ','.join(names),
+            'longitude'      : lon,
+            'latitude'       : lat,
+            'dms_longitude'  : dms_string(lon, is_lon=True ),
+            'dms_latitude'   : dms_string(lat, is_lon=False)
         })
 
     return peaks

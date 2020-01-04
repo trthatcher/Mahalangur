@@ -14,14 +14,13 @@ ANNE|Annapurna I East|Annapurna I|8026|Annapurna Himal (ENE of Annapurna I)|N|83
 MoTCA: (28° 35′ 44.00000″ N, 83° 49′ 21.00000″ E)"|ANNAPURNA
 ANNM|Annapurna I Middle|Annapurna I|8051|Annapurna Himal (ENE of Annapurna I)|N|83.8270789|28.5962553|83° 49′ 37.48404″ E|28° 35′ 46.51908″ N|"OSM: (28° 35′ 46.51908″ N, 83° 49′ 37.48404″ E)
 MoTCA: (28° 35′ 44.00000″ N, 83° 49′ 21.00000″ E)"|ANNAPURNA
-ANNS|Annapurna South|Moditse,Annapurna Dakshin|7219|Annapurna Himal (S of Annapurna I and Fang)|N|83.8063433|28.5183959|83° 48′ 22.83588″ E|28° 31′ 06.22524″ N|"OSM: (28° 31′ 06.22524″ N, 83° 48′ 22.83588″ E)
+ANNS|Annapurna South|Annapurna Dakshin,Moditse|7219|Annapurna Himal (S of Annapurna I and Fang)|N|83.8063433|28.5183959|83° 48′ 22.83588″ E|28° 31′ 06.22524″ N|"OSM: (28° 31′ 06.22524″ N, 83° 48′ 22.83588″ E)
 MoTCA: (28° 31′ 06.00000″ N, 83° 48′ 29.00000″ E)"|ANNAPURNA
 APIM|Api Main||7132|Api Himal|Y|80.9316667|30.0052778|80° 55′ 54.00000″ E|30° 00′ 19.00000″ N|MoTCA: (30° 00′ 19.00000″ N, 80° 55′ 54.00000″ E)|YOKAPAHAR
 APIW|Api West||7076|Api Himal (W of Api)|Y|80.9255556|30.0016667|80° 55′ 32.00000″ E|30° 00′ 06.00000″ N|MoTCA: (30° 00′ 06.00000″ N, 80° 55′ 32.00000″ E)|YOKAPAHAR
-BARU|Baruntse|Barun Tse,Kali Himal|7152|Khumbu Himal (W of Makalu)|N|86.9796489|27.8720615|86° 58′ 46.73604″ E|27° 52′ 19.42140″ N|"OSM: (27° 52′ 19.42140″ N, 86° 58′ 46.73604″ E)
-MoTCA: (27° 52′ 17.00000″ N, 86° 58′ 58.00000″ E)"|BARUN
+BARU|Baruntse|Barun Tse|7152|Khumbu Himal (W of Makalu)|Y|86.9827778|27.8713889|86° 58′ 58.00000″ E|27° 52′ 17.00000″ N|MoTCA: (27° 52′ 17.00000″ N, 86° 58′ 58.00000″ E)|BARUN
 BAUD|Baudha||6672|Mansiri Himal (SE of Manaslu and Himalchuli)|Y|84.6788889|28.3755556|84° 40′ 44.00000″ E|28° 22′ 32.00000″ N|MoTCA: (28° 22′ 32.00000″ N, 84° 40′ 44.00000″ E)|MANASLU
-BHEM|Bhemdang Ri|Morimoto Peak,Morimoto|6150|Jugal Himal (SE of Shalbachum)|N|85.6635329|28.2721381|85° 39′ 48.71844″ E|28° 16′ 19.69716″ N|"OSM: (28° 16′ 19.69716″ N, 85° 39′ 48.71844″ E)
+BHEM|Bhemdang Ri|Morimoto,Morimoto Peak|6150|Jugal Himal (SE of Shalbachum)|N|85.6635329|28.2721381|85° 39′ 48.71844″ E|28° 16′ 19.69716″ N|"OSM: (28° 16′ 19.69716″ N, 85° 39′ 48.71844″ E)
 MoTCA: (28° 16′ 24.00000″ N, 85° 40′ 04.00000″ E)"|LANGTANG
 BHRI|Bhrikuti|Damodar Himal|6476|Damodar Himal (NE of Thorong La near Tibetan border)|Y|84.1475|28.9188889|84° 08′ 51.00000″ E|28° 55′ 08.00000″ N|MoTCA: (28° 55′ 08.00000″ N, 84° 08′ 51.00000″ E)|DAMODAR
 BOBA|Bobaye||6808|Api Himal (S of Nampa)|N|81.0195732|29.9574701|81° 01′ 10.46352″ E|29° 57′ 26.89236″ N|"OSM: (29° 57′ 26.89236″ N, 81° 01′ 10.46352″ E)
@@ -29,31 +28,30 @@ MoTCA: (29° 57′ 33.00000″ N, 81° 01′ 21.00000″ E)"|YOKAPAHAR
 CHAM|Chamlang||7321|Khumbu Himal (in Hongku Valley, SW of Makalu)|N|86.98151|27.7772801|86° 58′ 53.43600″ E|27° 46′ 38.20836″ N|"OSM: (27° 46′ 38.20836″ N, 86° 58′ 53.43600″ E)
 MoTCA: (27° 46′ 31.00000″ N, 86° 58′ 56.00000″ E)"|BARUN
 CHAN|Changla|Changla Himal|6563|Changla Himal (N of Jumla on Tibetan border)|Y|82.1288889|30.3030556|82° 07′ 44.00000″ E|30° 18′ 11.00000″ N|MoTCA: (30° 18′ 11.00000″ N, 82° 07′ 44.00000″ E)|CHANGLA
-CHMN|Chamar North|Peak 23,Chamar|7165|Shringi Himal|N|84.9437234|28.5550852|84° 56′ 37.40424″ E|28° 33′ 18.30672″ N|"OSM: (28° 33′ 18.30672″ N, 84° 56′ 37.40424″ E)
+CHMN|Chamar North|Chamar,Peak 23|7165|Shringi Himal|N|84.9437234|28.5550852|84° 56′ 37.40424″ E|28° 33′ 18.30672″ N|"OSM: (28° 33′ 18.30672″ N, 84° 56′ 37.40424″ E)
 MoTCA: (28° 33′ 19.00000″ N, 84° 56′ 49.00000″ E)"|SERANG
 CHEO|Cheo Himal||6820|Peri Himal (ESE of Himlung Himal on Tibetan border)|Y|84.4541667|28.7647222|84° 27′ 15.00000″ E|28° 45′ 53.00000″ N|MoTCA: (28° 45′ 53.00000″ N, 84° 27′ 15.00000″ E)|PERI
 CHOY|Cho Oyu|Cho-Oyu|8188|Khumbu Himal (NW of Everest on Tibetan border)|N|86.659654|28.0967613|86° 39′ 34.75440″ E|28° 05′ 48.34068″ N|"OSM: (28° 05′ 48.34068″ N, 86° 39′ 34.75440″ E)
 MoTCA: (28° 05′ 37.00000″ N, 86° 39′ 48.00000″ E)"|KHUMBU
 CHOB|Chobuje|Chobutse,Tsoboje|6686|Rolwaling Himal (NE of Tsho Rolpa)|N|86.5089226|27.8745166|86° 30′ 32.12136″ E|27° 52′ 28.25976″ N|"OSM: (27° 52′ 28.25976″ N, 86° 30′ 32.12136″ E)
 MoTCA: (27° 52′ 56.00000″ N, 86° 29′ 30.00000″ E)"|ROLWALING
-CHOL|Cholatse|Cholotse,Jobo Lhaptshan,Tsolatse,Chola Tse|6423|Khumbu Himal (N of Tawoche)|N|86.7648644|27.9190402|86° 45′ 53.51184″ E|27° 55′ 08.54472″ N|"OSM: (27° 55′ 08.54472″ N, 86° 45′ 53.51184″ E)
-MoTCA: (27° 55′ 13.00000″ N, 86° 46′ 08.00000″ E)"|KHUMBU
+CHOL|Cholatse|Chola Tse,Jobo Lhaptshan,Tsolatse|6423|Khumbu Himal (N of Tawoche)|Y|86.7688889|27.9202778|86° 46′ 08.00000″ E|27° 55′ 13.00000″ N|MoTCA: (27° 55′ 13.00000″ N, 86° 46′ 08.00000″ E)|KHUMBU
 CHOP|Cho Polu||6700|Khumbu Himal (S of Shartse, N of Baruntse)|N|86.9819868|27.9194539|86° 58′ 55.15248″ E|27° 55′ 10.03404″ N|"OSM: (27° 55′ 10.03404″ N, 86° 58′ 55.15248″ E)
 MoTCA: (27° 55′ 10.00000″ N, 86° 59′ 01.00000″ E)"|BARUN
-CHUL|Chulu Central|Chulu East,Chulu|6584|Damodar Himal (E of Thorong La)|N|84.035097|28.7368233|84° 02′ 06.34920″ E|28° 44′ 12.56388″ N|"OSM: (28° 44′ 12.56388″ N, 84° 02′ 06.34920″ E)
+CHUL|Chulu Central|Chulu,Chulu East|6584|Damodar Himal (E of Thorong La)|N|84.035097|28.7368233|84° 02′ 06.34920″ E|28° 44′ 12.56388″ N|"OSM: (28° 44′ 12.56388″ N, 84° 02′ 06.34920″ E)
 MoTCA: (28° 44′ 09.00000″ N, 84° 02′ 12.00000″ E)"|DAMODAR
 CHUG|Chukyima Go|Chugimago|6258|Rolwaling Himal (WSW of Tesi Laptsa)|Y|86.4525|27.8322222|86° 27′ 09.00000″ E|27° 49′ 56.00000″ N|MoTCA: (27° 49′ 56.00000″ N, 86° 27′ 09.00000″ E)|ROLWALING
 CHUR|Churen Himal Central|Churen|7385|Dhaulagiri Himal (NW of Dhaulagiri VI)|Y|83.2122222|28.7322222|83° 12′ 44.00000″ E|28° 43′ 56.00000″ N|MoTCA: (28° 43′ 56.00000″ N, 83° 12′ 44.00000″ E)|DHAULAGIRI
 CHUW|Chulu West||6419|Damodar Himal (E of Thorong La)|N|84.0228323|28.7454053|84° 01′ 22.19628″ E|28° 44′ 43.45908″ N|"OSM: (28° 44′ 43.45908″ N, 84° 01′ 22.19628″ E)
 MoTCA: (28° 44′ 36.00000″ N, 84° 01′ 30.00000″ E)"|DAMODAR
 TAPL|Taple Shikhar|Cross Peak,Taple Sikhar|6447|Kangchenjunga Himal (W of Nepal Peak)|Y|88.1477778|27.7611111|88° 08′ 52.00000″ E|27° 45′ 40.00000″ N|MoTCA: (27° 45′ 40.00000″ N, 88° 08′ 52.00000″ E)|NORTHERN
-CTSE|Changtse|Everest North Peak,Chang Himal,Changtse Peak,Wedge Peak|7583|North of Everest (in Tibet)|N|86.9151856|28.024329|86° 54′ 54.66816″ E|28° 01′ 27.58440″ N|"OSM: (28° 01′ 27.58440″ N, 86° 54′ 54.66816″ E)
+CTSE|Changtse|Chang Himal,Changtse Peak,Everest North Peak,Wedge Peak|7583|North of Everest (in Tibet)|N|86.9151856|28.024329|86° 54′ 54.66816″ E|28° 01′ 27.58440″ N|"OSM: (28° 01′ 27.58440″ N, 86° 54′ 54.66816″ E)
 MoTCA: (27° 45′ 55.00000″ N, 88° 05′ 10.00000″ E)"|KHUMBU
 DHA1|Dhaulagiri I|Dhaulagiri|8167|Dhaulagiri Himal|N|83.4894884|28.6976088|83° 29′ 22.15824″ E|28° 41′ 51.39168″ N|"OSM: (28° 41′ 51.39168″ N, 83° 29′ 22.15824″ E)
 MoTCA: (28° 41′ 48.00000″ N, 83° 29′ 42.00000″ E)"|DHAULAGIRI
 DHA2|Dhaulagiri II||7751|Dhaulagiri Himal (NW of Dhaulagiri I)|N|83.3873786|28.7631589|83° 23′ 14.56296″ E|28° 45′ 47.37204″ N|"OSM: (28° 45′ 47.37204″ N, 83° 23′ 14.56296″ E)
 MoTCA: (28° 45′ 47.00000″ N, 83° 23′ 26.00000″ E)"|DHAULAGIRI
-DHA3|Dhaulagiri III|Naula,Nalu|7715|Dhaulagiri Himal (SW of Dhaulagiri II)|N|83.3771445|28.7540263|83° 22′ 37.72020″ E|28° 45′ 14.49468″ N|"OSM: (28° 45′ 14.49468″ N, 83° 22′ 37.72020″ E)
+DHA3|Dhaulagiri III|Nalu,Naula|7715|Dhaulagiri Himal (SW of Dhaulagiri II)|N|83.3771445|28.7540263|83° 22′ 37.72020″ E|28° 45′ 14.49468″ N|"OSM: (28° 45′ 14.49468″ N, 83° 22′ 37.72020″ E)
 MoTCA: (28° 45′ 14.00000″ N, 83° 22′ 46.00000″ E)"|DHAULAGIRI
 DHA4|Dhaulagiri IV||7661|Dhaulagiri Himal (W of Dhaulagiri V)|N|83.314379|28.7357489|83° 18′ 51.76440″ E|28° 44′ 08.69604″ N|"OSM: (28° 44′ 08.69604″ N, 83° 18′ 51.76440″ E)
 MoTCA: (28° 44′ 09.00000″ N, 83° 19′ 01.00000″ E)"|DHAULAGIRI
@@ -61,25 +59,24 @@ DHA5|Dhaulagiri V||7618|Dhaulagiri Himal (SW of Dhaulagiri III)|N|83.3605794|28.
 MoTCA: (28° 44′ 02.00000″ N, 83° 21′ 50.00000″ E)"|DHAULAGIRI
 DHA6|Dhaulagiri VI||7268|Dhaulagiri Himal (WSW of Dhaulagiri IV)|N|83.2731956|28.7083897|83° 16′ 23.50416″ E|28° 42′ 30.20292″ N|"OSM: (28° 42′ 30.20292″ N, 83° 16′ 23.50416″ E)
 MoTCA: (28° 42′ 30.00000″ N, 83° 16′ 33.00000″ E)"|DHAULAGIRI
-DHAM|Dhampus|Ohampus Peak,Dhampus Peak,Marpha Peak,Thapa Peak|6012|Mukut Himal (NE of Dhaulagiri I and Tukuche)|N|83.6064455|28.7979512|83° 36′ 23.20380″ E|28° 47′ 52.62432″ N|"OSM: (28° 47′ 52.62432″ N, 83° 36′ 23.20380″ E)
-MoTCA: (28° 47′ 53.00000″ N, 83° 36′ 43.00000″ E)"|DHAULAGIRI
+DHAM|Dhampus|Marpha Peak,Thapa Peak|6012|Mukut Himal (NE of Dhaulagiri I and Tukuche)|Y|83.6119444|28.7980556|83° 36′ 43.00000″ E|28° 47′ 53.00000″ N|MoTCA: (28° 47′ 53.00000″ N, 83° 36′ 43.00000″ E)|DHAULAGIRI
 DOGA|Dogari|Dogari Himal|6536|Dhaulagiri Himal (WNW of Putha Hiunchuli)|Y|83.1002778|28.7666667|83° 06′ 01.00000″ E|28° 46′ 00.00000″ N|MoTCA: (28° 46′ 00.00000″ N, 83° 06′ 01.00000″ E)|DHAULAGIRI
-PEMK|Pemthang Karpo Ri|Ramthang Karpo Ri,Pem Thang Karpo Ri,Kan Karmo,Dome Blanc|6865|Jugal Himal (NNW of Dorje Lhakpa on Tibetan border)|N|85.7482438|28.2492806|85° 44′ 53.67768″ E|28° 14′ 57.41016″ N|"OSM: (28° 14′ 57.41016″ N, 85° 44′ 53.67768″ E)
+PEMK|Pemthang Karpo Ri|Dome Blanc,Kan Karmo,Pem Thang Karpo Ri|6865|Jugal Himal (NNW of Dorje Lhakpa on Tibetan border)|N|85.7482438|28.2492806|85° 44′ 53.67768″ E|28° 14′ 57.41016″ N|"OSM: (28° 14′ 57.41016″ N, 85° 44′ 53.67768″ E)
 MoTCA: (28° 14′ 57.00000″ N, 85° 45′ 02.00000″ E)"|JUGAL
 DORJ|Dorje Lhakpa|Dorje Lyakpa|6966|Jugal Himal (near Tibetan border)|Y|85.7811111|28.1738889|85° 46′ 52.00000″ E|28° 10′ 26.00000″ N|MoTCA: (28° 10′ 26.00000″ N, 85° 46′ 52.00000″ E)|JUGAL
 DRAN|Drangnag Ri|Dranganag Ri,Thaknak Ri|6757|Rolwaling Himal (N of Tesi Laptsa near Tibetan border)|Y|86.5263889|27.9469444|86° 31′ 35.00000″ E|27° 56′ 49.00000″ N|MoTCA: (27° 56′ 49.00000″ N, 86° 31′ 35.00000″ E)|ROLWALING
-DROM|Drohmo|Longridge Peak,Domo|6881|Jongsang Himal (NNW of Kangchenjunga)|Y|88.105|27.8238889|88° 06′ 18.00000″ E|27° 49′ 26.00000″ N|MoTCA: (27° 49′ 26.00000″ N, 88° 06′ 18.00000″ E)|JANAK
-EVER|Everest|Qomolungma,Mount Everest,Chomolungma,Sagarmatha|8850|Khumbu Himal|N|86.9248308|27.9878675|86° 55′ 29.39088″ E|27° 59′ 16.32300″ N|"OSM: (27° 59′ 16.32300″ N, 86° 55′ 29.39088″ E)
+DROM|Drohmo|Domo,Longridge Peak|6881|Jongsang Himal (NNW of Kangchenjunga)|Y|88.105|27.8238889|88° 06′ 18.00000″ E|27° 49′ 26.00000″ N|MoTCA: (27° 49′ 26.00000″ N, 88° 06′ 18.00000″ E)|JANAK
+EVER|Everest|Chomolungma,Qomolungma,Sagarmatha|8850|Khumbu Himal|N|86.9248308|27.9878675|86° 55′ 29.39088″ E|27° 59′ 16.32300″ N|"OSM: (27° 59′ 16.32300″ N, 86° 55′ 29.39088″ E)
 MoTCA: (27° 59′ 17.00000″ N, 86° 55′ 41.00000″ E)"|KHUMBU
-FANG|Fang|Varaha Shikhar,Finger,Varaha Chuli|7647|Annapurna Himal (SW of Annapurna I)|Y|83.8033333|28.5780556|83° 48′ 12.00000″ E|28° 34′ 41.00000″ N|MoTCA: (28° 34′ 41.00000″ N, 83° 48′ 12.00000″ E)|ANNAPURNA
-FIRN|Firnkopf|Firnkopf East,Firnkof East|6730|Saipal Himal (W of Saipal)|Y|81.4572222|29.9013889|81° 27′ 26.00000″ E|29° 54′ 05.00000″ N|MoTCA: (29° 54′ 05.00000″ N, 81° 27′ 26.00000″ E)|SAIPAL
+FANG|Fang|Finger,Varaha Chuli,Varaha Shikhar|7647|Annapurna Himal (SW of Annapurna I)|Y|83.8033333|28.5780556|83° 48′ 12.00000″ E|28° 34′ 41.00000″ N|MoTCA: (28° 34′ 41.00000″ N, 83° 48′ 12.00000″ E)|ANNAPURNA
+FIRN|Firnkopf|Firnkof East,Firnkopf East|6730|Saipal Himal (W of Saipal)|Y|81.4572222|29.9013889|81° 27′ 26.00000″ E|29° 54′ 05.00000″ N|MoTCA: (29° 54′ 05.00000″ N, 81° 27′ 26.00000″ E)|SAIPAL
 FIRW|Firnkopf West|Firnkof West|6745|Saipal Himal (WSW of Firnkopf)|Y|81.4469444|29.8980556|81° 26′ 49.00000″ E|29° 53′ 53.00000″ N|MoTCA: (29° 53′ 53.00000″ N, 81° 26′ 49.00000″ E)|SAIPAL
 GAMA|Gama Peak||7187|Dhaulagiri Himal (N of Dhaulagiri VI, S of Junction Peak)|||||||DHAULAGIRI
-GAN1|Ganesh I|Yangra,Yangra Kangri|7422|Ganesh Himal (on Tibetan border)|N|85.1294745|28.3912625|85° 07′ 46.10820″ E|28° 23′ 28.54500″ N|"OSM: (28° 23′ 28.54500″ N, 85° 07′ 46.10820″ E)
+GAN1|Ganesh I|Ganesh III,Yangra,Yangra Kangri|7422|Ganesh Himal (on Tibetan border)|N|85.120491|28.3363962|85° 07′ 13.76760″ E|28° 20′ 11.02632″ N|"OSM: (28° 20′ 11.02632″ N, 85° 07′ 13.76760″ E)
 MoTCA: (28° 23′ 30.00000″ N, 85° 07′ 44.00000″ E)"|GANESH
-GAN3|Ganesh III|Lopsang Karbo,Salasungo,Kang Lombo|7043|Ganesh Himal (S of Ganesh I on Tibetan border)|N|85.120491|28.3363962|85° 07′ 13.76760″ E|28° 20′ 11.02632″ N|"OSM: (28° 20′ 11.02632″ N, 85° 07′ 13.76760″ E)
+GAN3|Ganesh III|Kang Lombo,Lopsang Karbo,Salasungo|7043|Ganesh Himal (S of Ganesh I on Tibetan border)|N|85.120491|28.3363962|85° 07′ 13.76760″ E|28° 20′ 11.02632″ N|"OSM: (28° 20′ 11.02632″ N, 85° 07′ 13.76760″ E)
 MoTCA: (28° 20′ 07.00000″ N, 85° 07′ 29.00000″ E)"|GANESH
-GAN2|Ganesh II|Ganesh Nw|7118|Ganesh Himal (WSW of Ganesh I)|N|85.0551861|28.3789024|85° 03′ 18.66996″ E|28° 22′ 44.04864″ N|"OSM: (28° 22′ 44.04864″ N, 85° 03′ 18.66996″ E)
+GAN2|Ganesh II||7118|Ganesh Himal (WSW of Ganesh I)|N|85.0551861|28.3789024|85° 03′ 18.66996″ E|28° 22′ 44.04864″ N|"OSM: (28° 22′ 44.04864″ N, 85° 03′ 18.66996″ E)
 MoTCA: (28° 22′ 44.00000″ N, 85° 03′ 33.00000″ E)"|GANESH
 GAN4|Ganesh IV|Pabil|7104|Ganesh Himal (SW of Ganesh I)|N|85.0795779|28.3452083|85° 04′ 46.48044″ E|28° 20′ 42.74988″ N|"OSM: (28° 20′ 42.74988″ N, 85° 04′ 46.48044″ E)
 MoTCA: (28° 20′ 44.00000″ N, 85° 04′ 56.00000″ E)"|GANESH
@@ -87,52 +84,50 @@ GAN5|Ganesh V||6770|Ganesh Himal (SE of Ganesh I on Tibetan border)|N|85.1628264
 MoTCA: (28° 19′ 55.00000″ N, 85° 09′ 39.00000″ E)"|GANESH
 GAN6|Ganesh VI||6908|Ganesh Himal (subpeak SE of Ganesh II)|N|85.0614738|28.3697277|85° 03′ 41.30568″ E|28° 22′ 11.01972″ N|"OSM: (28° 22′ 11.01972″ N, 85° 03′ 41.30568″ E)
 MoTCA: (28° 22′ 16.00000″ N, 85° 03′ 50.00000″ E)"|GANESH
-GANC|Ganchenpo|Fluted Peak,Ganchempo|6378|Jugal Himal (W of Dorje Lhakpa and Urkinmang)|N|85.6785419|28.1693908|85° 40′ 42.75084″ E|28° 10′ 09.80688″ N|"OSM: (28° 10′ 09.80688″ N, 85° 40′ 42.75084″ E)
-MoTCA: (28° 10′ 08.00000″ N, 85° 40′ 52.00000″ E)"|JUGAL
-GAND|Gandharva Chuli|Gandharbha,Gabelhorn Peak|6248|Annapurna Himal (SSW of Annapurna III near Machhapuchhare)|Y|83.9622222|28.5383333|83° 57′ 44.00000″ E|28° 32′ 18.00000″ N|MoTCA: (28° 32′ 18.00000″ N, 83° 57′ 44.00000″ E)|ANNAPURNA
+GANC|Ganchenpo|Fluted Peak,Ganchempo|6378|Jugal Himal (W of Dorje Lhakpa and Urkinmang)|N|83.8815063|28.5894888|83° 52′ 53.42268″ E|28° 35′ 22.15968″ N|"OSM: (28° 35′ 22.15968″ N, 83° 52′ 53.42268″ E)
+MoTCA: (28° 10′ 08.00000″ N, 85° 40′ 52.00000″ E)"|ANNAPURNA
+GAND|Gandharva Chuli|Gabelhorn Peak,Gandharbha|6248|Annapurna Himal (SSW of Annapurna III near Machhapuchhare)|Y|83.9622222|28.5383333|83° 57′ 44.00000″ E|28° 32′ 18.00000″ N|MoTCA: (28° 32′ 18.00000″ N, 83° 57′ 44.00000″ E)|ANNAPURNA
 GANG|Gangapurna||7455|Annapurna Himal (NW of Annapurna III)|N|83.9635144|28.605655|83° 57′ 48.65184″ E|28° 36′ 20.35800″ N|"OSM: (28° 36′ 20.35800″ N, 83° 57′ 48.65184″ E)
 MoTCA: (28° 36′ 19.00000″ N, 83° 57′ 57.00000″ E)"|ANNAPURNA
-GAUR|Gaurishankar|Jomo Tseringma,Gauri Sankar,Gauri Shanker|7135|Rolwaling Himal (on Tibetan border)|N|86.3345048|27.967351|86° 20′ 04.21728″ E|27° 58′ 02.46360″ N|"OSM: (27° 58′ 02.46360″ N, 86° 20′ 04.21728″ E)
+GAUR|Gaurishankar|Gauri Sankar,Gauri Shanker,Jomo Tseringma|7135|Rolwaling Himal (on Tibetan border)|N|86.3345048|27.967351|86° 20′ 04.21728″ E|27° 58′ 02.46360″ N|"OSM: (27° 58′ 02.46360″ N, 86° 20′ 04.21728″ E)
 MoTCA: (27° 57′ 54.00000″ N, 86° 20′ 16.00000″ E)"|ROLWALING
 GHUN|Ghustang North|Ghustung North|6529|Dhaulagiri Himal (WNW of Gurja Himal)|Y|83.2472222|28.6805556|83° 14′ 50.00000″ E|28° 40′ 50.00000″ N|MoTCA: (28° 40′ 50.00000″ N, 83° 14′ 50.00000″ E)|DHAULAGIRI
-GHUS|Ghustang South|Gurja West,Paschim Himal,Ghustung South,Mount Gurja,Gurja Himal|6465|Dhaulagiri Himal (WSW of Gurja Himal)|N|83.275664|28.6741019|83° 16′ 32.39040″ E|28° 40′ 26.76684″ N|"OSM: (28° 40′ 26.76684″ N, 83° 16′ 32.39040″ E)
+GHUS|Ghustang South|Ghustung South,Gurja Himal,Gurja West,Paschim Himal|6465|Dhaulagiri Himal (WSW of Gurja Himal)|N|83.275664|28.6741019|83° 16′ 32.39040″ E|28° 40′ 26.76684″ N|"OSM: (28° 40′ 26.76684″ N, 83° 16′ 32.39040″ E)
 MoTCA: (28° 40′ 20.00000″ N, 83° 14′ 46.00000″ E)"|DHAULAGIRI
-MATA|Matathumba|Matatumpa,Ghyuthumba East|5767|Jagdula Lekh (S of Kanjiroba Himal)|||||||KANJIROBA
+MATA|Matathumba|Ghyuthumba East,Matatumpa|5767|Jagdula Lekh (S of Kanjiroba Himal)|||||||KANJIROBA
 GHYM|Ghyuthumba Main|Gutumpa,Pasang Peak|5806|Jagdula Lekh (S of Kanjiroba Himal)|||||||KANJIROBA
 GIME|Gimmigela Chuli East|Gimigela Chuli,Twins|7007|Kangchenjunga Himal (N of Kangchenjunga on Indian border)|Y|88.1611111|27.7405556|88° 09′ 40.00000″ E|27° 44′ 26.00000″ N|MoTCA: (27° 44′ 26.00000″ N, 88° 09′ 40.00000″ E)|NORTHERN
-GIMM|Gimmigela Chuli|Gimmigela II,Gimigela Chuli,Twins|7350|Kangchenjunga Himal (N of Kangchenjunga on Indian border)|N|88.1779302|27.7467817|88° 10′ 40.54872″ E|27° 44′ 48.41412″ N|"OSM: (27° 44′ 48.41412″ N, 88° 10′ 40.54872″ E)
+GIMM|Gimmigela Chuli|Gimigela Chuli,Gimmigela II,Twins|7350|Kangchenjunga Himal (N of Kangchenjunga on Indian border)|N|88.1779302|27.7467817|88° 10′ 40.54872″ E|27° 44′ 48.41412″ N|"OSM: (27° 44′ 48.41412″ N, 88° 10′ 40.54872″ E)
 MoTCA: (27° 44′ 26.00000″ N, 88° 09′ 40.00000″ E)"|NORTHERN
-GLAC|Glacier Dome|Tharke Khang,Tarke Kang,Tarke Khang|7168|Annapurna Himal (E of Annapurna I)|N|83.886437|28.6073547|83° 53′ 11.17320″ E|28° 36′ 26.47692″ N|"OSM: (28° 36′ 26.47692″ N, 83° 53′ 11.17320″ E)
+GLAC|Glacier Dome|Tarke Kang,Tarke Khang,Tharke Khang|7168|Annapurna Himal (E of Annapurna I)|N|83.886437|28.6073547|83° 53′ 11.17320″ E|28° 36′ 26.47692″ N|"OSM: (28° 36′ 26.47692″ N, 83° 53′ 11.17320″ E)
 MoTCA: (28° 02′ 38.00000″ N, 86° 45′ 06.00000″ E)"|ANNAPURNA
-GURJ|Gurja Himal|Mount Gurja|7193|Dhaulagiri Himal (S of Dhaulagiri VI)|N|83.275664|28.6741019|83° 16′ 32.39040″ E|28° 40′ 26.76684″ N|"OSM: (28° 40′ 26.76684″ N, 83° 16′ 32.39040″ E)
+GURJ|Gurja Himal||7193|Dhaulagiri Himal (S of Dhaulagiri VI)|N|83.275664|28.6741019|83° 16′ 32.39040″ E|28° 40′ 26.76684″ N|"OSM: (28° 40′ 26.76684″ N, 83° 16′ 32.39040″ E)
 MoTCA: (28° 40′ 26.00000″ N, 83° 16′ 40.00000″ E)"|DHAULAGIRI
 GURK|Gurkarpo Ri|Gur Karpo Ri|6889|Jugal Himal (N of Dorje Lhakpa on Tibetan border)|N|85.7736263|28.2117364|85° 46′ 25.05468″ E|28° 12′ 42.25104″ N|"OSM: (28° 12′ 42.25104″ N, 85° 46′ 25.05468″ E)
 MoTCA: (28° 12′ 35.00000″ N, 85° 46′ 38.00000″ E)"|JUGAL
 GYAC|Gyachung Kang|Gyachung Khang|7861|Khumbu Himal (E of Cho Oyu on Tibetan border)|N|86.7448435|28.0980314|86° 44′ 41.43660″ E|28° 05′ 52.91304″ N|"OSM: (28° 05′ 52.91304″ N, 86° 44′ 41.43660″ E)
 MoTCA: (28° 05′ 40.00000″ N, 86° 45′ 03.00000″ E)"|KHUMBU
 GYAJ|Gyajikang|Gyaji Khang|7074|Peri Himal (SW of Himlung Himal)|Y|84.3741667|28.7330556|84° 22′ 27.00000″ E|28° 43′ 59.00000″ N|MoTCA: (28° 43′ 59.00000″ N, 84° 22′ 27.00000″ E)|PERI
-LEOE|Leonpo Gang East|Loenpo Gang,Gyalgen Peak,Leonpo Gang,Big White Peak|6733|Jugal Himal (NE of Leonpo Gang on Tibetan border)|N|85.8001908|28.1964383|85° 48′ 00.68688″ E|28° 11′ 47.17788″ N|"OSM: (28° 11′ 47.17788″ N, 85° 48′ 00.68688″ E)
-MoTCA: (28° 12′ 09.00000″ N, 85° 49′ 04.00000″ E)"|JUGAL
+LEOE|Leonpo Gang East|Gyalgen Peak|6733|Jugal Himal (NE of Leonpo Gang on Tibetan border)|Y|85.8177778|28.2025|85° 49′ 04.00000″ E|28° 12′ 09.00000″ N|MoTCA: (28° 12′ 09.00000″ N, 85° 49′ 04.00000″ E)|JUGAL
 HIME|Himalchuli East|Himalchuli Main|7893|Mansiri Himal (SE of Manaslu)|Y|84.6413889|28.4369444|84° 38′ 29.00000″ E|28° 26′ 13.00000″ N|MoTCA: (28° 26′ 13.00000″ N, 84° 38′ 29.00000″ E)|MANASLU
-HIML|Himlung Himal|Himlung East,Himlung|7126|Peri Himal (NW of Manaslu near Tibetan border)|N|84.4217998|28.7723305|84° 25′ 18.47928″ E|28° 46′ 20.38980″ N|"OSM: (28° 46′ 20.38980″ N, 84° 25′ 18.47928″ E)
+HIML|Himlung Himal|Himlung,Himlung East|7126|Peri Himal (NW of Manaslu near Tibetan border)|N|84.4217998|28.7723305|84° 25′ 18.47928″ E|28° 46′ 20.38980″ N|"OSM: (28° 46′ 20.38980″ N, 84° 25′ 18.47928″ E)
 MoTCA: (28° 46′ 09.00000″ N, 84° 26′ 20.00000″ E)"|PERI
 HIMN|Himalchuli North||7331|Mansiri Himal (SE of Manaslu, WNW of Himalchuli Main)|Y|84.6063889|28.4491667|84° 36′ 23.00000″ E|28° 26′ 57.00000″ N|MoTCA: (28° 26′ 57.00000″ N, 84° 36′ 23.00000″ E)|MANASLU
-RANI|Rani Peak|Himalchuli Northeast,Rani Himal,Lidanda Peak,Himalchuli East|6693|Mansiri Himal (SE of Manaslu, NE of Himalchuli Main)|N|81.5124957|29.9165574|81° 30′ 44.98452″ E|29° 54′ 59.60664″ N|"OSM: (29° 54′ 59.60664″ N, 81° 30′ 44.98452″ E)
+RANI|Rani Peak|Himalchuli East,Himalchuli Northeast,Lidanda Peak,Rani Himal|6693|Mansiri Himal (SE of Manaslu, NE of Himalchuli Main)|N|81.5124957|29.9165574|81° 30′ 44.98452″ E|29° 54′ 59.60664″ N|"OSM: (29° 54′ 59.60664″ N, 81° 30′ 44.98452″ E)
 MoTCA: (28° 26′ 13.00000″ N, 84° 38′ 29.00000″ E)"|SAIPAL
 HIMW|Himalchuli West||7540|Mansiri Himal (SE of Manaslu, W of Himalchuli Main)|Y|84.6188889|28.4355556|84° 37′ 08.00000″ E|28° 26′ 08.00000″ N|MoTCA: (28° 26′ 08.00000″ N, 84° 37′ 08.00000″ E)|MANASLU
 HIUP|Hiunchuli|Hiun Chuli,Patal Hiunchuli|6434|Annapurna Himal (E of Annapurna South)|N|83.85|28.51|83° 51′ 00.00000″ E|28° 30′ 36.00000″ N|"OSM: (28° 30′ 36.00000″ N, 83° 51′ 00.00000″ E)
 MoTCA: (28° 30′ 37.00000″ N, 83° 51′ 07.00000″ E)"|ANNAPURNA
-HNKU|Hongku Chuli|Pyramid Peak,Hunku Chuli,Patibhara|6833|Khumbu Himal (in Hongku Valley, NE of Chamlang)|N|88.173003|27.8205864|88° 10′ 22.81080″ E|27° 49′ 14.11104″ N|"OSM: (27° 49′ 14.11104″ N, 88° 10′ 22.81080″ E)
-MoTCA: (27° 49′ 03.00000″ N, 87° 00′ 43.00000″ E)"|NORTHERN
+HNKU|Hongku Chuli|Hunku Chuli,Pyramid Peak|6833|Khumbu Himal (in Hongku Valley, NE of Chamlang)|Y|87.0119444|27.8175|87° 00′ 43.00000″ E|27° 49′ 03.00000″ N|MoTCA: (27° 49′ 03.00000″ N, 87° 00′ 43.00000″ E)|BARUN
 HONG|Hongde|Hangde,Hongde Himal|6556|Mukut Himal (N of Sita Chuchura in Hidden Valley)|N|83.4967752|28.843187|83° 29′ 48.39072″ E|28° 50′ 35.47320″ N|"OSM: (28° 50′ 35.47320″ N, 83° 29′ 48.39072″ E)
 MoTCA: (28° 50′ 35.00000″ N, 83° 29′ 57.00000″ E)"|DHAULAGIRI
-IMJA|Imjatse|Island Peak,Imja Tse|6165|Khumbu Himal (S of Lhotse)|N|86.9346925|27.9200801|86° 56′ 04.89300″ E|27° 55′ 12.28836″ N|"OSM: (27° 55′ 12.28836″ N, 86° 56′ 04.89300″ E)
+IMJA|Imjatse|Imja Tse,Island Peak|6165|Khumbu Himal (S of Lhotse)|N|86.9346925|27.9200801|86° 56′ 04.89300″ E|27° 55′ 12.28836″ N|"OSM: (27° 55′ 12.28836″ N, 86° 56′ 04.89300″ E)
 MoTCA: (27° 55′ 14.00000″ N, 86° 56′ 16.00000″ E)"|KHUMBU
 JAGD|Jagdula|Jagdula Peak|5761|Jagdula Lekh (S of Kande Hiunchuli)|Y|82.5919444|29.3269444|82° 35′ 31.00000″ E|29° 19′ 37.00000″ N|MoTCA: (29° 19′ 37.00000″ N, 82° 35′ 31.00000″ E)|KANJIROBA
 JANU|Jannu|Khumbhakarna,Kumbhakarna|7711|Kangchenjunga Himal (W of Kangchenjunga)|Y|88.0463889|27.6822222|88° 02′ 47.00000″ E|27° 40′ 56.00000″ N|MoTCA: (27° 40′ 56.00000″ N, 88° 02′ 47.00000″ E)|KUMBHAKARNA
 JETH|Jethi Bahurani|Jettiborani,Jutibofurani|6850|Api Himal (S of Nampa and Bobaye)|N|81.0393354|29.8806741|81° 02′ 21.60744″ E|29° 52′ 50.42676″ N|"OSM: (29° 52′ 50.42676″ N, 81° 02′ 21.60744″ E)
 MoTCA: (29° 52′ 54.00000″ N, 81° 02′ 33.00000″ E)"|YOKAPAHAR
-JONG|Jongsang|Jongsong Peak,Jhinsang,Jongsang Peak,Jongsang Ri,Jonsong|7462|Jongsang Himal (on Indian-Tibetan border)|N|88.1349737|27.8815971|88° 08′ 05.90532″ E|27° 52′ 53.74956″ N|"OSM: (27° 52′ 53.74956″ N, 88° 08′ 05.90532″ E)
+JONG|Jongsang|Jhinsang,Jongsang Peak,Jongsang Ri,Jonsong|7462|Jongsang Himal (on Indian-Tibetan border)|N|88.1349737|27.8815971|88° 08′ 05.90532″ E|27° 52′ 53.74956″ N|"OSM: (27° 52′ 53.74956″ N, 88° 08′ 05.90532″ E)
 MoTCA: (27° 52′ 52.00000″ N, 88° 08′ 17.00000″ E)"|JANAK
 JUNC|Junction Peak||7133|Dhaulagiri Himal (on ridge joining Dhaulagiri VI, IV and Churen)|||||||DHAULAGIRI
 KABD|Kabru Dome|Kabru|6600|Simhalila Himal (SE of Kabru in India)|Y|88.1136111|27.6080556|88° 06′ 49.00000″ E|27° 36′ 29.00000″ N|MoTCA: (27° 36′ 29.00000″ N, 88° 06′ 49.00000″ E)|SINGALILA
@@ -142,31 +137,28 @@ KAG1|Kagmara I|Kagmara|5978|Kagmara Lekh (S of Kanjiroba Himal)|Y|82.7613889|29.
 KAN1|Kande Hiunchuli North  I|Kande Hiun Chuli|6521|Kanjiroba Himal (NW of Kanjiroba)|Y|82.5602778|29.4113889|82° 33′ 37.00000″ E|29° 24′ 41.00000″ N|MoTCA: (29° 24′ 41.00000″ N, 82° 33′ 37.00000″ E)|KANJIROBA
 KAN2|Kande Hiunchuli North  II|Kande Hiun Chuli|6471|Kanjiroba Himal (NW of Kanjiroba)|Y|82.5602778|29.4113889|82° 33′ 37.00000″ E|29° 24′ 41.00000″ N|MoTCA: (29° 24′ 41.00000″ N, 82° 33′ 37.00000″ E)|KANJIROBA
 KANB|Kangbachen|Kambachen|7902|Kangchenjunga Himal (W Spur of Kangchenjunga)|Y|88.1127778|27.7163889|88° 06′ 46.00000″ E|27° 42′ 59.00000″ N|MoTCA: (27° 42′ 59.00000″ N, 88° 06′ 46.00000″ E)|NORTHERN
-KANC|Kangchenjunga Central|Kangchenjunga,Kanchenjunga,Kanchenjunga Central|8473|Kangchenjunga Himal (between Main and South summits)|N|88.1483408|27.7026008|88° 08′ 54.02688″ E|27° 42′ 09.36288″ N|"OSM: (27° 42′ 09.36288″ N, 88° 08′ 54.02688″ E)
-MoTCA: (27° 41′ 46.00000″ N, 88° 09′ 12.00000″ E)"|NORTHERN
+KANC|Kangchenjunga Central|Kanchenjunga Central|8473|Kangchenjunga Himal (between Main and South summits)|Y|88.1533333|27.6961111|88° 09′ 12.00000″ E|27° 41′ 46.00000″ N|MoTCA: (27° 41′ 46.00000″ N, 88° 09′ 12.00000″ E)|NORTHERN
 KAND|Kande Hiunchuli|Kande Hiuchuli,Kande Hiun Chuli|6627|Kanjiroba Himal (WNW of Kanjiroba)|N|82.5601656|29.4119774|82° 33′ 36.59616″ E|29° 24′ 43.11864″ N|"OSM: (29° 24′ 43.11864″ N, 82° 33′ 36.59616″ E)
 MoTCA: (29° 24′ 41.00000″ N, 82° 33′ 37.00000″ E)"|KANJIROBA
-KANG|Kangchenjunga|Kanchenjunga,Kanchenjunga Central|8586|Kangchenjunga Himal|N|88.1483408|27.7026008|88° 08′ 54.02688″ E|27° 42′ 09.36288″ N|"OSM: (27° 42′ 09.36288″ N, 88° 08′ 54.02688″ E)
-MoTCA: (27° 41′ 46.00000″ N, 88° 09′ 12.00000″ E)"|NORTHERN
-KANS|Kangchenjunga South|Kangchenjunga,Kanchenjunga,Kanchenjunga South|8476|Kangchenjunga Himal|N|88.1483408|27.7026008|88° 08′ 54.02688″ E|27° 42′ 09.36288″ N|"OSM: (27° 42′ 09.36288″ N, 88° 08′ 54.02688″ E)
-MoTCA: (27° 41′ 32.00000″ N, 88° 09′ 23.00000″ E)"|NORTHERN
+KANG|Kangchenjunga|Kanchenjunga Central|8586|Kangchenjunga Himal|Y|88.1533333|27.6961111|88° 09′ 12.00000″ E|27° 41′ 46.00000″ N|MoTCA: (27° 41′ 46.00000″ N, 88° 09′ 12.00000″ E)|NORTHERN
+KANS|Kangchenjunga South|Kanchenjunga South|8476|Kangchenjunga Himal|Y|88.1563889|27.6922222|88° 09′ 23.00000″ E|27° 41′ 32.00000″ N|MoTCA: (27° 41′ 32.00000″ N, 88° 09′ 23.00000″ E)|NORTHERN
 KARY|Karyolung||6530|Rolwaling Himal (SE of Numbur)|Y|86.6141667|27.7333333|86° 36′ 51.00000″ E|27° 44′ 00.00000″ N|MoTCA: (27° 44′ 00.00000″ N, 86° 36′ 51.00000″ E)|ROLWALING
-KCHN|Kangchung Nup|UIAA Peak,Cholo,Kangcho Nup,Khangchung,Khangchung Nup|6043|Khumbu Himal (NE of Gokyo Lake)|Y|86.7397222|27.9836111|86° 44′ 23.00000″ E|27° 59′ 01.00000″ N|MoTCA: (27° 59′ 01.00000″ N, 86° 44′ 23.00000″ E)|KHUMBU
-NAYA|Naya Kanga|Kangja Chuli,Ghanja La Chuli|5863|Jugal Himal (W of Ganchempo by Kangja La)|N|85.5483906|28.168624|85° 32′ 54.20616″ E|28° 10′ 07.04640″ N|"OSM: (28° 10′ 07.04640″ N, 85° 32′ 54.20616″ E)
+KCHN|Kangchung Nup|Cholo,Kangcho Nup,Khangchung,Khangchung Nup,UIAA Peak|6043|Khumbu Himal (NE of Gokyo Lake)|Y|86.7397222|27.9836111|86° 44′ 23.00000″ E|27° 59′ 01.00000″ N|MoTCA: (27° 59′ 01.00000″ N, 86° 44′ 23.00000″ E)|KHUMBU
+NAYA|Naya Kanga|Ghanja La Chuli,Kangja Chuli|5863|Jugal Himal (W of Ganchempo by Kangja La)|N|85.5483906|28.168624|85° 32′ 54.20616″ E|28° 10′ 07.04640″ N|"OSM: (28° 10′ 07.04640″ N, 85° 32′ 54.20616″ E)
 MoTCA: (28° 10′ 06.00000″ N, 85° 33′ 05.00000″ E)"|JUGAL
-KGUR|Kang Guru|Naurgaon,Kang Garu|6981|Peri Himal (SW of Himlung Himal)|Y|84.3041667|28.6586111|84° 18′ 15.00000″ E|28° 39′ 31.00000″ N|MoTCA: (28° 39′ 31.00000″ N, 84° 18′ 15.00000″ E)|PERI
+KGUR|Kang Guru|Kang Garu,Naurgaon|6981|Peri Himal (SW of Himlung Himal)|Y|84.3041667|28.6586111|84° 18′ 15.00000″ E|28° 39′ 31.00000″ N|MoTCA: (28° 39′ 31.00000″ N, 84° 18′ 15.00000″ E)|PERI
 KHAT|Khatang||6790|Rolwaling Himal (E of Numbur)|Y|86.5983333|27.7575|86° 35′ 54.00000″ E|27° 45′ 27.00000″ N|MoTCA: (27° 45′ 27.00000″ N, 86° 35′ 54.00000″ E)|ROLWALING
-KHON|Khongma Tse|Mehra Peak,Mehra|5798|Khumbu Himal (SW of Nuptse)|Y|86.8505556|27.9477778|86° 51′ 02.00000″ E|27° 56′ 52.00000″ N|MoTCA: (27° 56′ 52.00000″ N, 86° 51′ 02.00000″ E)|KHUMBU
-KJER|Kanjeralwa|Kanjerawa,Kanchen Ruwa|6612|Kanjiroba Himal (NW of Phoksumdo Tal)|N|82.7897262|29.2371829|82° 47′ 23.01432″ E|29° 14′ 13.85844″ N|"OSM: (29° 14′ 13.85844″ N, 82° 47′ 23.01432″ E)
+KHON|Khongma Tse|Mehra,Mehra Peak|5798|Khumbu Himal (SW of Nuptse)|Y|86.8505556|27.9477778|86° 51′ 02.00000″ E|27° 56′ 52.00000″ N|MoTCA: (27° 56′ 52.00000″ N, 86° 51′ 02.00000″ E)|KHUMBU
+KJER|Kanjeralwa|Kanchen Ruwa,Kanjerawa|6612|Kanjiroba Himal (NW of Phoksumdo Tal)|N|82.7897262|29.2371829|82° 47′ 23.01432″ E|29° 14′ 13.85844″ N|"OSM: (29° 14′ 13.85844″ N, 82° 47′ 23.01432″ E)
 MoTCA: (29° 13′ 48.00000″ N, 82° 52′ 12.00000″ E)"|KANJIROBA
 KJRN|Kanjiroba North|Kanjiroba Himal|6858|Kanjiroba Himal|N|82.66667|29.41667|82° 40′ 00.01200″ E|29° 25′ 00.01200″ N|"OSM: (29° 25′ 00.01200″ N, 82° 40′ 00.01200″ E)
 MoTCA: (29° 23′ 02.00000″ N, 82° 38′ 36.00000″ E)"|KANJIROBA
 KJRS|Kanjiroba South|Kanjiroba Himal|6883|Kanjiroba Himal|N|82.66667|29.41667|82° 40′ 00.01200″ E|29° 25′ 00.01200″ N|"OSM: (29° 25′ 00.01200″ N, 82° 40′ 00.01200″ E)
 MoTCA: (29° 22′ 32.00000″ N, 82° 38′ 26.00000″ E)"|KANJIROBA
-KOTA|Kotang|Kothang Kang,Kokthang|6148|Simhalila Himal (SSW of Rothang on Indian border)|Y|88.0825|27.5636111|88° 04′ 57.00000″ E|27° 33′ 49.00000″ N|MoTCA: (27° 33′ 49.00000″ N, 88° 04′ 57.00000″ E)|SINGALILA
+KOTA|Kotang|Kokthang,Kothang Kang|6148|Simhalila Himal (SSW of Rothang on Indian border)|Y|88.0825|27.5636111|88° 04′ 57.00000″ E|27° 33′ 49.00000″ N|MoTCA: (27° 33′ 49.00000″ N, 88° 04′ 57.00000″ E)|SINGALILA
 KTEG|Kangtega|Kang Taiga,Kantega,Khangtega|6783|Khumbu Himal (SW of Ama Dablam)|Y|86.8194444|27.7925|86° 49′ 10.00000″ E|27° 47′ 33.00000″ N|MoTCA: (27° 47′ 33.00000″ N, 86° 49′ 10.00000″ E)|BARUN
 KTSU|Kangtsune|Kanchauni Lekh,Kangchunne|6444|Kagmara Lekh (SE of Kanjiroba, W of Kanjeralwa)|||||||KANJIROBA
-KUSU|Kusum Kanguru|Kusum Kang,Lamu,Kusum Kangguru|6370|Khumbu Himal (NE of Lukla village)|N|86.791863|27.7322274|86° 47′ 30.70680″ E|27° 43′ 56.01864″ N|"OSM: (27° 43′ 56.01864″ N, 86° 47′ 30.70680″ E)
+KUSU|Kusum Kanguru|Kusum Kang,Kusum Kangguru,Lamu|6370|Khumbu Himal (NE of Lukla village)|N|86.791863|27.7322274|86° 47′ 30.70680″ E|27° 43′ 56.01864″ N|"OSM: (27° 43′ 56.01864″ N, 86° 47′ 30.70680″ E)
 MoTCA: (27° 43′ 50.00000″ N, 86° 47′ 28.00000″ E)"|BARUN
 KWAN|Kwangde||6186|Rolwaling Himal (W of Namche Bazar)|Y|86.6344444|27.8002778|86° 38′ 04.00000″ E|27° 48′ 01.00000″ N|MoTCA: (27° 48′ 01.00000″ N, 86° 38′ 04.00000″ E)|ROLWALING
 LAMJ|Lamjung Himal||6983|Annapurna Himal (SE of Annapurna II)|N|84.1886093|28.4895076|84° 11′ 18.99348″ E|28° 29′ 22.22736″ N|"OSM: (28° 29′ 22.22736″ N, 84° 11′ 18.99348″ E)
@@ -175,33 +167,30 @@ LANG|Langtang Lirung|Langtang,Langtang I|7227|Langtang Himal|N|85.5168032|28.256
 MoTCA: (28° 15′ 22.00000″ N, 85° 31′ 10.00000″ E)"|LANGTANG
 LANR|Langtang Ri||7205|Langtang Himal (NE of Langtang Lirung on Tibetan border)|N|85.6837887|28.3821284|85° 41′ 01.63932″ E|28° 22′ 55.66224″ N|"OSM: (28° 22′ 55.66224″ N, 85° 41′ 01.63932″ E)
 MoTCA: (28° 22′ 56.00000″ N, 85° 41′ 11.00000″ E)"|LANGTANG
-LEON|Leonpo Gang|Big White Peak,Loenpo Gang,Dorje Pahad|6979|Jugal Himal (NNE of Dorje Lhakpa on Tibetan border)|N|85.8001908|28.1964383|85° 48′ 00.68688″ E|28° 11′ 47.17788″ N|"OSM: (28° 11′ 47.17788″ N, 85° 48′ 00.68688″ E)
+LEON|Leonpo Gang|Big White Peak,Dorje Pahad|6979|Jugal Himal (NNE of Dorje Lhakpa on Tibetan border)|N|85.8001908|28.1964383|85° 48′ 00.68688″ E|28° 11′ 47.17788″ N|"OSM: (28° 11′ 47.17788″ N, 85° 48′ 00.68688″ E)
 MoTCA: (28° 11′ 44.00000″ N, 85° 48′ 07.00000″ E)"|JUGAL
-LHAS|Lha Shamma|Pinnacle Peak,Lhasharma|6412|Kagmara Lekh (S of Kanjiroba, NNW of Kagmara I)|Y|82.7472222|29.2258333|82° 44′ 50.00000″ E|29° 13′ 33.00000″ N|MoTCA: (29° 13′ 33.00000″ N, 82° 44′ 50.00000″ E)|KANJIROBA
+LHAS|Lha Shamma|Lhasharma,Pinnacle Peak|6412|Kagmara Lekh (S of Kanjiroba, NNW of Kagmara I)|Y|82.7472222|29.2258333|82° 44′ 50.00000″ E|29° 13′ 33.00000″ N|MoTCA: (29° 13′ 33.00000″ N, 82° 44′ 50.00000″ E)|KANJIROBA
 LHOT|Lhotse|Lhotse Middle|8516|Khumbu Himal|N|86.9386871|27.9607748|86° 56′ 19.27356″ E|27° 57′ 38.78928″ N|"OSM: (27° 57′ 38.78928″ N, 86° 56′ 19.27356″ E)
 MoTCA: (27° 57′ 43.00000″ N, 86° 56′ 12.00000″ E)"|KHUMBU
-MUKT|Mukut Himal|Mukot Himal,Langru|6087|Mukut Himal (N of Sita Chuchura, S of Hongde)|N|83.4607345|28.7797894|83° 27′ 38.64420″ E|28° 46′ 47.24184″ N|"OSM: (28° 46′ 47.24184″ N, 83° 27′ 38.64420″ E)
+MUKT|Mukut Himal|Langru,Mukot Himal|6087|Mukut Himal (N of Sita Chuchura, S of Hongde)|N|83.4607345|28.7797894|83° 27′ 38.64420″ E|28° 46′ 47.24184″ N|"OSM: (28° 46′ 47.24184″ N, 83° 27′ 38.64420″ E)
 MoTCA: (28° 49′ 01.00000″ N, 83° 28′ 56.00000″ E)"|DHAULAGIRI
 LNPO|Langpo|Langpo Peak,Longpo|6965|Jongsang Himal (SE of Jongsang on Indian border)|N|88.1962277|27.8540227|88° 11′ 46.41972″ E|27° 51′ 14.48172″ N|"OSM: (27° 51′ 14.48172″ N, 88° 11′ 46.41972″ E)
 MoTCA: (27° 51′ 12.00000″ N, 88° 11′ 56.00000″ E)"|NORTHERN
-LOBE|Lobuje East|Lobuche East,Lobuche|6090|Khumbu Himal (SW of Pumori)|N|86.7816135|27.9691317|86° 46′ 53.80860″ E|27° 58′ 08.87412″ N|"OSM: (27° 58′ 08.87412″ N, 86° 46′ 53.80860″ E)
+LOBE|Lobuje East|Lobuche,Lobuche East|6090|Khumbu Himal (SW of Pumori)|N|86.7816135|27.9691317|86° 46′ 53.80860″ E|27° 58′ 08.87412″ N|"OSM: (27° 58′ 08.87412″ N, 86° 46′ 53.80860″ E)
 MoTCA: (27° 57′ 30.00000″ N, 86° 47′ 35.00000″ E)"|KHUMBU
-LOBW|Lobuje West|Lobuche West,Lobuche|6135|Khumbu Himal (SW of Pumori)|N|86.7816135|27.9691317|86° 46′ 53.80860″ E|27° 58′ 08.87412″ N|"OSM: (27° 58′ 08.87412″ N, 86° 46′ 53.80860″ E)
+LOBW|Lobuje West|Lobuche,Lobuche West|6135|Khumbu Himal (SW of Pumori)|N|86.7816135|27.9691317|86° 46′ 53.80860″ E|27° 58′ 08.87412″ N|"OSM: (27° 58′ 08.87412″ N, 86° 46′ 53.80860″ E)
 MoTCA: (27° 58′ 08.00000″ N, 86° 47′ 05.00000″ E)"|KHUMBU
 LSHR|Lhotse Shar|Lhotse II|8382|Khumbu Himal (ESE of Lhotse and Lhotse Middle)|N|86.9437467|27.9587111|86° 56′ 37.48812″ E|27° 57′ 31.35996″ N|"OSM: (27° 57′ 31.35996″ N, 86° 56′ 37.48812″ E)
 MoTCA: (27° 57′ 30.00000″ N, 86° 56′ 44.00000″ E)"|KHUMBU
-LSIS|Langshisa Ri|Langsisa Ri,Lansisa Ri|6412|Jugal Himal (NW of Dorje Lhakpa)|N|85.714613|28.2177782|85° 42′ 52.60680″ E|28° 13′ 04.00152″ N|"OSM: (28° 13′ 04.00152″ N, 85° 42′ 52.60680″ E)
-MoTCA: (28° 13′ 01.00000″ N, 85° 42′ 59.00000″ E)"|JUGAL
+LSIS|Langshisa Ri|Langsisa Ri|6412|Jugal Himal (NW of Dorje Lhakpa)|Y|85.7163889|28.2169444|85° 42′ 59.00000″ E|28° 13′ 01.00000″ N|MoTCA: (28° 13′ 01.00000″ N, 85° 42′ 59.00000″ E)|JUGAL
 MACH|Machhapuchhare||6993|Annapurna Himal (SE of Annapurna III)|||||||ANNAPURNA
-BTAK|Bhairab Takura|Madiya Peak,Madiya|6799|Jugal Himal (ENE of Dorje Lhakpa on Tibetan border)|Y|85.8097222|28.1977778|85° 48′ 35.00000″ E|28° 11′ 52.00000″ N|MoTCA: (28° 11′ 52.00000″ N, 85° 48′ 35.00000″ E)|JUGAL
-MAK2|Makalu II|Kangchungtse,Kangchug Tse|7678|Makalu Himal (NNW of Makalu on Tibetan border)|N|87.0804271|27.9140498|87° 04′ 49.53756″ E|27° 54′ 50.57928″ N|"OSM: (27° 54′ 50.57928″ N, 87° 04′ 49.53756″ E)
+BTAK|Bhairab Takura|Madiya,Madiya Peak|6799|Jugal Himal (ENE of Dorje Lhakpa on Tibetan border)|Y|85.8097222|28.1977778|85° 48′ 35.00000″ E|28° 11′ 52.00000″ N|MoTCA: (28° 11′ 52.00000″ N, 85° 48′ 35.00000″ E)|JUGAL
+MAK2|Makalu II|Kangchug Tse,Kangchungtse|7678|Makalu Himal (NNW of Makalu on Tibetan border)|N|87.0804271|27.9140498|87° 04′ 49.53756″ E|27° 54′ 50.57928″ N|"OSM: (27° 54′ 50.57928″ N, 87° 04′ 49.53756″ E)
 MoTCA: (27° 54′ 56.00000″ N, 87° 04′ 50.00000″ E)"|MAKALU
-MAKA|Makalu|Makalu II,Kangchungtse,Makalu I|8485|Makalu Himal|N|87.0804271|27.9140498|87° 04′ 49.53756″ E|27° 54′ 50.57928″ N|"OSM: (27° 54′ 50.57928″ N, 87° 04′ 49.53756″ E)
+MAKA|Makalu|Makalu I,Makalu II|8485|Makalu Himal|N|87.0804271|27.9140498|87° 04′ 49.53756″ E|27° 54′ 50.57928″ N|"OSM: (27° 54′ 50.57928″ N, 87° 04′ 49.53756″ E)
 MoTCA: (27° 53′ 21.00000″ N, 87° 05′ 27.00000″ E)"|MAKALU
-MANA|Manaslu|Pung Gyen,Peak 30,Kutang I,Kutang|8163|Manaslu Himal|N|84.5597284|28.5499829|84° 33′ 35.02224″ E|28° 32′ 59.93844″ N|"OSM: (28° 32′ 59.93844″ N, 84° 33′ 35.02224″ E)
-MoTCA: (28° 33′ 01.00000″ N, 84° 33′ 42.00000″ E)"|MANASLU
-MANN|Manaslu North|Pung Gyen,Manaslu II,Manaslu,Kutang|6994|Manaslu Himal (N of Manaslu)|N|84.5597284|28.5499829|84° 33′ 35.02224″ E|28° 32′ 59.93844″ N|"OSM: (28° 32′ 59.93844″ N, 84° 33′ 35.02224″ E)
-MoTCA: (28° 34′ 40.00000″ N, 84° 33′ 02.00000″ E)"|MANASLU
+MANA|Manaslu|Kutang I,Peak 30|8163|Manaslu Himal|Y|84.5616667|28.5502778|84° 33′ 42.00000″ E|28° 33′ 01.00000″ N|MoTCA: (28° 33′ 01.00000″ N, 84° 33′ 42.00000″ E)|MANASLU
+MANN|Manaslu North|Manaslu II|6994|Manaslu Himal (N of Manaslu)|Y|84.5505556|28.5777778|84° 33′ 02.00000″ E|28° 34′ 40.00000″ N|MoTCA: (28° 34′ 40.00000″ N, 84° 33′ 02.00000″ E)|MANASLU
 MANP|Manapathi||6380|Dhaulagiri Himal (SSW of Dhaulagiri I)|Y|83.4588889|28.6455556|83° 27′ 32.00000″ E|28° 38′ 44.00000″ N|MoTCA: (28° 38′ 44.00000″ N, 83° 27′ 32.00000″ E)|DHAULAGIRI
 MARD|Mardi Himal||5553|Annapurna Himal (SW of Machhapuchhare)|N|83.9275346|28.4737691|83° 55′ 39.12456″ E|28° 28′ 25.56876″ N|"OSM: (28° 28′ 25.56876″ N, 83° 55′ 39.12456″ E)
 MoTCA: (28° 28′ 23.00000″ N, 83° 55′ 51.00000″ E)"|ANNAPURNA
@@ -213,9 +202,9 @@ NAMP|Nampa|Chisel Peak|6729|Api Himal (E of Api)|Y|80.9969444|30.0041667|80° 59
 NCHU|Nupchu|Sharphu IV|6172|Ohmi Kangri Himal (NW of Kangchenjunga)|Y|87.9202778|27.8152778|87° 55′ 13.00000″ E|27° 48′ 55.00000″ N|MoTCA: (27° 48′ 55.00000″ N, 87° 55′ 13.00000″ E)|JANAK
 NEMJ|Nemjung||7140|Peri Himal (S of Himlung Himal and Himjung)|Y|84.4180556|28.7569444|84° 25′ 05.00000″ E|28° 45′ 25.00000″ N|MoTCA: (28° 45′ 25.00000″ N, 84° 25′ 05.00000″ E)|PERI
 NEPA|Nepal Peak||7177|Jongsang Himal (N of Kangchenjunga on Indian border)|Y|88.1852778|27.7763889|88° 11′ 07.00000″ E|27° 46′ 35.00000″ N|MoTCA: (27° 46′ 35.00000″ N, 88° 11′ 07.00000″ E)|NORTHERN
-NGO2|Ngojumba Kang II|Ngojumba Kang,Ngojumba Khang II,Ngozumpa Kang I|7743|Khumbu Himal (NE of Cho Oyu on Tibetan border)|N|86.6850856|28.1068465|86° 41′ 06.30816″ E|28° 06′ 24.64740″ N|"OSM: (28° 06′ 24.64740″ N, 86° 41′ 06.30816″ E)
+NGO2|Ngojumba Kang II|Ngojumba Kang,Ngojumba Khang II|7743|Khumbu Himal (NE of Cho Oyu on Tibetan border)|N|86.6850856|28.1068465|86° 41′ 06.30816″ E|28° 06′ 24.64740″ N|"OSM: (28° 06′ 24.64740″ N, 86° 41′ 06.30816″ E)
 MoTCA: (28° 06′ 23.00000″ N, 86° 42′ 31.00000″ E)"|KHUMBU
-NGOJ|Ngojumba Kang I|Ngozumpa Kang I,Tenzing Peak,Ngozumba Ri,Ngojumba Khang II,Ngojumba Kang,Ngozumba Kang|7916|Khumbu Himal (NE of Cho Oyu on Tibetan border)|N|86.6850856|28.1068465|86° 41′ 06.30816″ E|28° 06′ 24.64740″ N|"OSM: (28° 06′ 24.64740″ N, 86° 41′ 06.30816″ E)
+NGOJ|Ngojumba Kang I|Ngojumba Kang,Ngojumba Khang II,Ngozumba Kang,Ngozumba Ri,Tenzing Peak|7916|Khumbu Himal (NE of Cho Oyu on Tibetan border)|N|86.6850856|28.1068465|86° 41′ 06.30816″ E|28° 06′ 24.64740″ N|"OSM: (28° 06′ 24.64740″ N, 86° 41′ 06.30816″ E)
 MoTCA: (28° 06′ 23.00000″ N, 86° 42′ 31.00000″ E)"|KHUMBU
 NILC|Nilgiri Central||6940|Annapurna-Nilgiri Himal (NW of Annapurna I)|N|83.7353837|28.6783794|83° 44′ 07.38132″ E|28° 40′ 42.16584″ N|"OSM: (28° 40′ 42.16584″ N, 83° 44′ 07.38132″ E)
 MoTCA: (28° 40′ 42.00000″ N, 83° 42′ 31.00000″ E)"|ANNAPURNA
@@ -229,20 +218,20 @@ NUPT|Nuptse|Nuptse I|7864|Khumbu Himal (SW of Everest)|N|86.887081|27.9679586|86
 MoTCA: (27° 58′ 01.00000″ N, 86° 53′ 22.00000″ E)"|KHUMBU
 OHMI|Ohmi Kangri||6839|Ohmi Kangri Himal (NW of Kangchenjunga on Tibetan border)|Y|87.9666667|27.8972222|87° 58′ 00.00000″ E|27° 53′ 50.00000″ N|MoTCA: (27° 53′ 50.00000″ N, 87° 58′ 00.00000″ E)|JANAK
 OMBK|Ombak Himal||6300|Ohmi Kangri Himal (NE of Ombak La in Tibet)|||||||JANAK
-PALD|Paldor|Paldor Peak,Bharange|5903|Ganesh Himal (SE of  Ganesh V)|N|85.1871278|28.2776048|85° 11′ 13.66008″ E|28° 16′ 39.37728″ N|"OSM: (28° 16′ 39.37728″ N, 85° 11′ 13.66008″ E)
+PALD|Paldor|Bharange,Paldor Peak|5903|Ganesh Himal (SE of  Ganesh V)|N|85.1871278|28.2776048|85° 11′ 13.66008″ E|28° 16′ 39.37728″ N|"OSM: (28° 16′ 39.37728″ N, 85° 11′ 13.66008″ E)
 MoTCA: (28° 16′ 40.00000″ N, 85° 11′ 03.00000″ E)"|GANESH
 PANG|Pangbuk Ri||6625|Rolwaling Himal (N of Menlung La on Tibetan border)|Y|86.5222222|28.0052778|86° 31′ 20.00000″ E|28° 00′ 19.00000″ N|MoTCA: (28° 00′ 19.00000″ N, 86° 31′ 20.00000″ E)|ROLWALING
-PARC|Parchamo|Pachermo,Parchemuche,Pharchamo,Parchermo|6279|Rolwaling Himal (S of Tesi Laptsa)|N|86.5472278|27.8377252|86° 32′ 50.02008″ E|27° 50′ 15.81072″ N|"OSM: (27° 50′ 15.81072″ N, 86° 32′ 50.02008″ E)
+PARC|Parchamo|Pachermo,Parchemuche,Parchermo,Pharchamo|6279|Rolwaling Himal (S of Tesi Laptsa)|N|86.5472278|27.8377252|86° 32′ 50.02008″ E|27° 50′ 15.81072″ N|"OSM: (27° 50′ 15.81072″ N, 86° 32′ 50.02008″ E)
 MoTCA: (27° 50′ 12.00000″ N, 86° 32′ 58.00000″ E)"|ROLWALING
 PATR|Patrasi Himal|Kande Hiunchuli North,Patrasi|6450|Kanjiroba Himal (NE of Kande Huinchuli)|Y|82.5925|29.4211111|82° 35′ 33.00000″ E|29° 25′ 16.00000″ N|MoTCA: (29° 25′ 16.00000″ N, 82° 35′ 33.00000″ E)|KANJIROBA
 PETH|Pethangtse||6739|Khumbu Himal (NW of Makalu on Tibetan border)|N|87.0152042|27.957236|87° 00′ 54.73512″ E|27° 57′ 26.04960″ N|"OSM: (27° 57′ 26.04960″ N, 87° 00′ 54.73512″ E)
 MoTCA: (27° 57′ 27.00000″ N, 87° 01′ 06.00000″ E)"|MAKALU
-PHUR|Phurbi Chhyachu|Phurbi Ghyachu,Phurbi Chyachu,Phurbi Chachu|6637|Jugal Himal (SE of Dorje Lhakpa on Tibetan border)|N|85.8674922|28.1260087|85° 52′ 02.97192″ E|28° 07′ 33.63132″ N|"OSM: (28° 07′ 33.63132″ N, 85° 52′ 02.97192″ E)
+PHUR|Phurbi Chhyachu|Phurbi Chyachu,Phurbi Ghyachu|6637|Jugal Himal (SE of Dorje Lhakpa on Tibetan border)|N|85.8674922|28.1260087|85° 52′ 02.97192″ E|28° 07′ 33.63132″ N|"OSM: (28° 07′ 33.63132″ N, 85° 52′ 02.97192″ E)
 MoTCA: (28° 07′ 50.00000″ N, 85° 52′ 19.00000″ E)"|JUGAL
-PIMU|Pimu|Pamalka,Pama Himal|6344|Rolwaling Himal (N of Tesi Laptsa)|Y|84.9511111|28.5802778|84° 57′ 04.00000″ E|28° 34′ 49.00000″ N|MoTCA: (28° 34′ 49.00000″ N, 84° 57′ 04.00000″ E)|SERANG
-PISA|Pisang|Pisang Peak,Jong Ri|6091|Damodar Himal (N of Marysangdi Valley)|N|84.1880793|28.6490051|84° 11′ 17.08548″ E|28° 38′ 56.41836″ N|"OSM: (28° 38′ 56.41836″ N, 84° 11′ 17.08548″ E)
+PIMU|Pimu|Pama Himal,Pamalka|6344|Rolwaling Himal (N of Tesi Laptsa)|Y|84.9511111|28.5802778|84° 57′ 04.00000″ E|28° 34′ 49.00000″ N|MoTCA: (28° 34′ 49.00000″ N, 84° 57′ 04.00000″ E)|SERANG
+PISA|Pisang|Jong Ri|6091|Damodar Himal (N of Marysangdi Valley)|N|84.1880793|28.6490051|84° 11′ 17.08548″ E|28° 38′ 56.41836″ N|"OSM: (28° 38′ 56.41836″ N, 84° 11′ 17.08548″ E)
 MoTCA: (28° 38′ 46.00000″ N, 84° 11′ 18.00000″ E)"|DAMODAR
-PK29|Peak 29|Dr Harka Gurung Chuli,Dr. Harka Gurung Chuli,Ngadi Chuli,Dakura|7871|Manaslu Himal (S of Manaslu)|N|84.5672489|28.5039267|84° 34′ 02.09604″ E|28° 30′ 14.13612″ N|"OSM: (28° 30′ 14.13612″ N, 84° 34′ 02.09604″ E)
+PK29|Peak 29|Dakura,Dr Harka Gurung Chuli,Dr. Harka Gurung Chuli,Ngadi Chuli|7871|Manaslu Himal (S of Manaslu)|N|84.5672489|28.5039267|84° 34′ 02.09604″ E|28° 30′ 14.13612″ N|"OSM: (28° 30′ 14.13612″ N, 84° 34′ 02.09604″ E)
 MoTCA: (28° 30′ 12.00000″ N, 84° 34′ 07.00000″ E)"|MANASLU
 POIN|Pointed Peak||5850|Khumbu Himal (N of Cholatse, S of Tshola La)|||||||KHUMBU
 POKA|Pokalde|Pokhalde|5780|Khumbu Himal (N of Ama Dablam)|N|86.8331902|27.9247682|86° 49′ 59.48472″ E|27° 55′ 29.16552″ N|"OSM: (27° 55′ 29.16552″ N, 86° 49′ 59.48472″ E)
@@ -252,24 +241,23 @@ PUMO|Pumori||7138|Khumbu Himal (WNW of Everest on Tibetan border)|N|86.8273988|2
 MoTCA: (28° 00′ 54.00000″ N, 86° 49′ 50.00000″ E)"|KHUMBU
 PUTH|Putha Hiunchuli|Dhaulagiri,Dhaulagiri VII|7246|Dhaulagiri Himal (W of Churen Himal)|N|83.4894884|28.6976088|83° 29′ 22.15824″ E|28° 41′ 51.39168″ N|"OSM: (28° 41′ 51.39168″ N, 83° 29′ 22.15824″ E)
 MoTCA: (28° 44′ 52.00000″ N, 83° 08′ 53.00000″ E)"|DHAULAGIRI
-PYRM|Pyramid Peak|Pathibhara Khas,Patibhara,Pathibhara Chuli|7140|Jongsang Himal (N of Kangchenjunga on Indian border)|N|88.173003|27.8205864|88° 10′ 22.81080″ E|27° 49′ 14.11104″ N|"OSM: (27° 49′ 14.11104″ N, 88° 10′ 22.81080″ E)
-MoTCA: (27° 49′ 14.00000″ N, 88° 10′ 33.00000″ E)"|NORTHERN
+PYRM|Pyramid Peak|Pathibhara Chuli,Pathibhara Khas|7140|Jongsang Himal (N of Kangchenjunga on Indian border)|Y|88.1758333|27.8205556|88° 10′ 33.00000″ E|27° 49′ 14.00000″ N|MoTCA: (27° 49′ 14.00000″ N, 88° 10′ 33.00000″ E)|NORTHERN
 RAKS|Raksha Urai|Raksha Urai III|6609|Raksha Urai Himal (ESE of Nampa)|Y|81.1288889|30.0058333|81° 07′ 44.00000″ E|30° 00′ 21.00000″ N|MoTCA: (30° 00′ 21.00000″ N, 81° 07′ 44.00000″ E)|YOKAPAHAR
 RAMD|Ramdung|Ramdong Go|5900|Rolwaling Himal (W of Tesi Laptsa)|Y|86.4336111|27.8186111|86° 26′ 01.00000″ E|27° 49′ 07.00000″ N|MoTCA: (27° 49′ 07.00000″ N, 86° 26′ 01.00000″ E)|ROLWALING
 RATH|Rathong||6682|Simhalila Himal (SW of Kabru on Indian border)|N|88.0897953|27.5946131|88° 05′ 23.26308″ E|27° 35′ 40.60716″ N|"OSM: (27° 35′ 40.60716″ N, 88° 05′ 23.26308″ E)
 MoTCA: (27° 35′ 37.00000″ N, 88° 05′ 28.00000″ E)"|SINGALILA
-ROCN|Roc Noir|Khangsar Kang,Khang Sar Khang|7485|Annapurna Himal (ENE of Annapurna I)|N|83.8629012|28.6108141|83° 51′ 46.44432″ E|28° 36′ 38.93076″ N|"OSM: (28° 36′ 38.93076″ N, 83° 51′ 46.44432″ E)
+ROCN|Roc Noir|Khang Sar Khang,Khangsar Kang|7485|Annapurna Himal (ENE of Annapurna I)|N|83.8629012|28.6108141|83° 51′ 46.44432″ E|28° 36′ 38.93076″ N|"OSM: (28° 36′ 38.93076″ N, 83° 51′ 46.44432″ E)
 MoTCA: (28° 36′ 48.00000″ N, 83° 52′ 25.00000″ E)"|ANNAPURNA
-ROKA|Rokapi|Kapchuli,Kap Chuli|6468|Api Himal (S of Nampa, Bobaye and Jethi Bahurani)|Y|81.0402778|29.8477778|81° 02′ 25.00000″ E|29° 50′ 52.00000″ N|MoTCA: (29° 50′ 52.00000″ N, 81° 02′ 25.00000″ E)|YOKAPAHAR
+ROKA|Rokapi|Kap Chuli,Kapchuli|6468|Api Himal (S of Nampa, Bobaye and Jethi Bahurani)|Y|81.0402778|29.8477778|81° 02′ 25.00000″ E|29° 50′ 52.00000″ N|MoTCA: (29° 50′ 52.00000″ N, 81° 02′ 25.00000″ E)|YOKAPAHAR
 SAIE|Saipal East Humla||6925|Saipal Himal (NE of Saipal)|Y|81.5005556|29.8911111|81° 30′ 02.00000″ E|29° 53′ 28.00000″ N|MoTCA: (29° 53′ 28.00000″ N, 81° 30′ 02.00000″ E)|SAIPAL
 SAIP|Saipal||7030|Saipal Himal|N|81.4934831|29.8881313|81° 29′ 36.53916″ E|29° 53′ 17.27268″ N|"OSM: (29° 53′ 17.27268″ N, 81° 29′ 36.53916″ E)
 MoTCA: (29° 53′ 16.00000″ N, 81° 29′ 41.00000″ E)"|SAIPAL
-SHAR|Shartse|Shartse II,Shanti Shikhar,Peak 38,Shar Tse II|7591|Khumbu Himal (E of Lhotse Shar on Tibetan border)|N|86.9646815|27.9556165|86° 57′ 52.85340″ E|27° 57′ 20.21940″ N|"OSM: (27° 57′ 20.21940″ N, 86° 57′ 52.85340″ E)
+SHAR|Shartse|Peak 38,Shanti Shikhar,Shar Tse II,Shartse II|7591|Khumbu Himal (E of Lhotse Shar on Tibetan border)|N|86.9646815|27.9556165|86° 57′ 52.85340″ E|27° 57′ 20.21940″ N|"OSM: (27° 57′ 20.21940″ N, 86° 57′ 52.85340″ E)
 MoTCA: (27° 56′ 57.00000″ N, 86° 59′ 07.00000″ E)"|KHUMBU
-SHA2|Shartse II|Peak 38,Shar Tse II,Junction Peak|7457|Khumbu Himal (E of Lhotse Shar on Tibetan border)|N|86.9646815|27.9556165|86° 57′ 52.85340″ E|27° 57′ 20.21940″ N|"OSM: (27° 57′ 20.21940″ N, 86° 57′ 52.85340″ E)
+SHA2|Shartse II|Junction Peak,Shar Tse II|7457|Khumbu Himal (E of Lhotse Shar on Tibetan border)|N|86.9646815|27.9556165|86° 57′ 52.85340″ E|27° 57′ 20.21940″ N|"OSM: (27° 57′ 20.21940″ N, 86° 57′ 52.85340″ E)
 MoTCA: (27° 56′ 57.00000″ N, 86° 59′ 07.00000″ E)"|KHUMBU
 SHEY|Shey Shikhar|Junction Peak|6139|Kanjiroba Himal (SE of Kanjiroba and Tripura Hiunchuli)|Y|82.7972222|29.2869444|82° 47′ 50.00000″ E|29° 17′ 13.00000″ N|MoTCA: (29° 17′ 13.00000″ N, 82° 47′ 50.00000″ E)|KANJIROBA
-SING|Singu Chuli|Fluted Peak,Singu Chull|6501|Annapurna Himal (Annapurna Sanctuary)|N|83.8815063|28.5894888|83° 52′ 53.42268″ E|28° 35′ 22.15968″ N|"OSM: (28° 35′ 22.15968″ N, 83° 52′ 53.42268″ E)
+SING|Singu Chuli|Fluted Peak|6501|Annapurna Himal (Annapurna Sanctuary)|N|83.8815063|28.5894888|83° 52′ 53.42268″ E|28° 35′ 22.15968″ N|"OSM: (28° 35′ 22.15968″ N, 83° 52′ 53.42268″ E)
 MoTCA: (28° 35′ 14.00000″ N, 83° 53′ 06.00000″ E)"|ANNAPURNA
 SISN|Sisne Himal|Hiunchuli Patan,Sisne|5911|Sisne Himal (SW of Juphal in Rukum)|N|82.3532695|29.7561396|82° 21′ 11.77020″ E|29° 45′ 22.10256″ N|"OSM: (29° 45′ 22.10256″ N, 82° 21′ 11.77020″ E)
 MoTCA: (28° 49′ 40.00000″ N, 82° 37′ 07.00000″ E)"|GORAKH
@@ -279,39 +267,39 @@ SNOW|Snow Peak||6530|Dhaulagiri Himal (E of Dhaulagiri II)|||||||DHAULAGIRI
 SPHN|Sphinx|Pathibhara East,Pathibhara Phurba|6825|Jongsang Himal (NE of Pathibhara on Indian border)|Y|88.1902778|27.825|88° 11′ 25.00000″ E|27° 49′ 30.00000″ N|MoTCA: (27° 49′ 30.00000″ N, 88° 11′ 25.00000″ E)|NORTHERN
 SPH1|Sharphu I|Tanga I|6433|Ohmi Kangri Himal (WNW of Kangchenjunga)|Y|87.9197222|27.7522222|87° 55′ 11.00000″ E|27° 45′ 08.00000″ N|MoTCA: (27° 45′ 08.00000″ N, 87° 55′ 11.00000″ E)|JANAK
 SURM|Surma-Sarovar North||6564|Api Himal (SSE of Jethi Bahurani)|Y|81.0855556|29.8352778|81° 05′ 08.00000″ E|29° 50′ 07.00000″ N|MoTCA: (29° 50′ 07.00000″ N, 81° 05′ 08.00000″ E)|YOKAPAHAR
-TAWO|Tawoche|Tobuche,Taboche,Taweche,Tawache,Tawetse|6495|Khumbu Himal (NW of Ama Dablam)|N|86.7793702|27.8973138|86° 46′ 45.73272″ E|27° 53′ 50.32968″ N|"OSM: (27° 53′ 50.32968″ N, 86° 46′ 45.73272″ E)
+TAWO|Tawoche|Taboche|6495|Khumbu Himal (NW of Ama Dablam)|N|86.7793702|27.8973138|86° 46′ 45.73272″ E|27° 53′ 50.32968″ N|"OSM: (27° 53′ 50.32968″ N, 86° 46′ 45.73272″ E)
 MoTCA: (27° 53′ 50.00000″ N, 86° 46′ 54.00000″ E)"|KHUMBU
 KIRA|Kirat Chuli|Tent Peak|7362|Jongsang Himal (N of Kangchenjunga on Indian border)|N|88.1971372|27.7914626|88° 11′ 49.69392″ E|27° 47′ 29.26536″ N|"OSM: (27° 47′ 29.26536″ N, 88° 11′ 49.69392″ E)
 MoTCA: (27° 47′ 19.00000″ N, 88° 11′ 54.00000″ E)"|NORTHERN
 THAM|Thamserku|Tramserku|6618|Khumbu Himal (SW of Ama Dablam)|N|86.785298|27.7898577|86° 47′ 07.07280″ E|27° 47′ 23.48772″ N|"OSM: (27° 47′ 23.48772″ N, 86° 47′ 07.07280″ E)
 MoTCA: (27° 47′ 23.00000″ N, 86° 47′ 16.00000″ E)"|BARUN
-THAR|Tharpu Chuli|Tharpu Chull,Tent Peak|5695|Annapurna Himal (Annapurna Sanctuary)|N|83.8894197|28.5619937|83° 53′ 21.91092″ E|28° 33′ 43.17732″ N|"OSM: (28° 33′ 43.17732″ N, 83° 53′ 21.91092″ E)
+THAR|Tharpu Chuli|Tent Peak|5695|Annapurna Himal (Annapurna Sanctuary)|N|83.8894197|28.5619937|83° 53′ 21.91092″ E|28° 33′ 43.17732″ N|"OSM: (28° 33′ 43.17732″ N, 83° 53′ 21.91092″ E)
 MoTCA: (28° 35′ 05.00000″ N, 83° 55′ 50.00000″ E)"|ANNAPURNA
 TILI|Tilicho|Tilicho Peak,Tilitso|7134|Annapurna-Nilgiri Himal (N of Annapurna I)|N|83.8114833|28.6826518|83° 48′ 41.33988″ E|28° 40′ 57.54648″ N|"OSM: (28° 40′ 57.54648″ N, 83° 48′ 41.33988″ E)
 MoTCA: (28° 40′ 57.00000″ N, 83° 48′ 50.00000″ E)"|ANNAPURNA
 TLNG|Talung||7349|Simhalila Himal (S of Kangchenjunga on Indian border)|N|88.1301939|27.6548025|88° 07′ 48.69804″ E|27° 39′ 17.28900″ N|"OSM: (27° 39′ 17.28900″ N, 88° 07′ 48.69804″ E)
 MoTCA: (27° 39′ 17.00000″ N, 88° 08′ 01.00000″ E)"|SINGALILA
-TONG|Tongu|Sura Peak,Tongu Himal,Hongu|6187|Mukut Himal (N of Hongde in Hidden Valley)|N|83.5033761|28.8714693|83° 30′ 12.15396″ E|28° 52′ 17.28948″ N|"OSM: (28° 52′ 17.28948″ N, 83° 30′ 12.15396″ E)
+TONG|Tongu|Hongu,Sura Peak,Tongu Himal|6187|Mukut Himal (N of Hongde in Hidden Valley)|N|83.5033761|28.8714693|83° 30′ 12.15396″ E|28° 52′ 17.28948″ N|"OSM: (28° 52′ 17.28948″ N, 83° 30′ 12.15396″ E)
 MoTCA: (27° 49′ 32.00000″ N, 86° 58′ 46.00000″ E)"|DHAULAGIRI
-TRIP|Tripura Hiunchuli|Hanging Glacier Peak,Tripura Thumba,Tripura Hiun Chuli|6553|Kanjiroba Himal (SE of Kanjiroba)|Y|82.7375|29.3263889|82° 44′ 15.00000″ E|29° 19′ 35.00000″ N|MoTCA: (29° 19′ 35.00000″ N, 82° 44′ 15.00000″ E)|KANJIROBA
+TRIP|Tripura Hiunchuli|Hanging Glacier Peak,Tripura Hiun Chuli,Tripura Thumba|6553|Kanjiroba Himal (SE of Kanjiroba)|Y|82.7375|29.3263889|82° 44′ 15.00000″ E|29° 19′ 35.00000″ N|MoTCA: (29° 19′ 35.00000″ N, 82° 44′ 15.00000″ E)|KANJIROBA
 TSOK|Tso Karpo Kang|Tso Karpo Khang|6556|Kanjiroba Himal (E of Kanjiroba)|Y|82.7808333|29.3680556|82° 46′ 51.00000″ E|29° 22′ 05.00000″ N|MoTCA: (29° 22′ 05.00000″ N, 82° 46′ 51.00000″ E)|KANJIROBA
 TUKU|Tukuche|Tukuche Peak|6920|Dhaulagiri Himal (NE of Dhaulagiri I)|N|83.557406|28.7449534|83° 33′ 26.66160″ E|28° 44′ 41.83224″ N|"OSM: (28° 44′ 41.83224″ N, 83° 33′ 26.66160″ E)
 MoTCA: (28° 44′ 46.00000″ N, 83° 33′ 39.00000″ E)"|DHAULAGIRI
-URKM|Urkinmang|Urkinmag,Urkenmang,Buddha|6143|Jugal Himal (W of Dorje Lhakpa)|N|85.7126984|28.1685545|85° 42′ 45.71424″ E|28° 10′ 06.79620″ N|"OSM: (28° 10′ 06.79620″ N, 85° 42′ 45.71424″ E)
+URKM|Urkinmang|Buddha,Urkenmang,Urkinmag|6143|Jugal Himal (W of Dorje Lhakpa)|N|85.7126984|28.1685545|85° 42′ 45.71424″ E|28° 10′ 06.79620″ N|"OSM: (28° 10′ 06.79620″ N, 85° 42′ 45.71424″ E)
 MoTCA: (28° 10′ 09.00000″ N, 85° 42′ 54.00000″ E)"|JUGAL
-ANID|Anidesh Chuli|White Wave Peak,White Wave|6808|Kangchenjunga Himal (W of Kangbachen)|Y|88.0708333|27.7186111|88° 04′ 15.00000″ E|27° 43′ 07.00000″ N|MoTCA: (27° 43′ 07.00000″ N, 88° 04′ 15.00000″ E)|NORTHERN
-TSUR|Tsaurabong Peak|White Wave,Anidesh Chuli,Chara Ban Peak,White Peak|6395|Dhaulagiri Himal (SSE of Dhaulagiri V)|N|83.379961|28.6891711|83° 22′ 47.85960″ E|28° 41′ 21.01596″ N|"OSM: (28° 41′ 21.01596″ N, 83° 22′ 47.85960″ E)
+ANID|Anidesh Chuli|White Wave,White Wave Peak|6808|Kangchenjunga Himal (W of Kangbachen)|Y|88.0708333|27.7186111|88° 04′ 15.00000″ E|27° 43′ 07.00000″ N|MoTCA: (27° 43′ 07.00000″ N, 88° 04′ 15.00000″ E)|NORTHERN
+TSUR|Tsaurabong Peak|Anidesh Chuli,Chara Ban Peak,White Peak,White Wave|6395|Dhaulagiri Himal (SSE of Dhaulagiri V)|N|83.379961|28.6891711|83° 22′ 47.85960″ E|28° 41′ 21.01596″ N|"OSM: (28° 41′ 21.01596″ N, 83° 22′ 47.85960″ E)
 MoTCA: (27° 43′ 07.00000″ N, 88° 04′ 15.00000″ E)"|DHAULAGIRI
 YALU|Yalung Kang|Yalung Khang,Yalungkar|8505|Kangchenjunga Himal (W summit of Kangchenjunga)|Y|88.1386111|27.705|88° 08′ 19.00000″ E|27° 42′ 18.00000″ N|MoTCA: (27° 42′ 18.00000″ N, 88° 08′ 19.00000″ E)|NORTHERN
-PASA|Pasang Lhamu Chuli|Jasemba,Nangpai Gosum|7350|Khumbu Himal (W of Cho Oyu & Cho Aui on Tibetan border)|N|86.6124231|28.0729512|86° 36′ 44.72316″ E|28° 04′ 22.62432″ N|"OSM: (28° 04′ 22.62432″ N, 86° 36′ 44.72316″ E)
+PASA|Pasang Lhamu Chuli|Jasemba|7350|Khumbu Himal (W of Cho Oyu & Cho Aui on Tibetan border)|N|86.6124231|28.0729512|86° 36′ 44.72316″ E|28° 04′ 22.62432″ N|"OSM: (28° 04′ 22.62432″ N, 86° 36′ 44.72316″ E)
 MoTCA: (28° 04′ 24.00000″ N, 86° 37′ 01.00000″ E)"|KHUMBU
 RATC|Ratna Chuli||7035|Peri Himal (NW of Himlung on Tibetan border)|Y|84.3772222|28.8644444|84° 22′ 38.00000″ E|28° 51′ 52.00000″ N|MoTCA: (28° 51′ 52.00000″ N, 84° 22′ 38.00000″ E)|PERI
-KANT|Kanti Himal|Kubi Grangri,Kaqur Kangri,Ronglai Kangri,Kanti Himal East|6850|Kanti Himal (NNW of Kanjiroba on Tibetan border)|Y|82.7022222|29.8530556|82° 42′ 08.00000″ E|29° 51′ 11.00000″ N|MoTCA: (29° 51′ 11.00000″ N, 82° 42′ 08.00000″ E)|KANTI
+KANT|Kanti Himal|Kanti Himal East,Kaqur Kangri,Kubi Grangri,Ronglai Kangri|6850|Kanti Himal (NNW of Kanjiroba on Tibetan border)|Y|82.7022222|29.8530556|82° 42′ 08.00000″ E|29° 51′ 11.00000″ N|MoTCA: (29° 51′ 11.00000″ N, 82° 42′ 08.00000″ E)|KANTI
 RAMT|Ramtang||6601|Kangchenjunga Himal (N of Kangbachen)|Y|88.0958333|27.7508333|88° 05′ 45.00000″ E|27° 45′ 03.00000″ N|MoTCA: (27° 45′ 03.00000″ N, 88° 05′ 45.00000″ E)|NORTHERN
 LING|Lingtren||6713|Khumbu Himal (ENE of Pumori on Tibetan border)|N|86.8546651|28.0278017|86° 51′ 16.79436″ E|28° 01′ 40.08612″ N|"OSM: (28° 01′ 40.08612″ N, 86° 51′ 16.79436″ E)
 MoTCA: (28° 01′ 39.00000″ N, 86° 51′ 26.00000″ E)"|KHUMBU
 TENG|Tengkoma|Tang Kongma|6215|Jongsang Himal (NW of Kangchenjunga)|Y|88.0766667|27.8083333|88° 04′ 36.00000″ E|27° 48′ 30.00000″ N|MoTCA: (27° 48′ 30.00000″ N, 88° 04′ 36.00000″ E)|JANAK
-RAMC|Ramtang Chang|Ramtang,Chang Himal,Wedge Peak|6802|Kangchenjunga Himal (N of Ramtang)|Y|88.0958333|27.7508333|88° 05′ 45.00000″ E|27° 45′ 03.00000″ N|MoTCA: (27° 45′ 03.00000″ N, 88° 05′ 45.00000″ E)|NORTHERN
+RAMC|Ramtang Chang|Chang Himal,Ramtang,Wedge Peak|6802|Kangchenjunga Himal (N of Ramtang)|Y|88.0958333|27.7508333|88° 05′ 45.00000″ E|27° 45′ 03.00000″ N|MoTCA: (27° 45′ 03.00000″ N, 88° 05′ 45.00000″ E)|NORTHERN
 CHRE|Churen Himal East|Churen|7371|Dhaulagiri Himal (NW of Dhaulagiri VI)|Y|83.2122222|28.7322222|83° 12′ 44.00000″ E|28° 43′ 56.00000″ N|MoTCA: (28° 43′ 56.00000″ N, 83° 12′ 44.00000″ E)|DHAULAGIRI
 CHRW|Churen Himal West|Churen|7371|Dhaulagiri Himal (NW of Dhaulagiri VI)|Y|83.2122222|28.7322222|83° 12′ 44.00000″ E|28° 43′ 56.00000″ N|MoTCA: (28° 43′ 56.00000″ N, 83° 12′ 44.00000″ E)|DHAULAGIRI
 CHRI|Chhukung Ri|Chhukung Chuli|5550|Khumbu Himal (S of Lhotse)|Y|86.8772222|27.9388889|86° 52′ 38.00000″ E|27° 56′ 20.00000″ N|MoTCA: (27° 56′ 20.00000″ N, 86° 52′ 38.00000″ E)|KHUMBU
@@ -320,21 +308,21 @@ SRKU|Serku Dolma||6227|Kanjiroba Himal (S of Tso Karpo Kang)|||||||KANJIROBA
 NALS|Nalakankar South|Nala Kankar|6024|Nalakankar Himal (on W Nepal/Tibetan border)|Y|81.4013889|30.3575|81° 24′ 05.00000″ E|30° 21′ 27.00000″ N|MoTCA: (30° 21′ 27.00000″ N, 81° 24′ 05.00000″ E)|NALAKANKAR
 CHWT|Changwathang||6130|Chandi Himal (S of Tibetan border)|Y|81.8883333|30.3263889|81° 53′ 18.00000″ E|30° 19′ 35.00000″ N|MoTCA: (30° 19′ 35.00000″ N, 81° 53′ 18.00000″ E)|NALAKANKAR
 TAKP|Takphu Himal||6395|Nalakankar Himal (on W Nepal/Tibetan border)|Y|81.4177778|30.2838889|81° 25′ 04.00000″ E|30° 17′ 02.00000″ N|MoTCA: (30° 17′ 02.00000″ N, 81° 25′ 04.00000″ E)|NALAKANKAR
-MALA|Malanphulan|Melanphulan,Hinku Ri|6573|Khumbu Himal (S of Ama Dablam, NW of Kangtega)|Y|86.8722222|27.8027778|86° 52′ 20.00000″ E|27° 48′ 10.00000″ N|MoTCA: (27° 48′ 10.00000″ N, 86° 52′ 20.00000″ E)|BARUN
+MALA|Malanphulan|Hinku Ri,Melanphulan|6573|Khumbu Himal (S of Ama Dablam, NW of Kangtega)|Y|86.8722222|27.8027778|86° 52′ 20.00000″ E|27° 48′ 10.00000″ N|MoTCA: (27° 48′ 10.00000″ N, 86° 52′ 20.00000″ E)|BARUN
 LHOM|Lhotse Middle|Lhotse Intermediate|8410|Khumbu Himal (E of Lhotse)|N|86.9386871|27.9607748|86° 56′ 19.27356″ E|27° 57′ 38.78928″ N|"OSM: (27° 57′ 38.78928″ N, 86° 56′ 19.27356″ E)
 MoTCA: (27° 57′ 40.00000″ N, 86° 56′ 27.00000″ E)"|KHUMBU
-SIMN|Simnang Himal|Simnang Himal East,P2|6251|Manaslu Himal (SE of Manaslu)|Y|84.5972222|28.5163889|84° 35′ 50.00000″ E|28° 30′ 59.00000″ N|MoTCA: (28° 30′ 59.00000″ N, 84° 35′ 50.00000″ E)|MANASLU
-HCHI|Hungchhi|Gyubanare Kang,Hunchhi,Chakung,Gyuba Tshomotse|7029|Khumbu Himal (S of Gyachung Kang on Tibetan border)|Y|86.7611111|28.0347222|86° 45′ 40.00000″ E|28° 02′ 05.00000″ N|MoTCA: (28° 02′ 05.00000″ N, 86° 45′ 40.00000″ E)|KHUMBU
-LAMP|Lampo|Langpo Kangri,Ganesh VI|6648|Ganesh Himal (N of Ganesh I on Tibetan border)|N|85.0614738|28.3697277|85° 03′ 41.30568″ E|28° 22′ 11.01972″ N|"OSM: (28° 22′ 11.01972″ N, 85° 03′ 41.30568″ E)
+SIMN|Simnang Himal|P2,Simnang Himal East|6251|Manaslu Himal (SE of Manaslu)|Y|84.5972222|28.5163889|84° 35′ 50.00000″ E|28° 30′ 59.00000″ N|MoTCA: (28° 30′ 59.00000″ N, 84° 35′ 50.00000″ E)|MANASLU
+HCHI|Hungchhi|Chakung,Gyuba Tshomotse,Gyubanare Kang,Hunchhi|7029|Khumbu Himal (S of Gyachung Kang on Tibetan border)|Y|86.7611111|28.0347222|86° 45′ 40.00000″ E|28° 02′ 05.00000″ N|MoTCA: (28° 02′ 05.00000″ N, 86° 45′ 40.00000″ E)|KHUMBU
+LAMP|Lampo|Ganesh VI,Langpo Kangri|6648|Ganesh Himal (N of Ganesh I on Tibetan border)|N|85.0614738|28.3697277|85° 03′ 41.30568″ E|28° 22′ 11.01972″ N|"OSM: (28° 22′ 11.01972″ N, 85° 03′ 41.30568″ E)
 MoTCA: (28° 22′ 16.00000″ N, 85° 03′ 50.00000″ E)"|GANESH
 CHUK|Chhukung Tse|Chhukung Chuli|5833|Khumbu Himal (S of Lhotse)|Y|86.8772222|27.9388889|86° 52′ 38.00000″ E|27° 56′ 20.00000″ N|MoTCA: (27° 56′ 20.00000″ N, 86° 52′ 38.00000″ E)|KHUMBU
-DZAN|Dzanye|Dzanye II,Dzanaye|6581|Janak Himal (WNW of Lashar I on Tibetan border)|Y|88.0411111|27.9022222|88° 02′ 28.00000″ E|27° 54′ 08.00000″ N|MoTCA: (27° 54′ 08.00000″ N, 88° 02′ 28.00000″ E)|JANAK
+DZAN|Dzanye|Dzanaye,Dzanye II|6581|Janak Himal (WNW of Lashar I on Tibetan border)|Y|88.0411111|27.9022222|88° 02′ 28.00000″ E|27° 54′ 08.00000″ N|MoTCA: (27° 54′ 08.00000″ N, 88° 02′ 28.00000″ E)|JANAK
 GAUG|Gaugiri||6110|Damodar Himal (N of Bhrikuti on Tibetan border)|Y|84.19|29.0452778|84° 11′ 24.00000″ E|29° 02′ 43.00000″ N|MoTCA: (29° 02′ 43.00000″ N, 84° 11′ 24.00000″ E)|DAMODAR
 TKPO|Tengkangpoche|Thyangmoche|6482|Rolwaling Himal (W of Kwangde)|Y|86.5986111|27.8038889|86° 35′ 55.00000″ E|27° 48′ 14.00000″ N|MoTCA: (27° 48′ 14.00000″ N, 86° 35′ 55.00000″ E)|ROLWALING
 ARNK|Arniko Chuli|Araniko Chuli|6034|Mukut Himal (W Mustang near Tibetan border)|Y|83.6594444|29.1761111|83° 39′ 34.00000″ E|29° 10′ 34.00000″ N|MoTCA: (29° 10′ 34.00000″ N, 83° 39′ 34.00000″ E)|MUSTANG
 SARI|Saribung|Saribung Peak,Selibung|6328|Damodar Himal (W of Bhrikuti)|N|84.1719123|28.885|84° 10′ 18.88428″ E|28° 53′ 06.00000″ N|"OSM: (28° 53′ 06.00000″ N, 84° 10′ 18.88428″ E)
 MoTCA: (28° 53′ 04.00000″ N, 84° 10′ 26.00000″ E)"|DAMODAR
-GHEN|Ghenge Liru|Ghenye Liru,Langtang II,Langtang Lirung,Langtang I,Ghenye Lirung|6596|Langtang Himal (WSW of Langtang Lirung)|N|85.5168032|28.256616|85° 31′ 00.49152″ E|28° 15′ 23.81760″ N|"OSM: (28° 15′ 23.81760″ N, 85° 31′ 00.49152″ E)
+GHEN|Ghenge Liru|Ghenye Liru,Ghenye Lirung,Langtang I,Langtang II|6596|Langtang Himal (WSW of Langtang Lirung)|N|85.5168032|28.256616|85° 31′ 00.49152″ E|28° 15′ 23.81760″ N|"OSM: (28° 15′ 23.81760″ N, 85° 31′ 00.49152″ E)
 MoTCA: (28° 14′ 53.00000″ N, 85° 28′ 26.00000″ E)"|LANGTANG
 NAUL|Naulekh||6340|Khumbu Himal (S of Mera Peak)|N|86.9024898|27.6875828|86° 54′ 08.96328″ E|27° 41′ 15.29808″ N|"OSM: (27° 41′ 15.29808″ N, 86° 54′ 08.96328″ E)
 MoTCA: (27° 41′ 13.00000″ N, 86° 54′ 17.00000″ E)"|BARUN
@@ -349,34 +337,32 @@ MoTCA: (27° 54′ 32.00000″ N, 86° 40′ 23.00000″ E)"|KHUMBU
 PAND|Pandra||6670|Ohmi Kangri Himal (NW of Lhonak)|Y|87.9952778|27.8644444|87° 59′ 43.00000″ E|27° 51′ 52.00000″ N|MoTCA: (27° 51′ 52.00000″ N, 87° 59′ 43.00000″ E)|JANAK
 DANG|Danga||6220|Ohmi Kangri Himal (WNW of Lhonak, E of Nupchu)|Y|87.9786111|27.8169444|87° 58′ 43.00000″ E|27° 49′ 01.00000″ N|MoTCA: (27° 49′ 01.00000″ N, 87° 58′ 43.00000″ E)|JANAK
 POKR|Pokharkang|Pokhar Khang|6372|Damodar Himal (N of Pisang Peak)|Y|84.2288889|28.8127778|84° 13′ 44.00000″ E|28° 48′ 46.00000″ N|MoTCA: (28° 48′ 46.00000″ N, 84° 13′ 44.00000″ E)|DAMODAR
-NAG1|Nangpai Gosum I|Cho Aui,Nangpai Gosum,Pasang Lhamu Chuli,Nagpai Gosum I|7321|Khumbu Himal (WSW of Cho Oyu on Tibetan border)|N|86.6124231|28.0729512|86° 36′ 44.72316″ E|28° 04′ 22.62432″ N|"OSM: (28° 04′ 22.62432″ N, 86° 36′ 44.72316″ E)
-MoTCA: (28° 04′ 14.00000″ N, 86° 38′ 16.00000″ E)"|KHUMBU
+NAG1|Nangpai Gosum I|Cho Aui,Nagpai Gosum I|7321|Khumbu Himal (WSW of Cho Oyu on Tibetan border)|Y|86.6377778|28.0705556|86° 38′ 16.00000″ E|28° 04′ 14.00000″ N|MoTCA: (28° 04′ 14.00000″ N, 86° 38′ 16.00000″ E)|KHUMBU
 KGRI|Khangri Shar||6792|Khumbu Himal (W of Pumori)|Y|86.8152778|28.0188889|86° 48′ 55.00000″ E|28° 01′ 08.00000″ N|MoTCA: (28° 01′ 08.00000″ N, 86° 48′ 55.00000″ E)|KHUMBU
 KGRW|Khangri West||6658|Khumbu Himal (W of Pumori)|Y|86.7975|28.0205556|86° 47′ 51.00000″ E|28° 01′ 14.00000″ N|MoTCA: (28° 01′ 14.00000″ N, 86° 47′ 51.00000″ E)|KHUMBU
 PURB|Purbung Himal|Purbung,Putrung|6500|Damodar Himal (N of Chulu West)|Y|84.0205556|28.8013889|84° 01′ 14.00000″ E|28° 48′ 05.00000″ N|MoTCA: (28° 48′ 05.00000″ N, 84° 01′ 14.00000″ E)|DAMODAR
 TASH|Tashi Kang|Tashi Khang|6386|Mukut Himal (N of Dhampus Peak)|Y|83.6313889|28.8530556|83° 37′ 53.00000″ E|28° 51′ 11.00000″ N|MoTCA: (28° 51′ 11.00000″ N, 83° 37′ 53.00000″ E)|DHAULAGIRI
-TENR|Tengi Ragi Tau|Angole,Agole|6938|Rolwaling Himal (N of Tesi Laptsa)|Y|86.5563889|27.8572222|86° 33′ 23.00000″ E|27° 51′ 26.00000″ N|MoTCA: (27° 51′ 26.00000″ N, 86° 33′ 23.00000″ E)|ROLWALING
+TENR|Tengi Ragi Tau|Agole,Angole|6938|Rolwaling Himal (N of Tesi Laptsa)|Y|86.5563889|27.8572222|86° 33′ 23.00000″ E|27° 51′ 26.00000″ N|MoTCA: (27° 51′ 26.00000″ N, 86° 33′ 23.00000″ E)|ROLWALING
 KYAS|Kyashar|Peak 43,Tangnag Tseng|6770|Khumbu Himal (S of Kantega)|N|86.8223253|27.7548759|86° 49′ 20.37108″ E|27° 45′ 17.55324″ N|"OSM: (27° 45′ 17.55324″ N, 86° 49′ 20.37108″ E)
 MoTCA: (27° 45′ 19.00000″ N, 86° 49′ 30.00000″ E)"|BARUN
 NREK|Nirekha|Nirekha Peak|6159|Khumbu Himal (NW of Lobuje Peak)|Y|86.7652778|27.9775|86° 45′ 55.00000″ E|27° 58′ 39.00000″ N|MoTCA: (27° 58′ 39.00000″ N, 86° 45′ 55.00000″ E)|KHUMBU
 NORB|Norbu Kang|Norbu Khang|6085|Kanjiroba Himal (SE of Phoksumdo Tal)|Y|83.0747222|29.1191667|83° 04′ 29.00000″ E|29° 07′ 09.00000″ N|MoTCA: (29° 07′ 09.00000″ N, 83° 04′ 29.00000″ E)|DOLPO
 LNKE|Lunchhung Kamo East|Lungchhung|6024|Kanti Himal (SE of Danfe Sail on Tibetan border)|Y|83.1222222|29.6283333|83° 07′ 20.00000″ E|29° 37′ 42.00000″ N|MoTCA: (29° 37′ 42.00000″ N, 83° 07′ 20.00000″ E)|PALCHUNGHAMGA
-LIK1|Linkhu Chuli Shar|Bigphera-Go Shar,Linkhu Chuli I,Likhu Chuli I,Pigpferago Shar,Pig Pherago Shar|6719|Rolwaling Himal (S of Parchamo)|Y|86.5447222|27.8111111|86° 32′ 41.00000″ E|27° 48′ 40.00000″ N|MoTCA: (27° 48′ 40.00000″ N, 86° 32′ 41.00000″ E)|ROLWALING
-LIK2|Linkhu Chuli Nup|Pig Pherago Nup,Pigpferago Nup,Linkhu Chuli II,Bigphera-Go Nup,Likhu Chuli II|6659|Rolwaling Himal (SSW of Parchamo, W of Likhu Chuli Shar)|Y|86.5261111|27.805|86° 31′ 34.00000″ E|27° 48′ 18.00000″ N|MoTCA: (27° 48′ 18.00000″ N, 86° 31′ 34.00000″ E)|ROLWALING
-PANT|Panalotapa|Paniyo Tippa,Paniyo Tapa,Paniyotippa|6687|Rolwaling Himal (W of Tengkangpoche)|Y|86.5697222|27.8041667|86° 34′ 11.00000″ E|27° 48′ 15.00000″ N|MoTCA: (27° 48′ 15.00000″ N, 86° 34′ 11.00000″ E)|ROLWALING
+LIK1|Linkhu Chuli Shar|Bigphera-Go Shar,Likhu Chuli I,Linkhu Chuli I,Pig Pherago Shar,Pigpferago Shar|6719|Rolwaling Himal (S of Parchamo)|Y|86.5447222|27.8111111|86° 32′ 41.00000″ E|27° 48′ 40.00000″ N|MoTCA: (27° 48′ 40.00000″ N, 86° 32′ 41.00000″ E)|ROLWALING
+LIK2|Linkhu Chuli Nup|Bigphera-Go Nup,Likhu Chuli II,Linkhu Chuli II,Pig Pherago Nup,Pigpferago Nup|6659|Rolwaling Himal (SSW of Parchamo, W of Likhu Chuli Shar)|Y|86.5261111|27.805|86° 31′ 34.00000″ E|27° 48′ 18.00000″ N|MoTCA: (27° 48′ 18.00000″ N, 86° 31′ 34.00000″ E)|ROLWALING
+PANT|Panalotapa|Paniyo Tapa,Paniyo Tippa,Paniyotippa|6687|Rolwaling Himal (W of Tengkangpoche)|Y|86.5697222|27.8041667|86° 34′ 11.00000″ E|27° 48′ 15.00000″ N|MoTCA: (27° 48′ 15.00000″ N, 86° 34′ 11.00000″ E)|ROLWALING
 SHAL|Shalbachum|Phrul Rangtshan Ri,Salbachum|6707|Langtang Himal (E of Langtang Lirung on Tibetan border)|N|85.6311335|28.2710295|85° 37′ 52.08060″ E|28° 16′ 15.70620″ N|"OSM: (28° 16′ 15.70620″ N, 85° 37′ 52.08060″ E)
 MoTCA: (28° 16′ 18.00000″ N, 85° 38′ 04.00000″ E)"|LANGTANG
 KHUM|Khumbutse|Khumbu Tse|6639|Khumbu Himal (NW of Lho La on Tibetan border)|N|86.872193|28.0219052|86° 52′ 19.89480″ E|28° 01′ 18.85872″ N|"OSM: (28° 01′ 18.85872″ N, 86° 52′ 19.89480″ E)
 MoTCA: (28° 01′ 14.00000″ N, 86° 52′ 30.00000″ E)"|KHUMBU
 BOKT|Boktoh|Bokta,Bokta Peak|6114|Kangchenjunga Himal (SE of Jannu)|Y|88.0069444|27.6208333|88° 00′ 25.00000″ E|27° 37′ 15.00000″ N|MoTCA: (27° 37′ 15.00000″ N, 88° 00′ 25.00000″ E)|KUMBHAKARNA
-MOJC|Mojca|Mojka Peak,Mojka|6024|Kangchenjunga Himal (W of Ramtang Chang)|Y|88.0505556|27.7705556|88° 03′ 02.00000″ E|27° 46′ 14.00000″ N|MoTCA: (27° 46′ 14.00000″ N, 88° 03′ 02.00000″ E)|NORTHERN
-PLNG|Palung|Yalung Ri,Palung Ri|7012|North of Cho Oyu (in Tibet)|Y|86.4144444|27.8530556|86° 24′ 52.00000″ E|27° 51′ 11.00000″ N|MoTCA: (27° 51′ 11.00000″ N, 86° 24′ 52.00000″ E)|ROLWALING
+MOJC|Mojca|Mojka,Mojka Peak|6024|Kangchenjunga Himal (W of Ramtang Chang)|Y|88.0505556|27.7705556|88° 03′ 02.00000″ E|27° 46′ 14.00000″ N|MoTCA: (27° 46′ 14.00000″ N, 88° 03′ 02.00000″ E)|NORTHERN
+PLNG|Palung|Palung Ri,Yalung Ri|7012|North of Cho Oyu (in Tibet)|Y|86.4144444|27.8530556|86° 24′ 52.00000″ E|27° 51′ 11.00000″ N|MoTCA: (27° 51′ 11.00000″ N, 86° 24′ 52.00000″ E)|ROLWALING
 TUTS|Tutse|Nephu,Peak 6|6758|Makalu Himal (SE of Makalu)|Y|87.1013889|27.7719444|87° 06′ 05.00000″ E|27° 46′ 19.00000″ N|MoTCA: (27° 46′ 19.00000″ N, 87° 06′ 05.00000″ E)|BARUN
-NUPE|Nuptse East I|Nuptse I,Nuptse|7795|Khumbu Himal (E of Nuptse main summit)|N|86.887081|27.9679586|86° 53′ 13.49160″ E|27° 58′ 04.65096″ N|"OSM: (27° 58′ 04.65096″ N, 86° 53′ 13.49160″ E)
+NUPE|Nuptse East I|Nuptse,Nuptse I|7795|Khumbu Himal (E of Nuptse main summit)|N|86.887081|27.9679586|86° 53′ 13.49160″ E|27° 58′ 04.65096″ N|"OSM: (27° 58′ 04.65096″ N, 86° 53′ 13.49160″ E)
 MoTCA: (27° 58′ 01.00000″ N, 86° 53′ 22.00000″ E)"|KHUMBU
 AMOT|Amotsang|Amatson|6393|Damodar Himal (NW of Pokharhan)|Y|84.1725|28.8347222|84° 10′ 21.00000″ E|28° 50′ 05.00000″ N|MoTCA: (28° 50′ 05.00000″ N, 84° 10′ 21.00000″ E)|DAMODAR
-YANS|Yansa Tsenji|Dhagpache,Dogpache,Dhagpahe,Dragpoche|6567|Langtang Himal (SW of Shalbachum on Tibetan border)|N|85.6061571|28.2562087|85° 36′ 22.16556″ E|28° 15′ 22.35132″ N|"OSM: (28° 15′ 22.35132″ N, 85° 36′ 22.16556″ E)
-MoTCA: (28° 15′ 23.00000″ N, 85° 36′ 30.00000″ E)"|LANGTANG
+YANS|Yansa Tsenji|Dhagpache,Dragpoche|6567|Langtang Himal (SW of Shalbachum on Tibetan border)|Y|85.6083333|28.2563889|85° 36′ 30.00000″ E|28° 15′ 23.00000″ N|MoTCA: (28° 15′ 23.00000″ N, 85° 36′ 30.00000″ E)|LANGTANG
 HIMJ|Himjung|Nemjung Goth|7092|Peri Himal (S of Himlung Himal)|Y|84.4197222|28.7363889|84° 25′ 11.00000″ E|28° 44′ 11.00000″ N|MoTCA: (28° 44′ 11.00000″ N, 84° 25′ 11.00000″ E)|PERI
 AMPH|Amphu I||6740|Khumbu Himal (E of Amphu Laptsa, W of Baruntse)|Y|86.9555556|27.8702778|86° 57′ 20.00000″ E|27° 52′ 13.00000″ N|MoTCA: (27° 52′ 13.00000″ N, 86° 57′ 20.00000″ E)|BARUN
 CHAB|Chabuk|Tsajirip|6792|Ohmi Kangri Himal (E of Ohmi Kangri on Tibetan border)|Y|87.9875|27.8858333|87° 59′ 15.00000″ E|27° 53′ 09.00000″ N|MoTCA: (27° 53′ 09.00000″ N, 87° 59′ 15.00000″ E)|JANAK
@@ -391,8 +377,8 @@ KABR|Kabru Main|Kabru,Kabru Central|7412|Simhalila Himal (S of Talung on Indian 
 MoTCA: (27° 38′ 07.00000″ N, 88° 07′ 17.00000″ E)"|SINGALILA
 LASH|Lashar I|Loshar I|6842|Janak Himal (NW of Lashar II on Tibetan border)|Y|88.0566667|27.8961111|88° 03′ 24.00000″ E|27° 53′ 46.00000″ N|MoTCA: (27° 53′ 46.00000″ N, 88° 03′ 24.00000″ E)|JANAK
 LAS2|Lashar II|Loshar II|6803|Janak Himal (SW of Ghhanyala Hies on Tibetan border)|Y|88.0669444|27.8861111|88° 04′ 01.00000″ E|27° 53′ 10.00000″ N|MoTCA: (27° 53′ 10.00000″ N, 88° 04′ 01.00000″ E)|JANAK
-NAG2|Nangpai Gosum II|Nagpai Gosum II,Nangpai Gosum,Pasang Lhamu Chuli,Chamar|7287|Khumbu Himal (WSW of Cho Oyu on Tibetan border)|N|86.6124231|28.0729512|86° 36′ 44.72316″ E|28° 04′ 22.62432″ N|"OSM: (28° 04′ 22.62432″ N, 86° 36′ 44.72316″ E)
-MoTCA: (28° 04′ 29.00000″ N, 86° 39′ 09.00000″ E)"|KHUMBU
+NAG2|Nangpai Gosum II|Chamar,Nagpai Gosum II|7287|Khumbu Himal (WSW of Cho Oyu on Tibetan border)|N|84.9437234|28.5550852|84° 56′ 37.40424″ E|28° 33′ 18.30672″ N|"OSM: (28° 33′ 18.30672″ N, 84° 56′ 37.40424″ E)
+MoTCA: (28° 04′ 29.00000″ N, 86° 39′ 09.00000″ E)"|SERANG
 NANG|Nangamari I||6547|Ohmi Kangri Himal (W of Chaw Peak on Tibetan border)|Y|87.8686111|27.9105556|87° 52′ 07.00000″ E|27° 54′ 38.00000″ N|MoTCA: (27° 54′ 38.00000″ N, 87° 52′ 07.00000″ E)|JANAK
 PANB|Panbari||6905|Peri Himal (NW of Larkya La)|Y|84.4838889|28.7183333|84° 29′ 02.00000″ E|28° 43′ 06.00000″ N|MoTCA: (28° 43′ 06.00000″ N, 84° 29′ 02.00000″ E)|PERI
 PHNH|Phungi Himal||6538|Manaslu Himal (W of Manaslu)|Y|84.4858333|28.5544444|84° 29′ 09.00000″ E|28° 33′ 16.00000″ N|MoTCA: (28° 33′ 16.00000″ N, 84° 29′ 09.00000″ E)|MANASLU
@@ -404,7 +390,7 @@ BAMO|Bamongo||6406|Rolwaling Himal (E of Chekigo on Tibetan border)|Y|86.4352778
 CHAW|Chaw Peak|Chaw East|6404|Ohmi Kangri Himal (WNW of Ohmi Kangri on Tibetan border)|Y|87.9441667|27.9097222|87° 56′ 39.00000″ E|27° 54′ 35.00000″ N|MoTCA: (27° 54′ 35.00000″ N, 87° 56′ 39.00000″ E)|JANAK
 DING|Dingjung North|Kangkuru,Rima Mancho|6249|Rolwaling Himal (S of Pangbuk Ri on Tibetan border)|Y|86.5169444|27.9877778|86° 31′ 01.00000″ E|27° 59′ 16.00000″ N|MoTCA: (27° 59′ 16.00000″ N, 86° 31′ 01.00000″ E)|ROLWALING
 KNAG|Kang Nagchugo|Khang Nagchugo|6737|Rolwaling Himal (E of Chekigo on Tibetan border)|Y|86.4447222|27.9061111|86° 26′ 41.00000″ E|27° 54′ 22.00000″ N|MoTCA: (27° 54′ 22.00000″ N, 86° 26′ 41.00000″ E)|ROLWALING
-KBON|Konabon|Kambong Peak,Kambon,Konabon Peak|6570|Dhaulagiri Himal (SE of Gurja Himal)|N|83.3048561|28.6599965|83° 18′ 17.48196″ E|28° 39′ 35.98740″ N|"OSM: (28° 39′ 35.98740″ N, 83° 18′ 17.48196″ E)
+KBON|Konabon|Kambon,Kambong Peak,Konabon Peak|6570|Dhaulagiri Himal (SE of Gurja Himal)|N|83.3048561|28.6599965|83° 18′ 17.48196″ E|28° 39′ 35.98740″ N|"OSM: (28° 39′ 35.98740″ N, 83° 18′ 17.48196″ E)
 MoTCA: (28° 39′ 34.00000″ N, 83° 18′ 29.00000″ E)"|DHAULAGIRI
 KHAM|Khamjung|Khamjungar,Khumjung,Khumjungar|6759|Damodar Himal (W of Saribung and Bhrikuti)|N|84.1268825|28.8889917|84° 07′ 36.77700″ E|28° 53′ 20.37012″ N|"OSM: (28° 53′ 20.37012″ N, 84° 07′ 36.77700″ E)
 MoTCA: (28° 53′ 20.00000″ N, 84° 07′ 45.00000″ E)"|DAMODAR
@@ -414,19 +400,18 @@ KOJI|Kojichuwa Chuli|Kojichwa Chuli|6439|Kanti Himal (NNW of Kanti Himal peak on
 CHIV|Chhiv Himal|Chhib Himal|6650|Damodar Himal (SW of Saribang and WSW of Bhrikuti)|N|84.1598835|28.8736293|84° 09′ 35.58060″ E|28° 52′ 25.06548″ N|"OSM: (28° 52′ 25.06548″ N, 84° 09′ 35.58060″ E)
 MoTCA: (28° 52′ 24.00000″ N, 84° 09′ 44.00000″ E)"|DAMODAR
 LMOC|Langmoche Ri||6552|Rolwaling Himal (N of Tesi Laptsa)|Y|86.555|27.8672222|86° 33′ 18.00000″ E|27° 52′ 02.00000″ N|MoTCA: (27° 52′ 02.00000″ N, 86° 33′ 18.00000″ E)|ROLWALING
-LCHA|Lachama Chuli|Kubi Kangri,Kubi Dongdong|6721|Changla Himal (N of Gorakh Himal on Tibetan border)|Y|82.2005556|30.1363889|82° 12′ 02.00000″ E|30° 08′ 11.00000″ N|MoTCA: (30° 08′ 11.00000″ N, 82° 12′ 02.00000″ E)|CHANGLA
-PAN1|Panpoche 1|Pung Gyen,Manaslu,Pang Phunch 1,Kutang Himal,Kutang|6620|Manaslu Himal (NE of Sama village near Tibetan border)|N|84.5597284|28.5499829|84° 33′ 35.02224″ E|28° 32′ 59.93844″ N|"OSM: (28° 32′ 59.93844″ N, 84° 33′ 35.02224″ E)
-MoTCA: (28° 37′ 44.00000″ N, 84° 41′ 02.00000″ E)"|MANASLU
+LCHA|Lachama Chuli|Kubi Dongdong,Kubi Kangri|6721|Changla Himal (N of Gorakh Himal on Tibetan border)|Y|82.2005556|30.1363889|82° 12′ 02.00000″ E|30° 08′ 11.00000″ N|MoTCA: (30° 08′ 11.00000″ N, 82° 12′ 02.00000″ E)|CHANGLA
+PAN1|Panpoche 1|Kutang Himal,Pang Phunch 1|6620|Manaslu Himal (NE of Sama village near Tibetan border)|Y|84.6838889|28.6288889|84° 41′ 02.00000″ E|28° 37′ 44.00000″ N|MoTCA: (28° 37′ 44.00000″ N, 84° 41′ 02.00000″ E)|KUTANG
 PAN2|Panpoche 2|Pang Phunch 2|6504|Manaslu Himal (NE of Sama village near Tibetan border)|Y|84.6875|28.6141667|84° 41′ 15.00000″ E|28° 36′ 51.00000″ N|MoTCA: (28° 36′ 51.00000″ N, 84° 41′ 15.00000″ E)|KUTANG
 PHOL|Phole||6645|Kangchenjunga Himal (W of Kumbhakarna and Sobitongie)|Y|88.01|27.6858333|88° 00′ 36.00000″ E|27° 41′ 09.00000″ N|MoTCA: (27° 41′ 09.00000″ N, 88° 00′ 36.00000″ E)|KUMBHAKARNA
 PHUK|Phu Kang|Phu Khang|6694|Peri Himal (N of Cheo Himal on Tibetan border)|Y|84.4491667|28.7933333|84° 26′ 57.00000″ E|28° 47′ 36.00000″ N|MoTCA: (28° 47′ 36.00000″ N, 84° 26′ 57.00000″ E)|PERI
 LNGK|Langchung Khang|Langpo Chung|6786|Jongsang Himal (NW of Langpo on Indian border)|Y|88.1813889|27.8561111|88° 10′ 53.00000″ E|27° 51′ 22.00000″ N|MoTCA: (27° 51′ 22.00000″ N, 88° 10′ 53.00000″ E)|NORTHERN
-PK04|Peak 4|Sherson,Peak 3,Shershon Ri|6736|Khumbu Himal (SE of Baruntse)|Y|87.1288889|27.8338889|87° 07′ 44.00000″ E|27° 50′ 02.00000″ N|MoTCA: (27° 50′ 02.00000″ N, 87° 07′ 44.00000″ E)|MAKALU
+PK04|Peak 4|Peak 3,Shershon Ri,Sherson|6736|Khumbu Himal (SE of Baruntse)|Y|87.1288889|27.8338889|87° 07′ 44.00000″ E|27° 50′ 02.00000″ N|MoTCA: (27° 50′ 02.00000″ N, 87° 07′ 44.00000″ E)|MAKALU
 NAM2|Nampa II||6585|Api Himal (W of Nampa)|Y|80.9597222|30.0127778|80° 57′ 35.00000″ E|30° 00′ 46.00000″ N|MoTCA: (30° 00′ 46.00000″ N, 80° 57′ 35.00000″ E)|YOKAPAHAR
 NAM3|Nampa III|Nampa Chuli|6611|Api Himal (SE of Nampa)|Y|81.0169444|29.9808333|81° 01′ 01.00000″ E|29° 58′ 51.00000″ N|MoTCA: (29° 58′ 51.00000″ N, 81° 01′ 01.00000″ E)|YOKAPAHAR
 NAMS|Nampa South||6130|Api Himal (S of Nampa, W of Nampa Chuli)|Y|80.9966667|29.9858333|80° 59′ 48.00000″ E|29° 59′ 09.00000″ N|MoTCA: (29° 59′ 09.00000″ N, 80° 59′ 48.00000″ E)|YOKAPAHAR
 SOBI|Sobithongie|Sobitongie|6652|Kangchenjunga Himal (W of Kumbhakarna)|Y|88.0280556|27.6855556|88° 01′ 41.00000″ E|27° 41′ 08.00000″ N|MoTCA: (27° 41′ 08.00000″ N, 88° 01′ 41.00000″ E)|KUMBHAKARNA
-SHER|Shershon|Sherson,Peak 3|6432|Makalu Himal (NE of Shershon village on Tibetan border)|Y|87.1288889|27.8338889|87° 07′ 44.00000″ E|27° 50′ 02.00000″ N|MoTCA: (27° 50′ 02.00000″ N, 87° 07′ 44.00000″ E)|MAKALU
+SHER|Shershon|Peak 3,Sherson|6432|Makalu Himal (NE of Shershon village on Tibetan border)|Y|87.1288889|27.8338889|87° 07′ 44.00000″ E|27° 50′ 02.00000″ N|MoTCA: (27° 50′ 02.00000″ N, 87° 07′ 44.00000″ E)|MAKALU
 SWAK|Swaksa Kang||6405|Kanti Himal (SE of Kanti Himal peak on Tibetan border)|Y|82.8583333|29.6863889|82° 51′ 30.00000″ E|29° 41′ 11.00000″ N|MoTCA: (29° 41′ 11.00000″ N, 82° 51′ 30.00000″ E)|PALCHUNGHAMGA
 TILJ|Tilje||6530|Peri Himal (SE of Gyajikang)|Y|84.3952778|28.7102778|84° 23′ 43.00000″ E|28° 42′ 37.00000″ N|MoTCA: (28° 42′ 37.00000″ N, 84° 23′ 43.00000″ E)|PERI
 TSAR|Tsartse||6343|Mukut Himal (N of Dhampus Peak)|Y|83.6486111|28.8613889|83° 38′ 55.00000″ E|28° 51′ 41.00000″ N|MoTCA: (28° 51′ 41.00000″ N, 83° 38′ 55.00000″ E)|DHAULAGIRI
@@ -434,16 +419,16 @@ YAKA|Yakawa Kang||6482|Damodar Himal (N of Thorong La)|N|83.9419335|28.8089011|8
 MoTCA: (28° 48′ 31.00000″ N, 83° 56′ 40.00000″ E)"|DAMODAR
 YAUP|Yaupa||6422|Makalu Himal (NE of Shershon village on Tibetan border)|Y|87.1430556|27.8369444|87° 08′ 35.00000″ E|27° 50′ 13.00000″ N|MoTCA: (27° 50′ 13.00000″ N, 87° 08′ 35.00000″ E)|MAKALU
 TILK|Til Kang||6369|Nalakankar Himal (on W Nepal/Tibetan border)|Y|81.4144444|30.27|81° 24′ 52.00000″ E|30° 16′ 12.00000″ N|MoTCA: (30° 16′ 12.00000″ N, 81° 24′ 52.00000″ E)|NALAKANKAR
-YOKO|Yokopahar|Yoko Pahar,Nampa VIII|6423|Guras Himal (NNE of Nampa towards Tibetan border)|Y|81.04|30.015|81° 02′ 24.00000″ E|30° 00′ 54.00000″ N|MoTCA: (30° 00′ 54.00000″ N, 81° 02′ 24.00000″ E)|YOKAPAHAR
-SALW|Saldim West|Saldim Ri,Yaphu Ri,Peak 5|6388|Makalu Himal (ENE of Shershon village on Tibetan border)|Y|87.1591667|27.8241667|87° 09′ 33.00000″ E|27° 49′ 27.00000″ N|MoTCA: (27° 49′ 27.00000″ N, 87° 09′ 33.00000″ E)|MAKALU
+YOKO|Yokopahar|Nampa VIII,Yoko Pahar|6423|Guras Himal (NNE of Nampa towards Tibetan border)|Y|81.04|30.015|81° 02′ 24.00000″ E|30° 00′ 54.00000″ N|MoTCA: (30° 00′ 54.00000″ N, 81° 02′ 24.00000″ E)|YOKAPAHAR
+SALW|Saldim West|Peak 5,Saldim Ri,Yaphu Ri|6388|Makalu Himal (ENE of Shershon village on Tibetan border)|Y|87.1591667|27.8241667|87° 09′ 33.00000″ E|27° 49′ 27.00000″ N|MoTCA: (27° 49′ 27.00000″ N, 87° 09′ 33.00000″ E)|MAKALU
 SAMD|Samdo|Samdo Peak|6335|Manaslu Himal (NNE of Panpoche 1 & 2 on Tibetan border)|N|84.6464476|28.670341|84° 38′ 47.21136″ E|28° 40′ 13.22760″ N|"OSM: (28° 40′ 13.22760″ N, 84° 38′ 47.21136″ E)
 MoTCA: (28° 38′ 10.00000″ N, 84° 41′ 50.00000″ E)"|KUTANG
-PURK|Purkhung|Purkung,Purkhang|6126|Damodar Himal (NE of Thorong La)|N|83.9824071|28.8279631|83° 58′ 56.66556″ E|28° 49′ 40.66716″ N|"OSM: (28° 49′ 40.66716″ N, 83° 58′ 56.66556″ E)
+PURK|Purkhung|Purkhang,Purkung|6126|Damodar Himal (NE of Thorong La)|N|83.9824071|28.8279631|83° 58′ 56.66556″ E|28° 49′ 40.66716″ N|"OSM: (28° 49′ 40.66716″ N, 83° 58′ 56.66556″ E)
 MoTCA: (28° 48′ 53.00000″ N, 83° 59′ 34.00000″ E)"|DAMODAR
 DZAS|Dzasampatse||6295|Khumbu Himal (S of Pasang Lhamu Chuli)|||||||KHUMBU
 SWEL|Swelokhan||6180|Manaslu Himal (N of Samdo village on Tibetan border)|Y|84.6463889|28.725|84° 38′ 47.00000″ E|28° 43′ 30.00000″ N|MoTCA: (28° 43′ 30.00000″ N, 84° 38′ 47.00000″ E)|KUTANG
 MUPK|Mustang Peak|Mustang Himal|6229|Mustang Himal (S of Mustang Himal peak on Tibetan border)|Y|83.81|29.2861111|83° 48′ 36.00000″ E|29° 17′ 10.00000″ N|MoTCA: (29° 17′ 10.00000″ N, 83° 48′ 36.00000″ E)|MUSTANG
-JING|Jinjang|Genjang,Jijang,Gajang|6111|Damodar Himal (E of Thorong La)|N|84.032194|28.7849|84° 01′ 55.89840″ E|28° 47′ 05.64000″ N|"OSM: (28° 47′ 05.64000″ N, 84° 01′ 55.89840″ E)
+JING|Jinjang|Gajang,Genjang,Jijang|6111|Damodar Himal (E of Thorong La)|N|84.032194|28.7849|84° 01′ 55.89840″ E|28° 47′ 05.64000″ N|"OSM: (28° 47′ 05.64000″ N, 84° 01′ 55.89840″ E)
 MoTCA: (28° 47′ 03.00000″ N, 84° 02′ 05.00000″ E)"|DAMODAR
 JOBO|Jobo Rinjang|Jobo Ribjang|6778|Rolwaling Himal (SW of Nangpa La near Tibetan border)|N|86.5664238|28.0434251|86° 33′ 59.12568″ E|28° 02′ 36.33036″ N|"OSM: (28° 02′ 36.33036″ N, 86° 33′ 59.12568″ E)
 MoTCA: (28° 03′ 58.00000″ N, 86° 33′ 55.00000″ E)"|ROLWALING
@@ -452,7 +437,7 @@ KUML|Kumlung|Kang Kuru,Kang Kuru?|6355|Damodar Himal (NE of Saribung and W of Bh
 DGAR|Dhaulagari|Dhaulasiri|6638|Raksha Urai Himal (E of Bobaye, S of Raksha Urai)|Y|81.1213889|29.95|81° 07′ 17.00000″ E|29° 57′ 00.00000″ N|MoTCA: (29° 57′ 00.00000″ N, 81° 07′ 17.00000″ E)|YOKAPAHAR
 LHAY|Lhayul Peak||6395|Api Himal (SW of Api Main)|Y|80.8688889|29.9761111|80° 52′ 08.00000″ E|29° 58′ 34.00000″ N|MoTCA: (29° 58′ 34.00000″ N, 80° 52′ 08.00000″ E)|YOKAPAHAR
 MERR|Merra||6334|Kangchenjunga Himal (WNW of Anidesh Chuli)|Y|88.0197222|27.7408333|88° 01′ 11.00000″ E|27° 44′ 27.00000″ N|MoTCA: (27° 44′ 27.00000″ N, 88° 01′ 11.00000″ E)|NORTHERN
-PBUK|Pabuk Kang|Pabuk Khang,Kangata|6244|Ohmi Kangri Himal (E of Nangamari I on Tibetan border)|Y|87.8905556|27.91|87° 53′ 26.00000″ E|27° 54′ 36.00000″ N|MoTCA: (27° 54′ 36.00000″ N, 87° 53′ 26.00000″ E)|JANAK
+PBUK|Pabuk Kang|Kangata,Pabuk Khang|6244|Ohmi Kangri Himal (E of Nangamari I on Tibetan border)|Y|87.8905556|27.91|87° 53′ 26.00000″ E|27° 54′ 36.00000″ N|MoTCA: (27° 54′ 36.00000″ N, 87° 53′ 26.00000″ E)|JANAK
 YANK|Yanme Kang|Yanme Khang|6206|Ohmi Kangri Himal (NW of Nangamari on Tibetan border)|Y|87.8497222|27.9461111|87° 50′ 59.00000″ E|27° 56′ 46.00000″ N|MoTCA: (27° 56′ 46.00000″ N, 87° 50′ 59.00000″ E)|JANAK
 DANS|Danphe Shail|Danfe Shail|6103|Palchung Himal (N of Kanjiroba on Tibetan border)|Y|83.0102778|29.6725|83° 00′ 37.00000″ E|29° 40′ 21.00000″ N|MoTCA: (29° 40′ 21.00000″ N, 83° 00′ 37.00000″ E)|PALCHUNGHAMGA
 GAN7|Ganesh VII|Ganesh I,Yangra|6350|Ganesh Himal (E of Ganesh I in Tibet)|N|85.1867974|28.3916458|85° 11′ 12.47064″ E|28° 23′ 29.92488″ N|"OSM: (28° 23′ 29.92488″ N, 85° 11′ 12.47064″ E)
@@ -464,39 +449,38 @@ CHKA|Chamar Kang|Chharka,Kangtega,Khangtega|6060|Mukut Himal (NW of Tsharka vill
 NUPK|Nupche Kang|Friendship Peak,Nupche Himal|6576|Khumbu Himal (ESE of Nangpa La on Tibetan border)|Y|86.605|28.1013889|86° 36′ 18.00000″ E|28° 06′ 05.00000″ N|MoTCA: (28° 06′ 05.00000″ N, 86° 36′ 18.00000″ E)|KHUMBU
 PUCH|Punchen Himal|Puchen Himal|6049|Shringi Himal (in Tsum Valley N of Pashuwo on Tibetan border)|Y|85.1483333|28.6608333|85° 08′ 54.00000″ E|28° 39′ 39.00000″ N|MoTCA: (28° 39′ 39.00000″ N, 85° 08′ 54.00000″ E)|GANESH
 KAKU|Kang Kuru||6344|Mustang Himal (NNE of Tsartse, WSW of Ghami village)|Y|84.1861111|28.9013889|84° 11′ 10.00000″ E|28° 54′ 05.00000″ N|MoTCA: (28° 54′ 05.00000″ N, 84° 11′ 10.00000″ E)|DAMODAR
-AMPM|Amphu Middle|Amphu North,Amphu I|6202|Khumbu Himal (NE of Amphu Laptsa)|Y|86.9555556|27.8702778|86° 57′ 20.00000″ E|27° 52′ 13.00000″ N|MoTCA: (27° 52′ 13.00000″ N, 86° 57′ 20.00000″ E)|BARUN
+AMPM|Amphu Middle|Amphu I,Amphu North|6202|Khumbu Himal (NE of Amphu Laptsa)|Y|86.9555556|27.8702778|86° 57′ 20.00000″ E|27° 52′ 13.00000″ N|MoTCA: (27° 52′ 13.00000″ N, 86° 57′ 20.00000″ E)|BARUN
 LUGU|Lugula||6899|Damodar Himal (E of Bhrikuti Sail on Tibetan border)|Y|84.2616667|28.8961111|84° 15′ 42.00000″ E|28° 53′ 46.00000″ N|MoTCA: (28° 53′ 46.00000″ N, 84° 15′ 42.00000″ E)|DAMODAR
 BHRS|Bhrikuti Shail||6361|Damodar Himal (NE of Thorong La on Tibetan border)|Y|84.2283333|28.8938889|84° 13′ 42.00000″ E|28° 53′ 38.00000″ N|MoTCA: (28° 53′ 38.00000″ N, 84° 13′ 42.00000″ E)|DAMODAR
 MYAG|Myagdi Matha||6273|Dhaulagiri Himal (S of Dhaulagiri IV)|||||||DHAULAGIRI
-TOBS|Tobsar|Tobsar Peak,Tabsar|6065|Shringi Himal (ENE of Chamar)|Y|85.0594444|28.5805556|85° 03′ 34.00000″ E|28° 34′ 50.00000″ N|MoTCA: (28° 34′ 50.00000″ N, 85° 03′ 34.00000″ E)|SERANG
+TOBS|Tobsar|Tabsar,Tobsar Peak|6065|Shringi Himal (ENE of Chamar)|Y|85.0594444|28.5805556|85° 03′ 34.00000″ E|28° 34′ 50.00000″ N|MoTCA: (28° 34′ 50.00000″ N, 85° 03′ 34.00000″ E)|SERANG
 DINS|Dingjung Ri|Dingjung Ri South|6196|Rolwaling Himal (S of Pangbuk Ri on Tibetan border)|Y|86.5227778|27.9744444|86° 31′ 22.00000″ E|27° 58′ 28.00000″ N|MoTCA: (27° 58′ 28.00000″ N, 86° 31′ 22.00000″ E)|ROLWALING
 DUDH|Dudh Kundali|Dui Tal Chuli,Two Lakes Peak|6045|Jagdula Lekh (S of Kanjiroba Himal)|Y|82.5455556|29.2238889|82° 32′ 44.00000″ E|29° 13′ 26.00000″ N|MoTCA: (29° 13′ 26.00000″ N, 82° 32′ 44.00000″ E)|KANJIROBA
-KAGA|Kanta Gaton|Kangfu Gaton Kanta Gaton,Kangfu Gaton|5910|Kanjiroba Himal (SE of Phoksumdo Tal)|Y|82.9958333|29.1033333|82° 59′ 45.00000″ E|29° 06′ 12.00000″ N|MoTCA: (29° 06′ 12.00000″ N, 82° 59′ 45.00000″ E)|DOLPO
+KAGA|Kanta Gaton|Kangfu Gaton,Kangfu Gaton Kanta Gaton|5910|Kanjiroba Himal (SE of Phoksumdo Tal)|Y|82.9958333|29.1033333|82° 59′ 45.00000″ E|29° 06′ 12.00000″ N|MoTCA: (29° 06′ 12.00000″ N, 82° 59′ 45.00000″ E)|DOLPO
 KAPT|Kaptang||5965|Kanti Himal (NW of Kanti Himal peak on Tibetan border)|Y|82.5736111|29.9269444|82° 34′ 25.00000″ E|29° 55′ 37.00000″ N|MoTCA: (29° 55′ 37.00000″ N, 82° 34′ 25.00000″ E)|KANTI
 ROMA|Roma||5407|Saipal Himal (SW of Saipal)|||||||SAIPAL
 RIPI|Ripimo Shar|Kang Karpo,Khang Karpo|6647|Rolwaling Himal (S of Dingjung Ri on Tibetan border)|Y|86.5180556|27.8730556|86° 31′ 05.00000″ E|27° 52′ 23.00000″ N|MoTCA: (27° 52′ 23.00000″ N, 86° 31′ 05.00000″ E)|ROLWALING
-TSIS|Tsisima|MDM Peak,Chijima|6196|Janak Himal (WSW of Janak Chuli)|Y|88.0405556|27.8630556|88° 02′ 26.00000″ E|27° 51′ 47.00000″ N|MoTCA: (27° 51′ 47.00000″ N, 88° 02′ 26.00000″ E)|JANAK
+TSIS|Tsisima|Chijima,MDM Peak|6196|Janak Himal (WSW of Janak Chuli)|Y|88.0405556|27.8630556|88° 02′ 26.00000″ E|27° 51′ 47.00000″ N|MoTCA: (27° 51′ 47.00000″ N, 88° 02′ 26.00000″ E)|JANAK
 TAWA|Tawa||6110|Damodar Himal (NNE of Yakawa Kang)|||||||DAMODAR
-URMA|Urkema|Urkema Peak,Urgyenma,Baden Powell Scout Peak|5890|Langtang Himal (W of Ganja La)|Y|85.5125|28.1527778|85° 30′ 45.00000″ E|28° 09′ 10.00000″ N|MoTCA: (28° 09′ 10.00000″ N, 85° 30′ 45.00000″ E)|JUGAL
+URMA|Urkema|Baden Powell Scout Peak,Urgyenma,Urkema Peak|5890|Langtang Himal (W of Ganja La)|Y|85.5125|28.1527778|85° 30′ 45.00000″ E|28° 09′ 10.00000″ N|MoTCA: (28° 09′ 10.00000″ N, 85° 30′ 45.00000″ E)|JUGAL
 MPNW|Manapathi NW|Manapathi|6384|Dhaulagiri Himal (SSW of Dhaulagiri I, NW of Manapathi)|Y|83.4588889|28.6455556|83° 27′ 32.00000″ E|28° 38′ 44.00000″ N|MoTCA: (28° 38′ 44.00000″ N, 83° 27′ 32.00000″ E)|DHAULAGIRI
-LUNR|Lunag Ri|Rongshar Ri I,Ondrej Peak,Lunag I|6895|Rolwaling Himal (SW of Nangpa La on Tibetan border)|N|86.5500784|28.0535945|86° 33′ 00.28224″ E|28° 03′ 12.94020″ N|"OSM: (28° 03′ 12.94020″ N, 86° 33′ 00.28224″ E)
+LUNR|Lunag Ri|Lunag I,Ondrej Peak,Rongshar Ri I|6895|Rolwaling Himal (SW of Nangpa La on Tibetan border)|N|86.5500784|28.0535945|86° 33′ 00.28224″ E|28° 03′ 12.94020″ N|"OSM: (28° 03′ 12.94020″ N, 86° 33′ 00.28224″ E)
 MoTCA: (28° 03′ 02.00000″ N, 86° 33′ 04.00000″ E)"|ROLWALING
 JASG|Jasemba Goth|Dzasampa Kang,Jasemba Go|6730|Khumbu Himal (NW of Pasang Lhamu Chuli)|Y|86.605|28.0872222|86° 36′ 18.00000″ E|28° 05′ 14.00000″ N|MoTCA: (28° 05′ 14.00000″ N, 86° 36′ 18.00000″ E)|KHUMBU
 GOJN|Gojung|Mugu Chuli|6310|Kanti Himal (WNW of Kanti Himal peak on Tibetan border)|||||||KANTI
 NAN2|Nangamari II||6209|Ohmi Kangri Himal (S of Nangamari I)|Y|87.8672222|27.8913889|87° 52′ 02.00000″ E|27° 53′ 29.00000″ N|MoTCA: (27° 53′ 29.00000″ N, 87° 52′ 02.00000″ E)|JANAK
-DRAG|Dragmorpa Ri|Dragmarpo Ri,Panaya Tippa,Thakmarpo Ri,Pagmorpo|6185|Langtang Himal (SW of Tilman's Col on Tibetan border)|N|85.6621689|28.3259399|85° 39′ 43.80804″ E|28° 19′ 33.38364″ N|"OSM: (28° 19′ 33.38364″ N, 85° 39′ 43.80804″ E)
-MoTCA: (28° 19′ 31.00000″ N, 85° 39′ 51.00000″ E)"|LANGTANG
+DRAG|Dragmorpa Ri|Panaya Tippa,Thakmarpo Ri|6185|Langtang Himal (SW of Tilman's Col on Tibetan border)|Y|85.6641667|28.3252778|85° 39′ 51.00000″ E|28° 19′ 31.00000″ N|MoTCA: (28° 19′ 31.00000″ N, 85° 39′ 51.00000″ E)|LANGTANG
 SYKG|Syaokang|Suyao Kang|5929|Ohmi Kangri Himal (SW of Ohmi Kangri near Tibetan border)|Y|87.8961111|27.8825|87° 53′ 46.00000″ E|27° 52′ 57.00000″ N|MoTCA: (27° 52′ 57.00000″ N, 87° 53′ 46.00000″ E)|JANAK
 BIJO|Bijora Hiunchuli|Bijora Hiun Chuli|6111|Jagdula Lekh (S of Kande Huinchuli)|Y|82.5308333|29.2919444|82° 31′ 51.00000″ E|29° 17′ 31.00000″ N|MoTCA: (29° 17′ 31.00000″ N, 82° 31′ 51.00000″ E)|KANJIROBA
 CHUB|Chhuboche|Chhuboche Peak|5606|Damodar Himal (NNE of Pisang Peak)|Y|84.2183333|28.7516667|84° 13′ 06.00000″ E|28° 45′ 06.00000″ N|MoTCA: (28° 45′ 06.00000″ N, 84° 13′ 06.00000″ E)|DAMODAR
 LUNW|Lunag West||6492|Rolwaling Himal (W of Lunag I on Tibetan border)|||||||ROLWALING
-DOMO|Domo|Jongsang SE Peak,Jongsang Peak|7447|Jongsang Himal (SE of Jongsong on Indian border)|Y|88.1380556|27.8811111|88° 08′ 17.00000″ E|27° 52′ 52.00000″ N|MoTCA: (27° 52′ 52.00000″ N, 88° 08′ 17.00000″ E)|JANAK
+DOMO|Domo|Jongsang Peak,Jongsang SE Peak|7447|Jongsang Himal (SE of Jongsong on Indian border)|Y|88.1380556|27.8811111|88° 08′ 17.00000″ E|27° 52′ 52.00000″ N|MoTCA: (27° 52′ 52.00000″ N, 88° 08′ 17.00000″ E)|JANAK
 LUN2|Lunag II||6812|Rolwaling Himal (SW of Nangpa La near Tibetan border)|||||||ROLWALING
 TRIA|Triangle Peak|Triangle|6484|Jugal Himal (NNW of Dome Blanc on Tibetan border)|N|85.7414742|28.2724873|85° 44′ 29.30712″ E|28° 16′ 20.95428″ N|OSM: (28° 16′ 20.95428″ N, 85° 44′ 29.30712″ E)|JUGAL
 KASI|Kasi Dalpha||6386|Jagdula Lekh (S of Kande Huinchuli)|Y|82.5547222|29.2830556|82° 33′ 17.00000″ E|29° 16′ 59.00000″ N|MoTCA: (29° 16′ 59.00000″ N, 82° 33′ 17.00000″ E)|KANJIROBA
 NPHU|Narphu|Nar Phu|5921|Damodar Himal (WNW of Pisang Peak, E of Chulu East Peak)|Y|84.1238889|28.7169444|84° 07′ 26.00000″ E|28° 43′ 01.00000″ N|MoTCA: (28° 43′ 01.00000″ N, 84° 07′ 26.00000″ E)|DAMODAR
-POTA|Pota Himal North|Pota North,Peak Hawley|6182|Dhaulagiri Himal (NE of Putha Hiunchuli)|Y|83.1975|28.7758333|83° 11′ 51.00000″ E|28° 46′ 33.00000″ N|MoTCA: (28° 46′ 33.00000″ N, 83° 11′ 51.00000″ E)|DHAULAGIRI
-PANN|Pangbuk North|Pangbuk Ri,Jobo LeCoultre|6478|Rolwaling Himal (NE of Pangbuk Ri on Tibetan border)|Y|86.5222222|28.0052778|86° 31′ 20.00000″ E|28° 00′ 19.00000″ N|MoTCA: (28° 00′ 19.00000″ N, 86° 31′ 20.00000″ E)|ROLWALING
+POTA|Pota Himal North|Peak Hawley,Pota North|6182|Dhaulagiri Himal (NE of Putha Hiunchuli)|Y|83.1975|28.7758333|83° 11′ 51.00000″ E|28° 46′ 33.00000″ N|MoTCA: (28° 46′ 33.00000″ N, 83° 11′ 51.00000″ E)|DHAULAGIRI
+PANN|Pangbuk North|Jobo LeCoultre,Pangbuk Ri|6478|Rolwaling Himal (NE of Pangbuk Ri on Tibetan border)|Y|86.5222222|28.0052778|86° 31′ 20.00000″ E|28° 00′ 19.00000″ N|MoTCA: (28° 00′ 19.00000″ N, 86° 31′ 20.00000″ E)|ROLWALING
 MUST|Mustang Himal||6195|Mustang Himal (S of Mansail on Tibetan border)|Y|83.81|29.2861111|83° 48′ 36.00000″ E|29° 17′ 10.00000″ N|MoTCA: (29° 17′ 10.00000″ N, 83° 48′ 36.00000″ E)|MUSTANG
 MNSL|Mansail|Manshail|6235|Mustang Himal (NW of Lo Manthang on Tibetan border)|Y|83.3019444|29.3019444|83° 18′ 07.00000″ E|29° 18′ 07.00000″ N|MoTCA: (29° 18′ 07.00000″ N, 83° 18′ 07.00000″ E)|GAUTAM
 CPHU|Chhochenphu Himal||6260|Ohmi Kangri Himal (SW of Pabuk Kang near Tibetan border)|Y|87.7644444|27.8319444|87° 45′ 52.00000″ E|27° 49′ 55.00000″ N|MoTCA: (27° 49′ 55.00000″ N, 87° 45′ 52.00000″ E)|UMBAK
@@ -504,16 +488,14 @@ TANK|Tankya I||6305|Kanti Himal (NE of Mariyang on Tibetan border)|Y|82.9169444|
 GORK|Gorakh Khang||6254|Gorakh Khang (ENE of Simikot on Tibetan border)|Y|82.3375|30.0441667|82° 20′ 15.00000″ E|30° 02′ 39.00000″ N|MoTCA: (30° 02′ 39.00000″ N, 82° 20′ 15.00000″ E)|GORAKH
 RAUN|Raungsiyar||6224|Rolwaling Himal (N of Pimu)|Y|86.5594444|27.9077778|86° 33′ 34.00000″ E|27° 54′ 28.00000″ N|MoTCA: (27° 54′ 28.00000″ N, 86° 33′ 34.00000″ E)|ROLWALING
 LDAK|Langdak||6220|Rolwaling Himal (N of Raungsiyar and Pimu)|Y|86.5636111|27.9169444|86° 33′ 49.00000″ E|27° 55′ 01.00000″ N|MoTCA: (27° 55′ 01.00000″ N, 86° 33′ 49.00000″ E)|ROLWALING
-TKRE|Takargo East|Takargo,Thakar Go East,Dragker-go East|6152|Rolwaling Himal (ESE of Takargo)|Y|86.5116667|27.8747222|86° 30′ 42.00000″ E|27° 52′ 29.00000″ N|MoTCA: (27° 52′ 29.00000″ N, 86° 30′ 42.00000″ E)|ROLWALING
+TKRE|Takargo East|Dragker-go East,Takargo,Thakar Go East|6152|Rolwaling Himal (ESE of Takargo)|Y|86.5116667|27.8747222|86° 30′ 42.00000″ E|27° 52′ 29.00000″ N|MoTCA: (27° 52′ 29.00000″ N, 86° 30′ 42.00000″ E)|ROLWALING
 OMIT|Omitso Go|Omi Tso Go|6332|Rolwaling Himal (NE of Kang Nachugo on Tibetan border)|Y|86.4580556|27.9152778|86° 27′ 29.00000″ E|27° 54′ 55.00000″ N|MoTCA: (27° 54′ 55.00000″ N, 86° 27′ 29.00000″ E)|ROLWALING
 CBAM|Chhopa Bamare|Chomo Pamari|6109|Rolwaling Himal (NW of Lamabagar on Tibetan border)|Y|86.0919444|28.0572222|86° 05′ 31.00000″ E|28° 03′ 26.00000″ N|MoTCA: (28° 03′ 26.00000″ N, 86° 05′ 31.00000″ E)|PAMARI
 YALW|Yalung Kang West|Yalung Khang West|8077|Kangchenjunga Himal (W summit of Yalung Kang)|Y|88.1255556|27.7061111|88° 07′ 32.00000″ E|27° 42′ 22.00000″ N|MoTCA: (27° 42′ 22.00000″ N, 88° 07′ 32.00000″ E)|NORTHERN
-KANN|Kangchenjunga North|Kangchenjunga,Kanchenjunga,Kanchenjunga North|7938|Kangchenjunga Himal (small knob north of Main summit)|N|88.1483408|27.7026008|88° 08′ 54.02688″ E|27° 42′ 09.36288″ N|"OSM: (27° 42′ 09.36288″ N, 88° 08′ 54.02688″ E)
-MoTCA: (27° 42′ 39.00000″ N, 88° 09′ 16.00000″ E)"|NORTHERN
+KANN|Kangchenjunga North|Kanchenjunga North|7938|Kangchenjunga Himal (small knob north of Main summit)|Y|88.1544444|27.7108333|88° 09′ 16.00000″ E|27° 42′ 39.00000″ N|MoTCA: (27° 42′ 39.00000″ N, 88° 09′ 16.00000″ E)|NORTHERN
 KBNE|Kangbachen East|Kambachen East,Kangbachen|7780|Kangchenjunga Himal (plateau SE of Kangbachen?)|Y|88.1127778|27.7163889|88° 06′ 46.00000″ E|27° 42′ 59.00000″ N|MoTCA: (27° 42′ 59.00000″ N, 88° 06′ 46.00000″ E)|NORTHERN
-HERZ|Herzog Peak|Khangsar Kang,Roc Noir,Khangsar Khang West|7555|Annapurna Himal (WSW of Roc Noir)|N|83.8629012|28.6108141|83° 51′ 46.44432″ E|28° 36′ 38.93076″ N|"OSM: (28° 36′ 38.93076″ N, 83° 51′ 46.44432″ E)
-MoTCA: (28° 36′ 33.00000″ N, 83° 51′ 37.00000″ E)"|ANNAPURNA
-GANW|Gangapurna West|Asapurna,Lachenal Peak,Gangapurna,Lachenel|7140|Annapurna Himal (W of Gangapurna)|N|83.9635144|28.605655|83° 57′ 48.65184″ E|28° 36′ 20.35800″ N|"OSM: (28° 36′ 20.35800″ N, 83° 57′ 48.65184″ E)
+HERZ|Herzog Peak|Khangsar Khang West|7555|Annapurna Himal (WSW of Roc Noir)|Y|83.8602778|28.6091667|83° 51′ 37.00000″ E|28° 36′ 33.00000″ N|MoTCA: (28° 36′ 33.00000″ N, 83° 51′ 37.00000″ E)|ANNAPURNA
+GANW|Gangapurna West|Asapurna,Gangapurna,Lachenal Peak,Lachenel|7140|Annapurna Himal (W of Gangapurna)|N|83.9635144|28.605655|83° 57′ 48.65184″ E|28° 36′ 20.35800″ N|"OSM: (28° 36′ 20.35800″ N, 83° 57′ 48.65184″ E)
 MoTCA: (28° 36′ 04.00000″ N, 83° 56′ 38.00000″ E)"|ANNAPURNA
 CHMR|Chamar|Shringi Himal|7161|Shringi Himal (SSE of Chamar)|N|84.9437234|28.5550852|84° 56′ 37.40424″ E|28° 33′ 18.30672″ N|"OSM: (28° 33′ 18.30672″ N, 84° 56′ 37.40424″ E)
 MoTCA: (28° 32′ 48.00000″ N, 84° 57′ 02.00000″ E)"|SERANG
@@ -522,7 +504,7 @@ GAUS|Gaurishankar South|Gauri|7010|Rolwaling Himal (S of Gaurishankar)|Y|86.3502
 BURK|Burke Kang|Burke Khang|6942|Khumbu Himal (ENE of Hungchhi on Tibetan border)|Y|86.7738889|28.0369444|86° 46′ 26.00000″ E|28° 02′ 13.00000″ N|MoTCA: (28° 02′ 13.00000″ N, 86° 46′ 26.00000″ E)|KHUMBU
 HMLE|Himlung East|Himlung|6932|Peri Himal (E of Himlung Himal on Tibetan border)|N|84.4217998|28.7723305|84° 25′ 18.47928″ E|28° 46′ 20.38980″ N|"OSM: (28° 46′ 20.38980″ N, 84° 25′ 18.47928″ E)
 MoTCA: (28° 46′ 09.00000″ N, 84° 26′ 20.00000″ E)"|PERI
-YNGS|Yangra Kangri South|Yangra,Yangra Kangri,Ganesh I,Yangra South,Ganesh I South|6863|Ganesh Himal (NW of Ganesh III on Tibetan border)|N|85.1294745|28.3912625|85° 07′ 46.10820″ E|28° 23′ 28.54500″ N|"OSM: (28° 23′ 28.54500″ N, 85° 07′ 46.10820″ E)
+YNGS|Yangra Kangri South|Ganesh I South,Yangra Kangri,Yangra South|6863|Ganesh Himal (NW of Ganesh III on Tibetan border)|N|85.1294745|28.3912625|85° 07′ 46.10820″ E|28° 23′ 28.54500″ N|"OSM: (28° 23′ 28.54500″ N, 85° 07′ 46.10820″ E)
 MoTCA: (28° 20′ 47.00000″ N, 85° 06′ 36.00000″ E)"|GANESH
 NUPL|Nup La Kang|Nupla Khang|6861|Khumbu Himal (N of Nup La on Tibetan border)|Y|86.7669444|28.0741667|86° 46′ 01.00000″ E|28° 04′ 27.00000″ N|MoTCA: (28° 04′ 27.00000″ N, 86° 46′ 01.00000″ E)|KHUMBU
 CHUM|Chumbu||6859|Khumbu Himal (WSW of Khangri Shar near Tibetan border)|N|86.7878294|28.0136395|86° 47′ 16.18584″ E|28° 00′ 49.10220″ N|"OSM: (28° 00′ 49.10220″ N, 86° 47′ 16.18584″ E)
@@ -542,7 +524,7 @@ CHNG|Changdi||6623|Palchung Himal (SE of Kanti Himal peak on Tibetan border)|Y|8
 GOLD|Goldum Peak|Goldum,Pangri Goldumba|6632|Jugal Himal (on Tibetan border)|N|85.7319362|28.3252371|85° 43′ 54.97032″ E|28° 19′ 30.85356″ N|"OSM: (28° 19′ 30.85356″ N, 85° 43′ 54.97032″ E)
 MoTCA: (28° 19′ 41.00000″ N, 85° 43′ 45.00000″ E)"|JUGAL
 THOC|Thoche Go||6602|Peri Himal (SE of Cheo Himal on Tibetan border)|Y|84.4597222|28.7577778|84° 27′ 35.00000″ E|28° 45′ 28.00000″ N|MoTCA: (28° 45′ 28.00000″ N, 84° 27′ 35.00000″ E)|PERI
-KCHS|Kangchung Shar|UIAA Peak,Khangchung,Kangcho Shar|6063|Khumbu Himal (NE of Gokyo Lake)|Y|86.7397222|27.9836111|86° 44′ 23.00000″ E|27° 59′ 01.00000″ N|MoTCA: (27° 59′ 01.00000″ N, 86° 44′ 23.00000″ E)|KHUMBU
+KCHS|Kangchung Shar|Kangcho Shar,Khangchung,UIAA Peak|6063|Khumbu Himal (NE of Gokyo Lake)|Y|86.7397222|27.9836111|86° 44′ 23.00000″ E|27° 59′ 01.00000″ N|MoTCA: (27° 59′ 01.00000″ N, 86° 44′ 23.00000″ E)|KHUMBU
 PHUN|Phu Kang North|Phu Khang North,Phu khang North|6580|Peri Himal (N of Cheo Himal on Tibetan border)|Y|84.4377778|28.8208333|84° 26′ 16.00000″ E|28° 49′ 15.00000″ N|MoTCA: (28° 49′ 15.00000″ N, 84° 26′ 16.00000″ E)|PERI
 PTHE|Pethangtse East|Pethangtse|6572|Khumbu Himal (ESE of Pethangtse on Tibetan border)|N|87.0152042|27.957236|87° 00′ 54.73512″ E|27° 57′ 26.04960″ N|"OSM: (27° 57′ 26.04960″ N, 87° 00′ 54.73512″ E)
 MoTCA: (27° 56′ 58.00000″ N, 87° 02′ 10.00000″ E)"|MAKALU
@@ -550,7 +532,7 @@ PHNG|Phungi|Phungi Himal|6524|Peri Himal (SE of Ratna Chuli on Tibetan border)|Y
 KNTE|Kanti Himal East||6516|Kanti Himal (ENE of Kanti Himal on Tibetan border)|Y|82.7022222|29.8530556|82° 42′ 08.00000″ E|29° 51′ 11.00000″ N|MoTCA: (29° 51′ 11.00000″ N, 82° 42′ 08.00000″ E)|KANTI
 JARK|Jarkya|Jarkya Peak|6473|Manaslu Himal (N of Larkya La on Tibetan border)|Y|84.5269444|28.7419444|84° 31′ 37.00000″ E|28° 44′ 31.00000″ N|MoTCA: (28° 44′ 31.00000″ N, 84° 31′ 37.00000″ E)|PERI
 MARW|Mariyang West|Mariyang|6455|Kanti Himal (WSW of Mariyang on Tibetan border)|Y|82.8888889|29.6933333|82° 53′ 20.00000″ E|29° 41′ 36.00000″ N|MoTCA: (29° 41′ 36.00000″ N, 82° 53′ 20.00000″ E)|PALCHUNGHAMGA
-MAYT|Mayonthang Kang|Mayung Thang Khang,Mayun Thang Khang|6449|Kanti Himal (NW of Changdi Himal on Tibetan border)|Y|82.7466667|29.7697222|82° 44′ 48.00000″ E|29° 46′ 11.00000″ N|MoTCA: (29° 46′ 11.00000″ N, 82° 44′ 48.00000″ E)|KANTI
+MAYT|Mayonthang Kang|Mayun Thang Khang,Mayung Thang Khang|6449|Kanti Himal (NW of Changdi Himal on Tibetan border)|Y|82.7466667|29.7697222|82° 44′ 48.00000″ E|29° 46′ 11.00000″ N|MoTCA: (29° 46′ 11.00000″ N, 82° 44′ 48.00000″ E)|KANTI
 LNJU|Langju|Lajo Dada|6426|Shringi Himal (S of Tobsar)|Y|85.0552778|28.5458333|85° 03′ 19.00000″ E|28° 32′ 45.00000″ N|MoTCA: (28° 32′ 45.00000″ N, 85° 03′ 19.00000″ E)|SERANG
 JYAC|Jyachhung|Jyacchhung|6338|Byas Risi Himal (NNW of Nampa on Tibetan border)|Y|81.0858333|30.1063889|81° 05′ 09.00000″ E|30° 06′ 23.00000″ N|MoTCA: (30° 06′ 23.00000″ N, 81° 05′ 09.00000″ E)|YOKAPAHAR
 GYLA|Gyala||6363|Manaslu Himal (NNE of Larkya La on Tibetan border)|Y|84.5588889|28.7519444|84° 33′ 32.00000″ E|28° 45′ 07.00000″ N|MoTCA: (28° 45′ 07.00000″ N, 84° 33′ 32.00000″ E)|PERI
@@ -578,24 +560,24 @@ TAKN|Takphu North||6142|Nalakankar Himal (on W Nepal/Tibetan border)|Y|81.422222
 BHUL|Bhulu Lhasa||6102|Kanjiroba Himal (NNW of Kanjiroba North)|Y|82.5994444|29.4413889|82° 35′ 58.00000″ E|29° 26′ 29.00000″ N|MoTCA: (29° 26′ 29.00000″ N, 82° 35′ 58.00000″ E)|KANJIROBA
 LNAK|Lhonak|Rifil Peak|6070|Janak Himal (WNW of Drohmo)|Y|88.0572222|27.8319444|88° 03′ 26.00000″ E|27° 49′ 55.00000″ N|MoTCA: (27° 49′ 55.00000″ N, 88° 03′ 26.00000″ E)|JANAK
 ROLM|Rolmi||6056|Shringi Himal (S of Tobsar)|Y|85.0502778|28.5677778|85° 03′ 01.00000″ E|28° 34′ 04.00000″ N|MoTCA: (28° 34′ 04.00000″ N, 85° 03′ 01.00000″ E)|SERANG
-ACHN|Aichyn|Aychin,Ashvin|6055|Chandi Himal (SW of Changwathang)|Y|81.8597222|30.2708333|81° 51′ 35.00000″ E|30° 16′ 15.00000″ N|MoTCA: (30° 16′ 15.00000″ N, 81° 51′ 35.00000″ E)|NALAKANKAR
+ACHN|Aichyn|Ashvin,Aychin|6055|Chandi Himal (SW of Changwathang)|Y|81.8597222|30.2708333|81° 51′ 35.00000″ E|30° 16′ 15.00000″ N|MoTCA: (30° 16′ 15.00000″ N, 81° 51′ 35.00000″ E)|NALAKANKAR
 ARDN|Ardang||6034|Phupharka Himal (NW of Simikot)|Y|81.6233333|30.1988889|81° 37′ 24.00000″ E|30° 11′ 56.00000″ N|MoTCA: (30° 11′ 56.00000″ N, 81° 37′ 24.00000″ E)|NALAKANKAR
 LUNG|Lungchhung||6043|Palchung Himal (NE of Kanjiroba on Tibetan border)|Y|83.1222222|29.6283333|83° 07′ 20.00000″ E|29° 37′ 42.00000″ N|MoTCA: (29° 37′ 42.00000″ N, 83° 07′ 20.00000″ E)|PALCHUNGHAMGA
 KHNG|Khung||6024|Palchung Himal (NE of Kanjiroba on Tibetan border)|Y|83.1441667|29.6247222|83° 08′ 39.00000″ E|29° 37′ 29.00000″ N|MoTCA: (29° 37′ 29.00000″ N, 83° 08′ 39.00000″ E)|PALCHUNGHAMGA
 CHND|Chandi Himal||6142|Chandi Himal (NE of Simikot on Tibetan border)|Y|81.9513889|30.3591667|81° 57′ 05.00000″ E|30° 21′ 33.00000″ N|MoTCA: (30° 21′ 33.00000″ N, 81° 57′ 05.00000″ E)|NALAKANKAR
-KALI|Kali Himal|Chota Ri,Baruntse,Baruntse North|6985|Khumbu Himal (NW of Baruntse)|N|86.9796489|27.8720615|86° 58′ 46.73604″ E|27° 52′ 19.42140″ N|"OSM: (27° 52′ 19.42140″ N, 86° 58′ 46.73604″ E)
+KALI|Kali Himal|Baruntse North,Chota Ri|6985|Khumbu Himal (NW of Baruntse)|N|86.9796489|27.8720615|86° 58′ 46.73604″ E|27° 52′ 19.42140″ N|"OSM: (27° 52′ 19.42140″ N, 86° 58′ 46.73604″ E)
 MoTCA: (27° 52′ 38.00000″ N, 86° 58′ 32.00000″ E)"|BARUN
 DHEC|Dhechyan Khang||6019|Damodar Himal (ESE of Gaugiri on Tibetan border)|Y|84.2519444|29.0358333|84° 15′ 07.00000″ E|29° 02′ 09.00000″ N|MoTCA: (29° 02′ 09.00000″ N, 84° 15′ 07.00000″ E)|DAMODAR
 EKRA|Ek Rate Danda|Ek Rate Dada|6213|Khumbu Himal (in Hongku Valley, S of Chamlang)|Y|87.005|27.7088889|87° 00′ 18.00000″ E|27° 42′ 32.00000″ N|MoTCA: (27° 42′ 32.00000″ N, 87° 00′ 18.00000″ E)|BARUN
 GHYN|Ghyun Himal I||6110|Mustang Himal (N of Ghyun Khola on Tibetan border)|Y|83.7819444|29.2441667|83° 46′ 55.00000″ E|29° 14′ 39.00000″ N|MoTCA: (29° 14′ 39.00000″ N, 83° 46′ 55.00000″ E)|MUSTANG
 GORH|Gorakh Himal||6198|Gorakh Himal (NE of Simikot on Tibetan border)|Y|82.2330556|30.065|82° 13′ 59.00000″ E|30° 03′ 54.00000″ N|MoTCA: (30° 03′ 54.00000″ N, 82° 13′ 59.00000″ E)|GORAKH
-HONK|Hongku|Sura Peak,Hongku Chuli Nup,Honku,Hongu|6764|Khumbu Himal (in Hongku Valley, W of Hongku Chuli)|Y|86.9794444|27.8255556|86° 58′ 46.00000″ E|27° 49′ 32.00000″ N|MoTCA: (27° 49′ 32.00000″ N, 86° 58′ 46.00000″ E)|BARUN
+HONK|Hongku|Hongku Chuli Nup,Hongu,Honku,Sura Peak|6764|Khumbu Himal (in Hongku Valley, W of Hongku Chuli)|Y|86.9794444|27.8255556|86° 58′ 46.00000″ E|27° 49′ 32.00000″ N|MoTCA: (27° 49′ 32.00000″ N, 86° 58′ 46.00000″ E)|BARUN
 KARK|Karko||6015|Saipal Himal (WNW of Saipal)|Y|81.2191667|29.9202778|81° 13′ 09.00000″ E|29° 55′ 13.00000″ N|MoTCA: (29° 55′ 13.00000″ N, 81° 13′ 09.00000″ E)|SAIPAL
-KARS|Karsang Kang|Kesang Khang,UAAA Peak,Kharsang|6225|Damodar Himal (NE of Saribung)|Y|84.1694444|28.9333333|84° 10′ 10.00000″ E|28° 55′ 60.00000″ N|MoTCA: (28° 55′ 60.00000″ N, 84° 10′ 10.00000″ E)|DAMODAR
+KARS|Karsang Kang|Kesang Khang,Kharsang,UAAA Peak|6225|Damodar Himal (NE of Saribung)|Y|84.1694444|28.9333333|84° 10′ 10.00000″ E|28° 55′ 60.00000″ N|MoTCA: (28° 55′ 60.00000″ N, 84° 10′ 10.00000″ E)|DAMODAR
 KHAY|Khayang||6186|Manaslu Himal (E of Samdo Peak on Tibetan border)|Y|84.7158333|28.6333333|84° 42′ 57.00000″ E|28° 38′ 00.00000″ N|MoTCA: (28° 38′ 00.00000″ N, 84° 42′ 57.00000″ E)|KUTANG
-GYLZ|Gyalzen Peak|Gyaltsen Peak,Gyaltsen|6151|Jugal Himal (SE of Leonpo Gang on Tibetan border)|N|85.8384328|28.1836027|85° 50′ 18.35808″ E|28° 11′ 00.96972″ N|"OSM: (28° 11′ 00.96972″ N, 85° 50′ 18.35808″ E)
+GYLZ|Gyalzen Peak|Gyaltsen,Gyaltsen Peak|6151|Jugal Himal (SE of Leonpo Gang on Tibetan border)|N|85.8384328|28.1836027|85° 50′ 18.35808″ E|28° 11′ 00.96972″ N|"OSM: (28° 11′ 00.96972″ N, 85° 50′ 18.35808″ E)
 MoTCA: (28° 11′ 02.00000″ N, 85° 50′ 30.00000″ E)"|JUGAL
-LSAM|Lungsampa|Lung Sampa,Lumsumna|6500|Khumbu Himal (S of Nangpai Gosum II)|Y|86.6613889|28.0527778|86° 39′ 41.00000″ E|28° 03′ 10.00000″ N|MoTCA: (28° 03′ 10.00000″ N, 86° 39′ 41.00000″ E)|KHUMBU
+LSAM|Lungsampa|Lumsumna,Lung Sampa|6500|Khumbu Himal (S of Nangpai Gosum II)|Y|86.6613889|28.0527778|86° 39′ 41.00000″ E|28° 03′ 10.00000″ N|MoTCA: (28° 03′ 10.00000″ N, 86° 39′ 41.00000″ E)|KHUMBU
 MERS|Mera South|Mera Peak|6064|Khumbu Himal (SW of Mera)|N|86.8686622|27.7098398|86° 52′ 07.18392″ E|27° 42′ 35.42328″ N|"OSM: (27° 42′ 35.42328″ N, 86° 52′ 07.18392″ E)
 MoTCA: (27° 42′ 04.00000″ N, 86° 53′ 42.00000″ E)"|BARUN
 PASH|Pashuwo|Pashubo|6177|Ganesh Himal (N of Lampo on Tibetan border)|Y|85.1683333|28.5319444|85° 10′ 06.00000″ E|28° 31′ 55.00000″ N|MoTCA: (28° 31′ 55.00000″ N, 85° 10′ 06.00000″ E)|GANESH
@@ -608,28 +590,27 @@ SPH5|Sharphu V|Tanga III|6158|Ohmi Kangri Himal (WNW of Kangchenjunga)|Y|87.92|2
 SPH6|Sharphu VI||6076|Ohmi Kangri Himal (WNW of Kangchenjunga)|Y|87.9258333|27.7736111|87° 55′ 33.00000″ E|27° 46′ 25.00000″ N|MoTCA: (27° 46′ 25.00000″ N, 87° 55′ 33.00000″ E)|JANAK
 MNSS|Mansail South|Manshail South|6248|Mustang Himal (S of Mansail on Tibetan border)|Y|83.8102778|29.2944444|83° 48′ 37.00000″ E|29° 17′ 40.00000″ N|MoTCA: (29° 17′ 40.00000″ N, 83° 48′ 37.00000″ E)|MUSTANG
 GDNG|Gave Ding||6581|Changla Himal (N of Lachama Chuli on Tibetan border)|||||||CHANGLA
-NGO3|Ngojumba Kang III|Ngojumba Kang,Ngojumba Khang II,Ngozumpa Kang I,Hillary Peak|7681|Khumbu Himal (NE of Cho Oyu on Tibetan border)|N|86.6850856|28.1068465|86° 41′ 06.30816″ E|28° 06′ 24.64740″ N|"OSM: (28° 06′ 24.64740″ N, 86° 41′ 06.30816″ E)
+NGO3|Ngojumba Kang III|Hillary Peak,Ngojumba Kang,Ngojumba Khang II|7681|Khumbu Himal (NE of Cho Oyu on Tibetan border)|N|86.6850856|28.1068465|86° 41′ 06.30816″ E|28° 06′ 24.64740″ N|"OSM: (28° 06′ 24.64740″ N, 86° 41′ 06.30816″ E)
 MoTCA: (28° 06′ 23.00000″ N, 86° 42′ 31.00000″ E)"|KHUMBU
 KIMS|Kimshung|Kinshung,Tsangbu Ri|6781|Langtang Himal (NE of Langtang Lirung)|N|85.5538215|28.272896|85° 33′ 13.75740″ E|28° 16′ 22.42560″ N|OSM: (28° 16′ 22.42560″ N, 85° 33′ 13.75740″ E)|LANGTANG
 PAWR|Pawar Central|Chaar Baatsa|6621|Pawar Himal (N of Larkya La)|||||||PERI
 NGOR|Nagoru||6165|Peri Himal (NW of Himlung Himal)|||||||PERI
 SALD|Saldim||6374|Makalu Himal (ENE of Shershon village on Tibetan border)|Y|87.1730556|27.8213889|87° 10′ 23.00000″ E|27° 49′ 17.00000″ N|MoTCA: (27° 49′ 17.00000″ N, 87° 10′ 23.00000″ E)|MAKALU
-LANY|Langtang Yubra|Ubra,Yubra Himal|6048|Langtang Himal (ENE of Langtang Lirung)|N|85.5735866|28.2688317|85° 34′ 24.91176″ E|28° 16′ 07.79412″ N|"OSM: (28° 16′ 07.79412″ N, 85° 34′ 24.91176″ E)
+LANY|Langtang Yubra|Yubra Himal|6048|Langtang Himal (ENE of Langtang Lirung)|N|85.5735866|28.2688317|85° 34′ 24.91176″ E|28° 16′ 07.79412″ N|"OSM: (28° 16′ 07.79412″ N, 85° 34′ 24.91176″ E)
 MoTCA: (28° 16′ 28.00000″ N, 85° 34′ 04.00000″ E)"|LANGTANG
-LARK|Larkya Peak|Naike Peak,Granite Peak|6416|Manaslu Himal (N of Manaslu North)|Y|84.545|28.6269444|84° 32′ 42.00000″ E|28° 37′ 37.00000″ N|MoTCA: (28° 37′ 37.00000″ N, 84° 32′ 42.00000″ E)|MANASLU
-NUPW|Nuptse West II|Nuptse Nup II,Nuptse,Nuptse II|7732|Khumbu Himal (NW of Nuptse main summit)|N|86.8903249|27.9658595|86° 53′ 25.16964″ E|27° 57′ 57.09420″ N|"OSM: (27° 57′ 57.09420″ N, 86° 53′ 25.16964″ E)
+LARK|Larkya Peak|Granite Peak,Naike Peak|6416|Manaslu Himal (N of Manaslu North)|Y|84.545|28.6269444|84° 32′ 42.00000″ E|28° 37′ 37.00000″ N|MoTCA: (28° 37′ 37.00000″ N, 84° 32′ 42.00000″ E)|MANASLU
+NUPW|Nuptse West II|Nuptse,Nuptse II,Nuptse Nup II|7732|Khumbu Himal (NW of Nuptse main summit)|N|86.8903249|27.9658595|86° 53′ 25.16964″ E|27° 57′ 57.09420″ N|"OSM: (27° 57′ 57.09420″ N, 86° 53′ 25.16964″ E)
 MoTCA: (27° 58′ 01.00000″ N, 86° 53′ 22.00000″ E)"|KHUMBU
-TENE|Tengi Ragi Tau East|Tengi Ragi Tau,Agole|6675|Rolwaling Himal (N of Tesi Laptsa)|Y|86.5563889|27.8572222|86° 33′ 23.00000″ E|27° 51′ 26.00000″ N|MoTCA: (27° 51′ 26.00000″ N, 86° 33′ 23.00000″ E)|ROLWALING
-NILE|Nilgiri East|Nilgiri South,Nilgiri Central|6698|Annapurna-Nilgiri Himal (NNW of Annapurna I)|N|83.7296456|28.6541082|83° 43′ 46.72416″ E|28° 39′ 14.78952″ N|"OSM: (28° 39′ 14.78952″ N, 83° 43′ 46.72416″ E)
+TENE|Tengi Ragi Tau East|Agole,Tengi Ragi Tau|6675|Rolwaling Himal (N of Tesi Laptsa)|Y|86.5563889|27.8572222|86° 33′ 23.00000″ E|27° 51′ 26.00000″ N|MoTCA: (27° 51′ 26.00000″ N, 86° 33′ 23.00000″ E)|ROLWALING
+NILE|Nilgiri East|Nilgiri Central,Nilgiri South|6698|Annapurna-Nilgiri Himal (NNW of Annapurna I)|N|83.7296456|28.6541082|83° 43′ 46.72416″ E|28° 39′ 14.78952″ N|"OSM: (28° 39′ 14.78952″ N, 83° 43′ 46.72416″ E)
 MoTCA: (28° 40′ 42.00000″ N, 83° 42′ 31.00000″ E)"|ANNAPURNA
 PEMR|Pemthang Ri|Pem Thang Karpo Ri|6743|Jugal Himal (N of Pemthang Karpo Ri on Tibetan border)|N|85.736021|28.2992576|85° 44′ 09.67560″ E|28° 17′ 57.32736″ N|"OSM: (28° 17′ 57.32736″ N, 85° 44′ 09.67560″ E)
 MoTCA: (28° 14′ 57.00000″ N, 85° 45′ 02.00000″ E)"|JUGAL
 FUTI|Futi Himal||6425|Damodar Himal (W of Bhrikuti)|||||||DAMODAR
 SANB|Sano Bhrikuti|Bhrikuti|6328|Damodar Himal (ENE of Bhrikuti)|Y|84.1475|28.9188889|84° 08′ 51.00000″ E|28° 55′ 08.00000″ N|MoTCA: (28° 55′ 08.00000″ N, 84° 08′ 51.00000″ E)|DAMODAR
 SANK|Sano Kailash||6452||||||||DAMODAR
-TARS|Tarke Kang Shar|Glacier Dome,Tare Kang,Tarke Kang,Tare Khang|7069|Annapurna Himal (E of Glacier Dome)|N|83.886437|28.6073547|83° 53′ 11.17320″ E|28° 36′ 26.47692″ N|"OSM: (28° 36′ 26.47692″ N, 83° 53′ 11.17320″ E)
-MoTCA: (28° 36′ 18.00000″ N, 83° 54′ 58.00000″ E)"|ANNAPURNA
+TARS|Tarke Kang Shar|Tare Kang,Tare Khang|7069|Annapurna Himal (E of Glacier Dome)|Y|83.9161111|28.605|83° 54′ 58.00000″ E|28° 36′ 18.00000″ N|MoTCA: (28° 36′ 18.00000″ N, 83° 54′ 58.00000″ E)|ANNAPURNA
 KORL|Korlang Pari Tippa|Korlang Pari Tippa North|5738|N of Lamabagar on Tibetan border|Y|86.1911111|28.1733333|86° 11′ 28.00000″ E|28° 10′ 24.00000″ N|MoTCA: (28° 10′ 24.00000″ N, 86° 11′ 28.00000″ E)|PAMARI
 JANE|Jannu East|Jannu,Khumbhakarna East,Kumbhakarna|7460|Kangchenjunga Himal (W of Kangchenjunga)|Y|88.0463889|27.6822222|88° 02′ 47.00000″ E|27° 40′ 56.00000″ N|MoTCA: (27° 40′ 56.00000″ N, 88° 02′ 47.00000″ E)|KUMBHAKARNA
-YUBR|Yubra|Ubra,Yubra Himal|6264|Langtang Himal (ENE of Langtang Lirung)|N|85.5735866|28.2688317|85° 34′ 24.91176″ E|28° 16′ 07.79412″ N|"OSM: (28° 16′ 07.79412″ N, 85° 34′ 24.91176″ E)
+YUBR|Yubra|Yubra Himal|6264|Langtang Himal (ENE of Langtang Lirung)|N|85.5735866|28.2688317|85° 34′ 24.91176″ E|28° 16′ 07.79412″ N|"OSM: (28° 16′ 07.79412″ N, 85° 34′ 24.91176″ E)
 MoTCA: (28° 16′ 28.00000″ N, 85° 34′ 04.00000″ E)"|LANGTANG

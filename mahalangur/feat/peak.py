@@ -362,17 +362,18 @@ def peak_list(hdb_peaks, himals, himal_override, osm_peaks, motca_peaks):
 
 
 def peak_geojson(peak_list):
-    property_names = [
-        ('name'     ,  1),
-        ('alt_names',  2),
-        ('height'   ,  3),
-        ('himal'    , 11)
-    ]
-
     features = []
     for peak in peak_list:
-        properties = {name: peak[col] for name, col in property_names
-                      if peak[col] is not None}
+        if peak[6] is None or peak[7] is None:
+            continue
+
+        properties = {'name': peak[1]}
+
+        if peak[2] is not None:
+            properties['alternate_names'] = peak[2].split(',')
+        
+        properties['height'] = int(peak[3])
+        properties['himal' ] = peak[11]
 
         features.append({
             'id': peak[0],
@@ -396,14 +397,15 @@ def peak_metadata():
     # Read peaks as {id: record} dictionary
     hdb_peaks = read_peaks(HDB_DSV_PATH, id_col='peakid')
 
-    with res.path('mahalangur.data.metadata', 'osm_peak.txt') as osm_dsv_path:
+    meta_dir = 'mahalangur.data.metadata'
+    with res.path(meta_dir, 'osm_peak.txt') as osm_dsv_path:
         osm_peaks = read_peaks(osm_dsv_path, id_col='peak_id')
 
-    with res.path('mahalangur.data.metadata', 'mot_peak.txt') as mot_dsv_path:
+    with res.path(meta_dir, 'mot_peak.txt') as mot_dsv_path:
         mot_peaks = read_peaks(mot_dsv_path, id_col='peak_number')
 
     # Read himal geometry
-    with res.path('mahalangur.web.static', 'web_himal.geojson') as himal_path:
+    with res.path(meta_dir, 'web_himal.geojson') as himal_path:
         himals = read_himals(himal_path)
 
     # Create a dataframe of names with header [id, seq, full_name, name, title]
