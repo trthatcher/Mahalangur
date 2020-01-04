@@ -1,138 +1,86 @@
 import csv
+import importlib.resources as res
 import joblib
 import json
 import pandas as pd
-from .. import ASSETS_DIR, DATASETS_DIR, WEB_DIR
-from .. import utils
+from ..feat import utils
 from flask import Flask, render_template, request, jsonify
 
 ### Globals
 
 app = Flask(__name__)
 
-MODEL    = None
-PEAK_DF  = None
+MODEL         = None
+PEAK_GEOSJON  = None
+HIMAL_GEOJSON = None
+PEAK_DF       = None
 
-PEAKS_PATH  = (WEB_DIR / 'static' / 'peak.geojson' ).resolve()
-MODEL_PATH  = (ASSETS_DIR / 'model-rf_v1.0.pickle').resolve()
-
-HIMALS = [
-    'ANNAPURNA',
-    'BARUN',
-    'CHANGLA',
-    'DAMODAR',
-    'DHAULAGIRI',
-    'DOLPO',
-    'GANESH',
-    'GAUTAM',
-    'GORAKH',
-    'JANAK',
-    'JUGAL',
-    'KANJIROBA',
-    'KANTI',
-    #'KHUMBU',  Ignore, default
-    'KUMBHAKARNA',
-    'KUTANG',
-    'LANGTANG',
-    'MAKALU',
-    'MANASLU',
-    'MUSTANG',
-    'NALAKANKAR',
-    'NORTHERN',
-    'PALCHUNGHAMGA',
-    'PAMARI',
-    'PERI',
-    'ROLWALING',
-    'SAIPAL',
-    'SERANG',
-    'SINGALILA',
-    'UMBAK',
-    'WESTERNSIKKIM',
-    'YOKAPAHAR'
-]
-
-SEASONS = [
-    'Spring',
-    'Summer',
-    #'Autumn',  Ignore, default
-    'Winter'
-]
+DEFAULTS = {
+    'expedition_year' : (int, 2020    ),
+    'season'          : (str, 'Autumn'),
+    'commercial_route': (str, 'N'     ),
+    'total_members'   : (int, 5       ),
+    'total_hired'     : (int, 3       ),
+    'age'             : (int, 37      ),
+    'sex'             : (str, 'M'     ),
+    'o2_used'         : (str, 'N'     )
+}
 
 
 ### Asset Loading
 
 def load_assets():
     global MODEL
+    global PEAK_GEOJSON
+    global HIMAL_GEOJSON
     global PEAK_DF
 
-    peak_headers = [
-        'height',
-        'expedition_year',
-        'commercial_route',
-        'total_members',
-        'total_hired',
-        'age',
-        'female',
-        'o2_used'
-    ]
-    peak_headers.extend(['himal_' + himal.lower() for himal in HIMALS])
-    peak_headers.extend(['season_' + season.lower() for season in SEASONS])
+    with res.path('mahalangur.assets', 'rfmodel.pickle') as model_path:
+        MODEL = joblib.load(model_path)
 
-    with open(PEAKS_PATH, 'r') as geojson_file:
-        peaks_geojson = json.load(geojson_file)
+    meta_dir = 'mahalangur.data.metadata'
+    with res.path(meta_dir, 'web_peak.geojson') as peak_path:
+        with open(peak_path, 'r') as geojson_file:
+            PEAK_GEOJSON = json.load(geojson_file)
 
-    peak_index   = []
-    peak_list    = []
-    for peak in peaks_geojson['features']:
-        peak_index.append(peak['id'])
+    with res.path(meta_dir, 'web_himal.geojson') as himal_path:
+        with open(himal_path, 'r') as geojson_file:
+            HIMAL_GEOJSON = json.load(geojson_file)
 
-        peak_data = [
-            peak['properties']['height'],
-            2020,  # Expedition Year
-            0,     # Commercial Route
-            1,     # Total Members
-            0,     # Total Hired
-            30,    # Age
-            0,     # Female
-            0,     # O2 Used
-        ]
+    peak_ids  = []
+    peak_data = []
+    for peak in PEAK_GEOJSON['features']:
+        peak_ids.append(peak['id'])
 
-        peak_himal = peak['properties']['himal']
+        data = {
+            'height': peak['properties']['height'],
+            'himal' : peak['properties']['himal']
+        }
+        for col, value in DEFAULTS.items():
+            data[col] = value[1]
 
-        peak_data.extend(
-            [1 if peak_himal == himal else 0 for himal in HIMALS]
-        )
-
-        peak_data.extend([0 for season in SEASONS])
-
-        peak_list.append(peak_data)
-
-    PEAK_DF = pd.DataFrame(
-        data=peak_list,
-        index=peak_index,
-        columns=peak_headers
-    )
-    MODEL = joblib.load(MODEL_PATH)
+        peak_data.append(data)
+    
+    PEAK_DF = utils.data_matrix(pd.DataFrame(peak_data, index=peak_ids))
 
 
 ### Prediction
 
-def predict(expedition_year=2019, season='Autumn', commercial_route=False,
-            total_members=10, total_hired=5, age=37, female=False,
-            o2_used=False):
-    PEAK_DF['expedition_year' ] = expedition_year
-    PEAK_DF['commercial_route'] = 1 if commercial_route else 0
-    PEAK_DF['total_members'   ] = total_members
-    PEAK_DF['total_hired'     ] = total_hired
-    PEAK_DF['age'             ] = age
-    PEAK_DF['female'          ] = 1 if female else 0
-    PEAK_DF['o2_used'         ] = 1 if o2_used else 0
-    PEAK_DF['season_summer'   ] = 1 if season == 'Summer' else 0
-    PEAK_DF['season_spring'   ] = 1 if season == 'Spring' else 0
-    PEAK_DF['season_winter'   ] = 1 if season == 'Winter' else 0
+def expedition_data(expedition_form):
+    exped_data = {}
+    for col, (dtype, value) in DEFAULTS.items():
+        exped_data[col] = dtype(expedition_form.get(col, value))
 
-    success = MODEL.predict_proba(PEAK_DF)[:, 1]
-    peaks = PEAK_DF.index
+    return exped_data
+
+
+def predict(expedition_data):
+    exped_df = PEAK_DF.copy(deep=True)
+    utils.update_data_matrix(exped_df, data=expedition_data,
+                             ignore_cols={'himal', 'height'})
+
+    success = MODEL.predict_proba(exped_df)[:, 1]
+    peaks = exped_df.index
 
     return {peak: round(100*prob, 2) for peak, prob in zip(peaks, success)}
 
@@ -142,33 +90,17 @@ def predict(expedition_year=2019, season='Autumn', commercial_route=False,
 @app.route('/')
 @app.route('/index')
 def index():
-    return render_template('map.j2')
+    return render_template('map.j2', peak_geojson=PEAK_GEOJSON,
+                           himal_geojson=HIMAL_GEOJSON)
 
 @app.route('/api/v1', methods=['POST'])
 def api_v1():
-    features = request.get_json()
-
-    expedition_year  = int(features['expedition_year'])
-    season           = features['season']
-    commercial_route = features['commercial_route'] == 'Y'
-    total_members    = int(features['total_members'])
-    total_hired      = int(features['total_hired'])
-    age              = int(features['age'])
-    female           = features['sex'] == 'F'
-    o2_used          = features['o2_used'] == 'Y'
-
-    success_probs = predict(
-        expedition_year  = expedition_year ,
-        season           = season,
-        commercial_route = commercial_route,
-        total_members    = total_members,
-        total_hired      = total_hired,
-        age              = age,
-        female           = female,
-        o2_used          = o2_used
-    )
-
-    return jsonify(success_probs)
+    try:
+        exped_form = request.get_json()
+        exped_data = expedition_data(exped_form)
+        return jsonify(predict(exped_data))
+    except:
+        return jsonify({})
 
 
 if __name__ == "__main__":

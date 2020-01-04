@@ -185,7 +185,13 @@
         })
     }
 
-    fetch('{{ url_for('static', filename='himal.geojson') }}')
+    var himalCollection = {{ himal_geojson|tojson }};
+    var peakCollection  = {{ peak_geojson|tojson }};
+
+    populateHimalLayer(himalCollection);
+    populatePeakLayer(peakCollection);
+
+    /*fetch('{{ url_for('static', filename='himal.geojson') }}')
         .then(response => {return response.json();})
         .then(himalCollection => {
             populateHimalLayer(himalCollection);
@@ -195,7 +201,7 @@
         .then(response => {return response.json();})
         .then(peakCollection => {
             populatePeakLayer(peakCollection);
-        });
+        });*/
 
 
 </script>

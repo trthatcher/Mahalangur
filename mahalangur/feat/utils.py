@@ -128,6 +128,7 @@ def update_data_matrix(model_df, data, schema=DATA_SCHEMA, ignore_cols=set()):
     set_column = set_dict_column if type(data) == dict else set_df_column
 
     for column, column_schema in schema.items():
+        if column in ignore_cols: continue
         set_column(model_df, data, column, column_schema)
 
     return model_df

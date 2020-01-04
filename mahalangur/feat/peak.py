@@ -301,7 +301,7 @@ def peak_list(hdb_peaks, himals, himal_override, osm_peaks, motca_peaks):
         if name in alt_names:
             alt_names.remove(name)
 
-        alt_names = ','.join(alt_names) if alt_names else None
+        alt_names = ','.join(sorted(alt_names)) if alt_names else None
 
         # Get latitude and longitude coordinates
         is_approx = None
