@@ -93,14 +93,14 @@ def index():
     return render_template('map.j2', peak_geojson=PEAK_GEOJSON,
                            himal_geojson=HIMAL_GEOJSON)
 
-@app.route('/api/v1', methods=['POST'])
+@app.route('/api/v1/', methods=['POST'])
 def api_v1():
     try:
         exped_form = request.get_json()
         exped_data = expedition_data(exped_form)
         return jsonify({
             'status': 'success',
-            'prediction': predict(exped_data)
+            'probabilities': predict(exped_data)
         })
     except:
         return jsonify({'status': 'failure'})

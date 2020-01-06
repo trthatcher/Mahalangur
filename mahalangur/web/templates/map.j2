@@ -26,13 +26,14 @@
 
         #map {
             flex: 1;
+            background-color: #333;
         }
 
         #footer {
             background-color: #333;
         }
 
-        /*#modal {
+        #modal {
             display: None;
             position: fixed;
             width: 100vw;
@@ -51,7 +52,7 @@
             transform: translateX(-50%) translateY(-50%);
             background-color: white;
             max-width: 90%;
-        }*/
+        }
     </style>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
         integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
@@ -111,30 +112,27 @@
     crossorigin=""></script>
 
 <script>
-    function createPeakIcon(fill_colour, width=30, height=45) {
-        shapeStyle = 'stroke:#000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none';
+    function hslString(hslColor) {
+        h = hslColor.h.toString();
+        s = hslColor.s.toString();
+        l = hslColor.l.toString();
+        return 'hsl(' + h + ',' + s + '%,' + l + '%)';
+    }
+
+    function createPeakIcon(fillColor, width=50, height=50) {
+        var pathStyle = 'stroke:#000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none';
 
         var svg = document.createElement('svg');
-        svg.setAttribute('width'  , width.toString());
-        svg.setAttribute('height' , height.toString());
-        svg.setAttribute('viewBox', '0 0 10.60838 15.91257');
-        svg.setAttribute('style'  , 'background-color:none;');
+        svg.setAttribute('width'  , width.toString()        );
+        svg.setAttribute('height' , height.toString()       );
+        svg.setAttribute('viewBox', '0 0 100 100'           );
+        svg.setAttribute('style'  , 'background-color:none;overflow:visible;');
 
-        var g = document.createElement('g');
-        g.setAttribute('transform', 'translate(0.30419,0.55902)');
+        var triangle = document.createElement('path');
+        triangle.setAttribute('d', 'm 0,100 50,-100 50,100 z');
+        triangle.setAttribute('style', 'fill:' + hslString(fillColor) + ';' + pathStyle);
 
-        svg.appendChild(g);
-
-        var basePath = document.createElement('path');
-        basePath.setAttribute('style', 'fill:' + fill_colour + ';' + shapeStyle);
-        basePath.setAttribute('d', 'm 10,10 -3,-6 -1,1 -1,-1 -1,1 -1,-1 -3,6 5,5 z');
-
-        var peakPath = document.createElement('path');
-        peakPath.setAttribute('style', 'fill:#FFF;' + shapeStyle);
-        peakPath.setAttribute('d', 'm 3,4 2,-4 2,4 -1,1 -1,-1 -1,1 z');
-
-        g.appendChild(basePath);
-        g.appendChild(peakPath);
+        svg.appendChild(triangle);
 
         return L.divIcon({
             html:       svg.outerHTML,
@@ -144,26 +142,32 @@
         })
     }
 
-    const peakIcons = [
-        createPeakIcon('#000'),
-        createPeakIcon('red'),
-        createPeakIcon('orange'),
-        createPeakIcon('yellow'),
-        createPeakIcon('green')
-    ];
+    function getPeakColor(probability) {
+        if ((0 <= probability) && (probability <= 100) && Number.isFinite(probability)) {
+            /* Red: #e83030 */
+            var h1 =   0,
+                s1 = 100,
+                l1 =  50;
+
+            var h2 = 120,
+                s2 = 100,
+                l2 =  50;
+
+            var alpha = Math.min(Math.max(0, probability - 20), 30)/30;
+
+            return {
+                h: Math.round((1 - alpha)*h1 + alpha*h2),
+                s: Math.round((1 - alpha)*s1 + alpha*s2),
+                l: Math.round((1 - alpha)*l1 + alpha*l2)
+            };
+        } else {
+            return {h:241, s:77, l:56};
+        }
+    }
 
     function getPeakIcon(probability) {
-        if (probability == null) {
-            return peakIcons[0];
-        } else if (probability < 20) {
-            return peakIcons[1];
-        } else if (probability < 30) {
-            return peakIcons[2];
-        } else if (probability < 40) {
-            return peakIcons[3];
-        } else {
-            return peakIcons[4];
-        }
+        peakColor = getPeakColor(probability);
+        return createPeakIcon(peakColor, 25, 25);
     }
 
     const osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
@@ -197,6 +201,7 @@
         center: [29, 84.5],
         layers: [otmLayer, himalLayer, peakLayer],
         maxBounds: bounds,
+        maxZoom: 15,
         minZoom: 7,
         zoom: 8
     });
@@ -251,28 +256,38 @@
     populateHimalLayer(himalCollection);
     populatePeakLayer(peakCollection);
 
-
-    /*newIcon = L.divIcon({html: peakMarker('black').outerHTML, className: null, iconSize: [40, 60], iconAnchor: [20, 60] });
-
-    newIcon = L.divIcon({html: peakMarker('blue').outerHTML, className: null, iconSize: [30, 45], iconAnchor: [15, 45] });*/
-
-    L.marker([28.0, 84.0], {icon: createPeakIcon('purple')}).addTo(himalayaMap);
-
-
-    /*fetch('{{ url_for('static', filename='himal.geojson') }}')
-        .then(response => {return response.json();})
-        .then(himalCollection => {
-            populateHimalLayer(himalCollection);
+    async function postExpeditionData(data) {
+        const response = await fetch(window.location.origin + "/api/v1/", {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify(data || {})
         });
 
-    fetch('{{ url_for('static', filename='peak.geojson') }}')
-        .then(response => {return response.json();})
-        .then(peakCollection => {
-            populatePeakLayer(peakCollection);
-        });*/
+        return await response.json();
+    }
 
+    function updatePeakProbabilities(peakResponse) {
+        if ('probabilities' in peakResponse) {
+            var peakProbability = peakResponse.probabilities;
+            peakLayer.eachLayer(layer => {
+                if ('feature' in layer) {
+                    var featureId = layer.feature.id;
+                    if (featureId in peakProbability) {
+                        layer.feature.properties.summit_probability = peakProbability[featureId];
+                    }
+                }
+            });
+        }
+    }
 
-
+    function updatePeakIcons() {
+        peakLayer.eachLayer(layer => {
+            if ('feature' in layer) {
+                var summit_probability = layer.feature.properties.summit_probability;
+                layer.setIcon(getPeakIcon(summit_probability));
+            }
+        });
+    }
 
 
 </script>
