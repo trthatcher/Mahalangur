@@ -2,8 +2,10 @@ import csv
 import importlib.resources as res
 import joblib
 import json
+import logging
 import pandas as pd
 from ..feat import utils
+from .. import LOG_FORMAT
 from flask import Flask, render_template, request, jsonify
 
 ### Globals
@@ -97,15 +99,18 @@ def index():
 def api_v1():
     try:
         exped_form = request.get_json()
+        logger = logging.getLogger()
+        logger.info(exped_form)
         exped_data = expedition_data(exped_form)
         return jsonify({
             'status': 'success',
-            'probabilities': predict(exped_data)
+            'summit_probabilities': predict(exped_data)
         })
     except:
         return jsonify({'status': 'failure'})
 
 
 if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO, format=LOG_FORMAT)
     load_assets()
     app.run(debug=True)

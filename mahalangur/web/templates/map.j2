@@ -10,18 +10,52 @@
             margin: 0;
         }
 
-        #main {
+        html {
+            height: 100%;
+        }
+
+        body {
+            background-color: #333;
+            font: 14px sans-serif;
+        }
+
+        #site-main {
             display: flex;
             flex-flow: column;
             position: relative;
-            width: 100vw;
-            height: 100vh;
+            min-width: 100vw;
+            min-height: 100vh;
             z-index: 1;
+            overflow: auto;
         }
 
-        #header {
-            color: white;
-            background-color: #333;
+        #site-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        #site-title {
+            margin: 1rem;
+            padding: 0;
+            font-size: 2.4rem;
+            color: #fff;
+        }
+
+        #modal-button {
+            display: block;
+            font-size: 1.2rem;
+            color: #fff;
+            margin: 1rem;
+            padding: 0.7rem;
+            border-radius: 0;
+            border: 1px solid #888;
+            background-color: #555;
+        }
+
+        #modal-button:hover {
+            background-color: #666;
         }
 
         #map {
@@ -29,29 +63,59 @@
             background-color: #333;
         }
 
-        #footer {
-            background-color: #333;
+        .popup {
+            text-align: center;
+        }
+
+        .popup h1 {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        .popup h2 {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        .popup h3 {
+            font-size: 1rem;
+            margin: 0;
+            font-weight: normal;
+        }
+
+        #site-footer {
+            color: white;
+            text-align: center;
+            font-size: 0.8rem;
+        }
+
+        #site-footer a {
+            color: white;
         }
 
         #modal {
-            display: None;
-            position: fixed;
+            display: none;
+            justify-content: center;
+            align-items: center;
             width: 100vw;
             height: 100vh;
-            overflow: auto;
-            background-color: rgba(0,0,0,0.5);
-            z-index: 2;
+            position: fixed;
             top: 0;
             left: 0;
+            z-index: 2;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.5);
         }
 
         #modal-content {
-            position: relative;
-            left: 50%;
-            top: 50%;
-            transform: translateX(-50%) translateY(-50%);
-            background-color: white;
-            max-width: 90%;
+            display: block;
+            box-sizing: border-box;
+            padding: 1rem;
+            background-color: #fff;
+            max-height: 100%;
+            max-width: 100%;
+            width: 34rem;
+            overflow: auto;
         }
     </style>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
@@ -59,51 +123,52 @@
         crossorigin=""/>
 </head>
 <body>
-<main id="main">
-    <header id="header">
-        <h1>Mahalangur</h1>
-        <button id="modalbutton">Calculate Success Probability</button>
+<main id="site-main">
+    <header id="site-header">
+        <h1 id="site-title">Mahalangur</h1>
+        <button id="modal-button">Summit Probability</button>
     </header>
     <div id="map"></div>
-    <footer id="footer"><p>Leaflet</p></footer>
+    <footer id="site-footer">
+        <p><a href="https://github.com/trthatcher/Mahalangur">Mahalangur on Github</a></p>
+    </footer>
 </main>
 <div id="modal">
     <div id="modal-content">
-        <h1>This is where the modal content is</h1>
-        <form action="/visualization" method="POST">
+        <h1>Tell Us About Your Expedition</h1>
+        <form id="expedition-form">
+            <p>What is your age?</p>
+            <input name="age" type="number" step="1" min="16" max="65" value="30">
             <p>What is your sex?<p>
             <ul>
                 <li><label><input name="sex" type="radio" value="M" checked="checked">Male</label></li>
                 <li><label><input name="sex" type="radio" value="F">Female</label></li>
             </ul>
-            <p>What is your age?</p>
-            <input name="age" type="number" step="1" min="16" max="65" value="30">
+            <p>Will you use supplemental oxygen?</p>
+            <ul>
+                <li><label><input name="o2_used" type="radio" value="N" checked="checked">No</label</li>
+                <li><label><input name="o2_used" type="radio" value="Y">Yes</label></li>
+            </ul>
             <p>What year will you attempt the summit?</p>
+            <input name="expedition_year" type="number" step="1" min="2020" max="2040" value="2020">
             <p>What season will you attempt the summit?</p>
-<!--
-            <p><b>What is your sex? </b> </br>
-                
-                
-            </p>
-            <p><b>What is your age? (16 to 65)</b></br>
-                
-            </p>
-            <p><b>When will you reach basecamp? </b></br>
-                <input name="bcdate" type="date" value="2019-01-01">
-            </p>
-            <p><b>How many members (not hired) will be on the expedition? (1 to 25)</b></br>
-                <input name="members" type="number" step="1" min="1" max="25" value="1">
-            </p>
-            <p><b>How many hired guides will be on the expedition? (0 to 10)</b></br>
-                <input name="guides" type="number" step="1" min="0" max="10" value="0">
-            </p>
-            <p><b>Will you use supplemental oxygen?</b> </br>
-                <label>No<input name="o2used" type="radio" value="N" checked="checked" class = "index"></label>
-                <label>Yes<input name="o2used" type="radio" value="Y" class = "index"></label>
-            </p>
-            <p><input type="submit" value="SUBMIT" class="btn btn-primary btn-block btn-large"/></p>
-            -->
-         </form>
+            <ul>
+                <li><label><input name="season" type="radio" value="Spring">Spring</label></li>
+                <li><label><input name="season" type="radio" value="Summer">Summer</label></li>
+                <li><label><input name="season" type="radio" value="Autumn" checked="checked">Autumn</label></li>
+                <li><label><input name="season" type="radio" value="Winter">Winter</label></li>
+            </ul>
+            <p>Will you be using a commercial route?</p>
+            <ul>
+                <li><label><input name="commercial_route" type="radio" value="N" checked="checked">No</label></li>
+                <li><label>Yes<input name="commercial_route" type="radio" value="Y"></label></li>
+            </ul>
+            <p>How many hired guides will be on the expedition?</p>
+            <input name="total_hired" type="number" step="1" min="0" max="15" value="0">
+            <p>How many members (excluding guides) will be on the expedition?</p>
+            <input name="total_members" type="number" step="1" min="1" max="25" value="1">
+        </form>
+        <button id="expedition-form-button">Submit</button>
     </div>
 </div>
 
@@ -112,12 +177,56 @@
     crossorigin=""></script>
 
 <script>
-    function hslString(hslColor) {
-        h = hslColor.h.toString();
-        s = hslColor.s.toString();
-        l = hslColor.l.toString();
-        return 'hsl(' + h + ',' + s + '%,' + l + '%)';
+    /***** Form Interaction *****/
+
+    function toggleModal() {
+        var modal = document.getElementById('modal');
+        var isHidden = window.getComputedStyle(modal).display === 'none';
+        modal.style.display = isHidden ? 'flex' : 'none';
     }
+
+    document.getElementById('modal'        ).onclick = toggleModal;
+    document.getElementById('modal-button' ).onclick = toggleModal;
+    document.getElementById('modal-content').onclick = function () {
+        event.stopPropagation();
+    };
+
+
+    /***** Peak Icon Creation *****/
+
+    class ColorRange {
+        constructor(lower, upper) {
+            this.lower = lower;
+            this.upper = upper;
+        }
+
+        getColor(value) {
+            const lower = this.lower,
+                  upper = this.upper;
+
+            var delta = upper - lower;
+            var alpha = Math.min(Math.max(0, value - lower), delta)/delta;
+
+            /* #009948 hsla(148, 100%, 30%, 1) */
+            /* #ffff80 hsla(60 , 100%, 75%, 1) */
+
+            /* 240, 100%, 25.1% */
+
+            var h = Math.round((1 - alpha)*240 + alpha*240);
+            var s = Math.round((1 - alpha)*10 + alpha*100);
+            var l = Math.round((1 - alpha)*80 + alpha*25 );
+
+            return `hsl(${h} 100% ${l}%)`;
+        }
+
+        setRange(lower, upper) {
+            this.lower = lower;
+            this.upper = upper;
+        }
+    }
+
+    const colorRange = new ColorRange(0, 100);
+
 
     function createPeakIcon(fillColor, width=50, height=50) {
         var pathStyle = 'stroke:#000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none';
@@ -130,7 +239,7 @@
 
         var triangle = document.createElement('path');
         triangle.setAttribute('d', 'm 0,100 50,-100 50,100 z');
-        triangle.setAttribute('style', 'fill:' + hslString(fillColor) + ';' + pathStyle);
+        triangle.setAttribute('style', 'fill:' + fillColor + ';' + pathStyle);
 
         svg.appendChild(triangle);
 
@@ -138,30 +247,16 @@
             html:       svg.outerHTML,
             className:  null,
             iconSize:   [width, height],
-            iconAnchor: [width/2, height]
+            iconAnchor: [width/2, height],
+            popupAnchor: [0, -height]
         })
     }
 
     function getPeakColor(probability) {
         if ((0 <= probability) && (probability <= 100) && Number.isFinite(probability)) {
-            /* Red: #e83030 */
-            var h1 =   0,
-                s1 = 100,
-                l1 =  50;
-
-            var h2 = 120,
-                s2 = 100,
-                l2 =  50;
-
-            var alpha = Math.min(Math.max(0, probability - 20), 30)/30;
-
-            return {
-                h: Math.round((1 - alpha)*h1 + alpha*h2),
-                s: Math.round((1 - alpha)*s1 + alpha*s2),
-                l: Math.round((1 - alpha)*l1 + alpha*l2)
-            };
+            return colorRange.getColor(probability);
         } else {
-            return {h:241, s:77, l:56};
+            return 'hsl(0 0% 100%)';
         }
     }
 
@@ -169,6 +264,9 @@
         peakColor = getPeakColor(probability);
         return createPeakIcon(peakColor, 25, 25);
     }
+
+
+    /***** Map Definition & Settings *****/
 
     const osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
           otmUrl = 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png';
@@ -186,18 +284,35 @@
         L.latLng(latUpper + latPadding, lonUpper + lonPadding)
     );
 
+    function getPopupContent(feature) {
+        peakDesc = '<h1>' + feature.properties.name + '<h2>';
+        if ('summit_probability' in feature.properties) {
+            prob = feature.properties.summit_probability.toString();
+            peakDesc +=  '<h2>' + prob + '%</h2><h3>probability of summit</h3>';
+        }
+        return '<div class="popup">' + peakDesc + '</div>';
+    }
+
     var peakLayer = L.geoJSON(null, {
         pointToLayer: function (feature, latlng) {
-            return L.marker(latlng, {icon: getPeakIcon(null)});
+            var peakMarker = L.marker(latlng, {icon: getPeakIcon(null)});
+
+            peakMarker.bindPopup(getPopupContent(feature), {autoPan: false});
+            peakMarker.on('mouseover', function (e) { this.openPopup() ; });
+            peakMarker.on('mouseout' , function (e) { this.closePopup(); });
+
+            return peakMarker;
         }
     });
 
+    var attribution = 'Map Data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> Contributors, SRTM | Rendering &copy; <a href="opentopomap.org/">OpenTopoMap</a> | Climb Data &copy; <a href="https://www.himalayandatabase.com/">Himlayan Database</a>';
+
     var himalLayer = L.geoJSON(),
-        osmLayer   = L.tileLayer(osmUrl, {bounds: bounds}),
-        otmLayer   = L.tileLayer(otmUrl, {bounds: bounds});
+        osmLayer   = L.tileLayer(osmUrl, {bounds: bounds, attribution: attribution}),
+        otmLayer   = L.tileLayer(otmUrl, {bounds: bounds, attribution: attribution});
 
     var himalayaMap = L.map('map', {
-        attributionControl: false,
+        attributionControl: true,
         center: [29, 84.5],
         layers: [otmLayer, himalLayer, peakLayer],
         maxBounds: bounds,
@@ -218,13 +333,8 @@
 
     L.control.layers(baseMaps, overlayMaps).addTo(himalayaMap);
 
-    var modal = document.getElementById("modal");
 
-    var btn = document.getElementById("modalbutton");
-    btn.onclick = function() {
-        console.log("ok");
-        modal.style.display = "block";
-    }
+    /***** Layer Updates *****/
 
     function populateHimalLayer(himalCollection) {
         parentHimals = new Set();
@@ -237,27 +347,52 @@
 
         himalCollection.features.forEach(himal => {
             if (!(parentHimals.has(himal.id))) {
-                himal.properties['probability'] = Math.random();
                 himalLayer.addData(himal);
             }
         })
     }
 
     function populatePeakLayer(peakCollection) {
-        console.log(peakCollection);
         peakCollection.features.forEach(peak => {
             peakLayer.addData(peak);
         })
     }
 
-    var himalCollection = {{ himal_geojson|tojson }};
-    var peakCollection  = {{ peak_geojson|tojson }};
+    function setSummitProbabilities(summitProbability) {
+        let arr = Object.values(summitProbability);
+        let min = Math.min(...arr);
+        let max = Math.max(...arr);
+        colorRange.setRange(min, max);
 
-    populateHimalLayer(himalCollection);
-    populatePeakLayer(peakCollection);
+
+        peakLayer.eachLayer(layer => {
+            if ('feature' in layer) {
+                var feature = layer.feature;
+                if (feature.id in summitProbability) {
+                    feature.properties.summit_probability = summitProbability[feature.id];
+                }
+            }
+        });
+    }
+
+    function refreshPeakLayer() {
+        peakLayer.eachLayer(layer => {
+            if ('feature' in layer) {
+                var summitProbability = layer.feature.properties.summit_probability;
+                layer.setIcon(getPeakIcon(summitProbability));
+
+                var popup = layer.getPopup();
+                console.log(popup);
+                popup.setContent(getPopupContent(layer.feature));
+            }
+        });
+    }
+
+
+    /***** Form Submission *****/
 
     async function postExpeditionData(data) {
-        const response = await fetch(window.location.origin + "/api/v1/", {
+        const response = await fetch(window.location.origin + '/api/v1/', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(data || {})
@@ -266,30 +401,34 @@
         return await response.json();
     }
 
-    function updatePeakProbabilities(peakResponse) {
-        if ('probabilities' in peakResponse) {
-            var peakProbability = peakResponse.probabilities;
-            peakLayer.eachLayer(layer => {
-                if ('feature' in layer) {
-                    var featureId = layer.feature.id;
-                    if (featureId in peakProbability) {
-                        layer.feature.properties.summit_probability = peakProbability[featureId];
-                    }
+    function submitExpeditionForm() {
+        var formData = new FormData(document.getElementById('expedition-form'));
+
+        var expeditionData = {};
+        for (const [k, v] of formData) {
+            expeditionData[k] = v;
+        }
+
+        postExpeditionData(expeditionData)
+            .then(data => {
+                if (data.status == 'success') {
+                    setSummitProbabilities(data.summit_probabilities);
+                    refreshPeakLayer();
                 }
             });
-        }
     }
 
-    function updatePeakIcons() {
-        peakLayer.eachLayer(layer => {
-            if ('feature' in layer) {
-                var summit_probability = layer.feature.properties.summit_probability;
-                layer.setIcon(getPeakIcon(summit_probability));
-            }
-        });
-    }
+    var submitButton = document.getElementById('expedition-form-button');
+    submitButton.onclick = function () {
+        submitExpeditionForm();
+        toggleModal()
+    };
 
+    var himalCollection = {{ himal_geojson|tojson }};
+    var peakCollection  = {{ peak_geojson|tojson }};
 
+    populateHimalLayer(himalCollection);
+    populatePeakLayer(peakCollection);
 </script>
 
 </body>
