@@ -2,8 +2,10 @@
 -e .
 
 # Required Packages
-dbfread
-flask
-pandas
-scikit-learn
-tqdm
+dbfread==2.0.7
+Flask==1.1.1
+numpy==1.17.4
+pandas==0.25.3
+scikit-learn==0.22
+scipy==1.3.3
+tqdm==4.40.0

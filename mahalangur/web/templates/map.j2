@@ -249,16 +249,11 @@
             var delta = upper - lower;
             var alpha = Math.min(Math.max(0, value - lower), delta)/delta;
 
-            /* #009948 hsla(148, 100%, 30%, 1) */
-            /* #ffff80 hsla(60 , 100%, 75%, 1) */
+            var h = Math.round((1 - alpha)*60  + alpha*145);
+            var s = Math.round((1 - alpha)*100 + alpha*100);
+            var l = Math.round((1 - alpha)*70  + alpha*20 );
 
-            /* 240, 100%, 25.1% */
-
-            var h = Math.round((1 - alpha)*240 + alpha*240);
-            var s = Math.round((1 - alpha)*10 + alpha*100);
-            var l = Math.round((1 - alpha)*80 + alpha*25 );
-
-            return `hsl(${h} 100% ${l}%)`;
+            return `hsl(${h} ${s}% ${l}%)`;
         }
 
         setRange(lower, upper) {
@@ -347,7 +342,7 @@
         }
     });
 
-    var attribution = 'Map Data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> Contributors, SRTM | Rendering &copy; <a href="opentopomap.org/">OpenTopoMap</a> | Climb Data &copy; <a href="https://www.himalayandatabase.com/">Himlayan Database</a>';
+    var attribution = 'Map Data &copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a> Contributors, SRTM | Rendering &copy; <a href="https://opentopomap.org/">OpenTopoMap</a> | Climb Data &copy; <a href="https://himalayandatabase.com/">Himlayan Database</a>';
 
     var himalLayer = L.geoJSON(),
         osmLayer   = L.tileLayer(osmUrl, {bounds: bounds, attribution: attribution}),
@@ -483,11 +478,8 @@
         toggleModal()
     };
 
-    var himalCollection = {{ himal_geojson|tojson }};
-    var peakCollection  = {{ peak_geojson|tojson }};
-
-    populateHimalLayer(himalCollection);
-    populatePeakLayer(peakCollection);
+    populateHimalLayer({{ himal_geojson|tojson }});
+    populatePeakLayer({{ peak_geojson|tojson }});
 </script>
 
 </body>
