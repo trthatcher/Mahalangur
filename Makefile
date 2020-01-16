@@ -21,4 +21,9 @@ data_sqldb:
 	$(PYTHON_INTERPRETER) -m mahalangur.data.sqldb
 
 model_rf:
-	$(PYTHON_INTERPRETER) -m mahalangur.models.rf
+	$(PYTHON_INTERPRETER) -m mahalangur.rfmodel
+
+dataset: data_hdb data_sqldb
+
+api:
+	$(PYTHON_INTERPRETER) -m mahalangur.web.app
