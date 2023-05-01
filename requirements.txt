@@ -3,7 +3,7 @@
 
 # Required Packages
 dbfread==2.0.7
-Flask==1.1.1
+Flask==2.3.2
 joblib==0.14.1
 numpy==1.17.4
 pandas==0.25.3
